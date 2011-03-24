@@ -1,0 +1,56 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+import urllib
+import re
+import json
+import sys
+from BeautifulSoup import BeautifulSoup
+
+
+html = urllib.urlopen('http://webwatch.cityofmadison.com/webwatch/mobileada.aspx').read()
+soup = BeautifulSoup(html)
+
+stops = {}
+namedb = []
+
+for a in soup.findAll('a'):
+	if 'Route ' in a.string:
+		routeno = int(re.search('Route (\\d+)', a.string).group(1))
+		# for each rote
+		
+		html = urllib.urlopen('http://webwatch.cityofmadison.com/webwatch/mobileada.aspx'+re.search('(\\?r=.*)', a['href']).group(1)).read()
+		
+		for dirs in re.findall('\\"MobileAda.aspx(\\?r=.*)\\">(.*?)<', html):
+			dirurl = dirs[0]
+			dirstr = dirs[1]
+			
+			html = urllib.urlopen('http://webwatch.cityofmadison.com/webwatch/mobileada.aspx'+dirurl).read()
+			
+			for stop in re.findall('\\"MobileAda.aspx\\?(r=.*)\\">(.*?)<', html):
+				url = stop[0]
+				stopname = stop[1]
+				
+				try:
+					stopid = int(re.search('ID#(\\d+)', stop[1]).group(1))
+				except Exception as e:
+					print >>sys.stderr, "stopid:", stopid, "routeno:", routeno, "url:", url, "exception", e 
+					continue
+				 
+				if stopid not in stops:
+					stops[stopid] = []
+				
+				
+				stops[stopid].append({
+					'routeno': routeno,
+					'direction': dirstr,
+					'url': url
+				})
+				
+				namedb.append(stopname + " route="+str(routeno) + " dir=" +dirstr)
+				
+			#break;
+	#break	
+
+print >>open("mobile-tracker-saturday.json", "w"), json.dumps(stops, sort_keys=True, indent=4)
+print>>open("names-saturday.json", "w"), json.dumps(namedb, sort_keys=True, indent=4)

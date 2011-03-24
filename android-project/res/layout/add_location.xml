@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  >
+	  <LinearLayout
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation="vertical"
+	  >
+	  <TextView
+	    android:text="Location Name"
+	    android:id="@+id/Text01"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingRight = "10dp"
+	    android:paddingTop = "10dp"
+	    android:paddingLeft = "10dp"
+	    android:textSize = "16sp"
+	  >
+	  </TextView>
+	  <EditText
+	    android:text=""
+	    android:id="@+id/Name"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	  android:enabled="true" android:singleLine="true">
+	  </EditText>
+	  <LinearLayout
+	    android:id="@+id/LinearLayout04"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:orientation="horizontal"
+	  >
+	  <RadioGroup
+	  	android:id="@+id/LinearLayout01"
+	  	android:layout_height="wrap_content"
+	  	android:orientation="vertical"
+	  android:layout_width="fill_parent">
+	    <RadioButton
+	  	  android:text="Street Address:"
+	  	  android:id="@+id/RadioButton01"
+	  	  android:layout_width="wrap_content"
+	  	  android:layout_height="wrap_content"
+	    >
+	    </RadioButton>
+	    <EditText android:text="" android:id="@+id/Address" android:layout_height="wrap_content" android:singleLine="true" android:layout_width="fill_parent">
+	  </EditText><RadioButton
+	  	  android:text="Current Location"
+	  	  android:id="@+id/RadioButton02"
+	  	  android:layout_width="wrap_content"
+	  	  android:layout_height="wrap_content"
+	    >
+	    </RadioButton>
+	    <RadioButton
+	  	  android:text="Current Selection"
+	  	  android:id="@+id/RadioButton03"
+	  	  android:layout_width="wrap_content"
+	  	  android:layout_height="wrap_content"
+	    >
+	    </RadioButton>
+	  </RadioGroup>
+	  
+	  </LinearLayout>
+	</LinearLayout>
+</ScrollView>

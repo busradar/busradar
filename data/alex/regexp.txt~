@@ -1,0 +1,12 @@
+<div align="Center"><b>Mobile Estimates</b><div align="Left">Next 3 Vehicles Arrive at:<br>
+3:07 P.M.   TO EAGLE HT:UW HOSP<br>
+3:13 P.M.   TO EAGLE HT:UW HOSP<br>
+3:20 P.M.   TO EAGLE HT:UW HOSP<br>
+
+<div align="Center"><b>Mobile Estimates</b><div align="Left">No further buses scheduled for this stop.<br>
+
+if contains "No further buses scheduled for this stop." then none
+
+Next (\d) Vehicles Arrive at:<br>
+
+regular exp (\d\d?:\d\d [AP].M.)

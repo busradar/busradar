@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<meta name="generator" content="HTML Tidy for Linux (vers 6 November 2007), see www.w3.org" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>BusRadar - About</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="files/default.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+/*<![CDATA[*/
+ div.c3 {clear: both; padding-bottom: 30px;}
+ div.c2 {line-height: 20px; font-size: 16px; padding-top: 30px; text-align: left}
+ div.c1 {padding-top: 15px}
+/*]]>*/
+</style>
+</head>
+<body>
+<!-- start header -->
+<div id="header">
+<div id="logo"><a href="index.html"><img src="files/icon.png" alt="icon" /></a>
+<h1><a href="index.html"></a></h1>
+<a href="index.html"><img src="files/busradar_banner.png" alt="BusRadar" /></a>
+<p> </p>
+</div>
+<div id="menu" class="c1">
+<ul>
+<li><a href="index.html">home</a></li>
+<li class="current_page_item"><a href="about.html">about</a></li>
+</ul>
+</div>
+</div>
+<!-- end header -->
+<div id="page">
+<div class="c2">
+<p><strong>Madison BusRadar</strong><br />
+1.0</p>
+<br />
+<p><small>Copyright &#169; 2010 Aleksandr Dobkin, Michael Choi, and Christopher Mills. All rights reserved.</small></p>
+<p><small><a href="index.html">BusRadar</a> is in not produced by or in any way affiliated with <a href="http://www.cityofmadison.com/metro/">Madison Metro Transit</a>.</small></p>
+<p><small>Real-time departure times and bus locations are provided by the <a href="http://www.cityofmadison.com/metro/TransitTracker/TransitTracker.html">Transit Tracker</a> website.<br />
+We assume no responsibility for the correctness, completeness or legality of such information.</small></p>
+<p><small>This application was a class project for [CS 638: Mobile and Wireless Systems Laboratory]<br />
+at <a href="http://www.wisc.edu/">University of Wisconsin - Madison</a>, instructed by Professor <a href="http://pages.cs.wisc.edu/~suman/">Suman Banerjee</a>.</small></p>
+<p><small>Thank you, and we hope that you enjoy your <a href="index.html">BusRadar</a> experience!</small></p>
+<p><small>Feedbacks &#38; Fix requests welcomed. support [et] busradarapp [period] com</small></p>
+</div>
+<div class="c3"></div>
+</div>
+<!-- end page -->
+<div id="footer-bg">
+<div id="footer">
+<p id="legal">&#169; 2010 <a href="index.html">Aleksandr Dobkin, Michael Choi, and Christopher Mills</a> All Rights Reserved | <a href="about.html">Privacy</a></p>
+<p id="links"><a href="http://developer.android.com/index.html">Android Developers<img src="http://developer.android.com/resources/tutorials/views/images/androidmarker.png" alt="Android Developers" /></a></p>
+</div>
+</div>
+</body>
+</html>

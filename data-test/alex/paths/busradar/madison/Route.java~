@@ -1,0 +1,23 @@
+package busradar.madison;
+
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.Serializable;
+
+@SuppressWarnings("serial")
+public class Route implements Serializable
+{
+	public RouteTree tree;
+	public int color;
+	
+	public Route(DataInputStream s) throws IOException {
+		tree = new RouteTree(s);
+		color = s.readInt();
+	}
+	
+	public void write(DataOutputStream s) throws IOException {
+		tree.write(s);
+		s.writeInt(color);
+	}
+}

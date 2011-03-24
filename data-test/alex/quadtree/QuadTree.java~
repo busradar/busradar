@@ -1,0 +1,115 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
+import com.google.android.maps.GeoPoint;
+
+public class QuadTree implements Serializable
+{
+	
+	public static class Element implements Serializable {
+		int lat;
+		int lon;
+	}
+	
+	static int maxchild = 20;
+	ArrayList<GeoPoint> items;
+	QuadTree nw, ne, sw, se;
+	
+	int midx, midy;	
+
+
+	public QuadTree(ArrayList<GeoPoint> points)
+	{	
+
+		if (points.size() <= maxchild) {
+			items = points;
+			return;
+		}
+	
+		Collections.sort(points, new Comparator<GeoPoint>() {
+			public int compare(GeoPoint a, GeoPoint b) { return a.getLongitudeE6() - b.getLongitudeE6(); }
+			public boolean equals(Object o) { return false; }
+		});
+			
+		midx = points.get(points.size()/2+1).getLongitudeE6();
+	
+		Collections.sort(points, new Comparator<GeoPoint>() {
+			public int compare(GeoPoint a, GeoPoint b) { return a.getLatitudeE6() - b.getLatitudeE6(); }
+			public boolean equals(Object o) { return false; }
+		});
+	
+		midy = points.get(points.size()/2+1).getLatitudeE6();
+	
+		ArrayList<GeoPoint> nwl = new ArrayList<GeoPoint>();
+		ArrayList<GeoPoint> nel = new ArrayList<GeoPoint>();
+		ArrayList<GeoPoint> swl = new ArrayList<GeoPoint>();
+		ArrayList<GeoPoint> sel = new ArrayList<GeoPoint>();
+	
+		for (GeoPoint p : points) 
+		{
+			if (p.getLatitudeE6() >= midy) { // north
+				if (p.getLongitudeE6() >= midx) { // east
+					nel.add(p);
+				}
+				else { //west
+					nwl.add(p);
+				}
+			}
+			else { // south
+				if (p.getLongitudeE6() >= midx) { // east
+					sel.add(p);
+				}
+				else { //west
+					swl.add(p);
+				}
+			}
+		}
+	
+		nw = new QuadTree(nwl);
+		ne = new QuadTree(nel);
+		sw = new QuadTree(swl);
+		se = new QuadTree(sel);
+	}
+
+
+	public ArrayList<GeoPoint>
+			get(int xboundmin, int yboundmin, int xboundmax, int yboundmax, int span)
+	{	
+	
+		ArrayList<GeoPoint> l = new ArrayList<GeoPoint>();
+	
+		if (items != null) // we're a leaf
+		{	
+			for (GeoPoint p : items) {
+				if (p.getLongitudeE6() >= xboundmin && p.getLongitudeE6() <= xboundmax &&
+								p.getLatitudeE6() >= yboundmin && p.getLatitudeE6() <= yboundmax )
+					l.add(p);
+			}
+		
+			return l;
+		}
+		else {
+		
+			if (yboundmin < midy) { // include south
+				if (xboundmin < midx) { // include west
+					l.addAll(sw.get(xboundmin, yboundmin, xboundmax, yboundmax, span));
+				}
+				if (xboundmax >= midx) { // include east
+					l.addAll(se.get(xboundmin, yboundmin, xboundmax, yboundmax, span));
+				}
+			}
+		
+			if (yboundmax >= midy) { // include north
+				if (xboundmin < midx) { // include west
+					l.addAll(nw.get(xboundmin, yboundmin, xboundmax, yboundmax, span));
+				}
+				if (xboundmax >= midx) { // include east
+					l.addAll(ne.get(xboundmin, yboundmin, xboundmax, yboundmax, span));
+				}
+			}
+		
+			return l;
+		}
+	}
+}
