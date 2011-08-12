@@ -1,0 +1,2 @@
+agency_id,agency_name,agency_url,agency_timezone,agency_lang,agency_phone,fare_url
+MMT,Metro Transit-City of Madison,http://www.mymetrobus.com,America/Chicago,en,608-266-4466,http://www.cityofmadison.com/metro/fares/
