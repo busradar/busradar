@@ -341,7 +341,7 @@ public boolean onTap(GeoPoint p, MapView map) {
 				.setTitle("Choose a stop")
 				.setItems(names, 
 					new DialogInterface.OnClickListener() {
-						@Override public void 
+						public void 
 						onClick(DialogInterface dialog, int which) 
 						{
 							new StopDialog(G.activity, touched.get(which).id,

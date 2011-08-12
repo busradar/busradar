@@ -36,7 +36,7 @@ public class TutorialDialog extends Dialog {
         	addView(new Button(ctx){{
         		setText("▶");
         		setOnClickListener(new OnClickListener() {
-					@Override public void onClick(View v) {
+					public void onClick(View v) {
 						gallery.dispatchKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_DPAD_RIGHT));
 					}
 				});
@@ -49,7 +49,7 @@ public class TutorialDialog extends Dialog {
         	addView(new Button(ctx){{
         		setText("◀");
         		setOnClickListener(new OnClickListener() {
-					@Override public void onClick(View v) {
+					public void onClick(View v) {
 						gallery.dispatchKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_DPAD_LEFT));
 					}
 				});
@@ -72,16 +72,12 @@ public class TutorialDialog extends Dialog {
 		
 		public ImageAdapter(Context c) { this.mContext = c; }
 
-		@Override
 		public int getCount() { return this.mImages.length; }
 
-		@Override
 		public Object getItem(int position) { return position; }
 
-		@Override
 		public long getItemId(int position) { return position; }
 
-		@Override
 		public View getView(int position, View convertView, ViewGroup parent) {
 			ImageView i = new ImageView(this.mContext);
 			

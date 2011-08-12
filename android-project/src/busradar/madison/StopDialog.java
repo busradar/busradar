@@ -176,7 +176,7 @@ public final class StopDialog extends Dialog {
 					
 					setPadding(0, 0, 10, 0);
 					setOnClickListener(new OnClickListener() {
-						@Override public void onClick(View v) {							
+						public void onClick(View v) {							
 							setEnabled(!enabled);
 						}
 				});

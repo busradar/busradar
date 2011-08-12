@@ -29,7 +29,7 @@ public class AddDialog extends View {
 		
 		final View view = View.inflate(context, R.layout.add_location, null);
 		d = new AlertDialog.Builder(context).setPositiveButton("Save", new DialogInterface.OnClickListener(){
-			@Override public void onClick(DialogInterface dialog, int which) {
+			public void onClick(DialogInterface dialog, int which) {
 				GeoPoint gp;
 				switch (((RadioGroup) view.findViewById(R.id.LinearLayout01)).getCheckedRadioButtonId())
 				{

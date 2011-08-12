@@ -61,7 +61,7 @@ public class FavoriteDialog extends Dialog {
 				View v =  super.getView(position, convertView, parent);
 				ImageView edit_button = (ImageView) v.findViewById(R.id.edit_button);
 				edit_button.setOnClickListener(new View.OnClickListener() {
-					@Override public void onClick(View v) {
+					public void onClick(View v) {
 						v.performLongClick();
 					}
 				});

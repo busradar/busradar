@@ -107,7 +107,7 @@ static void init(Main a)
 			Cursor c = db.rawQuery("SELECT version FROM db_version", null);
 			c.moveToFirst();
 			
-			if (c.getInt(0) < 3) {
+			if (c.getInt(0) < 4) {
 				//System.out.println("BusRadar: Updating DB");
 				throw new SQLiteException();
 			}
