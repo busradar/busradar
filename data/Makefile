@@ -15,15 +15,6 @@ db.sqlite: combined-stops.json
 combined-stops.json: mobiletracker-combined.json
 	python stops-from-gtf.py
 
-map-weekday.json:
-	python get-map.py
-
-map-holiday.json:
-	python get-map.py	
-
-stops.json:
-	python get-stops.py
-
 mobiletracker-weekdays.json:
 	python get-mobiletracker.py
 
