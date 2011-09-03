@@ -5,5 +5,5 @@ CreateQuadTree.class: CreateQuadTree.java
 	javac CreateQuadTree.java
 	
 clean:
-	rm *.class stops.bin busradar/madison/*.class
+	rm -f *.class stops.bin busradar/madison/*.class
 

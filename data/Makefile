@@ -26,5 +26,6 @@ mobiletracker-combined.json: mobiletracker-weekdays.json mobiletracker-weekendsa
 
 clean:
 	make -C quadtree clean
-	rm *.json
-	rm db.sqlite
+	make -C paths clean
+	rm -f *.json
+	rm -f db.sqlite

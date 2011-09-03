@@ -5,3 +5,6 @@ route_points.bin: CreateRoutes.class
 	
 CreateRoutes.class: CreateRoutes.java
 	javac CreateRoutes.java
+	
+clean:
+	rm -f route_points.bin
