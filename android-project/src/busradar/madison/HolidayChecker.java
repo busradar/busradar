@@ -75,8 +75,6 @@ check_named_date(GregorianCalendar date, int month, int day_of_week, int num_wee
 	
 	shift_to_nth_day_of_month(holiday, month, day_of_week, num_weeks);
 	
-	System.out.printf("named date %s\n",holiday.getTime());
-	
 	return same_date(date, holiday);
 }
 

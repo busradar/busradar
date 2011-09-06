@@ -24,7 +24,7 @@ namedb = []
 
 for a in soup.findAll('a'):
 	if 'Route ' in a.string:
-		routeno = int(re.search('Route (\\d+)', a.string).group(1))
+		routeno = re.search('Route ([a-zA-Z0-9_-]+)', a.string).group(1)
 		print "route", routeno
 		# for each rote
 		

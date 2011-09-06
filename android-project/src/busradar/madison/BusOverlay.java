@@ -97,8 +97,7 @@ draw(Canvas canvas, MapView map, boolean shadow)
 	}
 	zoom_level = x;
 	
-//		for (G.active_route = 0; G.active_route < G.route_points.length; G.active_route++)
-	if (G.route_points[G.active_route] != null) { 
+	if (G.active_route >= 0) { 
 		
 		ArrayList<RouteTree.Line> lines = new ArrayList<RouteTree.Line>();
 		line_paint.setColor(0x90000000 | G.route_points[G.active_route].color);
@@ -129,7 +128,7 @@ draw(Canvas canvas, MapView map, boolean shadow)
 		//System.out.printf("draw %d points\n", geopoints.size());
 		
 		for (QuadTree.Element geopoint : geopoints ) {
-			if (G.active_route != 0 && Arrays.binarySearch(geopoint.routes, G.active_route) < 0)
+			if (G.active_route >= 0 && Arrays.binarySearch(geopoint.routes, G.active_route) < 0)
 				continue;
 			
 			//pgp.lat = geopoint.lat; pgp.lon = geopoint.lon;
@@ -276,7 +275,7 @@ public boolean onTap(GeoPoint p, MapView map) {
 	
 	Bitmap b;
 	for(QuadTree.Element e: geopoints) {
-		if (G.active_route != 0 && Arrays.binarySearch(e.routes, G.active_route) < 0)
+		if (G.active_route >= 0 && Arrays.binarySearch(e.routes, G.active_route) < 0)
 			continue;
 		
 		//pgp.lat = e.lat; pgp.lon = e.lon;

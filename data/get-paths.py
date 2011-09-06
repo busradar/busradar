@@ -5,10 +5,23 @@ import urllib
 import re
 import sys
 import json
+from BeautifulSoup import BeautifulSoup
+
+indexpage = urllib.urlopen("http://webwatch.cityofmadison.com/webwatch/map.aspx").read();
+indexsoup = BeautifulSoup(indexpage);
+route_names = []
+
+for opt in indexsoup.findAll("option"):
+    name = opt["value"]
+    if name != "Select a route":
+        route_names.append(name)
+        print name
 
 routes = {}
-for route in range(0, 100):
-	parms= urllib.urlopen("http://webwatch.cityofmadison.com/webwatch/Scripts/Route%02d_trace.js" % route).read()
+
+
+for route in route_names:
+	parms= urllib.urlopen("http://webwatch.cityofmadison.com/webwatch/Scripts/Route%0s_trace.js" % route).read()
 
 	legslist = []
 

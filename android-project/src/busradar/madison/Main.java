@@ -46,12 +46,10 @@ public class Main extends MapActivity
         }});
         
         // CS "0Ig8W-xZ2oTTUV790AiVTa3KwEH6f-lIPaPek3Q");
-        // home laptop 0Ig8W-xZ2oTTfaInEj5tO3IAm8eCWdNzpD3yBOA
-        // signed key 0nhR5qUExunzdtDzAYrFjx2tcA9aSJISJEwxhYg
-        // debug key "0nhR5qUExuny9Tkp9u8PZguQnBL2NlvYRA7yXfQ"
-        G.active_route = 0;
+        // alex hp laptop 0Ig8W-xZ2oTTr3MmiHSsA98C7_KVHwhUQe849bQ
+        G.active_route = -1;
         map_view = new MapView(this,"0nhR5qUExunzdtDzAYrFjx2tcA9aSJISJEwxhYg"); // signed key
-        //map_view = new MapView(this,"0Ig8W-xZ2oTQiNf8FBvVMZ3tXEL75F5EHbdsOIg"); // debug key
+        //map_view = new MapView(this,"0Ig8W-xZ2oTTr3MmiHSsA98C7_KVHwhUQe849bQ"); // debug key
  		G.location_overlay = new MyLocationOverlay(this, map_view) {
  			boolean droid_x_MyLocationOverlay_bug = false;
  			Bitmap bitmap_curloc_indicator = BitmapFactory.decodeResource(Main.this.getResources(), R.drawable.curloc_pointer);
@@ -264,7 +262,7 @@ public class Main extends MapActivity
 			G.location_overlay.enableCompass();
 		}
 		
-		if (G.active_route > 0) {
+		if (G.active_route >= 0) {
 			G.bus_locator.start(G.active_route);
 		}
 		

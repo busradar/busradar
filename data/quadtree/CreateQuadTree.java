@@ -3,21 +3,16 @@ import java.io.*;
 import java.util.*;
 import org.json.*;
 import busradar.madison.*;
+import org.apache.commons.io.*;
 
 class CreateQuadTree
 {
 
 public static void main(String[] args) throws Exception	
 {
-	String jsonstr = null;
-	FileInputStream file = new FileInputStream("../combined-stops.json");
-	byte[] buf = new byte[(int) file.available()];
-	file.read(buf);
-		
-	jsonstr = new String(buf, "UTF-8");
-	file.close();
+	JSONObject json = new JSONObject(FileUtils.readFileToString(new File("../combined-stops.json")));
+	JSONArray routes_info_json = new JSONArray(FileUtils.readFileToString(new File("../routes.json")));
 
-	JSONObject json = new JSONObject(jsonstr);
 		
 	Iterator<String> it = json.keys();
 	ArrayList<QuadTree.Element>points = new ArrayList<QuadTree.Element>();
@@ -42,7 +37,23 @@ public static void main(String[] args) throws Exception
 
 			for(int i = 0; i < routes_json.length(); i++)
 			{
-				routes[i] = routes_json.getJSONObject(i).getInt("routeno");
+				String route_name = routes_json.getJSONObject(i).getString("routeno");
+				
+				int index;
+				boolean found = false;
+				for (index = 0; index < routes_info_json.length(); index++)
+				{
+                                    if (routes_info_json.getJSONObject(index).getString("name").equals(route_name))
+                                    {
+                                        found = true;
+                                        break;
+                                    }
+				}
+				
+				if (!found)
+                                    throw new Error();
+				
+				routes[i] = index;
 			}
 			Arrays.sort(routes);
 			e.routes = routes;

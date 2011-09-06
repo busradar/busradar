@@ -7,6 +7,7 @@ import sys
 import os
 
 stops = json.load(open("combined-stops.json"))
+route_info = json.load(open("routes.json"))
 
 try:
 	os.remove("./db.sqlite")
@@ -20,23 +21,38 @@ c.execute("CREATE TABLE android_metadata (locale TEXT DEFAULT 'en_US')")
 c.execute("INSERT INTO android_metadata VALUES ('en_US')")
 
 c.execute("CREATE TABLE db_version (version INT)")
-c.execute("INSERT INTO db_version VALUES (3)")
+c.execute("INSERT INTO db_version VALUES (6)")
 
-c.execute("create table routestops(stopid integer, route integer, url text)")
+c.execute("CREATE TABLE routestops(stopid integer, route integer, url text)")
 c.execute("CREATE TABLE Stop (_ID INTEGER PRIMARY KEY, Name TEXT)")
 
 
 for stopid in stops:
-	c.execute("INSERT INTO Stop(_ID, Name) values (?, ?)", \
-			(stopid, stops[stopid]['name']))
-			
-	for route in stops[stopid]['routes']:
-		c.execute("insert into routestops(stopid, route, url) values(?, ?, ?)", \
-				(stopid, \
-				 route['routeno'], \
-				 route['url']))
-		
-		
+        c.execute("INSERT INTO Stop(_ID, Name) values (?, ?)", \
+                        (stopid, stops[stopid]['name']))
+                        
+        for route in stops[stopid]['routes']:
+                route_name = route['routeno']
+                
+                id = 0;
+                found = False
+                
+                for rinfo in route_info:
+                    if rinfo['name'] == route_name:
+                        found = True
+                        break
+                    id += 1
+                    
+                if not found:
+                    raise "Not found"
+                
+            
+                c.execute("insert into routestops(stopid, route, url) values(?, ?, ?)", \
+                                (stopid, \
+                                    id, \
+                                    route['url']))
+
+
 conn.commit()
 
 c.close()

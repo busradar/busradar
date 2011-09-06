@@ -16,16 +16,19 @@ public class Route
 	public int color;
 	public byte days;
 	public Button button;
+	public String name;
 	
 	public Route() {}
 	
 	public Route(DataInputStream s) throws IOException {
+        name = s.readUTF();
 		tree = new RouteTree(s);
 		color = s.readInt();
 		days = s.readByte();
 	}
 	
 	public void write(DataOutputStream s) throws IOException {
+        s.writeUTF(name);
 		tree.write(s);
 		s.writeInt(color);
 		s.writeByte(days);

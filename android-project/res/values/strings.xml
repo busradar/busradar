@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">Madison BusRadar</string>
 <string name="about"><big><b>Madison BusRadar</b>
-	\n1.0.12</big>
+	\n1.0.13</big>
 	
 	\n\nCopyright © 2010 Aleksandr Dobkin, Michael Choi, and Christopher Mills. All rights reserved.
 	\n\nRoute paths and bus stop locations are accurate as of October 2010. Bus arrival estimates and bus locations are obtained on demand from the <a href="http://www.cityofmadison.com/metro/">Madison Metro</a> website. We assume no responsibility for this information.

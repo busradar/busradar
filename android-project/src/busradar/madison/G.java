@@ -45,7 +45,7 @@ static SQLiteDatabase db;
 static MyLocations favorites;
 
 static MyLocationOverlay location_overlay;
-static int active_route = 0;
+static int active_route = -1;
 
 static ArrayList<BusOverlay.BusLocation> bus_locs;
 static BusLocator bus_locator = new BusLocator();
@@ -89,10 +89,9 @@ static void init(Main a)
 		
 		route_points = new Route[in.readInt()];
 		for (int i = 0; i < route_points.length; i++)
-			if (in.readBoolean() == true) {
-				//System.out.printf("%d is not null\n", i);
+		{
 				route_points[i] = new Route(in);
-			}
+		}
 	
 		//long t2 = System.currentTimeMillis();
 		//System.out.printf("Time to unseralize %d\n", t2 - t1);
@@ -100,14 +99,14 @@ static void init(Main a)
 		in.close();
 		file.close();
 		
-		String path = "/data/data/" + a.getPackageName() + "/db.sqlite";
+		String path = a.getFilesDir().getParent() + "/db.sqlite";
 		
 		try {
 			db = SQLiteDatabase.openDatabase(path, null, SQLiteDatabase.OPEN_READONLY);
 			Cursor c = db.rawQuery("SELECT version FROM db_version", null);
 			c.moveToFirst();
 			
-			if (c.getInt(0) < 4) {
+			if (c.getInt(0) < 6) {
 				//System.out.println("BusRadar: Updating DB");
 				throw new SQLiteException();
 			}

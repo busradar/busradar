@@ -219,7 +219,7 @@ public final class StopDialog extends Dialog {
 									}
 
 									{
-										setText(String.valueOf(route.route));
+										setText(G.route_points[route.route].name);
 										setTextColor(0xffffffff);
 										setTypeface(Typeface.DEFAULT_BOLD);
 										text_size = getTextSize();
@@ -330,7 +330,7 @@ public final class StopDialog extends Dialog {
 
 		// title.setGravity(Gravity.CENTER_HORIZONTAL|Gravity.CENTER_VERTICAL);
 		
-		if (G.active_route > 0)
+		if (G.active_route >= 0)
 			for (int i = 0; i < routes.length; i++)
 				if (routes[i].route == G.active_route) {
 					selected_route = routes[i];
@@ -545,6 +545,7 @@ public final class StopDialog extends Dialog {
 			r.url = c.getString(0);
 			r.route = c.getInt(1);
 			list[i++] = r;
+		
 		}
 
 		c.close();
