@@ -95,7 +95,7 @@ make_layout()
 								b.setEnabled(true);
 								G.active_route = ix;
 								
-								G.bus_locator.start(ix);
+								G.bus_locator.start(G.route_points[ix].name);
 								G.activity.map_view.invalidate();
 							}
 						}

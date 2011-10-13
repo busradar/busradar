@@ -3,16 +3,17 @@ package busradar.madison;
 import java.io.InputStream;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.IllegalFormatException;
 
 import android.os.AsyncTask;
 
 import com.google.android.maps.GeoPoint;
 
-public class BusLocator extends AsyncTask<Integer, ArrayList<BusOverlay.BusLocation>, ArrayList<BusOverlay.BusLocation> > {
+public class BusLocator extends AsyncTask<String, ArrayList<BusOverlay.BusLocation>, ArrayList<BusOverlay.BusLocation> > {
 	BusLocator curr = null;
 	Thread t;
 	
-	void start(int r) {
+	void start(String r) {
 		if (curr != null)
 			curr.cancel(true);
 		
@@ -31,17 +32,18 @@ public class BusLocator extends AsyncTask<Integer, ArrayList<BusOverlay.BusLocat
 	
 	@SuppressWarnings("unchecked")
 	@Override
-	protected ArrayList<BusOverlay.BusLocation> doInBackground(Integer... r) {
-		int route = r[0];
+	protected ArrayList<BusOverlay.BusLocation> doInBackground(String... r) {
+		String route = r[0];
 		for (;;) {
 			ArrayList<BusOverlay.BusLocation> bus_locs = new ArrayList<BusOverlay.BusLocation>();
+			String route_formatted = null;
 			
 			try {
 				String str = "";
 				
-				InputStream is = new URL(
-					String.format("http://webwatch.cityofmadison.com/webwatch/UpdateWebMap.aspx?u=%02d", route)
-				).openStream();
+				route_formatted = "http://webwatch.cityofmadison.com/webwatch/UpdateWebMap.aspx?u=" + r[0];
+				
+				InputStream is = new URL(route_formatted).openStream();
 				
 				byte[] b = new byte[1024*8];
 				while ( is.read(b) != -1 ) {
@@ -91,7 +93,7 @@ public class BusLocator extends AsyncTask<Integer, ArrayList<BusOverlay.BusLocat
 					return null;
 				}
 				
-				System.out.printf("BusLoactor: error route %d\n", route);
+				System.out.printf("BusLoactor: error route %s url=%s\n", route, route_formatted);
 				e.printStackTrace();
 				return null;
 			}

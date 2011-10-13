@@ -291,7 +291,7 @@ public final class StopDialog extends Dialog {
 								v = (CellView) convertView;
 
 							v.setBackgroundColor(G.route_points[curr_times.get(position).route].color | 0xff000000);
-							v.route_textview.setText(String.valueOf(curr_times.get(position).route));
+							v.route_textview.setText(G.route_points[curr_times.get(position).route].name);
 							v.dir_textview.setText("to "+ curr_times.get(position).dir);
 							v.time_textview.setText(curr_times.get(position).time);
 
