@@ -105,8 +105,10 @@ static void init(Main a)
 			db = SQLiteDatabase.openDatabase(path, null, SQLiteDatabase.OPEN_READONLY);
 			Cursor c = db.rawQuery("SELECT version FROM db_version", null);
 			c.moveToFirst();
+			int version = c.getInt(0);
+			c.close();
 			
-			if (c.getInt(0) < 6) {
+			if (version < 6) {
 				//System.out.println("BusRadar: Updating DB");
 				throw new SQLiteException();
 			}

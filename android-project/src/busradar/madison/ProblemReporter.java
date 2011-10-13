@@ -7,6 +7,7 @@ public final class ProblemReporter {
 	}
 	
 	static void log_problem(Exception e) {
+		e.printStackTrace();
 		
 	}
 

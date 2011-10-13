@@ -6,6 +6,8 @@ import java.io.InputStream;
 import java.net.SocketException;
 import java.net.URL;
 import java.net.UnknownHostException;
+import java.security.cert.CertificateException;
+import java.security.cert.X509Certificate;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -13,6 +15,15 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.Scanner;
 import java.util.regex.Pattern;
+
+import javax.net.ssl.HostnameVerifier;
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.SSLSession;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
+
+import org.apache.http.conn.ssl.SSLSocketFactory;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -38,6 +49,37 @@ import android.widget.Toast;
 import static busradar.madison.ProblemReporter.*;
 
 public final class StopDialog extends Dialog {
+	
+//	static javax.net.ssl.SSLSocketFactory sslsockfactory;
+//	
+//	static {
+//		// Imports: javax.net.ssl.TrustManager, javax.net.ssl.X509TrustManager
+//		try {
+//		    // Create a trust manager that does not validate certificate chains
+//		    final TrustManager[] trustAllCerts = new TrustManager[] { new X509TrustManager() {
+//		        public void checkClientTrusted( final X509Certificate[] chain, final String authType ) {
+//		        }
+//		        public void checkServerTrusted( final X509Certificate[] chain, final String authType ) {
+//		        }
+//		        public X509Certificate[] getAcceptedIssuers() {
+//		            return null;
+//		        }
+//		    } };
+//		    
+//		    // Install the all-trusting trust manager
+//		    final SSLContext sslContext = SSLContext.getInstance( "TLS" );
+//		    sslContext.init( null, trustAllCerts, new java.security.SecureRandom() );
+//		    // Create an ssl socket factory with our all-trusting manager
+//		    sslsockfactory = sslContext.getSocketFactory();
+//		    
+//		    
+//		    
+//		} catch ( final Exception e ) {
+//		    e.printStackTrace();
+//		}
+//	
+//	}
+	
 	final static Pattern num_vehicles_re = Pattern.compile("Next (\\d) Vehicles Arrive at:<br>");
 	final static Pattern time_re = Pattern.compile("(\\d\\d?:\\d\\d [AP]\\.M\\.)   TO (.*)<");
 	final static Pattern no_busses_re = Pattern.compile("No further buses scheduled for this stop\\.");
@@ -50,7 +92,7 @@ public final class StopDialog extends Dialog {
 	TextView status_text;
 	TextView cur_loading_text;
 	BaseAdapter times_adapter;
-	final static String TRANSITTRACKER_URL = "http://webwatch.cityofmadison.com/webwatch/MobileAda.aspx?";
+	final static String TRANSITTRACKER_URL = "https://webwatch.cityofmadison.com/webwatch/MobileAda.aspx?";
 
 	static class RouteURL {
 		static final int LOADING = 0;
@@ -364,7 +406,17 @@ public final class StopDialog extends Dialog {
 					
 					final ArrayList<RouteTime> curtimes = new ArrayList<RouteTime>();
 					try {
-						InputStream is = new URL(TRANSITTRACKER_URL+r.url).openStream();
+						URL url = new URL(TRANSITTRACKER_URL+r.url);
+						HttpsURLConnection url_conn = (HttpsURLConnection) url.openConnection();
+						//url_conn.setSSLSocketFactory(sslsockfactory);
+						//url_conn.setAllowUserInteraction(true);
+						url_conn.setHostnameVerifier(new HostnameVerifier() {
+							
+							public boolean verify(String hostname, SSLSession session) {
+								return true;
+							}
+						});
+						InputStream is = url_conn.getInputStream();
 						Scanner scan = new Scanner(is, "UTF-8");
 
 						String outstr_cur = "Route " + r.route + "\n";
@@ -439,7 +491,7 @@ public final class StopDialog extends Dialog {
 						{
 							// data connection doesn't work
 							custom_msg = "Error downloading data. Is the data connection enabled?"+
-							              "<p>Report problems to <a href='mailto:support@busradarapp.com'>support@busradarapp.com</a><p>"+e;
+							              "<p>Report problems to <a href='mailto:support@busradarapp.com'>support@busradarapp.com</a><p>"+TextUtils.htmlEncode(e.toString());
 						}
 						else 
 						{
@@ -447,7 +499,7 @@ public final class StopDialog extends Dialog {
 							String rurl = String.format("http://www.cityofmadison.com/metro/BusStopDepartures/StopID/%04d.pdf", stopid);
 							custom_msg = "Trouble retrieving real-time arrival estimates from <a href='"+turl+"'>this</a> TransitTracker webpage, which is displayed below. "+
 							             "Meanwhile, try PDF timetable <a href='"+rurl+"'>here</a>. "+
-							             "Contact us at <a href='mailto:support@busradarapp.com'>support@busradarapp.com</a> to report the problem.";
+							             "Contact us at <a href='mailto:support@busradarapp.com'>support@busradarapp.com</a> to report the problem.<p>"+ TextUtils.htmlEncode(e.toString());
 						}
 				
 						final String msg = custom_msg;
