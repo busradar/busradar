@@ -1,0 +1,5 @@
+syntax: glob
+android-project/bin/**
+android-project/gen/**
+
+

@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C1DC72214494A1B005EE2E9 /* ios-icon-114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C1DC72014494A1B005EE2E9 /* ios-icon-114x114.png */; };
+		4C1DC72314494A1B005EE2E9 /* ios-icon-57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C1DC72114494A1B005EE2E9 /* ios-icon-57x57.png */; };
+		4CC58C38144810050077C7F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC58C37144810050077C7F2 /* UIKit.framework */; };
+		4CC58C3A144810050077C7F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC58C39144810050077C7F2 /* Foundation.framework */; };
+		4CC58C3C144810050077C7F2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC58C3B144810050077C7F2 /* CoreGraphics.framework */; };
+		4CC58C42144810050077C7F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CC58C40144810050077C7F2 /* InfoPlist.strings */; };
+		4CC58C44144810050077C7F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC58C43144810050077C7F2 /* main.m */; };
+		4CC58C48144810050077C7F2 /* MainAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC58C47144810050077C7F2 /* MainAppDelegate.m */; };
+		4CC58C4B144810050077C7F2 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CC58C49144810050077C7F2 /* MainStoryboard.storyboard */; };
+		4CC58C4E144810050077C7F2 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC58C4D144810050077C7F2 /* MainViewController.m */; };
+		4CC58C56144810060077C7F2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC58C55144810060077C7F2 /* SenTestingKit.framework */; };
+		4CC58C57144810060077C7F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC58C37144810050077C7F2 /* UIKit.framework */; };
+		4CC58C58144810060077C7F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC58C39144810050077C7F2 /* Foundation.framework */; };
+		4CC58C60144810060077C7F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CC58C5E144810060077C7F2 /* InfoPlist.strings */; };
+		4CC58C63144810060077C7F2 /* BusRadarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC58C62144810060077C7F2 /* BusRadarTests.m */; };
+		4CC58C7114481EAF0077C7F2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC58C7014481EAF0077C7F2 /* MapKit.framework */; };
+		4CC58C74144823EC0077C7F2 /* StopAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC58C73144823EC0077C7F2 /* StopAnnotation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CC58C59144810060077C7F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CC58C2A144810050077C7F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CC58C32144810050077C7F2;
+			remoteInfo = BusRadar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4C1DC72014494A1B005EE2E9 /* ios-icon-114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ios-icon-114x114.png"; sourceTree = "<group>"; };
+		4C1DC72114494A1B005EE2E9 /* ios-icon-57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ios-icon-57x57.png"; sourceTree = "<group>"; };
+		4C1DC72714494B3C005EE2E9 /* ios-icon-57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ios-icon-57x57.png"; sourceTree = "<group>"; };
+		4C1DC72914494B43005EE2E9 /* ios-icon-114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ios-icon-114x114.png"; sourceTree = "<group>"; };
+		4CC58C33144810050077C7F2 /* BusRadar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusRadar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CC58C37144810050077C7F2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4CC58C39144810050077C7F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4CC58C3B144810050077C7F2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4CC58C3F144810050077C7F2 /* BusRadar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BusRadar-Info.plist"; sourceTree = "<group>"; };
+		4CC58C41144810050077C7F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4CC58C43144810050077C7F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CC58C45144810050077C7F2 /* BusRadar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BusRadar-Prefix.pch"; sourceTree = "<group>"; };
+		4CC58C46144810050077C7F2 /* MainAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainAppDelegate.h; sourceTree = "<group>"; };
+		4CC58C47144810050077C7F2 /* MainAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainAppDelegate.m; sourceTree = "<group>"; };
+		4CC58C4A144810050077C7F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		4CC58C4C144810050077C7F2 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		4CC58C4D144810050077C7F2 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		4CC58C54144810060077C7F2 /* BusRadarTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusRadarTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CC58C55144810060077C7F2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		4CC58C5D144810060077C7F2 /* BusRadarTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BusRadarTests-Info.plist"; sourceTree = "<group>"; };
+		4CC58C5F144810060077C7F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4CC58C61144810060077C7F2 /* BusRadarTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusRadarTests.h; sourceTree = "<group>"; };
+		4CC58C62144810060077C7F2 /* BusRadarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusRadarTests.m; sourceTree = "<group>"; };
+		4CC58C7014481EAF0077C7F2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4CC58C72144823EC0077C7F2 /* StopAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopAnnotation.h; sourceTree = "<group>"; };
+		4CC58C73144823EC0077C7F2 /* StopAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopAnnotation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CC58C30144810050077C7F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC58C7114481EAF0077C7F2 /* MapKit.framework in Frameworks */,
+				4CC58C38144810050077C7F2 /* UIKit.framework in Frameworks */,
+				4CC58C3A144810050077C7F2 /* Foundation.framework in Frameworks */,
+				4CC58C3C144810050077C7F2 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CC58C50144810060077C7F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC58C56144810060077C7F2 /* SenTestingKit.framework in Frameworks */,
+				4CC58C57144810060077C7F2 /* UIKit.framework in Frameworks */,
+				4CC58C58144810060077C7F2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C1DC71F14494A1B005EE2E9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C1DC72014494A1B005EE2E9 /* ios-icon-114x114.png */,
+				4C1DC72114494A1B005EE2E9 /* ios-icon-57x57.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4CC58C28144810050077C7F2 = {
+			isa = PBXGroup;
+			children = (
+				4C1DC72914494B43005EE2E9 /* ios-icon-114x114.png */,
+				4C1DC72714494B3C005EE2E9 /* ios-icon-57x57.png */,
+				4C1DC71F14494A1B005EE2E9 /* Resources */,
+				4CC58C7014481EAF0077C7F2 /* MapKit.framework */,
+				4CC58C3D144810050077C7F2 /* BusRadar */,
+				4CC58C5B144810060077C7F2 /* BusRadarTests */,
+				4CC58C36144810050077C7F2 /* Frameworks */,
+				4CC58C34144810050077C7F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4CC58C34144810050077C7F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CC58C33144810050077C7F2 /* BusRadar.app */,
+				4CC58C54144810060077C7F2 /* BusRadarTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CC58C36144810050077C7F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CC58C37144810050077C7F2 /* UIKit.framework */,
+				4CC58C39144810050077C7F2 /* Foundation.framework */,
+				4CC58C3B144810050077C7F2 /* CoreGraphics.framework */,
+				4CC58C55144810060077C7F2 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4CC58C3D144810050077C7F2 /* BusRadar */ = {
+			isa = PBXGroup;
+			children = (
+				4CC58C46144810050077C7F2 /* MainAppDelegate.h */,
+				4CC58C47144810050077C7F2 /* MainAppDelegate.m */,
+				4CC58C49144810050077C7F2 /* MainStoryboard.storyboard */,
+				4CC58C4C144810050077C7F2 /* MainViewController.h */,
+				4CC58C4D144810050077C7F2 /* MainViewController.m */,
+				4CC58C72144823EC0077C7F2 /* StopAnnotation.h */,
+				4CC58C73144823EC0077C7F2 /* StopAnnotation.m */,
+				4CC58C3E144810050077C7F2 /* Supporting Files */,
+			);
+			path = BusRadar;
+			sourceTree = "<group>";
+		};
+		4CC58C3E144810050077C7F2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CC58C3F144810050077C7F2 /* BusRadar-Info.plist */,
+				4CC58C40144810050077C7F2 /* InfoPlist.strings */,
+				4CC58C43144810050077C7F2 /* main.m */,
+				4CC58C45144810050077C7F2 /* BusRadar-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CC58C5B144810060077C7F2 /* BusRadarTests */ = {
+			isa = PBXGroup;
+			children = (
+				4CC58C61144810060077C7F2 /* BusRadarTests.h */,
+				4CC58C62144810060077C7F2 /* BusRadarTests.m */,
+				4CC58C5C144810060077C7F2 /* Supporting Files */,
+			);
+			path = BusRadarTests;
+			sourceTree = "<group>";
+		};
+		4CC58C5C144810060077C7F2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CC58C5D144810060077C7F2 /* BusRadarTests-Info.plist */,
+				4CC58C5E144810060077C7F2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CC58C32144810050077C7F2 /* BusRadar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CC58C66144810060077C7F2 /* Build configuration list for PBXNativeTarget "BusRadar" */;
+			buildPhases = (
+				4CC58C2F144810050077C7F2 /* Sources */,
+				4CC58C30144810050077C7F2 /* Frameworks */,
+				4CC58C31144810050077C7F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BusRadar;
+			productName = BusRadar;
+			productReference = 4CC58C33144810050077C7F2 /* BusRadar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4CC58C53144810060077C7F2 /* BusRadarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CC58C69144810060077C7F2 /* Build configuration list for PBXNativeTarget "BusRadarTests" */;
+			buildPhases = (
+				4CC58C4F144810060077C7F2 /* Sources */,
+				4CC58C50144810060077C7F2 /* Frameworks */,
+				4CC58C51144810060077C7F2 /* Resources */,
+				4CC58C52144810060077C7F2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CC58C5A144810060077C7F2 /* PBXTargetDependency */,
+			);
+			name = BusRadarTests;
+			productName = BusRadarTests;
+			productReference = 4CC58C54144810060077C7F2 /* BusRadarTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CC58C2A144810050077C7F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 4CC58C2D144810050077C7F2 /* Build configuration list for PBXProject "BusRadar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4CC58C28144810050077C7F2;
+			productRefGroup = 4CC58C34144810050077C7F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CC58C32144810050077C7F2 /* BusRadar */,
+				4CC58C53144810060077C7F2 /* BusRadarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CC58C31144810050077C7F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC58C42144810050077C7F2 /* InfoPlist.strings in Resources */,
+				4CC58C4B144810050077C7F2 /* MainStoryboard.storyboard in Resources */,
+				4C1DC72214494A1B005EE2E9 /* ios-icon-114x114.png in Resources */,
+				4C1DC72314494A1B005EE2E9 /* ios-icon-57x57.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CC58C51144810060077C7F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC58C60144810060077C7F2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CC58C52144810060077C7F2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CC58C2F144810050077C7F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC58C44144810050077C7F2 /* main.m in Sources */,
+				4CC58C48144810050077C7F2 /* MainAppDelegate.m in Sources */,
+				4CC58C4E144810050077C7F2 /* MainViewController.m in Sources */,
+				4CC58C74144823EC0077C7F2 /* StopAnnotation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CC58C4F144810060077C7F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC58C63144810060077C7F2 /* BusRadarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4CC58C5A144810060077C7F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CC58C32144810050077C7F2 /* BusRadar */;
+			targetProxy = 4CC58C59144810060077C7F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4CC58C40144810050077C7F2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CC58C41144810050077C7F2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4CC58C49144810050077C7F2 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CC58C4A144810050077C7F2 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		4CC58C5E144810060077C7F2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CC58C5F144810060077C7F2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4CC58C64144810060077C7F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4CC58C65144810060077C7F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CC58C67144810060077C7F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BusRadar/BusRadar-Prefix.pch";
+				INFOPLIST_FILE = "BusRadar/BusRadar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4CC58C68144810060077C7F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BusRadar/BusRadar-Prefix.pch";
+				INFOPLIST_FILE = "BusRadar/BusRadar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4CC58C6A144810060077C7F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BusRadar.app/BusRadar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BusRadar/BusRadar-Prefix.pch";
+				INFOPLIST_FILE = "BusRadarTests/BusRadarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		4CC58C6B144810060077C7F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BusRadar.app/BusRadar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BusRadar/BusRadar-Prefix.pch";
+				INFOPLIST_FILE = "BusRadarTests/BusRadarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CC58C2D144810050077C7F2 /* Build configuration list for PBXProject "BusRadar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CC58C64144810060077C7F2 /* Debug */,
+				4CC58C65144810060077C7F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CC58C66144810060077C7F2 /* Build configuration list for PBXNativeTarget "BusRadar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CC58C67144810060077C7F2 /* Debug */,
+				4CC58C68144810060077C7F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CC58C69144810060077C7F2 /* Build configuration list for PBXNativeTarget "BusRadarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CC58C6A144810060077C7F2 /* Debug */,
+				4CC58C6B144810060077C7F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4CC58C2A144810050077C7F2 /* Project object */;
+}
