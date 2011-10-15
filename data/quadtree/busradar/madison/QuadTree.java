@@ -21,14 +21,22 @@ public class QuadTree
 		public Element() {}
 		
 		public void write(DataOutputStream s) throws IOException {
+                        System.out.printf("writeInt: lat=%s\n", lat);
+                        System.out.printf("writeInt: lon=%s\n", lon);
 			s.writeInt(lat);
 			s.writeInt(lon);
 			
+			System.out.printf("writeChar: dir=%s\n", dir);
+			System.out.printf("writeInt: id=%s\n", id);
+			System.out.printf("writeInt: routes.lenght=%s\n", routes.length);
 			s.writeChar(dir);
 			s.writeInt(id);
 			s.writeInt(routes.length);
 			for(int i = 0; i < routes.length; i++)
-				s.writeInt(routes[i]);
+			{
+                            System.out.printf("writeInt: route[%s]=%s\n", i, routes[i]);
+                            s.writeInt(routes[i]);
+                        }
 		}
 		
 		public Element(DataInputStream s) throws IOException {
@@ -51,13 +59,19 @@ public class QuadTree
 	
 	public void write(DataOutputStream s) throws IOException {
 		if (items != null) {
+                        System.out.printf("writeBoolean: true\n");
 			s.writeBoolean(true);
 
+			System.out.printf("writeInt: items.length=%s\n", items.length);
 			s.writeInt(items.length);
+			
 			for (int i = 0; i < items.length; i++)
+			{
 				items[i].write(s);
+                        }
 		}
 		else {
+                        System.out.printf("writeBoolean: flase\n");
 			s.writeBoolean(false);
 		
 			nw.write(s);
@@ -65,6 +79,8 @@ public class QuadTree
 			sw.write(s);
 			se.write(s);
 		
+                        System.out.printf("writeInt: midx=%s\n", midx);
+                        System.out.printf("writeInt: midy=%s\n", midy);
 			s.writeInt(midx);
 			s.writeInt(midy);
 		}
