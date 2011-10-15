@@ -44,6 +44,11 @@ const NSUInteger numSegments = 15;
 - (void)viewDidLoad
 {
     [self layoutScrollSegments];
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"stops" ofType:@"bin"];
+    NSInputStream *is = [[NSInputStream alloc] initWithFileAtPath:path];
+    [is open]; // you NEED to open the stream dude!
+    [[QuadTree alloc] initFromStream:is];
 }
 
 - (void)viewDidUnload

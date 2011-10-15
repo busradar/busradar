@@ -2,4 +2,6 @@ syntax: glob
 android-project/bin/**
 android-project/gen/**
 
+syntax: regexp
+.*\.DS_Store
 
