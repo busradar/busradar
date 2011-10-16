@@ -53,4 +53,39 @@ const int MAX_CHILD = 20;
     return self;
 }
 
+- (NSMutableArray *)get:(int)xboundmin :(int)yboundmin :(int)xboundmax :(int)yboundmax :(int)span {
+    NSMutableArray *l = [[NSMutableArray alloc] init];
+    
+    if(items != nil) { // we're a leaf
+        for(Element *e in items) {
+            if(e->lon >= xboundmin && e->lon <= xboundmax &&
+               e->lat >= yboundmin && e->lat <= yboundmax) {
+                [l addObject:e];
+            }
+        }
+        
+    } else {
+        if(yboundmin < midy) { // include south
+            if(xboundmin < midx) { // include west
+                [l addObjectsFromArray:[sw get:xboundmin :yboundmin :xboundmax :yboundmax :span]];
+            }
+            if(xboundmax >= midx) { // include east
+                [l addObjectsFromArray:[se get:xboundmin :yboundmin :xboundmax :yboundmax :span]];
+            }
+        }
+        
+        if(yboundmax >= midy) { // include north
+            if(xboundmin < midx) { // include west
+                [l addObjectsFromArray:[nw get:xboundmin :yboundmin :xboundmax :yboundmax :span]];
+            }
+            if(xboundmax >= midx) { // include east
+                [l addObjectsFromArray:[ne get:xboundmin :yboundmin :xboundmax :yboundmax :span]];
+            }
+        }
+
+    }
+    
+    return l;
+}
+
 @end

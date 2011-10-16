@@ -12,16 +12,32 @@
 @synthesize coordinate;
 
 - (NSString *)subtitle {
-    return @"subtitle";
+    NSMutableString *sub = [[NSMutableString alloc] init];
+    for(int i = 0; i < element->size; i++) {
+        [sub appendFormat:@"%d", element->routes[i]];
+        
+        if(i != element->size - 1) { // if not last
+            [sub appendString:@", "];
+        }
+    }
+
+    return sub;
 }
 
 - (NSString *)title {
     return @"title";
 }
 
-- (id)initWithCoordinate:(CLLocationCoordinate2D)c {
-    coordinate = c;
-    NSLog(@"%f,%f", c.latitude, c.longitude);
+- (id)initWithElement:(Element *)e {
+    CLLocationCoordinate2D point;
+    point.latitude = e->lat / 1E6;
+    point.longitude = e->lon / 1E6;
+    
+    element = e;
+    coordinate = point;
+    
+    // query sqlite for the title
+    
     return self;
 }
 

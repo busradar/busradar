@@ -10,6 +10,7 @@
 #import "StreamUtil.h"
 
 @interface Element : NSObject {
+@public
     int lat, lon, _id;
     char dir;
     
@@ -28,5 +29,6 @@
 }
 
 - (id)initFromStream:(NSInputStream *)s;
+- (NSMutableArray *)get:(int)xboundmin :(int)yboundmin :(int)xboundmax :(int)yboundmax :(int)span;
 
 @end

@@ -14,7 +14,7 @@
 
 const CGFloat scrollObjectHeight = 46.0;
 const CGFloat scrollObjectWidth = 46.0;
-const NSUInteger numSegments = 15;
+const int numSegments = 15;
 
 - (void)layoutScrollSegments {
     UISegmentedControl *sc = [[UISegmentedControl alloc] init];
@@ -41,17 +41,18 @@ const NSUInteger numSegments = 15;
 
 #pragma mark - View lifecycle
 
-- (void)viewDidLoad
+- (void)viewDidLoad // Called after the controller’s view is loaded into memory.
 {
     [self layoutScrollSegments];
     
     NSString *path = [[NSBundle mainBundle] pathForResource:@"stops" ofType:@"bin"];
     NSInputStream *is = [[NSInputStream alloc] initWithFileAtPath:path];
     [is open]; // you NEED to open the stream dude!
-    [[QuadTree alloc] initFromStream:is];
+    
+    stops_tree = [[QuadTree alloc] initFromStream:is];
 }
 
-- (void)viewDidUnload
+- (void)viewDidUnload // Called when the controller’s view is released from memory.
 {
     [self setMapView:nil];
     [self setScrollView:nil];
@@ -60,7 +61,7 @@ const NSUInteger numSegments = 15;
     // e.g. self.myOutlet = nil;
 }
 
-- (void)viewWillAppear:(BOOL)animated
+- (void)viewWillAppear:(BOOL)animated // Notifies the view controller that its view is about to be become visible.
 {
     CLLocationCoordinate2D zoomLocation;
     zoomLocation.latitude = 43.066667;
@@ -69,9 +70,23 @@ const NSUInteger numSegments = 15;
     MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, METERS_PER_MILE, METERS_PER_MILE);
     
     MKCoordinateRegion adjustRegion = [_mapView regionThatFits:viewRegion];
-    
     [_mapView setRegion:adjustRegion animated:YES];
-    [_mapView addAnnotation:[[StopAnnotation alloc] initWithCoordinate:zoomLocation]];
+    
+    int pixel = (adjustRegion.span.longitudeDelta * 1E6) / _mapView.bounds.size.width;
+    double minLat = adjustRegion.center.latitude - (adjustRegion.span.latitudeDelta / 2.0);
+    double maxLat = adjustRegion.center.latitude + (adjustRegion.span.latitudeDelta / 2.0);
+    double minLong = adjustRegion.center.longitude - (adjustRegion.span.longitudeDelta / 2.0);
+    double maxLong = adjustRegion.center.longitude + (adjustRegion.span.longitudeDelta / 2.0);
+    int xboundmin = (int) round(minLong * 1E6);
+    int yboundmin = (int) round(minLat * 1E6);
+    int xboundmax = (int) round(maxLong * 1E6);
+    int yboundmax = (int) round(maxLat * 1E6);
+    NSMutableArray *geopoints = [stops_tree get:xboundmin-32*pixel :yboundmin-32*pixel 
+                                              :xboundmax+32*pixel :yboundmax+32*pixel :15*pixel];
+    for(Element *e in geopoints) {
+        [_mapView addAnnotation:[[StopAnnotation alloc] initWithElement:e]];
+    }
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -98,7 +113,7 @@ const NSUInteger numSegments = 15;
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
     MKPinAnnotationView *pav = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:nil];
     pav.pinColor = MKPinAnnotationColorPurple;
-    pav.animatesDrop = YES;
+    pav.animatesDrop = NO;
     pav.canShowCallout = YES;
     return pav;
 }

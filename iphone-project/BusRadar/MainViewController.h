@@ -14,7 +14,7 @@
 #define METERS_PER_MILE 1609.344
 
 @interface MainViewController : UIViewController <MKMapViewDelegate> {
-    
+    QuadTree *stops_tree;
 }
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;

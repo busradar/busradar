@@ -8,11 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
+#import "QuadTree.h"
 
 @interface StopAnnotation : NSObject <MKAnnotation> {
     CLLocationCoordinate2D coordinate;
     NSString *title;
     NSString *subtitle;
+    
+    Element *element; // holds data (lat/long, routes[], etc)
 }
-- (id)initWithCoordinate:(CLLocationCoordinate2D)c;
+- (id)initWithElement:(Element *)e;
+
 @end
