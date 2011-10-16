@@ -7,23 +7,26 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "StreamUtil.h"
 
-//@interface Element : NSObject {
-//    NSInteger lat, lon, stopId;
-//    char dir;
-//    NSArray *routes;
-//}
-//
-//- (id)initFromStream:(NSInputStream *)stream;
-//    
-//@end
+@interface Element : NSObject {
+    int lat, lon, _id;
+    char dir;
+    
+    int *routes; // array
+    int size; // size of array
+}
+
+- (id)initFromStream:(NSInputStream *)s;
+    
+@end
 
 @interface QuadTree : NSObject {
     QuadTree *nw, *ne, *sw, *se;
-    NSInteger midx, midy;
-    NSArray *items;
+    int midx, midy;
+    NSMutableArray *items;
 }
 
-- (id)initFromStream:(NSInputStream *)stream;
+- (id)initFromStream:(NSInputStream *)s;
 
 @end

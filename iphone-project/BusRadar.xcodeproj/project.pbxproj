@@ -13,6 +13,7 @@
 		4C724F0414497FE600AE5581 /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 4C724F0314497FE600AE5581 /* db.sqlite */; };
 		4C724F061449800700AE5581 /* route_points.bin in Resources */ = {isa = PBXBuildFile; fileRef = 4C724F051449800700AE5581 /* route_points.bin */; };
 		4C724F081449802C00AE5581 /* stops.bin in Resources */ = {isa = PBXBuildFile; fileRef = 4C724F071449802C00AE5581 /* stops.bin */; };
+		4C8C0460144A2EAD00985167 /* StreamUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8C045F144A2EAD00985167 /* StreamUtil.m */; };
 		4CC58C38144810050077C7F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC58C37144810050077C7F2 /* UIKit.framework */; };
 		4CC58C3A144810050077C7F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC58C39144810050077C7F2 /* Foundation.framework */; };
 		4CC58C3C144810050077C7F2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC58C3B144810050077C7F2 /* CoreGraphics.framework */; };
@@ -48,6 +49,8 @@
 		4C724F0314497FE600AE5581 /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = db.sqlite; path = ../data/db.sqlite; sourceTree = "<group>"; };
 		4C724F051449800700AE5581 /* route_points.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = route_points.bin; path = ../data/paths/route_points.bin; sourceTree = "<group>"; };
 		4C724F071449802C00AE5581 /* stops.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = stops.bin; path = ../data/quadtree/stops.bin; sourceTree = "<group>"; };
+		4C8C045E144A2EAD00985167 /* StreamUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; path = StreamUtil.h; sourceTree = "<group>"; };
+		4C8C045F144A2EAD00985167 /* StreamUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreamUtil.m; sourceTree = "<group>"; };
 		4CC58C33144810050077C7F2 /* BusRadar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusRadar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CC58C37144810050077C7F2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4CC58C39144810050077C7F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -145,6 +148,8 @@
 				4CC58C73144823EC0077C7F2 /* StopAnnotation.m */,
 				4C724EB11449515400AE5581 /* QuadTree.h */,
 				4C724EB21449515400AE5581 /* QuadTree.m */,
+				4C8C045E144A2EAD00985167 /* StreamUtil.h */,
+				4C8C045F144A2EAD00985167 /* StreamUtil.m */,
 				4CC58C3E144810050077C7F2 /* Supporting Files */,
 			);
 			path = BusRadar;
@@ -296,6 +301,7 @@
 				4CC58C4E144810050077C7F2 /* MainViewController.m in Sources */,
 				4CC58C74144823EC0077C7F2 /* StopAnnotation.m in Sources */,
 				4C724EB31449515400AE5581 /* QuadTree.m in Sources */,
+				4C8C0460144A2EAD00985167 /* StreamUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

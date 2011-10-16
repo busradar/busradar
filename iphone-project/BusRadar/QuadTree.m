@@ -8,38 +8,48 @@
 
 #import "QuadTree.h"
 
-//@implementation Element
-//
-//@end
+const int MAX_CHILD = 20;
+
+@implementation Element
+
+- (id)initFromStream:(NSInputStream *)s {
+    lat = [StreamUtil readInt:s];
+    lon = [StreamUtil readInt:s];
+    dir = [StreamUtil readChar:s];
+    _id = [StreamUtil readInt:s];
+    
+    size = [StreamUtil readInt:s]; // size of array
+    routes = malloc(sizeof(int) * size);
+    for(int i = 0; i < size; i++) {
+        routes[i] = [StreamUtil readInt:s];
+    }
+    
+    return self;
+}
+
+@end
 
 @implementation QuadTree
 
-- (id)initFromStream:(NSInputStream *)stream {
-    uint8_t buf1[32];
-    int len1 = [stream read:buf1 maxLength:32];
-    uint8_t buf2[32];
-    int len2 = [stream read:buf2 maxLength:32];
-    
-    NSMutableData *data1 = [[NSMutableData alloc] init];
-    NSMutableData *data2 = [[NSMutableData alloc] init];
-    NSLog(@"%d,%d bytes read", len1, len2);
-    if(len1 > 0) {
-        [data1 appendBytes:&buf1 length:len1];
+- (id)initFromStream:(NSInputStream *)s {
+    if([StreamUtil readBoolean:s] == YES) {
+        int x = [StreamUtil readInt:s];
+        items = [[NSMutableArray alloc] initWithCapacity:x];
+        for(int i = 0; i < x; i++) {
+            [items insertObject:[[Element alloc] initFromStream:s] atIndex:i];
+        }
+        
+    } else {
+        
+        nw = [[QuadTree alloc] initFromStream:s];
+        ne = [[QuadTree alloc] initFromStream:s];
+        sw = [[QuadTree alloc] initFromStream:s];
+        se = [[QuadTree alloc] initFromStream:s];
+        
+        midx = [StreamUtil readInt:s];
+        midy = [StreamUtil readInt:s];
     }
-    if(len2 > 0) {
-        [data2 appendBytes:&buf2 length:len2];
-    }
     
-    NSString *first = [[NSString alloc] initWithData:data1 encoding:NSASCIIStringEncoding];
-    NSString *second = [[NSString alloc] initWithData:data2 encoding:NSASCIIStringEncoding];
-    
-    NSLog(@"first 32bytes: %@", first);
-    NSLog(@"second 32bytes: %@", second);
-    
-//    nw = [[QuadTree alloc] initFromStream:stream];
-//    ne = [[QuadTree alloc] initFromStream:stream];
-//    sw = [[QuadTree alloc] initFromStream:stream];
-//    se = [[QuadTree alloc] initFromStream:stream];
     return self;
 }
 
