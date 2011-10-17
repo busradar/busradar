@@ -15,6 +15,39 @@
 const CGFloat scrollObjectHeight = 46.0;
 const CGFloat scrollObjectWidth = 46.0;
 const int numSegments = 15;
+const double maxZoom = 0.028; // allowed longtigude span degree
+
+-(void)addAllAnnotations:(MKCoordinateRegion)region {
+//    NSLog(@"add: count %d", [[_mapView annotations] count]);    
+    if([_mapView.annotations count] > 1) {
+        // do nothing; already drawn
+    } else {
+        int pixel = (region.span.longitudeDelta * 1E6) / _mapView.bounds.size.width;
+        //    double minLat = adjustRegion.center.latitude - (adjustRegion.span.latitudeDelta / 2.0);
+        //    double maxLat = adjustRegion.center.latitude + (adjustRegion.span.latitudeDelta / 2.0);
+        //    double minLong = adjustRegion.center.longitude - (adjustRegion.span.longitudeDelta / 2.0);
+        //    double maxLong = adjustRegion.center.longitude + (adjustRegion.span.longitudeDelta / 2.0);
+        //    int xboundmin = (int) round(minLong * 1E6);
+        //    int yboundmin = (int) round(minLat * 1E6);
+        //    int xboundmax = (int) round(maxLong * 1E6);
+        //    int yboundmax = (int) round(maxLat * 1E6);
+        //    NSMutableArray *geopoints = [stops_tree get:xboundmin-32*pixel :yboundmin-32*pixel 
+        //                                              :xboundmax+32*pixel :yboundmax+32*pixel :15*pixel];
+        NSMutableArray *geopoints = [stops_tree get:-92*1E6 :41*1E6
+                                                   :-87*1E6 :45*1E6 :15*pixel];
+        for(Element *e in geopoints) {
+            [_mapView addAnnotation:[[StopAnnotation alloc] initWithElement:e]];
+        }
+    }
+}
+
+-(void)removeAllAnnotations
+{
+//    NSLog(@"remove: count %d", [[_mapView annotations] count]);
+    if([[_mapView annotations] count] > 1) {
+        [_mapView removeAnnotations:_mapView.annotations];
+    }
+}
 
 - (void)layoutScrollSegments {
     UISegmentedControl *sc = [[UISegmentedControl alloc] init];
@@ -70,23 +103,7 @@ const int numSegments = 15;
     MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, METERS_PER_MILE, METERS_PER_MILE);
     
     MKCoordinateRegion adjustRegion = [_mapView regionThatFits:viewRegion];
-    [_mapView setRegion:adjustRegion animated:YES];
-    
-    int pixel = (adjustRegion.span.longitudeDelta * 1E6) / _mapView.bounds.size.width;
-    double minLat = adjustRegion.center.latitude - (adjustRegion.span.latitudeDelta / 2.0);
-    double maxLat = adjustRegion.center.latitude + (adjustRegion.span.latitudeDelta / 2.0);
-    double minLong = adjustRegion.center.longitude - (adjustRegion.span.longitudeDelta / 2.0);
-    double maxLong = adjustRegion.center.longitude + (adjustRegion.span.longitudeDelta / 2.0);
-    int xboundmin = (int) round(minLong * 1E6);
-    int yboundmin = (int) round(minLat * 1E6);
-    int xboundmax = (int) round(maxLong * 1E6);
-    int yboundmax = (int) round(maxLat * 1E6);
-    NSMutableArray *geopoints = [stops_tree get:xboundmin-32*pixel :yboundmin-32*pixel 
-                                              :xboundmax+32*pixel :yboundmax+32*pixel :15*pixel];
-    for(Element *e in geopoints) {
-        [_mapView addAnnotation:[[StopAnnotation alloc] initWithElement:e]];
-    }
-    
+    [_mapView setRegion:adjustRegion animated:YES];    
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -111,11 +128,24 @@ const int numSegments = 15;
 }
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
-    MKPinAnnotationView *pav = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:nil];
-    pav.pinColor = MKPinAnnotationColorPurple;
-    pav.animatesDrop = NO;
-    pav.canShowCallout = YES;
-    return pav;
+    if([annotation isKindOfClass:[MKUserLocation class]]) {
+        return nil;
+    } else {
+        MKPinAnnotationView *pav = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:nil];
+        pav.pinColor = MKPinAnnotationColorPurple;
+        pav.animatesDrop = NO;
+        pav.canShowCallout = YES;
+        return pav;
+    }
+}
+
+- (void)mapView:(MKMapView *)mapView regionDidChangeAnimated:(BOOL)animated {
+    MKCoordinateRegion region = [_mapView regionThatFits:[_mapView region]];
+    if(region.span.longitudeDelta > maxZoom) {
+        [self removeAllAnnotations];
+    } else {
+        [self addAllAnnotations:region];
+    }
 }
 
 @end

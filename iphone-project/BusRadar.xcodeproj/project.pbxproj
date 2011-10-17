@@ -42,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C2CF788144B9ED400F81A01 /* loc.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = loc.gpx; path = ../../../../Desktop/loc.gpx; sourceTree = "<group>"; };
 		4C724EB11449515400AE5581 /* QuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuadTree.h; sourceTree = "<group>"; };
 		4C724EB21449515400AE5581 /* QuadTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuadTree.m; sourceTree = "<group>"; };
 		4C724EFF14497FD000AE5581 /* ios-icon-57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ios-icon-57x57.png"; path = "../art/ios-icon-57x57.png"; sourceTree = "<group>"; };
@@ -49,7 +50,7 @@
 		4C724F0314497FE600AE5581 /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = db.sqlite; path = ../data/db.sqlite; sourceTree = "<group>"; };
 		4C724F051449800700AE5581 /* route_points.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = route_points.bin; path = ../data/paths/route_points.bin; sourceTree = "<group>"; };
 		4C724F071449802C00AE5581 /* stops.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = stops.bin; path = ../data/quadtree/stops.bin; sourceTree = "<group>"; };
-		4C8C045E144A2EAD00985167 /* StreamUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; path = StreamUtil.h; sourceTree = "<group>"; };
+		4C8C045E144A2EAD00985167 /* StreamUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamUtil.h; sourceTree = "<group>"; };
 		4C8C045F144A2EAD00985167 /* StreamUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreamUtil.m; sourceTree = "<group>"; };
 		4CC58C33144810050077C7F2 /* BusRadar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusRadar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CC58C37144810050077C7F2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -103,6 +104,7 @@
 		4CC58C28144810050077C7F2 = {
 			isa = PBXGroup;
 			children = (
+				4C2CF788144B9ED400F81A01 /* loc.gpx */,
 				4C724F071449802C00AE5581 /* stops.bin */,
 				4C724F051449800700AE5581 /* route_points.bin */,
 				4C724F0314497FE600AE5581 /* db.sqlite */,
