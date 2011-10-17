@@ -129,9 +129,16 @@ const double maxZoom = 0.028; // allowed longtigude span degree
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
     if([annotation isKindOfClass:[StopAnnotation class]]) {
-        MKAnnotationView *av = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"stops"];
+        MKAnnotationView *av = [_mapView dequeueReusableAnnotationViewWithIdentifier:@"stops"]; // TODO: use title instead
+        if(av == nil) {
+//            NSLog(@"creating");
+            av = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"stops"];
+        } else {
+//            NSLog(@"re-using");
+        }
         [av setImage:[(StopAnnotation *)annotation img]];
         av.canShowCallout = YES;
+//        av.centerOffset = [(StopAnnotation *)annotation offset]; // TODO: make this dynamic
         return av;
     } else {
         return nil;

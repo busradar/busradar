@@ -17,8 +17,10 @@
     
     Element *element; // holds data (lat/long, routes[], etc)
     UIImage *img;
+    CGPoint offset;
 }
 - (id)initWithElement:(Element *)e;
 - (UIImage *)img;
+- (CGPoint)offset;
 
 @end

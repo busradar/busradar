@@ -33,6 +33,10 @@
     return img;
 }
 
+- (CGPoint)offset {
+    return offset;
+}
+
 - (id)initWithElement:(Element *)e {
     CLLocationCoordinate2D point;
     point.latitude = e->lat / 1E6;
@@ -44,22 +48,27 @@
     switch (e->dir) {
         case 'N':
             img = [UIImage imageNamed:@"bus_north_small.png"];
+            offset = CGPointMake(0, -[img size].height/2);
             break;
             
         case 'S':
             img = [UIImage imageNamed:@"bus_south_small.png"];
+            offset = CGPointMake(-[img size].width, -[img size].height/2);
             break;
             
         case 'E':
             img = [UIImage imageNamed:@"bus_east_small.png"];
+            offset = CGPointMake(-[img size].width/2, 0);
             break;
             
         case 'W':
             img = [UIImage imageNamed:@"bus_west_small.png"];
+            offset = CGPointMake(-[img size].width/2, -[img size].height);
             break;
             
         default:
             img = [UIImage imageNamed:@"bus_nodir_small.png"];
+            offset = CGPointMake(-[img size].width/2, -[img size].height);
             break;
     }
         
