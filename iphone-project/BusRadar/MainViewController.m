@@ -131,7 +131,7 @@ const double maxZoom = 0.028; // allowed longtigude span degree
     if([annotation isKindOfClass:[MKUserLocation class]]) {
         return nil;
     } else {
-        MKPinAnnotationView *pav = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:nil];
+        MKPinAnnotationView *pav = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"stops"];
         pav.pinColor = MKPinAnnotationColorPurple;
         pav.animatesDrop = NO;
         pav.canShowCallout = YES;
