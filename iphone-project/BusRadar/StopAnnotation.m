@@ -25,7 +25,12 @@
 }
 
 - (NSString *)title {
+    // query sqlite for the title
     return @"title";
+}
+
+- (UIImage *)img {
+    return img;
 }
 
 - (id)initWithElement:(Element *)e {
@@ -36,8 +41,28 @@
     element = e;
     coordinate = point;
     
-    // query sqlite for the title
-    
+    switch (e->dir) {
+        case 'N':
+            img = [UIImage imageNamed:@"bus_north_small.png"];
+            break;
+            
+        case 'S':
+            img = [UIImage imageNamed:@"bus_south_small.png"];
+            break;
+            
+        case 'E':
+            img = [UIImage imageNamed:@"bus_east_small.png"];
+            break;
+            
+        case 'W':
+            img = [UIImage imageNamed:@"bus_west_small.png"];
+            break;
+            
+        default:
+            img = [UIImage imageNamed:@"bus_nodir_small.png"];
+            break;
+    }
+        
     return self;
 }
 

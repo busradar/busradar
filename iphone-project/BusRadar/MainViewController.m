@@ -128,14 +128,13 @@ const double maxZoom = 0.028; // allowed longtigude span degree
 }
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
-    if([annotation isKindOfClass:[MKUserLocation class]]) {
-        return nil;
+    if([annotation isKindOfClass:[StopAnnotation class]]) {
+        MKAnnotationView *av = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"stops"];
+        [av setImage:[(StopAnnotation *)annotation img]];
+        av.canShowCallout = YES;
+        return av;
     } else {
-        MKPinAnnotationView *pav = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"stops"];
-        pav.pinColor = MKPinAnnotationColorPurple;
-        pav.animatesDrop = NO;
-        pav.canShowCallout = YES;
-        return pav;
+        return nil;
     }
 }
 

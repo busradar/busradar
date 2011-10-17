@@ -16,7 +16,9 @@
     NSString *subtitle;
     
     Element *element; // holds data (lat/long, routes[], etc)
+    UIImage *img;
 }
 - (id)initWithElement:(Element *)e;
+- (UIImage *)img;
 
 @end
