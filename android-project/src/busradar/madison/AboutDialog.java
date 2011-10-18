@@ -2,6 +2,8 @@ package busradar.madison;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.content.pm.PackageManager.NameNotFoundException;
+import android.text.Html;
 import android.text.method.LinkMovementMethod;
 import android.view.Window;
 import android.widget.ImageView;
@@ -35,8 +37,14 @@ public class AboutDialog extends Dialog {
 	        		setTextColor(0xff000000);	        		
 		        	setMovementMethod(LinkMovementMethod.getInstance());
 		        	
-		        	
-		        	setText(R.string.about);
+		        	String version_string;
+		        	try {
+		        		version_string = ctx.getPackageManager().getPackageInfo(ctx.getPackageName(), 0).versionName;
+		        	}
+		        	catch (NameNotFoundException  e) {
+		        		version_string = "??";
+		        	}
+		        	setText(Html.fromHtml(ctx.getString(R.string.about).replace("$VERSION$", version_string)));
 		        	
 		        }});
         	}});

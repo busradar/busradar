@@ -3,8 +3,10 @@ package busradar.madison;
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
 
 import java.io.InputStream;
+import java.net.HttpURLConnection;
 import java.net.SocketException;
 import java.net.URL;
+import java.net.URLConnection;
 import java.net.UnknownHostException;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
@@ -13,6 +15,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
+import java.util.Locale;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
@@ -80,10 +83,10 @@ public final class StopDialog extends Dialog {
 //	
 //	}
 	
-	final static Pattern num_vehicles_re = Pattern.compile("Next (\\d) Vehicles Arrive at:<br>");
-	final static Pattern time_re = Pattern.compile("(\\d\\d?:\\d\\d [AP]\\.M\\.)   TO (.*)<");
-	final static Pattern no_busses_re = Pattern.compile("No further buses scheduled for this stop\\.");
-	final static Pattern no_timepoints_re = Pattern.compile("No stop information is found with this time point\\.");
+	final static Pattern num_vehicles_re = Pattern.compile("Next (\\d) Vehicles Arrive at:");
+	final static Pattern time_re = Pattern.compile("(\\d\\d?:\\d\\d [AP]\\.M\\.).*TO (.*)<");
+	//final static Pattern no_busses_re = Pattern.compile("No stops with upcoming crossings times found\\.");
+	//final static Pattern no_timepoints_re = Pattern.compile("No stop information is found with this time point\\.");
 	final static int route_list_id = 1;
 	final static int time_list_id = 2;
 	final static int stop_num_id = 3;
@@ -92,18 +95,19 @@ public final class StopDialog extends Dialog {
 	TextView status_text;
 	TextView cur_loading_text;
 	BaseAdapter times_adapter;
-	final static String TRANSITTRACKER_URL = "https://webwatch.cityofmadison.com/webwatch/MobileAda.aspx?";
+	final static String TRANSITTRACKER_URL = "http://webwatch.cityofmadison.com/webwatch/ada.aspx?";
 
 	static class RouteURL {
 		static final int LOADING = 0;
 		static final int DONE = 1;
 		static final int NO_MORE_TODAY = 2;
 		static final int NO_TIMEPOINTS = 3;
-		static final int ERROR = 4;
+		static final int NO_STOPS_UNKONWN = 4;
+		static final int ERROR = 5;
 		
 		int route;
 		String url;
-		String text;
+		//String text;
 		int status = 0;
 	}
 
@@ -400,26 +404,27 @@ public final class StopDialog extends Dialog {
 				for (final RouteURL r : routes) {
 					G.activity.runOnUiThread(new Runnable() {
 						public void run() {
-							cur_loading_text.setText(String.format("Loading route %d...", r.route));
+							cur_loading_text.setText(String.format("Loading route %s...", G.route_points[r.route].name));
 						}
 					});
 					
 					final ArrayList<RouteTime> curtimes = new ArrayList<RouteTime>();
 					try {
 						URL url = new URL(TRANSITTRACKER_URL+r.url);
-						HttpsURLConnection url_conn = (HttpsURLConnection) url.openConnection();
-						//url_conn.setSSLSocketFactory(sslsockfactory);
-						//url_conn.setAllowUserInteraction(true);
-						url_conn.setHostnameVerifier(new HostnameVerifier() {
-							
-							public boolean verify(String hostname, SSLSession session) {
-								return true;
-							}
-						});
+					    URLConnection url_conn = url.openConnection();
+						if (url_conn instanceof HttpsURLConnection)
+						{
+							((HttpsURLConnection)url_conn).setHostnameVerifier(new HostnameVerifier() {
+								
+								public boolean verify(String hostname, SSLSession session) {
+									return true;
+								}
+							});
+						}
 						InputStream is = url_conn.getInputStream();
 						Scanner scan = new Scanner(is, "UTF-8");
 
-						String outstr_cur = "Route " + r.route + "\n";
+						//String outstr_cur = "Route " + r.route + "\n";
 						
 						if (scan.findWithinHorizon(num_vehicles_re, 0) != null) {
 
@@ -428,32 +433,35 @@ public final class StopDialog extends Dialog {
 								time.route = r.route;
 								time.time = scan.match().group(1).replace(".", "");
 								time.dir = scan.match().group(2);
-								time.date = DateFormat.getTimeInstance(DateFormat.SHORT).parse(time.time);
+								//time.date = DateFormat.getTimeInstance(DateFormat.SHORT).parse(time.time);
 								
-								SimpleDateFormat f = new SimpleDateFormat("h:mm aa");
+								SimpleDateFormat f = new SimpleDateFormat("h:mm aa", Locale.US);
 								time.date = f.parse(time.time);
 								r.status = RouteURL.DONE;
 								
-								outstr_cur += String.format("%s to %s\n", time.time, time.dir);
+								//outstr_cur += String.format("%s to %s\n", time.time, time.dir);
 								curtimes.add(time);
 							}
 
 						}
 
-						else if (scan.findWithinHorizon(no_busses_re, 0) != null) {
-							r.status = RouteURL.NO_MORE_TODAY; 
-						} 
-						else if (scan.findWithinHorizon(no_timepoints_re, 0) != null) {
-							r.status = RouteURL.NO_TIMEPOINTS;
-						}
+//						else if (scan.findWithinHorizon(no_busses_re, 0) != null) {
+//							r.status = RouteURL.NO_MORE_TODAY; 
+//						} 
+//						else if (scan.findWithinHorizon(no_timepoints_re, 0) != null) {
+//							r.status = RouteURL.NO_TIMEPOINTS;
+//						}
+//						else {
+//							r.status = RouteURL.ERROR;
+//							System.out.printf("BusRadar: Could not get stop info for %s\n", r.url);
+//							
+//							throw new Exception("Error parsing TransitTracker webpage.");
+//						}
 						else {
-							r.status = RouteURL.ERROR;
-							System.out.printf("BusRadar: Could not get stop info for %s\n", r.url);
-							
-							throw new Exception("Error parsing TransitTracker webpage.");
+							r.status = RouteURL.NO_STOPS_UNKONWN;
 						}
 
-						r.text = outstr_cur;
+						//r.text = outstr_cur;
 
 						G.activity.runOnUiThread(new Runnable() {
 							public void run() {
@@ -562,9 +570,14 @@ public final class StopDialog extends Dialog {
 				case RouteURL.NO_TIMEPOINTS:
 					status_text.setText("Does not run today.");
 					break;
+				case RouteURL.NO_STOPS_UNKONWN:
+					status_text.setText("No stops to show.");
+					break;
 				case RouteURL.ERROR:
 					status_text.setText("Unkown error.");
 					break;
+				default:
+					throw new Error();
 			}
 			
 			ArrayList<RouteTime> list = new ArrayList<RouteTime>();

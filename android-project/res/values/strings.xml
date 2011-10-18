@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Madison BusRadar</string>
-<string name="about"><big><b>Madison BusRadar</b>
-	\n1.0.15</big>
+<string name="about"><![CDATA[<big><b>Madison BusRadar</b><br>
+	$VERSION$</big>
 	
-	\n\nCopyright © 2010 Aleksandr Dobkin, Michael Choi, and Christopher Mills. All rights reserved.
-	\n\nRoute paths and bus stop locations are accurate as of October 2010. Bus arrival estimates and bus locations are obtained on demand from the <a href="http://www.cityofmadison.com/metro/">Madison Metro</a> website. We assume no responsibility for this information.
-	\n\nThe Priority R-Tree implementation is based on <a href="http://www.khelekore.org/prtree/">PRTree</a> © 2008 Robert Olofsson.
-	\n\nBusRadar is in not produced by or in any way affiliated with <a href="http://www.cityofmadison.com/metro/">Madison Metro Transit</a>.
-	\n\nThank you, and we hope that you enjoy your BusRadar experience! 
-	\n\nVisit us online at <a href="http://busradarapp.com">busradarapp.com</a> and on Twitter <a href="http://twitter.com/busradar">@busradar</a>. Feedbacks &amp; Fix requests welcomed. <a href="mailto:support@busradarapp.com">support@busradarapp.com</a> 
+	<p>Copyright © 2010–2011 Aleksandr Dobkin, Michael Choi, and Christopher Mills. All rights reserved.
+	<p>Route paths and bus stop locations are accurate as of October 2011. Bus arrival estimates and bus locations are obtained on demand from the <a href="http://www.cityofmadison.com/metro/">Madison Metro</a> website. We assume no responsibility for this information.
+	<p>The Priority R-Tree implementation is based on <a href="http://www.khelekore.org/prtree/">PRTree</a> © 2008 Robert Olofsson.
+	<p>BusRadar is in not produced by or in any way affiliated with <a href="http://www.cityofmadison.com/metro/">Madison Metro Transit</a>.
+	<p>Thank you, and we hope that you enjoy your BusRadar experience! 
+	<p>Visit us online at <a href="http://busradarapp.com">busradarapp.com</a> and on Twitter <a href="http://twitter.com/busradar">@busradar</a>. Feedbacks &amp; Fix requests welcomed. <a href="mailto:support@busradarapp.com">support@busradarapp.com</a>]]> 
 </string>
 </resources>
