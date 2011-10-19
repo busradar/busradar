@@ -19,6 +19,8 @@
 		4C724F061449800700AE5581 /* route_points.bin in Resources */ = {isa = PBXBuildFile; fileRef = 4C724F051449800700AE5581 /* route_points.bin */; };
 		4C724F081449802C00AE5581 /* stops.bin in Resources */ = {isa = PBXBuildFile; fileRef = 4C724F071449802C00AE5581 /* stops.bin */; };
 		4C8C0460144A2EAD00985167 /* StreamUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8C045F144A2EAD00985167 /* StreamUtil.m */; };
+		4CB7C8AF144E849C004EFB08 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB7C8AE144E849C004EFB08 /* libsqlite3.dylib */; };
+		4CB7C8B3144E89AA004EFB08 /* DB.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7C8B2144E89AA004EFB08 /* DB.m */; };
 		4CC58C38144810050077C7F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC58C37144810050077C7F2 /* UIKit.framework */; };
 		4CC58C3A144810050077C7F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC58C39144810050077C7F2 /* Foundation.framework */; };
 		4CC58C3C144810050077C7F2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC58C3B144810050077C7F2 /* CoreGraphics.framework */; };
@@ -62,6 +64,9 @@
 		4C724F071449802C00AE5581 /* stops.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = stops.bin; path = ../data/quadtree/stops.bin; sourceTree = "<group>"; };
 		4C8C045E144A2EAD00985167 /* StreamUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamUtil.h; sourceTree = "<group>"; };
 		4C8C045F144A2EAD00985167 /* StreamUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreamUtil.m; sourceTree = "<group>"; };
+		4CB7C8AE144E849C004EFB08 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		4CB7C8B1144E89AA004EFB08 /* DB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DB.h; sourceTree = "<group>"; };
+		4CB7C8B2144E89AA004EFB08 /* DB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DB.m; sourceTree = "<group>"; };
 		4CC58C33144810050077C7F2 /* BusRadar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusRadar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CC58C37144810050077C7F2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4CC58C39144810050077C7F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -91,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CB7C8AF144E849C004EFB08 /* libsqlite3.dylib in Frameworks */,
 				4CC58C7114481EAF0077C7F2 /* MapKit.framework in Frameworks */,
 				4CC58C38144810050077C7F2 /* UIKit.framework in Frameworks */,
 				4CC58C3A144810050077C7F2 /* Foundation.framework in Frameworks */,
@@ -114,6 +120,7 @@
 		4CC58C28144810050077C7F2 = {
 			isa = PBXGroup;
 			children = (
+				4CB7C8AE144E849C004EFB08 /* libsqlite3.dylib */,
 				4C562035144C0B5E000749CE /* madison.gpx */,
 				4C56202D144C0620000749CE /* bus_east_small.png */,
 				4C56202E144C0620000749CE /* bus_north_small.png */,
@@ -167,6 +174,8 @@
 				4C724EB21449515400AE5581 /* QuadTree.m */,
 				4C8C045E144A2EAD00985167 /* StreamUtil.h */,
 				4C8C045F144A2EAD00985167 /* StreamUtil.m */,
+				4CB7C8B1144E89AA004EFB08 /* DB.h */,
+				4CB7C8B2144E89AA004EFB08 /* DB.m */,
 				4CC58C3E144810050077C7F2 /* Supporting Files */,
 			);
 			path = BusRadar;
@@ -324,6 +333,7 @@
 				4CC58C74144823EC0077C7F2 /* StopAnnotation.m in Sources */,
 				4C724EB31449515400AE5581 /* QuadTree.m in Sources */,
 				4C8C0460144A2EAD00985167 /* StreamUtil.m in Sources */,
+				4CB7C8B3144E89AA004EFB08 /* DB.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

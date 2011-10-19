@@ -25,8 +25,7 @@
 }
 
 - (NSString *)title {
-    // query sqlite for the title
-    return @"title";
+    return [DB getStopName:element->_id];
 }
 
 - (UIImage *)img {

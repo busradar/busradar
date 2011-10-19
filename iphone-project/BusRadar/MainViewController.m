@@ -83,6 +83,8 @@ const double maxZoom = 0.028; // allowed longtigude span degree
     [is open]; // you NEED to open the stream dude!
     
     stops_tree = [[QuadTree alloc] initFromStream:is];
+    
+    [DB initialize];
 }
 
 - (void)viewDidUnload // Called when the controller’s view is released from memory.
@@ -128,16 +130,20 @@ const double maxZoom = 0.028; // allowed longtigude span degree
 }
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
+    
     if([annotation isKindOfClass:[StopAnnotation class]]) {
-        MKAnnotationView *av = [_mapView dequeueReusableAnnotationViewWithIdentifier:@"stops"]; // TODO: use title instead
+        StopAnnotation *sa = (StopAnnotation *)annotation; // cast to be used many times below
+        
+        MKAnnotationView *av = [_mapView dequeueReusableAnnotationViewWithIdentifier:[sa title]];
         if(av == nil) {
 //            NSLog(@"creating");
-            av = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"stops"];
+            av = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:[sa title]];
+            [av setImage:[sa img]];
+            av.canShowCallout = YES;
         } else {
 //            NSLog(@"re-using");
         }
-        [av setImage:[(StopAnnotation *)annotation img]];
-        av.canShowCallout = YES;
+        
 //        av.centerOffset = [(StopAnnotation *)annotation offset]; // TODO: make this dynamic
         return av;
     } else {

@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
 #import "QuadTree.h"
+#import "DB.h"
 
 @interface StopAnnotation : NSObject <MKAnnotation> {
     CLLocationCoordinate2D coordinate;
