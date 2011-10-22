@@ -24,4 +24,7 @@
 - (void)removeAllAnnotations;
 - (void)layoutScrollSegments;
 
+- (MKAnnotationView *)mapView:(MKMapView *)mapView dequeueForDirection:(char)direction;
+- (MKAnnotationView *)annotation:(id<MKAnnotation>)annotation initForDirection:(char)direction;
+
 @end

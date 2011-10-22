@@ -98,6 +98,8 @@ const double maxZoom = 0.028; // allowed longtigude span degree
 
 - (void)viewWillAppear:(BOOL)animated // Notifies the view controller that its view is about to be become visible.
 {
+    self.navigationController.navigationBarHidden = YES;
+    
     CLLocationCoordinate2D zoomLocation;
     zoomLocation.latitude = 43.066667;
     zoomLocation.longitude = -89.4;
@@ -129,17 +131,84 @@ const double maxZoom = 0.028; // allowed longtigude span degree
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
-- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
+{
+    self.navigationController.navigationBarHidden = NO;
+    [self performSegueWithIdentifier:@"ShowDetail" sender:self];
+}
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView dequeueForDirection:(char)direction
+{
+    MKAnnotationView *av;
+    switch (direction) {
+        case 'N':
+            av = [mapView dequeueReusableAnnotationViewWithIdentifier:@"N"];
+            break;
+            
+        case 'S':
+            av = [mapView dequeueReusableAnnotationViewWithIdentifier:@"S"];
+            break;
+            
+        case 'E':
+            av = [mapView dequeueReusableAnnotationViewWithIdentifier:@"E"];
+            break;
+            
+        case 'W':
+            av = [mapView dequeueReusableAnnotationViewWithIdentifier:@"W"];
+            break;
+            
+        default:
+            av = [mapView dequeueReusableAnnotationViewWithIdentifier:@"none"];
+            break;
+    }
     
+    return av;
+}
+
+- (MKAnnotationView *)annotation:(id<MKAnnotation>)annotation initForDirection:(char)direction
+{
+    MKAnnotationView *av;
+    switch (direction) {
+        case 'N':
+            av = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"N"];
+            break;
+            
+        case 'S':
+            av = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"S"];
+            break;
+            
+        case 'E':
+            av = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"E"];
+            break;
+            
+        case 'W':
+            av = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"W"];
+            break;
+            
+        default:
+            av = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"none"];
+            break;
+    }
+    
+    return av;
+}
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
+{    
     if([annotation isKindOfClass:[StopAnnotation class]]) {
         StopAnnotation *sa = (StopAnnotation *)annotation; // cast to be used many times below
         
-        MKAnnotationView *av = [_mapView dequeueReusableAnnotationViewWithIdentifier:[sa title]];
+//        MKAnnotationView *av = [mapView dequeueReusableAnnotationViewWithIdentifier:[sa title]];
+        MKAnnotationView *av = [self mapView:mapView dequeueForDirection:[sa dir]];
         if(av == nil) {
 //            NSLog(@"creating");
-            av = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:[sa title]];
+//            av = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:[sa title]];
+            av = [self annotation:annotation initForDirection:[sa dir]];
             [av setImage:[sa img]];
             av.canShowCallout = YES;
+            
+            UIButton *btn = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+            av.rightCalloutAccessoryView = btn;
         } else {
 //            NSLog(@"re-using");
         }

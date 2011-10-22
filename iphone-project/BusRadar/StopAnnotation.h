@@ -23,5 +23,6 @@
 - (id)initWithElement:(Element *)e;
 - (UIImage *)img;
 - (CGPoint)offset;
+- (char)dir;
 
 @end

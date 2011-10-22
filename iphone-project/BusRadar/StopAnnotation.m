@@ -36,6 +36,10 @@
     return offset;
 }
 
+- (char)dir {
+    return element->dir;
+}
+
 - (id)initWithElement:(Element *)e {
     CLLocationCoordinate2D point;
     point.latitude = e->lat / 1E6;
