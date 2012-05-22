@@ -1,0 +1,15 @@
+Google Maps API Tutorial
+
+#1 Obtain a key by following instructions on:
+http://developer.android.com/guide/topics/location/index.html
+
+#2 Nice tutorial - just follow
+http://mobiforge.com/developing/story/using-google-maps-android
+
+- zoom control
+- map zoom control to keypad
+- overlap satellite view & street view
+- animateTo()
+- drop location markers (we have to make our custom image)
+- recognize user's touchscreen action
+- geocoding & reverse-geocoding

@@ -1,0 +1,48 @@
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:9:22: error: RSSParser.h: No such file or directory
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:14: warning: cannot find interface declaration for 'RSSParser'
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:14: error: no declaration of property 'articleList' found in the interface
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:14: error: no declaration of property 'rssURL' found in the interface
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:14: error: no declaration of property 'currentData' found in the interface
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:14: error: no declaration of property 'currentArticle' found in the interface
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m: In function '-[RSSParser initWithRSSFeed:]':
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:17: error: no super class declared in @interface for 'RSSParser'
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:20: error: request for member 'rssURL' in something not a structure or union
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:21: error: request for member 'articleList' in something not a structure or union
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:26: error: request for member 'currentData' in something not a structure or union
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:43: warning: 'RSSParser' may not respond to '-release'
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:43: warning: (Messages without a matching method signature
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:43: warning: will be assumed to return 'id' and accept
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:43: warning: '...' as arguments.)
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m: In function '-[RSSParser parser:didStartElement:namespaceURI:qualifiedName:attributes:]':
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:61: error: 'Article' undeclared (first use in this function)
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:61: error: (Each undeclared identifier is reported only once
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:61: error: for each function it appears in.)
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:61: error: 'article' undeclared (first use in this function)
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:62: error: request for member 'currentArticle' in something not a structure or union
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:64: error: 'inItemTag' undeclared (first use in this function)
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:67: error: 'accumulatingParsedCharacterData' undeclared (first use in this function)
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:69: error: 'currentData' undeclared (first use in this function)
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m: In function '-[RSSParser parser:didEndElement:namespaceURI:qualifiedName:]':
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:76: error: request for member 'articleList' in something not a structure or union
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:76: error: request for member 'currentArticle' in something not a structure or union
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:77: error: 'inItemTag' undeclared (first use in this function)
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:80: error: request for member 'currentArticle' in something not a structure or union
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:80: error: request for member 'currentData' in something not a structure or union
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:91: error: request for member 'currentArticle' in something not a structure or union
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:91: error: request for member 'currentData' in something not a structure or union
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:92: error: request for member 'currentArticle' in something not a structure or union
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:96: error: request for member 'currentArticle' in something not a structure or union
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:96: error: request for member 'currentData' in something not a structure or union
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:97: error: request for member 'currentArticle' in something not a structure or union
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:101: error: request for member 'currentArticle' in something not a structure or union
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:101: error: request for member 'currentData' in something not a structure or union
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:104: error: 'accumulatingParsedCharacterData' undeclared (first use in this function)
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m: In function '-[RSSParser parser:parseErrorOccurred:]':
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:109: error: request for member 'articleList' in something not a structure or union
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:110: error: request for member 'articleList' in something not a structure or union
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m: In function '-[RSSParser parser:foundCharacters:]':
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:117: error: 'accumulatingParsedCharacterData' undeclared (first use in this function)
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:120: error: request for member 'currentData' in something not a structure or union
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m: In function '-[RSSParser dealloc]':
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:126: error: no super class declared in @interface for 'RSSParser'
+/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/RSS-Reader/RssParser.m:127: error: 'articleList' undeclared (first use in this function)

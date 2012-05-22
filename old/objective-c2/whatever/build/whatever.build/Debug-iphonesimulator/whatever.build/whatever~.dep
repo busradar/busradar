@@ -1,0 +1,11 @@
+7a33169cc76655e1a6c7a6953f421a9d 5aa5596a353a71f6c27cdbba8934ff99 ffffffffffffffffffffffffffffffff 2048 /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app
+000000004b745b8d0000000000004322 419074cfa4163393c01676e0109eb755 ffffffffffffffffffffffffffffffff 1388 /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app/RootViewController.nib
+000000004b745b8d0000000000002c65 2588be6e0a8dcb44062e372c91150ead ffffffffffffffffffffffffffffffff 2013 /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app/MainWindow.nib
+00000000000000000000000000000000 2d909d07f8cb5661849ebe7f8d22e09d ffffffffffffffffffffffffffffffff 8 /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app/PkgInfo
+00000000000000000000000000000000 2d909d07f8cb5661849ebe7f8d22e09d ffffffffffffffffffffffffffffffff 568 /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app/Info.plist
+00000000000000000000000000000000 7d327eb2e3b63ad307f5f3f5c016b187 ffffffffffffffffffffffffffffffff 2048 /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app.dSYM
+a81e6a01a0129ce5df24ca224de2e3e4 b635b63cc9ef31d3bfdb2d7bf32b2fc6 ffffffffffffffffffffffffffffffff 20296 /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app/whatever
+b52d574418cfbedaa42c98675a811f86 3ba87b2e036aeba5252f394316e94a93 ffffffffffffffffffffffffffffffff 32320 /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/RootViewController.o
+b52d574453bbe557a42c98675a810d7d 1ba871e4782f625dc8a46b583815b4bc ffffffffffffffffffffffffffffffff 39876 /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/whateverAppDelegate.o
+b52d574419060b4aa42c98675a8109b3 3d33378f88f8d79a9683005e38f9213d ffffffffffffffffffffffffffffffff 5960 /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/main.o
+0000000001c9b6e80000000000000c66 b52d574419060832a42c98675a810333 ffffffffffffffffffffffffffffffff 13034960 /var/folders/zz/zzzivhrRnAmviuee+++KF+++3YE/-Caches-/com.apple.Xcode.5700/SharedPrecompiledHeaders/whatever_Prefix-fudekpbiqdavaybhiouiitduxlln/whatever_Prefix.pch.gch

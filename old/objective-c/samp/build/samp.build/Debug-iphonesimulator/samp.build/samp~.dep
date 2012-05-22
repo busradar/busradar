@@ -1,0 +1,11 @@
+c84b2a9a2be2aca370ed5cd28dfa891a 5901697764db96978454b41e0b7bbf86 ffffffffffffffffffffffffffffffff 2048 /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app
+000000004b71b5b6000000000000431e f35c67ace2a91645ae0e9cbf52ed24eb ffffffffffffffffffffffffffffffff 1388 /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app/RootViewController.nib
+000000004b71b5b60000000000002c55 c12867bc0bc213b869700808f89797ce ffffffffffffffffffffffffffffffff 2009 /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app/MainWindow.nib
+00000000000000000000000000000000 7dd307f51f8617fcab30fd8ea8aa8abf ffffffffffffffffffffffffffffffff 8 /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app/PkgInfo
+00000000000000000000000000000000 7dd307f51f8617fcab30fd8ea8aa8abf ffffffffffffffffffffffffffffffff 552 /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app/Info.plist
+00000000000000000000000000000000 e66cd8fa2adcbaab4b3b895cf12d2494 ffffffffffffffffffffffffffffffff 2048 /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app.dSYM
+1111868198ba484e0344e7d357dd8260 eb2eac0b5a33e110b4d72fb6705dd714 ffffffffffffffffffffffffffffffff 20176 /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app/samp
+f64c9142d27d363170db075c6464bb4a 6747cf7e11f554a5b8cdaaa67997d01f ffffffffffffffffffffffffffffffff 32312 /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/Objects-normal/i386/RootViewController.o
+f64c9142990c838770db075c6464b62c 2b1842b976f5c9cbd81a6e6eaeb299da ffffffffffffffffffffffffffffffff 39780 /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/Objects-normal/i386/sampAppDelegate.o
+f64c9142d3b16d9b70db075c6464b286 ab029a0466a79f4813482447e5fa53fb ffffffffffffffffffffffffffffffff 5952 /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/Objects-normal/i386/main.o
+0000000001cc58d30000000000000c1e f64c9142d3b16ee270db075c6464b879 ffffffffffffffffffffffffffffffff 13034960 /var/folders/zz/zzzivhrRnAmviuee+++KF+++3YE/-Caches-/com.apple.Xcode.5700/SharedPrecompiledHeaders/samp_Prefix-cuipswqranrxirgyomzyzwsneonc/samp_Prefix.pch.gch

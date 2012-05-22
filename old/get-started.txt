@@ -1,0 +1,25 @@
+1. Create an emulator instance. One time only.
+
+$ android create avd --target 2 --name avd
+
+The --target option specifies which Android OS version the emulator will run. My device runs version 1.5.
+
+2. Then create project files. Once for each new project.
+
+$ android create project \
+    --package cs638.HelloWorld \
+    --activity HelloWorld \
+    --target 2 \
+    --path ./HelloWorld
+
+3. Compile
+
+$ ant debug
+
+4. Launch the emulator
+
+$ emulator -avd avd
+
+5. Install the application
+
+$ ant install

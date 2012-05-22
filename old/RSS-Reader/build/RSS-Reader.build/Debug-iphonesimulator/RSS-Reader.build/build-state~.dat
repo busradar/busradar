@@ -1,0 +1,295 @@
+TRSS-Reader
+v7
+r0
+t289004894.295336
+cCheck dependencies
+cProcessInfoPlistFile "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/Debug-iphonesimulator/RSS-Reader.app/Info.plist" RSS_Reader-Info.plist
+cCompileXIB "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/MainWindow.xib"
+cCompileXIB "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/RootViewController.xib"
+cCompileXIB "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/MyViewController.xib"
+cProcessPCH /var/folders/zz/zzzivhrRnAmviuee+++9cE++0u2/-Caches-/com.apple.Xcode.2977/SharedPrecompiledHeaders/RSS_Reader_Prefix-fszxiocrdulfilfivwybyfbbqiyw/RSS_Reader_Prefix.pch.gch RSS_Reader_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/Objects-normal/i386/main.o "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/Objects-normal/i386/RSS_ReaderAppDelegate.o "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/RSS_ReaderAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/Objects-normal/i386/RootViewController.o "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/RootViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/Objects-normal/i386/MyViewController.o "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/MyViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk
+c000000004B607DA300000000000000EE
+t1264614819
+s238
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004ABDC853000000000026EE30
+t1253951571
+s2551344
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004ABDC952000000000027E880
+t1253951826
+s2615424
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004ABDC93F0000000000001355
+t1253951807
+s4949
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004ABDEE1D0000000000000788
+t1253961245
+s1928
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004ABDEEE200000000016721E0
+t1253961442
+s23536096
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/usr/include/Availability.h
+c000000004ABDCA4700000000000019F9
+t1253952071
+s6649
+
+N/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/RSS_ReaderAppDelegate.h
+c000000004B89A5DA000000000000025F
+t1267312090
+s607
+
+N/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/RSS_ReaderAppDelegate.m
+c000000004B89A5DA00000000000004D5
+t1267312090
+s1237
+i"RSS_ReaderAppDelegate.h"
+i"RootViewController.h"
+i"MyViewController.h"
+
+N/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/RootViewController.h
+c000000004B897C8D00000000000000DA
+t1267301517
+s218
+
+N/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/RootViewController.m
+c000000004B897C8D0000000000001007
+t1267301517
+s4103
+i"RootViewController.h"
+
+N/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/MainWindow.xib
+c000000004B897C8D0000000000002C6D
+t1267301517
+s11373
+
+N/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/MyViewController.h
+c000000004B899AA600000000000000EC
+t1267309222
+s236
+i<UIKit/UIKit.h>
+
+N/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/MyViewController.m
+c000000004B899AA60000000000000578
+t1267309222
+s1400
+i"MyViewController.h"
+
+N/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/MyViewController.xib
+c000000004B899AA6000000000000186B
+t1267309222
+s6251
+
+N/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/RSS_Reader_Prefix.pch
+c000000004B897C8D0000000000000146
+t1267301517
+s326
+i<Availability.h>
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/RootViewController.xib
+c000000004B897C8D0000000000004324
+t1267301517
+s17188
+
+N/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/Debug-iphonesimulator/RSS-Reader.app
+t2
+s0
+
+N/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/Debug-iphonesimulator/RSS-Reader.app.dSYM
+t2
+s0
+
+N/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/Debug-iphonesimulator/RSS-Reader.app/Info.plist
+t1267312090
+s576
+
+N/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/Debug-iphonesimulator/RSS-Reader.app/MainWindow.nib
+t1267312092
+s2015
+
+N/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/Debug-iphonesimulator/RSS-Reader.app/MyViewController.nib
+t1267312092
+s1106
+
+N/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/Debug-iphonesimulator/RSS-Reader.app/PkgInfo
+t1267312090
+s8
+
+N/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/Debug-iphonesimulator/RSS-Reader.app/RSS-Reader
+t2
+s0
+
+N/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/Debug-iphonesimulator/RSS-Reader.app/RootViewController.nib
+t1267312092
+s1388
+
+N/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/Objects-normal/i386/MyViewController.o
+t1267312094
+s29948
+
+N/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/Objects-normal/i386/RSS-Reader.LinkFileList
+c000000004B89A5DA00000000000002C7
+t1267312090
+s711
+
+N/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/Objects-normal/i386/RSS_ReaderAppDelegate.o
+t2
+s0
+
+N/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/Objects-normal/i386/RootViewController.o
+t1267312094
+s32396
+
+N/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/Objects-normal/i386/main.o
+t1267312094
+s6036
+
+N/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/main.m
+c000000004B897C8D0000000000000171
+t1267301517
+s369
+i<UIKit/UIKit.h>
+
+N/var/folders/zz/zzzivhrRnAmviuee+++9cE++0u2/-Caches-/com.apple.Xcode.2977/SharedPrecompiledHeaders/RSS_Reader_Prefix-fszxiocrdulfilfivwybyfbbqiyw/RSS_Reader_Prefix.pch.gch
+t1267312093
+s13034960
+
+NRSS_Reader-Info.plist
+c000000004B897C8D000000000000038D
+t1267301517
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies289004890#289004890#0(0"0(0#1#0"7947009927035180032#0"0#
+
+CCompileC build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/Objects-normal/i386/MyViewController.o "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/MyViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s289004894.212195
+e289004894.295227
+r1
+xCompileC
+xbuild/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/Objects-normal/i386/MyViewController.o
+x/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/MyViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@104"Compile /afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/MyViewController.m289004894#289004894#0(0"0(0#0#96"/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/MyViewController.m4300885448#2395"    cd "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/RSS-Reader-generated-files.hmap" "-I/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/RSS-Reader-own-target-headers.hmap" "-I/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/RSS-Reader-all-target-headers.hmap" -iquote "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/RSS-Reader-project-headers.hmap" "-F/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/Debug-iphonesimulator" "-I/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/Debug-iphonesimulator/include" "-I/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/DerivedSources/i386" "-I/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/DerivedSources" -include /var/folders/zz/zzzivhrRnAmviuee+++9cE++0u2/-Caches-/com.apple.Xcode.2977/SharedPrecompiledHeaders/RSS_Reader_Prefix-fszxiocrdulfilfivwybyfbbqiyw/RSS_Reader_Prefix.pch -c "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/MyViewController.m" -o "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/Objects-normal/i386/MyViewController.o"0#
+
+CCompileC build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/Objects-normal/i386/RSS_ReaderAppDelegate.o "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/RSS_ReaderAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s289004894.027603
+e289004894.119075
+r0
+xCompileC
+xbuild/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/Objects-normal/i386/RSS_ReaderAppDelegate.o
+x/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/RSS_ReaderAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/RSS_ReaderAppDelegate.m:9:
+o/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/RSS_ReaderAppDelegate.h:15: error: expected ':', ',', ';', '}' or '__attribute__' before 'UINavigationController'
+o/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/RSS_ReaderAppDelegate.m:17: error: synthesized property 'navigationController' must either be named the same as a compatible ivar or must explicitly name an ivar
+o/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/RSS_ReaderAppDelegate.m:18: error: synthesized property 'myViewController' must either be named the same as a compatible ivar or must explicitly name an ivar
+lSLF07#2@117"Compile /afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/RSS_ReaderAppDelegate.m289004894#289004894#0(827"In file included from /afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/RSS_ReaderAppDelegate.m:9:/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/RSS_ReaderAppDelegate.h:15: error: expected ':', ',', ';', '}' or '__attribute__' before 'UINavigationController'/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/RSS_ReaderAppDelegate.m:17: error: synthesized property 'navigationController' must either be named the same as a compatible ivar or must explicitly name an ivar/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/RSS_ReaderAppDelegate.m:18: error: synthesized property 'myViewController' must either be named the same as a compatible ivar or must explicitly name an ivar3(4@78"Expected ':', ',', ';', '}' or '__attribute__' before 'UINavigationController'289004894#135#200#2(7@131"In file included from /afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/RSS_ReaderAppDelegate.m289004894#18446744073709551615#0#0(6@109"/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/RSS_ReaderAppDelegate.m289004890#9#0#9#0#0"0(13@191"Expected ':', ',', ';', '}' or '__attribute__' before 'UINavigationController' in /afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/RSS_ReaderAppDelegate.h289004894#18446744073709551615#0#0(6@109"/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/RSS_ReaderAppDelegate.h289004890#15#0#15#0#0"0(6@109"/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/RSS_ReaderAppDelegate.h289004890#15#0#15#0#19"expected * before *0(4@126"Synthesized property 'navigationController' must either be named the same as a compatible ivar or must explicitly name an ivar289004894#335#248#0(6@109"/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/RSS_ReaderAppDelegate.m289004890#17#0#17#0#0"0(4@122"Synthesized property 'myViewController' must either be named the same as a compatible ivar or must explicitly name an ivar289004894#583#244#0(6@109"/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/RSS_ReaderAppDelegate.m289004890#18#0#18#0#0"0(0#0#109"/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/RSS_ReaderAppDelegate.m4300885448#2413"    cd "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/RSS-Reader-generated-files.hmap" "-I/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/RSS-Reader-own-target-headers.hmap" "-I/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/RSS-Reader-all-target-headers.hmap" -iquote "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/RSS-Reader-project-headers.hmap" "-F/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/Debug-iphonesimulator" "-I/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/Debug-iphonesimulator/include" "-I/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/DerivedSources/i386" "-I/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/DerivedSources" -include /var/folders/zz/zzzivhrRnAmviuee+++9cE++0u2/-Caches-/com.apple.Xcode.2977/SharedPrecompiledHeaders/RSS_Reader_Prefix-fszxiocrdulfilfivwybyfbbqiyw/RSS_Reader_Prefix.pch -c "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/RSS_ReaderAppDelegate.m" -o "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/Objects-normal/i386/RSS_ReaderAppDelegate.o"1#
+
+CCompileC build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/Objects-normal/i386/RootViewController.o "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/RootViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s289004894.119191
+e289004894.212074
+r1
+xCompileC
+xbuild/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/Objects-normal/i386/RootViewController.o
+x/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/RootViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@114"Compile /afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/RootViewController.m289004894#289004894#0(0"0(0#0#106"/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/RootViewController.m4300885448#2407"    cd "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/RSS-Reader-generated-files.hmap" "-I/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/RSS-Reader-own-target-headers.hmap" "-I/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/RSS-Reader-all-target-headers.hmap" -iquote "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/RSS-Reader-project-headers.hmap" "-F/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/Debug-iphonesimulator" "-I/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/Debug-iphonesimulator/include" "-I/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/DerivedSources/i386" "-I/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/DerivedSources" -include /var/folders/zz/zzzivhrRnAmviuee+++9cE++0u2/-Caches-/com.apple.Xcode.2977/SharedPrecompiledHeaders/RSS_Reader_Prefix-fszxiocrdulfilfivwybyfbbqiyw/RSS_Reader_Prefix.pch -c "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/RootViewController.m" -o "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/Objects-normal/i386/RootViewController.o"0#
+
+CCompileC build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/Objects-normal/i386/main.o "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s289004893.926399
+e289004894.027387
+r1
+xCompileC
+xbuild/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/Objects-normal/i386/main.o
+x/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@92"Compile /afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/main.m289004893#289004894#0(0"0(0#0#84"/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/main.m4300885448#2371"    cd "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/RSS-Reader-generated-files.hmap" "-I/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/RSS-Reader-own-target-headers.hmap" "-I/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/RSS-Reader-all-target-headers.hmap" -iquote "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/RSS-Reader-project-headers.hmap" "-F/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/Debug-iphonesimulator" "-I/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/Debug-iphonesimulator/include" "-I/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/DerivedSources/i386" "-I/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/DerivedSources" -include /var/folders/zz/zzzivhrRnAmviuee+++9cE++0u2/-Caches-/com.apple.Xcode.2977/SharedPrecompiledHeaders/RSS_Reader_Prefix-fszxiocrdulfilfivwybyfbbqiyw/RSS_Reader_Prefix.pch -c "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/main.m" -o "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/Objects-normal/i386/main.o"0#
+
+CCompileXIB "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/MainWindow.xib"
+s289004890.938041
+e289004892.438634
+r1
+xCompileXIB
+x/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/MainWindow.xib
+o2010-02-27 17:08:12.026 Interface Builder Cocoa Touch Tool[5923:903] CFPreferences: user home directory at /u/m/i/mills/Library/Application Support/iPhone Simulator/User is unavailable. User domains will be volatile.
+lSLF07#2@25"CompileXIB MainWindow.xib289004890#289004892#0(217"2010-02-27 17:08:12.026 Interface Builder Cocoa Touch Tool[5923:903] CFPreferences: user home directory at /u/m/i/mills/Library/Application Support/iPhone Simulator/User is unavailable. User domains will be volatile.0(0#0#92"/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/MainWindow.xib4300885448#608"    cd "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/Debug-iphonesimulator/RSS-Reader.app/MainWindow.nib" "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/MainWindow.xib"0#
+
+CCompileXIB "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/MyViewController.xib"
+s289004892.439071
+e289004892.724342
+r1
+xCompileXIB
+x/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/MyViewController.xib
+o2010-02-27 17:08:12.642 Interface Builder Cocoa Touch Tool[5926:903] CFPreferences: user home directory at /u/m/i/mills/Library/Application Support/iPhone Simulator/User is unavailable. User domains will be volatile.
+lSLF07#2@31"CompileXIB MyViewController.xib289004892#289004892#0(217"2010-02-27 17:08:12.642 Interface Builder Cocoa Touch Tool[5926:903] CFPreferences: user home directory at /u/m/i/mills/Library/Application Support/iPhone Simulator/User is unavailable. User domains will be volatile.0(0#0#98"/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/MyViewController.xib4300885448#620"    cd "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/Debug-iphonesimulator/RSS-Reader.app/MyViewController.nib" "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/MyViewController.xib"0#
+
+CCompileXIB "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/RootViewController.xib"
+s289004890.951297
+e289004892.438963
+r1
+xCompileXIB
+x/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/RootViewController.xib
+o2010-02-27 17:08:12.026 Interface Builder Cocoa Touch Tool[5924:903] CFPreferences: user home directory at /u/m/i/mills/Library/Application Support/iPhone Simulator/User is unavailable. User domains will be volatile.
+lSLF07#2@33"CompileXIB RootViewController.xib289004890#289004892#0(217"2010-02-27 17:08:12.026 Interface Builder Cocoa Touch Tool[5924:903] CFPreferences: user home directory at /u/m/i/mills/Library/Application Support/iPhone Simulator/User is unavailable. User domains will be volatile.0(0#0#100"/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/RootViewController.xib4300885448#624"    cd "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/Debug-iphonesimulator/RSS-Reader.app/RootViewController.nib" "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/RootViewController.xib"0#
+
+CGenerateDSYMFile "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/Debug-iphonesimulator/RSS-Reader.app.dSYM" "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/Debug-iphonesimulator/RSS-Reader.app/RSS-Reader"
+r0
+
+CLd "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/Debug-iphonesimulator/RSS-Reader.app/RSS-Reader" normal i386
+r0
+
+CProcessInfoPlistFile "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/Debug-iphonesimulator/RSS-Reader.app/Info.plist" RSS_Reader-Info.plist
+s289004890.861258
+e289004890.937911
+r1
+xProcessInfoPlistFile
+x/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/Debug-iphonesimulator/RSS-Reader.app/Info.plist
+xRSS_Reader-Info.plist
+lSLF07#2@29"Process RSS_Reader-Info.plist289004890#289004890#0(0"0(0#0#99"/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/RSS_Reader-Info.plist7093291949669431296#611"    cd "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility RSS_Reader-Info.plist -genpkginfo "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/Debug-iphonesimulator/RSS-Reader.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/Debug-iphonesimulator/RSS-Reader.app/Info.plist"0#
+
+CProcessPCH /var/folders/zz/zzzivhrRnAmviuee+++9cE++0u2/-Caches-/com.apple.Xcode.2977/SharedPrecompiledHeaders/RSS_Reader_Prefix-fszxiocrdulfilfivwybyfbbqiyw/RSS_Reader_Prefix.pch.gch RSS_Reader_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s289004892.724546
+e289004893.926275
+r1
+xProcessPCH
+x/var/folders/zz/zzzivhrRnAmviuee+++9cE++0u2/-Caches-/com.apple.Xcode.2977/SharedPrecompiledHeaders/RSS_Reader_Prefix-fszxiocrdulfilfivwybyfbbqiyw/RSS_Reader_Prefix.pch.gch
+xRSS_Reader_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@32"Precompile RSS_Reader_Prefix.pch289004892#289004893#0(0"0(0#0#99"/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/RSS_Reader_Prefix.pch4300885448#2219"    cd "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/RSS-Reader-generated-files.hmap" "-I/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/RSS-Reader-own-target-headers.hmap" "-I/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/RSS-Reader-all-target-headers.hmap" -iquote "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/RSS-Reader-project-headers.hmap" "-F/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/Debug-iphonesimulator" "-I/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/Debug-iphonesimulator/include" "-I/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/DerivedSources/i386" "-I/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/RSS-Reader.build/Debug-iphonesimulator/RSS-Reader.build/DerivedSources" -c "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/RSS_Reader_Prefix.pch" -o /var/folders/zz/zzzivhrRnAmviuee+++9cE++0u2/-Caches-/com.apple.Xcode.2977/SharedPrecompiledHeaders/RSS_Reader_Prefix-fszxiocrdulfilfivwybyfbbqiyw/RSS_Reader_Prefix.pch.gch0#
+
+CTouch "/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/build/Debug-iphonesimulator/RSS-Reader.app"
+r0
+

@@ -1,0 +1,15 @@
+Challenges:
+
+Drawing bus stops on screen.
+Over 2000 bus stops.
+Used quad tree.
+
+Drawing routes on screen.
+Approx 80 routes, each with hundreds of waypoints.
+User priority R-tree.
+
+Obtainig list of bus stops from Madison Metro.
+
+Obtaining real-time bus departure time from Madsion Metro.
+
+Obtaining real-time bus locations from Madison Metro.

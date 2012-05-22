@@ -1,0 +1,444 @@
+Twhatever
+v7
+r0
+t289357789.160100
+cCheck dependencies
+cProcessInfoPlistFile /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator/whatever.app/Info.plist whatever-Info.plist
+cCompileXIB /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/MainWindow.xib
+cCompileXIB /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/RootViewController.xib
+cProcessPCH /var/folders/zz/zzzivhrRnAmviuee+++KF+++3YE/-Caches-/com.apple.Xcode.5700/SharedPrecompiledHeaders/whatever_Prefix-bxymdrqiogqhxqakdsdxcldjdvum/whatever_Prefix.pch.gch whatever_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/main.o /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/whateverAppDelegate.o /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/Classes/whateverAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/RootViewController.o /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/Classes/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator/whatever.app/whatever normal i386
+cGenerateDSYMFile /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator/whatever.app.dSYM /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator/whatever.app/whatever
+cTouch /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator/whatever.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk
+c000000004B607DA300000000000000EE
+t1264614819
+s238
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004ABDC853000000000026EE30
+t1253951571
+s2551344
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004ABDC952000000000027E880
+t1253951826
+s2615424
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004ABDC93F0000000000001355
+t1253951807
+s4949
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004ABDEE1D0000000000000788
+t1253961245
+s1928
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004ABDEEE200000000016721E0
+t1253961442
+s23536096
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/usr/include/Availability.h
+c000000004ABDCA4700000000000019F9
+t1253952071
+s6649
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/Classes/RootViewController.h
+c000000004B745D920000000000000132
+t1265917330
+s306
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/Classes/RootViewController.m
+c000000004B74628F0000000000001203
+t1265918607
+s4611
+i"RootViewController.h"
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/Classes/whateverAppDelegate.h
+c000000004B745B8D00000000000001C1
+t1265916813
+s449
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/Classes/whateverAppDelegate.m
+c000000004B745B8D000000000000033E
+t1265916813
+s830
+i"whateverAppDelegate.h"
+i"RootViewController.h"
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/MainWindow.xib
+c000000004B7463610000000000005AF3
+t1265918817
+s23283
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/RootViewController.xib
+c000000004B745B8D0000000000004322
+t1265916813
+s17186
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator/whatever.app
+t1267664989
+s2048
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator/whatever.app.dSYM
+t1267664989
+s2048
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator/whatever.app/Info.plist
+t1265916885
+s568
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator/whatever.app/MainWindow.nib
+t1265918822
+s2176
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator/whatever.app/PkgInfo
+t1265916885
+s8
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator/whatever.app/RootViewController.nib
+t1265916886
+s1388
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator/whatever.app/whatever
+t1267664989
+s21176
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/RootViewController.o
+t1267664988
+s35812
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/main.o
+t1267664988
+s6032
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/whatever.LinkFileList
+c000000004B8F085B0000000000000200
+t1267664987
+s512
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/whateverAppDelegate.o
+t1267664988
+s39944
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/main.m
+c000000004B745B8D000000000000016E
+t1265916813
+s366
+i<UIKit/UIKit.h>
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/whatever_Prefix.pch
+c000000004B745B8D0000000000000142
+t1265916813
+s322
+i<Availability.h>
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/whatever/Classes/RootViewController.h
+c000000004B745D920000000000000132
+t1265917330
+s306
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/whatever/Classes/RootViewController.m
+c000000004B74628F0000000000001203
+t1265918607
+s4611
+i"RootViewController.h"
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/whatever/Classes/whateverAppDelegate.h
+c000000004B745B8D00000000000001C1
+t1265916813
+s449
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/whatever/Classes/whateverAppDelegate.m
+c000000004B745B8D000000000000033E
+t1265916813
+s830
+i"whateverAppDelegate.h"
+i"RootViewController.h"
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/whatever/MainWindow.xib
+c000000004B7463610000000000005AF3
+t1265918817
+s23283
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/whatever/RootViewController.xib
+c000000004B745B8D0000000000004322
+t1265916813
+s17186
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app
+t1265918823
+s2048
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app.dSYM
+t1265918612
+s2048
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app/Info.plist
+t1265916885
+s568
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app/MainWindow.nib
+t1265918822
+s2176
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app/PkgInfo
+t1265916885
+s8
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app/RootViewController.nib
+t1265916886
+s1388
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app/whatever
+t1265918612
+s20968
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/RootViewController.o
+t1265918612
+s35740
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/main.o
+t1265916889
+s5960
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/whatever.LinkFileList
+c000000004B745BD50000000000000197
+t1265916885
+s407
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/whateverAppDelegate.o
+t1265917330
+s39876
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/whatever/main.m
+c000000004B745B8D000000000000016E
+t1265916813
+s366
+i<UIKit/UIKit.h>
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/whatever/whatever_Prefix.pch
+c000000004B745B8D0000000000000142
+t1265916813
+s322
+i<Availability.h>
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/var/folders/zz/zzzivhrRnAmviuee+++KF+++3YE/-Caches-/com.apple.Xcode.5700/SharedPrecompiledHeaders/whatever_Prefix-bxymdrqiogqhxqakdsdxcldjdvum/whatever_Prefix.pch.gch
+t1267664988
+s13034960
+
+N/var/folders/zz/zzzivhrRnAmviuee+++KF+++3YE/-Caches-/com.apple.Xcode.5700/SharedPrecompiledHeaders/whatever_Prefix-fudekpbiqdavaybhiouiitduxlln/whatever_Prefix.pch.gch
+t1265916889
+s13034960
+
+Nwhatever-Info.plist
+c000000004B745B8D000000000000038D
+t1265916813
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies289357787#289357787#0(0"0(0#1#0"7947009927035180032#0"0#
+
+CCompileC build/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/RootViewController.o /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/Classes/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s289357788.535150
+e289357788.740462
+r1
+xCompileC
+xbuild/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/RootViewController.o
+x/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/Classes/RootViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@112"Compile /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/Classes/RootViewController.m289357788#289357788#0(0"0(0#0#104"/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/Classes/RootViewController.m4300885448#2323"    cd /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/whatever-generated-files.hmap -I/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/whatever-own-target-headers.hmap -I/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/whatever-all-target-headers.hmap -iquote /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/whatever-project-headers.hmap -F/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator -I/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator/include -I/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/DerivedSources/i386 -I/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/DerivedSources -include /var/folders/zz/zzzivhrRnAmviuee+++KF+++3YE/-Caches-/com.apple.Xcode.5700/SharedPrecompiledHeaders/whatever_Prefix-bxymdrqiogqhxqakdsdxcldjdvum/whatever_Prefix.pch -c /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/Classes/RootViewController.m -o /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/RootViewController.o0#
+
+CCompileC build/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/RootViewController.o /afs/cs.wisc.edu/u/a/l/aleksand/whatever/Classes/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s287611410.392536
+e287611412.158136
+r1
+xCompileC
+xbuild/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/RootViewController.o
+x/afs/cs.wisc.edu/u/a/l/aleksand/whatever/Classes/RootViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@77"Compile /afs/cs.wisc.edu/u/a/l/aleksand/whatever/Classes/RootViewController.m287611410#287611412#0(0"0(0#0#69"/afs/cs.wisc.edu/u/a/l/aleksand/whatever/Classes/RootViewController.m4300885448#1938"    cd /afs/cs.wisc.edu/u/a/l/aleksand/whatever    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/whatever-generated-files.hmap -I/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/whatever-own-target-headers.hmap -I/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/whatever-all-target-headers.hmap -iquote /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/whatever-project-headers.hmap -F/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator -I/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/include -I/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/DerivedSources/i386 -I/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/DerivedSources -include /var/folders/zz/zzzivhrRnAmviuee+++KF+++3YE/-Caches-/com.apple.Xcode.5700/SharedPrecompiledHeaders/whatever_Prefix-fudekpbiqdavaybhiouiitduxlln/whatever_Prefix.pch -c /afs/cs.wisc.edu/u/a/l/aleksand/whatever/Classes/RootViewController.m -o /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/RootViewController.o0#
+
+CCompileC build/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/main.o /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s289357788.363889
+e289357788.444054
+r1
+xCompileC
+xbuild/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/main.o
+x/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@90"Compile /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/main.m289357788#289357788#0(0"0(0#0#82"/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/main.m4300885448#2287"    cd /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/whatever-generated-files.hmap -I/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/whatever-own-target-headers.hmap -I/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/whatever-all-target-headers.hmap -iquote /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/whatever-project-headers.hmap -F/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator -I/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator/include -I/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/DerivedSources/i386 -I/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/DerivedSources -include /var/folders/zz/zzzivhrRnAmviuee+++KF+++3YE/-Caches-/com.apple.Xcode.5700/SharedPrecompiledHeaders/whatever_Prefix-bxymdrqiogqhxqakdsdxcldjdvum/whatever_Prefix.pch -c /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/main.m -o /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/main.o0#
+
+CCompileC build/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/main.o /afs/cs.wisc.edu/u/a/l/aleksand/whatever/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s287609689.456642
+e287609689.646482
+r1
+xCompileC
+xbuild/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/main.o
+x/afs/cs.wisc.edu/u/a/l/aleksand/whatever/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@55"Compile /afs/cs.wisc.edu/u/a/l/aleksand/whatever/main.m287609689#287609689#0(0"0(0#0#47"/afs/cs.wisc.edu/u/a/l/aleksand/whatever/main.m4300885448#1902"    cd /afs/cs.wisc.edu/u/a/l/aleksand/whatever    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/whatever-generated-files.hmap -I/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/whatever-own-target-headers.hmap -I/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/whatever-all-target-headers.hmap -iquote /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/whatever-project-headers.hmap -F/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator -I/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/include -I/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/DerivedSources/i386 -I/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/DerivedSources -include /var/folders/zz/zzzivhrRnAmviuee+++KF+++3YE/-Caches-/com.apple.Xcode.5700/SharedPrecompiledHeaders/whatever_Prefix-fudekpbiqdavaybhiouiitduxlln/whatever_Prefix.pch -c /afs/cs.wisc.edu/u/a/l/aleksand/whatever/main.m -o /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/main.o0#
+
+CCompileC build/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/whateverAppDelegate.o /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/Classes/whateverAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s289357788.444175
+e289357788.535029
+r1
+xCompileC
+xbuild/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/whateverAppDelegate.o
+x/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/Classes/whateverAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@113"Compile /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/Classes/whateverAppDelegate.m289357788#289357788#0(0"0(0#0#105"/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/Classes/whateverAppDelegate.m4300885448#2325"    cd /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/whatever-generated-files.hmap -I/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/whatever-own-target-headers.hmap -I/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/whatever-all-target-headers.hmap -iquote /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/whatever-project-headers.hmap -F/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator -I/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator/include -I/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/DerivedSources/i386 -I/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/DerivedSources -include /var/folders/zz/zzzivhrRnAmviuee+++KF+++3YE/-Caches-/com.apple.Xcode.5700/SharedPrecompiledHeaders/whatever_Prefix-bxymdrqiogqhxqakdsdxcldjdvum/whatever_Prefix.pch -c /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/Classes/whateverAppDelegate.m -o /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/whateverAppDelegate.o0#
+
+CCompileC build/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/whateverAppDelegate.o /afs/cs.wisc.edu/u/a/l/aleksand/whatever/Classes/whateverAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s287610130.492596
+e287610130.598011
+r1
+xCompileC
+xbuild/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/whateverAppDelegate.o
+x/afs/cs.wisc.edu/u/a/l/aleksand/whatever/Classes/whateverAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@78"Compile /afs/cs.wisc.edu/u/a/l/aleksand/whatever/Classes/whateverAppDelegate.m287610130#287610130#0(0"0(0#0#70"/afs/cs.wisc.edu/u/a/l/aleksand/whatever/Classes/whateverAppDelegate.m4300885448#1940"    cd /afs/cs.wisc.edu/u/a/l/aleksand/whatever    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/whatever-generated-files.hmap -I/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/whatever-own-target-headers.hmap -I/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/whatever-all-target-headers.hmap -iquote /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/whatever-project-headers.hmap -F/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator -I/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/include -I/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/DerivedSources/i386 -I/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/DerivedSources -include /var/folders/zz/zzzivhrRnAmviuee+++KF+++3YE/-Caches-/com.apple.Xcode.5700/SharedPrecompiledHeaders/whatever_Prefix-fudekpbiqdavaybhiouiitduxlln/whatever_Prefix.pch -c /afs/cs.wisc.edu/u/a/l/aleksand/whatever/Classes/whateverAppDelegate.m -o /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/whateverAppDelegate.o0#
+
+CCompileXIB /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/MainWindow.xib
+r0
+
+CCompileXIB /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/RootViewController.xib
+r0
+
+CCompileXIB /afs/cs.wisc.edu/u/a/l/aleksand/whatever/MainWindow.xib
+s287611622.503710
+e287611622.932291
+r1
+xCompileXIB
+x/afs/cs.wisc.edu/u/a/l/aleksand/whatever/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib287611622#287611622#0(0"0(0#0#55"/afs/cs.wisc.edu/u/a/l/aleksand/whatever/MainWindow.xib4300885448#489"    cd /afs/cs.wisc.edu/u/a/l/aleksand/whatever    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app/MainWindow.nib /afs/cs.wisc.edu/u/a/l/aleksand/whatever/MainWindow.xib0#
+
+CCompileXIB /afs/cs.wisc.edu/u/a/l/aleksand/whatever/RootViewController.xib
+s287609685.206576
+e287609686.820119
+r1
+xCompileXIB
+x/afs/cs.wisc.edu/u/a/l/aleksand/whatever/RootViewController.xib
+lSLF07#2@33"CompileXIB RootViewController.xib287609685#287609686#0(0"0(0#0#63"/afs/cs.wisc.edu/u/a/l/aleksand/whatever/RootViewController.xib4300885448#505"    cd /afs/cs.wisc.edu/u/a/l/aleksand/whatever    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app/RootViewController.nib /afs/cs.wisc.edu/u/a/l/aleksand/whatever/RootViewController.xib0#
+
+CGenerateDSYMFile /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator/whatever.app.dSYM /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator/whatever.app/whatever
+s289357789.020578
+e289357789.130106
+r1
+xGenerateDSYMFile
+x/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator/whatever.app.dSYM
+x/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator/whatever.app/whatever
+lSLF07#2@112"GenerateDSYMFile build/Debug-iphonesimulator/whatever.app.dSYM build/Debug-iphonesimulator/whatever.app/whatever289357789#289357789#0(0"0(0#0#125"/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator/whatever.app/whatever4300885448#497"    cd /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator/whatever.app/whatever -o /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator/whatever.app.dSYM0#
+
+CGenerateDSYMFile /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app.dSYM /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app/whatever
+s287611412.221362
+e287611412.572073
+r1
+xGenerateDSYMFile
+x/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app.dSYM
+x/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app/whatever
+lSLF07#2@112"GenerateDSYMFile build/Debug-iphonesimulator/whatever.app.dSYM build/Debug-iphonesimulator/whatever.app/whatever287611412#287611412#0(0"0(0#0#90"/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app/whatever4300885448#392"    cd /afs/cs.wisc.edu/u/a/l/aleksand/whatever    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app/whatever -o /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app.dSYM0#
+
+CLd /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator/whatever.app/whatever normal i386
+s289357788.740567
+e289357789.020371
+r1
+xLd
+x/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator/whatever.app/whatever
+xnormal
+xi386
+lSLF07#2@130"Link /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator/whatever.app/whatever289357788#289357789#0(0"0(0#0#0"4300885448#1054"    cd /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -L/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator -F/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator -filelist /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/whatever.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -o /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator/whatever.app/whatever0#
+
+CLd /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app/whatever normal i386
+s287611412.158387
+e287611412.221231
+r1
+xLd
+x/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app/whatever
+xnormal
+xi386
+lSLF07#2@95"Link /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app/whatever287611412#287611412#0(0"0(0#0#0"4300885448#879"    cd /afs/cs.wisc.edu/u/a/l/aleksand/whatever    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -L/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator -F/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator -filelist /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/Objects-normal/i386/whatever.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -o /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app/whatever0#
+
+CProcessInfoPlistFile /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator/whatever.app/Info.plist whatever-Info.plist
+r0
+
+CProcessInfoPlistFile /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app/Info.plist whatever-Info.plist
+s287609685.150883
+e287609685.190300
+r1
+xProcessInfoPlistFile
+x/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app/Info.plist
+xwhatever-Info.plist
+lSLF07#2@27"Process whatever-Info.plist287609685#287609685#0(0"0(0#0#60"/afs/cs.wisc.edu/u/a/l/aleksand/whatever/whatever-Info.plist4300885448#488"    cd /afs/cs.wisc.edu/u/a/l/aleksand/whatever    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility whatever-Info.plist -genpkginfo /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app/Info.plist0#
+
+CProcessPCH /var/folders/zz/zzzivhrRnAmviuee+++KF+++3YE/-Caches-/com.apple.Xcode.5700/SharedPrecompiledHeaders/whatever_Prefix-bxymdrqiogqhxqakdsdxcldjdvum/whatever_Prefix.pch.gch whatever_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s289357787.391262
+e289357788.363764
+r1
+xProcessPCH
+x/var/folders/zz/zzzivhrRnAmviuee+++KF+++3YE/-Caches-/com.apple.Xcode.5700/SharedPrecompiledHeaders/whatever_Prefix-bxymdrqiogqhxqakdsdxcldjdvum/whatever_Prefix.pch.gch
+xwhatever_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@30"Precompile whatever_Prefix.pch289357787#289357788#0(0"0(0#0#95"/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/whatever_Prefix.pch8588209949583368192#2141"    cd /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/whatever-generated-files.hmap -I/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/whatever-own-target-headers.hmap -I/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/whatever-all-target-headers.hmap -iquote /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/whatever-project-headers.hmap -F/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator -I/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator/include -I/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/DerivedSources/i386 -I/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/DerivedSources -c /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/whatever_Prefix.pch -o /var/folders/zz/zzzivhrRnAmviuee+++KF+++3YE/-Caches-/com.apple.Xcode.5700/SharedPrecompiledHeaders/whatever_Prefix-bxymdrqiogqhxqakdsdxcldjdvum/whatever_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/zz/zzzivhrRnAmviuee+++KF+++3YE/-Caches-/com.apple.Xcode.5700/SharedPrecompiledHeaders/whatever_Prefix-fudekpbiqdavaybhiouiitduxlln/whatever_Prefix.pch.gch whatever_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s287609686.820253
+e287609689.456404
+r1
+xProcessPCH
+x/var/folders/zz/zzzivhrRnAmviuee+++KF+++3YE/-Caches-/com.apple.Xcode.5700/SharedPrecompiledHeaders/whatever_Prefix-fudekpbiqdavaybhiouiitduxlln/whatever_Prefix.pch.gch
+xwhatever_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@30"Precompile whatever_Prefix.pch287609686#287609689#0(0"0(0#0#60"/afs/cs.wisc.edu/u/a/l/aleksand/whatever/whatever_Prefix.pch4300885448#1791"    cd /afs/cs.wisc.edu/u/a/l/aleksand/whatever    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/whatever-generated-files.hmap -I/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/whatever-own-target-headers.hmap -I/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/whatever-all-target-headers.hmap -iquote /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/whatever-project-headers.hmap -F/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator -I/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/include -I/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/DerivedSources/i386 -I/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/whatever.build/Debug-iphonesimulator/whatever.build/DerivedSources -c /afs/cs.wisc.edu/u/a/l/aleksand/whatever/whatever_Prefix.pch -o /var/folders/zz/zzzivhrRnAmviuee+++KF+++3YE/-Caches-/com.apple.Xcode.5700/SharedPrecompiledHeaders/whatever_Prefix-fudekpbiqdavaybhiouiitduxlln/whatever_Prefix.pch.gch0#
+
+CTouch /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator/whatever.app
+s289357789.130210
+e289357789.160023
+r1
+xTouch
+x/afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator/whatever.app
+lSLF07#2@122"Touch /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator/whatever.app289357789#289357789#0(0"0(0#0#0"4300885448#353"    cd /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /afs/cs.wisc.edu/u/a/l/aleksand/Dropbox/cs638-wireless/objective-c/whatever/build/Debug-iphonesimulator/whatever.app0#
+
+CTouch /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app
+s287611622.932945
+e287611623.042875
+r1
+xTouch
+x/afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app
+lSLF07#2@87"Touch /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app287611622#287611623#0(0"0(0#0#0"4300885448#283"    cd /afs/cs.wisc.edu/u/a/l/aleksand/whatever    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /afs/cs.wisc.edu/u/a/l/aleksand/whatever/build/Debug-iphonesimulator/whatever.app0#
+

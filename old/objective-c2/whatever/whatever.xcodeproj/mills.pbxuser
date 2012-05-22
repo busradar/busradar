@@ -1,0 +1,167 @@
+// !$*UTF8*$!
+{
+	1D3623240D0F684500981E51 /* whateverAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {600, 260}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{3, 446}";
+		};
+	};
+	1D3623250D0F684500981E51 /* whateverAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 624}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 325}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* whatever */ = {
+		activeExec = 0;
+		executables = (
+			8587A7281140885000876804 /* whatever */,
+		);
+	};
+	28C286E00D94DF7D0034E888 /* RootViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {775, 2574}}";
+			sepNavSelRange = "{364, 349}";
+			sepNavVisRange = "{291, 608}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 8587A7281140885000876804 /* whatever */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* whatever */;
+		codeSenseManager = 8587A7361140887000876804 /* Code sense */;
+		executables = (
+			8587A7281140885000876804 /* whatever */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					341,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 289441873;
+			PBXWorkspaceStateSaveDate = 289441873;
+		};
+		perUserProjectItems = {
+			8587A7DD1140A59800876804 /* PBXTextBookmark */ = 8587A7DD1140A59800876804 /* PBXTextBookmark */;
+			8587A7DE1140A59800876804 /* PBXTextBookmark */ = 8587A7DE1140A59800876804 /* PBXTextBookmark */;
+			8587A7DF1140A59800876804 /* PBXTextBookmark */ = 8587A7DF1140A59800876804 /* PBXTextBookmark */;
+			8587A7E01140A59800876804 /* PBXBookmark */ = 8587A7E01140A59800876804 /* PBXBookmark */;
+			8587A7E11140A59800876804 /* PBXTextBookmark */ = 8587A7E11140A59800876804 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 8587A7351140887000876804 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	8587A7281140885000876804 /* whatever */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = whatever;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	8587A7351140887000876804 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	8587A7361140887000876804 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	8587A7DD1140A59800876804 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D74B9DB31139DC5F00EA1FA5 /* Article.h */;
+		name = "Article.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 336;
+		vrLoc = 0;
+	};
+	8587A7DE1140A59800876804 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* whateverAppDelegate.h */;
+		name = "whateverAppDelegate.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 446;
+		vrLoc = 3;
+	};
+	8587A7DF1140A59800876804 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* whateverAppDelegate.m */;
+		name = "whateverAppDelegate.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 325;
+		vrLoc = 0;
+	};
+	8587A7E01140A59800876804 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+	};
+	8587A7E11140A59800876804 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 21";
+		rLen = 349;
+		rLoc = 364;
+		rType = 0;
+		vrLen = 608;
+		vrLoc = 291;
+	};
+	D74B9DB31139DC5F00EA1FA5 /* Article.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 312}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 336}";
+		};
+	};
+}

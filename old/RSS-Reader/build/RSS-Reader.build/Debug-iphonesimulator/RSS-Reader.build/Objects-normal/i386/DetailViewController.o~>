@@ -1,0 +1,10 @@
+/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/DetailViewController.m:14: error: no declaration of property 'myTitle' found in the interface
+/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/DetailViewController.m:15: error: no declaration of property 'myLabel' found in the interface
+/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/DetailViewController.m: In function '-[DetailViewController viewDidLoad]':
+/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/DetailViewController.m:30: error: 'myLabel' undeclared (first use in this function)
+/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/DetailViewController.m:30: error: (Each undeclared identifier is reported only once
+/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/DetailViewController.m:30: error: for each function it appears in.)
+/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/DetailViewController.m:30: error: 'myTitle' undeclared (first use in this function)
+/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/DetailViewController.m: In function '-[DetailViewController dealloc]':
+/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/DetailViewController.m:56: error: 'myLabel' undeclared (first use in this function)
+/afs/cs.wisc.edu/u/m/i/mills/CS 678/Dropbox/Dropbox/cs638-wireless/RSS-Reader/Classes/DetailViewController.m:57: error: 'myTitle' undeclared (first use in this function)

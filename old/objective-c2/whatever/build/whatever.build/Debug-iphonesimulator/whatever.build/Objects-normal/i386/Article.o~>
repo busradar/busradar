@@ -1,0 +1,2 @@
+/afs/cs.wisc.edu/u/m/c/mchoi/objective-c/whatever/Classes/Article.m:17: warning: property 'desc' requires method '-desc' to be defined - use @synthesize, @dynamic or provide a method implementation
+/afs/cs.wisc.edu/u/m/c/mchoi/objective-c/whatever/Classes/Article.m:17: warning: property 'desc' requires the method 'setDesc:' to be defined - use @synthesize, @dynamic or provide a method implementation

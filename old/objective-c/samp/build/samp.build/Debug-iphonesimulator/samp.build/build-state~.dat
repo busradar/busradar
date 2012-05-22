@@ -1,0 +1,262 @@
+Tsamp
+v7
+r0
+t287436644.341719
+cCheck dependencies
+cProcessInfoPlistFile /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app/Info.plist samp-Info.plist
+cCompileXIB /afs/cs.wisc.edu/u/a/l/aleksand/samp/MainWindow.xib
+cCompileXIB /afs/cs.wisc.edu/u/a/l/aleksand/samp/RootViewController.xib
+cProcessPCH /var/folders/zz/zzzivhrRnAmviuee+++KF+++3YE/-Caches-/com.apple.Xcode.5700/SharedPrecompiledHeaders/samp_Prefix-cuipswqranrxirgyomzyzwsneonc/samp_Prefix.pch.gch samp_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/samp.build/Debug-iphonesimulator/samp.build/Objects-normal/i386/main.o /afs/cs.wisc.edu/u/a/l/aleksand/samp/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/samp.build/Debug-iphonesimulator/samp.build/Objects-normal/i386/sampAppDelegate.o /afs/cs.wisc.edu/u/a/l/aleksand/samp/Classes/sampAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/samp.build/Debug-iphonesimulator/samp.build/Objects-normal/i386/RootViewController.o /afs/cs.wisc.edu/u/a/l/aleksand/samp/Classes/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app/samp normal i386
+cGenerateDSYMFile /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app.dSYM /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app/samp
+cTouch /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk
+c000000004B607DA600000000000000EE
+t1264614822
+s238
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004ABDC853000000000026EE30
+t1253951571
+s2551344
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004ABDC952000000000027E880
+t1253951826
+s2615424
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004ABDC93F0000000000001355
+t1253951807
+s4949
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004ABDEE1D0000000000000788
+t1253961245
+s1928
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004ABDEEE200000000016721E0
+t1253961442
+s23536096
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/usr/include/Availability.h
+c000000004ABDCA4700000000000019F9
+t1253952071
+s6649
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/samp/Classes/RootViewController.h
+c000000004B71B5B500000000000000D2
+t1265743285
+s210
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/samp/Classes/RootViewController.m
+c000000004B71B5B50000000000000FFF
+t1265743285
+s4095
+i"RootViewController.h"
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/samp/Classes/sampAppDelegate.h
+c000000004B71B5B500000000000001B4
+t1265743285
+s436
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/samp/Classes/sampAppDelegate.m
+c000000004B71B5B6000000000000032D
+t1265743286
+s813
+i"sampAppDelegate.h"
+i"RootViewController.h"
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/samp/MainWindow.xib
+c000000004B71B5B60000000000002C55
+t1265743286
+s11349
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/samp/RootViewController.xib
+c000000004B71B5B6000000000000431E
+t1265743286
+s17182
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app
+t1265743844
+s2048
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app.dSYM
+t1265743844
+s2048
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app/Info.plist
+t1265743837
+s552
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app/MainWindow.nib
+t1265743839
+s2009
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app/PkgInfo
+t1265743837
+s8
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app/RootViewController.nib
+t1265743839
+s1388
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app/samp
+t1265743844
+s20176
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/Objects-normal/i386/RootViewController.o
+t1265743843
+s32312
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/Objects-normal/i386/main.o
+t1265743843
+s5952
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/Objects-normal/i386/samp.LinkFileList
+c000000004B71B7DD000000000000016F
+t1265743837
+s367
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/Objects-normal/i386/sampAppDelegate.o
+t1265743843
+s39780
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/samp/main.m
+c000000004B71B5B70000000000000169
+t1265743287
+s361
+i<UIKit/UIKit.h>
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/samp/samp_Prefix.pch
+c000000004B71B5B6000000000000013A
+t1265743286
+s314
+i<Availability.h>
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/var/folders/zz/zzzivhrRnAmviuee+++KF+++3YE/-Caches-/com.apple.Xcode.5700/SharedPrecompiledHeaders/samp_Prefix-cuipswqranrxirgyomzyzwsneonc/samp_Prefix.pch.gch
+t1265743842
+s13034960
+
+Nsamp-Info.plist
+c000000004B71B5B6000000000000038D
+t1265743286
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies287436637#287436637#0(0"0(0#1#0"7947009927035180032#0"0#
+
+CCompileC build/samp.build/Debug-iphonesimulator/samp.build/Objects-normal/i386/RootViewController.o /afs/cs.wisc.edu/u/a/l/aleksand/samp/Classes/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s287436643.431398
+e287436643.547435
+r1
+xCompileC
+xbuild/samp.build/Debug-iphonesimulator/samp.build/Objects-normal/i386/RootViewController.o
+x/afs/cs.wisc.edu/u/a/l/aleksand/samp/Classes/RootViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@73"Compile /afs/cs.wisc.edu/u/a/l/aleksand/samp/Classes/RootViewController.m287436643#287436643#0(0"0(0#0#65"/afs/cs.wisc.edu/u/a/l/aleksand/samp/Classes/RootViewController.m4300885448#1814"    cd /afs/cs.wisc.edu/u/a/l/aleksand/samp    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/samp-generated-files.hmap -I/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/samp-own-target-headers.hmap -I/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/samp-all-target-headers.hmap -iquote /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/samp-project-headers.hmap -F/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator -I/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/include -I/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/DerivedSources/i386 -I/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/DerivedSources -include /var/folders/zz/zzzivhrRnAmviuee+++KF+++3YE/-Caches-/com.apple.Xcode.5700/SharedPrecompiledHeaders/samp_Prefix-cuipswqranrxirgyomzyzwsneonc/samp_Prefix.pch -c /afs/cs.wisc.edu/u/a/l/aleksand/samp/Classes/RootViewController.m -o /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/Objects-normal/i386/RootViewController.o0#
+
+CCompileC build/samp.build/Debug-iphonesimulator/samp.build/Objects-normal/i386/main.o /afs/cs.wisc.edu/u/a/l/aleksand/samp/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s287436643.141149
+e287436643.326400
+r1
+xCompileC
+xbuild/samp.build/Debug-iphonesimulator/samp.build/Objects-normal/i386/main.o
+x/afs/cs.wisc.edu/u/a/l/aleksand/samp/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@51"Compile /afs/cs.wisc.edu/u/a/l/aleksand/samp/main.m287436643#287436643#0(0"0(0#0#43"/afs/cs.wisc.edu/u/a/l/aleksand/samp/main.m4300885448#1778"    cd /afs/cs.wisc.edu/u/a/l/aleksand/samp    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/samp-generated-files.hmap -I/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/samp-own-target-headers.hmap -I/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/samp-all-target-headers.hmap -iquote /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/samp-project-headers.hmap -F/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator -I/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/include -I/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/DerivedSources/i386 -I/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/DerivedSources -include /var/folders/zz/zzzivhrRnAmviuee+++KF+++3YE/-Caches-/com.apple.Xcode.5700/SharedPrecompiledHeaders/samp_Prefix-cuipswqranrxirgyomzyzwsneonc/samp_Prefix.pch -c /afs/cs.wisc.edu/u/a/l/aleksand/samp/main.m -o /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/Objects-normal/i386/main.o0#
+
+CCompileC build/samp.build/Debug-iphonesimulator/samp.build/Objects-normal/i386/sampAppDelegate.o /afs/cs.wisc.edu/u/a/l/aleksand/samp/Classes/sampAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s287436643.326516
+e287436643.431264
+r1
+xCompileC
+xbuild/samp.build/Debug-iphonesimulator/samp.build/Objects-normal/i386/sampAppDelegate.o
+x/afs/cs.wisc.edu/u/a/l/aleksand/samp/Classes/sampAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@70"Compile /afs/cs.wisc.edu/u/a/l/aleksand/samp/Classes/sampAppDelegate.m287436643#287436643#0(0"0(0#0#62"/afs/cs.wisc.edu/u/a/l/aleksand/samp/Classes/sampAppDelegate.m4300885448#1808"    cd /afs/cs.wisc.edu/u/a/l/aleksand/samp    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/samp-generated-files.hmap -I/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/samp-own-target-headers.hmap -I/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/samp-all-target-headers.hmap -iquote /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/samp-project-headers.hmap -F/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator -I/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/include -I/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/DerivedSources/i386 -I/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/DerivedSources -include /var/folders/zz/zzzivhrRnAmviuee+++KF+++3YE/-Caches-/com.apple.Xcode.5700/SharedPrecompiledHeaders/samp_Prefix-cuipswqranrxirgyomzyzwsneonc/samp_Prefix.pch -c /afs/cs.wisc.edu/u/a/l/aleksand/samp/Classes/sampAppDelegate.m -o /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/Objects-normal/i386/sampAppDelegate.o0#
+
+CCompileXIB /afs/cs.wisc.edu/u/a/l/aleksand/samp/MainWindow.xib
+s287436637.695247
+e287436639.954714
+r1
+xCompileXIB
+x/afs/cs.wisc.edu/u/a/l/aleksand/samp/MainWindow.xib
+o2010-02-09 13:30:39.663 Interface Builder Cocoa Touch Tool[6779:903] CFPreferences: user home directory at /u/a/l/aleksand/Library/Application Support/iPhone Simulator/User is unavailable. User domains will be volatile.
+lSLF07#2@25"CompileXIB MainWindow.xib287436637#287436639#0(220"2010-02-09 13:30:39.663 Interface Builder Cocoa Touch Tool[6779:903] CFPreferences: user home directory at /u/a/l/aleksand/Library/Application Support/iPhone Simulator/User is unavailable. User domains will be volatile.0(0#0#51"/afs/cs.wisc.edu/u/a/l/aleksand/samp/MainWindow.xib4300885448#473"    cd /afs/cs.wisc.edu/u/a/l/aleksand/samp    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app/MainWindow.nib /afs/cs.wisc.edu/u/a/l/aleksand/samp/MainWindow.xib0#
+
+CCompileXIB /afs/cs.wisc.edu/u/a/l/aleksand/samp/RootViewController.xib
+s287436637.706644
+e287436639.955023
+r1
+xCompileXIB
+x/afs/cs.wisc.edu/u/a/l/aleksand/samp/RootViewController.xib
+o2010-02-09 13:30:39.663 Interface Builder Cocoa Touch Tool[6780:903] CFPreferences: user home directory at /u/a/l/aleksand/Library/Application Support/iPhone Simulator/User is unavailable. User domains will be volatile.
+lSLF07#2@33"CompileXIB RootViewController.xib287436637#287436639#0(220"2010-02-09 13:30:39.663 Interface Builder Cocoa Touch Tool[6780:903] CFPreferences: user home directory at /u/a/l/aleksand/Library/Application Support/iPhone Simulator/User is unavailable. User domains will be volatile.0(0#0#59"/afs/cs.wisc.edu/u/a/l/aleksand/samp/RootViewController.xib4300885448#489"    cd /afs/cs.wisc.edu/u/a/l/aleksand/samp    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app/RootViewController.nib /afs/cs.wisc.edu/u/a/l/aleksand/samp/RootViewController.xib0#
+
+CGenerateDSYMFile /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app.dSYM /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app/samp
+s287436644.040632
+e287436644.228076
+r1
+xGenerateDSYMFile
+x/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app.dSYM
+x/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app/samp
+lSLF07#2@100"GenerateDSYMFile build/Debug-iphonesimulator/samp.app.dSYM build/Debug-iphonesimulator/samp.app/samp287436644#287436644#0(0"0(0#0#78"/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app/samp4300885448#368"    cd /afs/cs.wisc.edu/u/a/l/aleksand/samp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app/samp -o /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app.dSYM0#
+
+CLd /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app/samp normal i386
+s287436643.547543
+e287436644.040518
+r1
+xLd
+x/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app/samp
+xnormal
+xi386
+lSLF07#2@83"Link /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app/samp287436643#287436644#0(0"0(0#0#0"4300885448#839"    cd /afs/cs.wisc.edu/u/a/l/aleksand/samp    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -L/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator -F/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator -filelist /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/Objects-normal/i386/samp.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -o /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app/samp0#
+
+CProcessInfoPlistFile /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app/Info.plist samp-Info.plist
+s287436637.516205
+e287436637.695116
+r1
+xProcessInfoPlistFile
+x/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app/Info.plist
+xsamp-Info.plist
+lSLF07#2@23"Process samp-Info.plist287436637#287436637#0(0"0(0#0#52"/afs/cs.wisc.edu/u/a/l/aleksand/samp/samp-Info.plist31525648366108776#464"    cd /afs/cs.wisc.edu/u/a/l/aleksand/samp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility samp-Info.plist -genpkginfo /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app/Info.plist0#
+
+CProcessPCH /var/folders/zz/zzzivhrRnAmviuee+++KF+++3YE/-Caches-/com.apple.Xcode.5700/SharedPrecompiledHeaders/samp_Prefix-cuipswqranrxirgyomzyzwsneonc/samp_Prefix.pch.gch samp_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s287436639.955185
+e287436643.140947
+r1
+xProcessPCH
+x/var/folders/zz/zzzivhrRnAmviuee+++KF+++3YE/-Caches-/com.apple.Xcode.5700/SharedPrecompiledHeaders/samp_Prefix-cuipswqranrxirgyomzyzwsneonc/samp_Prefix.pch.gch
+xsamp_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@26"Precompile samp_Prefix.pch287436639#287436643#0(0"0(0#0#52"/afs/cs.wisc.edu/u/a/l/aleksand/samp/samp_Prefix.pch4300885448#1675"    cd /afs/cs.wisc.edu/u/a/l/aleksand/samp    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/samp-generated-files.hmap -I/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/samp-own-target-headers.hmap -I/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/samp-all-target-headers.hmap -iquote /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/samp-project-headers.hmap -F/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator -I/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/include -I/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/DerivedSources/i386 -I/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/samp.build/Debug-iphonesimulator/samp.build/DerivedSources -c /afs/cs.wisc.edu/u/a/l/aleksand/samp/samp_Prefix.pch -o /var/folders/zz/zzzivhrRnAmviuee+++KF+++3YE/-Caches-/com.apple.Xcode.5700/SharedPrecompiledHeaders/samp_Prefix-cuipswqranrxirgyomzyzwsneonc/samp_Prefix.pch.gch0#
+
+CTouch /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app
+s287436644.228189
+e287436644.341645
+r1
+xTouch
+x/afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app
+lSLF07#2@79"Touch /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app287436644#287436644#0(0"0(0#0#0"4300885448#271"    cd /afs/cs.wisc.edu/u/a/l/aleksand/samp    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /afs/cs.wisc.edu/u/a/l/aleksand/samp/build/Debug-iphonesimulator/samp.app0#
+

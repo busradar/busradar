@@ -1,0 +1,256 @@
+TUntitled
+v7
+r0
+t287437824.197639
+cCheck dependencies
+cProcessInfoPlistFile /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/Untitled.app/Info.plist Untitled-Info.plist
+cCompileXIB /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/MainWindow.xib
+cCompileXIB /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/UntitledViewController.xib
+cProcessPCH /var/folders/zz/zzzivhrRnAmviuee+++KF+++3YE/-Caches-/com.apple.Xcode.5700/SharedPrecompiledHeaders/Untitled_Prefix-cuusuvidepeylafbbaisbyxxkodz/Untitled_Prefix.pch.gch Untitled_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Untitled.build/Debug-iphonesimulator/Untitled.build/Objects-normal/i386/main.o /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Untitled.build/Debug-iphonesimulator/Untitled.build/Objects-normal/i386/UntitledAppDelegate.o /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/Classes/UntitledAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Untitled.build/Debug-iphonesimulator/Untitled.build/Objects-normal/i386/UntitledViewController.o /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/Classes/UntitledViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/Untitled.app/Untitled normal i386
+cGenerateDSYMFile /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/Untitled.app.dSYM /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/Untitled.app/Untitled
+cTouch /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/Untitled.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk
+c000000004B607DA600000000000000EE
+t1264614822
+s238
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004ABDC853000000000026EE30
+t1253951571
+s2551344
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004ABDC952000000000027E880
+t1253951826
+s2615424
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004ABDC93F0000000000001355
+t1253951807
+s4949
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004ABDEE1D0000000000000788
+t1253961245
+s1928
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004ABDEEE200000000016721E0
+t1253961442
+s23536096
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/Classes/UntitledAppDelegate.h
+c000000004B71BC3B00000000000001E8
+t1265744955
+s488
+i<UIKit/UIKit.h>
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/Classes/UntitledAppDelegate.m
+c000000004B71BC3B0000000000000272
+t1265744955
+s626
+i"UntitledAppDelegate.h"
+i"UntitledViewController.h"
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/Classes/UntitledViewController.h
+c000000004B71BC3B00000000000000F4
+t1265744955
+s244
+i<UIKit/UIKit.h>
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/Classes/UntitledViewController.m
+c000000004B71BC3B00000000000005BE
+t1265744955
+s1470
+i"UntitledViewController.h"
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/MainWindow.xib
+c000000004B71BC3B0000000000002459
+t1265744955
+s9305
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/UntitledViewController.xib
+c000000004B71BC3B00000000000018DF
+t1265744955
+s6367
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/Untitled_Prefix.pch
+c000000004B71BC3B00000000000000B9
+t1265744955
+s185
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/Untitled.app
+t1265745024
+s2048
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/Untitled.app.dSYM
+t1265745024
+s2048
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/Untitled.app/Info.plist
+t1265745020
+s568
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/Untitled.app/MainWindow.nib
+t1265745022
+s1497
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/Untitled.app/PkgInfo
+t1265745020
+s8
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/Untitled.app/Untitled
+t1265745024
+s19436
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/Untitled.app/UntitledViewController.nib
+t1265745022
+s1151
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Untitled.build/Debug-iphonesimulator/Untitled.build/Objects-normal/i386/Untitled.LinkFileList
+c000000004B71BC7C000000000000019B
+t1265745020
+s411
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Untitled.build/Debug-iphonesimulator/Untitled.build/Objects-normal/i386/UntitledAppDelegate.o
+t1265745023
+s38092
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Untitled.build/Debug-iphonesimulator/Untitled.build/Objects-normal/i386/UntitledViewController.o
+t1265745023
+s29964
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Untitled.build/Debug-iphonesimulator/Untitled.build/Objects-normal/i386/main.o
+t1265745023
+s5960
+
+N/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/main.m
+c000000004B71BC3B000000000000016D
+t1265744955
+s365
+i<UIKit/UIKit.h>
+
+N/var/folders/zz/zzzivhrRnAmviuee+++KF+++3YE/-Caches-/com.apple.Xcode.5700/SharedPrecompiledHeaders/Untitled_Prefix-cuusuvidepeylafbbaisbyxxkodz/Untitled_Prefix.pch.gch
+t1265745023
+s13034960
+
+NUntitled-Info.plist
+c000000004B71BC3B000000000000038D
+t1265744955
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies287437820#287437820#0(0"0(0#1#0"4300885448#0"0#
+
+CCompileC build/Untitled.build/Debug-iphonesimulator/Untitled.build/Objects-normal/i386/UntitledAppDelegate.o /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/Classes/UntitledAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s287437823.830161
+e287437823.921233
+r1
+xCompileC
+xbuild/Untitled.build/Debug-iphonesimulator/Untitled.build/Objects-normal/i386/UntitledAppDelegate.o
+x/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/Classes/UntitledAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@78"Compile /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/Classes/UntitledAppDelegate.m287437823#287437823#0(0"0(0#0#70"/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/Classes/UntitledAppDelegate.m4300885448#1940"    cd /afs/cs.wisc.edu/u/a/l/aleksand/Untitled    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Untitled.build/Debug-iphonesimulator/Untitled.build/Untitled-generated-files.hmap -I/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Untitled.build/Debug-iphonesimulator/Untitled.build/Untitled-own-target-headers.hmap -I/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Untitled.build/Debug-iphonesimulator/Untitled.build/Untitled-all-target-headers.hmap -iquote /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Untitled.build/Debug-iphonesimulator/Untitled.build/Untitled-project-headers.hmap -F/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator -I/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/include -I/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Untitled.build/Debug-iphonesimulator/Untitled.build/DerivedSources/i386 -I/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Untitled.build/Debug-iphonesimulator/Untitled.build/DerivedSources -include /var/folders/zz/zzzivhrRnAmviuee+++KF+++3YE/-Caches-/com.apple.Xcode.5700/SharedPrecompiledHeaders/Untitled_Prefix-cuusuvidepeylafbbaisbyxxkodz/Untitled_Prefix.pch -c /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/Classes/UntitledAppDelegate.m -o /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Untitled.build/Debug-iphonesimulator/Untitled.build/Objects-normal/i386/UntitledAppDelegate.o0#
+
+CCompileC build/Untitled.build/Debug-iphonesimulator/Untitled.build/Objects-normal/i386/UntitledViewController.o /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/Classes/UntitledViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s287437823.921352
+e287437823.999268
+r1
+xCompileC
+xbuild/Untitled.build/Debug-iphonesimulator/Untitled.build/Objects-normal/i386/UntitledViewController.o
+x/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/Classes/UntitledViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@81"Compile /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/Classes/UntitledViewController.m287437823#287437823#0(0"0(0#0#73"/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/Classes/UntitledViewController.m4300885448#1946"    cd /afs/cs.wisc.edu/u/a/l/aleksand/Untitled    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Untitled.build/Debug-iphonesimulator/Untitled.build/Untitled-generated-files.hmap -I/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Untitled.build/Debug-iphonesimulator/Untitled.build/Untitled-own-target-headers.hmap -I/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Untitled.build/Debug-iphonesimulator/Untitled.build/Untitled-all-target-headers.hmap -iquote /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Untitled.build/Debug-iphonesimulator/Untitled.build/Untitled-project-headers.hmap -F/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator -I/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/include -I/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Untitled.build/Debug-iphonesimulator/Untitled.build/DerivedSources/i386 -I/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Untitled.build/Debug-iphonesimulator/Untitled.build/DerivedSources -include /var/folders/zz/zzzivhrRnAmviuee+++KF+++3YE/-Caches-/com.apple.Xcode.5700/SharedPrecompiledHeaders/Untitled_Prefix-cuusuvidepeylafbbaisbyxxkodz/Untitled_Prefix.pch -c /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/Classes/UntitledViewController.m -o /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Untitled.build/Debug-iphonesimulator/Untitled.build/Objects-normal/i386/UntitledViewController.o0#
+
+CCompileC build/Untitled.build/Debug-iphonesimulator/Untitled.build/Objects-normal/i386/main.o /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s287437823.763850
+e287437823.830050
+r1
+xCompileC
+xbuild/Untitled.build/Debug-iphonesimulator/Untitled.build/Objects-normal/i386/main.o
+x/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@55"Compile /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/main.m287437823#287437823#0(0"0(0#0#47"/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/main.m4300885448#1902"    cd /afs/cs.wisc.edu/u/a/l/aleksand/Untitled    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Untitled.build/Debug-iphonesimulator/Untitled.build/Untitled-generated-files.hmap -I/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Untitled.build/Debug-iphonesimulator/Untitled.build/Untitled-own-target-headers.hmap -I/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Untitled.build/Debug-iphonesimulator/Untitled.build/Untitled-all-target-headers.hmap -iquote /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Untitled.build/Debug-iphonesimulator/Untitled.build/Untitled-project-headers.hmap -F/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator -I/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/include -I/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Untitled.build/Debug-iphonesimulator/Untitled.build/DerivedSources/i386 -I/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Untitled.build/Debug-iphonesimulator/Untitled.build/DerivedSources -include /var/folders/zz/zzzivhrRnAmviuee+++KF+++3YE/-Caches-/com.apple.Xcode.5700/SharedPrecompiledHeaders/Untitled_Prefix-cuusuvidepeylafbbaisbyxxkodz/Untitled_Prefix.pch -c /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/main.m -o /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Untitled.build/Debug-iphonesimulator/Untitled.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/MainWindow.xib
+s287437820.845757
+e287437822.168446
+r1
+xCompileXIB
+x/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib287437820#287437822#0(0"0(0#0#55"/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/MainWindow.xib4300885448#489"    cd /afs/cs.wisc.edu/u/a/l/aleksand/Untitled    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/Untitled.app/MainWindow.nib /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/MainWindow.xib0#
+
+CCompileXIB /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/UntitledViewController.xib
+s287437820.854320
+e287437822.160362
+r1
+xCompileXIB
+x/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/UntitledViewController.xib
+lSLF07#2@37"CompileXIB UntitledViewController.xib287437820#287437822#0(0"0(0#0#67"/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/UntitledViewController.xib4300885448#513"    cd /afs/cs.wisc.edu/u/a/l/aleksand/Untitled    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/Untitled.app/UntitledViewController.nib /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/UntitledViewController.xib0#
+
+CGenerateDSYMFile /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/Untitled.app.dSYM /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/Untitled.app/Untitled
+s287437824.067686
+e287437824.162880
+r1
+xGenerateDSYMFile
+x/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/Untitled.app.dSYM
+x/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/Untitled.app/Untitled
+lSLF07#2@112"GenerateDSYMFile build/Debug-iphonesimulator/Untitled.app.dSYM build/Debug-iphonesimulator/Untitled.app/Untitled287437824#287437824#0(0"0(0#0#90"/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/Untitled.app/Untitled4300885448#392"    cd /afs/cs.wisc.edu/u/a/l/aleksand/Untitled    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/Untitled.app/Untitled -o /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/Untitled.app.dSYM0#
+
+CLd /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/Untitled.app/Untitled normal i386
+s287437823.999402
+e287437824.067555
+r1
+xLd
+x/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/Untitled.app/Untitled
+xnormal
+xi386
+lSLF07#2@95"Link /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/Untitled.app/Untitled287437823#287437824#0(0"0(0#0#0"4300885448#879"    cd /afs/cs.wisc.edu/u/a/l/aleksand/Untitled    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -L/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator -F/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator -filelist /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Untitled.build/Debug-iphonesimulator/Untitled.build/Objects-normal/i386/Untitled.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -o /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/Untitled.app/Untitled0#
+
+CProcessInfoPlistFile /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/Untitled.app/Info.plist Untitled-Info.plist
+s287437820.828574
+e287437820.845636
+r1
+xProcessInfoPlistFile
+x/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/Untitled.app/Info.plist
+xUntitled-Info.plist
+lSLF07#2@27"Process Untitled-Info.plist287437820#287437820#0(0"0(0#0#60"/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/Untitled-Info.plist4300885448#488"    cd /afs/cs.wisc.edu/u/a/l/aleksand/Untitled    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Untitled-Info.plist -genpkginfo /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/Untitled.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/Untitled.app/Info.plist0#
+
+CProcessPCH /var/folders/zz/zzzivhrRnAmviuee+++KF+++3YE/-Caches-/com.apple.Xcode.5700/SharedPrecompiledHeaders/Untitled_Prefix-cuusuvidepeylafbbaisbyxxkodz/Untitled_Prefix.pch.gch Untitled_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s287437822.168595
+e287437823.763672
+r1
+xProcessPCH
+x/var/folders/zz/zzzivhrRnAmviuee+++KF+++3YE/-Caches-/com.apple.Xcode.5700/SharedPrecompiledHeaders/Untitled_Prefix-cuusuvidepeylafbbaisbyxxkodz/Untitled_Prefix.pch.gch
+xUntitled_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@30"Precompile Untitled_Prefix.pch287437822#287437823#0(0"0(0#0#60"/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/Untitled_Prefix.pch4300885448#1791"    cd /afs/cs.wisc.edu/u/a/l/aleksand/Untitled    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Untitled.build/Debug-iphonesimulator/Untitled.build/Untitled-generated-files.hmap -I/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Untitled.build/Debug-iphonesimulator/Untitled.build/Untitled-own-target-headers.hmap -I/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Untitled.build/Debug-iphonesimulator/Untitled.build/Untitled-all-target-headers.hmap -iquote /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Untitled.build/Debug-iphonesimulator/Untitled.build/Untitled-project-headers.hmap -F/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator -I/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/include -I/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Untitled.build/Debug-iphonesimulator/Untitled.build/DerivedSources/i386 -I/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Untitled.build/Debug-iphonesimulator/Untitled.build/DerivedSources -c /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/Untitled_Prefix.pch -o /var/folders/zz/zzzivhrRnAmviuee+++KF+++3YE/-Caches-/com.apple.Xcode.5700/SharedPrecompiledHeaders/Untitled_Prefix-cuusuvidepeylafbbaisbyxxkodz/Untitled_Prefix.pch.gch0#
+
+CTouch /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/Untitled.app
+s287437824.162981
+e287437824.197582
+r1
+xTouch
+x/afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/Untitled.app
+lSLF07#2@87"Touch /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/Untitled.app287437824#287437824#0(0"0(0#0#0"4300885448#283"    cd /afs/cs.wisc.edu/u/a/l/aleksand/Untitled    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /afs/cs.wisc.edu/u/a/l/aleksand/Untitled/build/Debug-iphonesimulator/Untitled.app0#
+
