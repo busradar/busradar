@@ -1,7 +1,9 @@
 syntax: glob
 android-project/bin/**
 android-project/gen/**
+android-project/local.properties
 
 syntax: regexp
 .*\.DS_Store
+/*~
 
