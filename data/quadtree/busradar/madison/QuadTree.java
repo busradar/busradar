@@ -15,7 +15,7 @@ public class QuadTree
 		public int lon;
 		
 		public char dir;
-		public int id;
+		public String id;
 		public int[] routes;
 		
 		public Element() {}
@@ -30,7 +30,7 @@ public class QuadTree
 			System.out.printf("writeInt: id=%s\n", id);
 			System.out.printf("writeInt: routes.lenght=%s\n", routes.length);
 			s.writeChar(dir);
-			s.writeInt(id);
+			s.writeUTF(id);
 			s.writeInt(routes.length);
 			for(int i = 0; i < routes.length; i++)
 			{
@@ -44,7 +44,7 @@ public class QuadTree
 			lon = s.readInt();
 			
 			dir = s.readChar();
-			id = s.readInt();
+			id = s.readUTF();
 			routes = new int[s.readInt()];
 			for(int i = 0; i < routes.length; i++)
 				routes[i] = s.readInt();

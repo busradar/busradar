@@ -84,7 +84,8 @@ public final class StopDialog extends Dialog {
 //	}
 	
 	final static Pattern num_vehicles_re = Pattern.compile("Next (\\d) Vehicles Arrive at:");
-	final static Pattern time_re = Pattern.compile("(\\d\\d?:\\d\\d [AP]\\.M\\.).*TO (.*)<");
+	//final static Pattern time_re = Pattern.compile("(\\d\\d?:\\d\\d [AP]\\.M\\.).*TO (.*)<");
+	final static Pattern time_re = Pattern.compile("(\\d\\d?:\\d\\d [AP]\\.M\\.)");
 	//final static Pattern no_busses_re = Pattern.compile("No stops with upcoming crossings times found\\.");
 	//final static Pattern no_timepoints_re = Pattern.compile("No stop information is found with this time point\\.");
 	final static int route_list_id = 1;
@@ -95,7 +96,7 @@ public final class StopDialog extends Dialog {
 	TextView status_text;
 	TextView cur_loading_text;
 	BaseAdapter times_adapter;
-	final static String TRANSITTRACKER_URL = "http://webwatch.cityofmadison.com/webwatch/ada.aspx?";
+	final static String TRANSITTRACKER_URL = "http://webwatch.cityofmadison.com/webwatch/MobileAda.aspx?";
 
 	static class RouteURL {
 		static final int LOADING = 0;
@@ -338,7 +339,7 @@ public final class StopDialog extends Dialog {
 
 							v.setBackgroundColor(G.route_points[curr_times.get(position).route].color | 0xff000000);
 							v.route_textview.setText(G.route_points[curr_times.get(position).route].name);
-							v.dir_textview.setText("to "+ curr_times.get(position).dir);
+							//v.dir_textview.setText("to "+ curr_times.get(position).dir);
 							v.time_textview.setText(curr_times.get(position).time);
 
 							return v;
@@ -410,6 +411,7 @@ public final class StopDialog extends Dialog {
 					
 					final ArrayList<RouteTime> curtimes = new ArrayList<RouteTime>();
 					try {
+						System.err.printf("BusRadar URL %s\n", TRANSITTRACKER_URL+r.url);
 						URL url = new URL(TRANSITTRACKER_URL+r.url);
 					    URLConnection url_conn = url.openConnection();
 						if (url_conn instanceof HttpsURLConnection)
@@ -432,7 +434,7 @@ public final class StopDialog extends Dialog {
 								RouteTime time = new RouteTime();
 								time.route = r.route;
 								time.time = scan.match().group(1).replace(".", "");
-								time.dir = scan.match().group(2);
+								//time.dir = scan.match().group(2);
 								//time.date = DateFormat.getTimeInstance(DateFormat.SHORT).parse(time.time);
 								
 								SimpleDateFormat f = new SimpleDateFormat("h:mm aa", Locale.US);

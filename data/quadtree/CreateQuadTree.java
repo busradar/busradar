@@ -20,7 +20,7 @@ public static void main(String[] args) throws Exception
 
 	while (it.hasNext()) {
 		String key = it.next();
-		int stopid = Integer.parseInt(key);
+		String stopid = key;
 			
 		JSONObject item = json.getJSONObject(key);
 			

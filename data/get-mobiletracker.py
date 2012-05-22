@@ -41,9 +41,9 @@ for a in soup.findAll('a'):
 				stopname = stop[1]
 				
 				try:
-					stopid = int(re.search('ID#(\\d+)', stop[1]).group(1))
+					stopid = re.search('\\[(.)B#(\\w+)\\]', stop[1]).group(2)
 				except Exception as e:
-					print >>sys.stderr, "stopid:", stopid, "routeno:", routeno, "url:", url, "exception", e 
+					print >>sys.stderr, "stopname:", stopname, "routeno:", routeno, "url:", url, "exception", e 
 					continue
 				 
 				if stopid not in stops:
