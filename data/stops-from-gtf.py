@@ -31,6 +31,8 @@ for row in stops_csv_data:
     dic['lon'] = row['stop_lon']
     dic['name'] = row['stop_name']
     
+    stop_id = "%04d" % int(stop_id)
+
     if stop_id in mobiletracker_data:
         dic['routes'] = mobiletracker_data[ stop_id ]
     else:

@@ -28,8 +28,9 @@ c.execute("CREATE TABLE Stop (_ID INTEGER PRIMARY KEY, Name TEXT)")
 
 
 for stopid in stops:
+        stopid_int = int(stopid)
         c.execute("INSERT INTO Stop(_ID, Name) values (?, ?)", \
-                        (stopid, stops[stopid]['name']))
+                        (stopid_int, stops[stopid]['name']))
                         
         for route in stops[stopid]['routes']:
                 route_name = route['routeno']
