@@ -55,6 +55,7 @@ static byte today = G.is_today_weekend_or_holiday() != null ? Route.HOLIDAY : Ro
 static boolean first_time = true;
     
 static boolean inited = false;
+static int db_version = -1;
 
 static void init(Main a) 
 {
@@ -112,6 +113,7 @@ static void init(Main a)
 				//System.out.println("BusRadar: Updating DB");
 				throw new SQLiteException();
 			}
+			G.db_version = version;
 		}
 		catch (SQLiteException e)
 		{
@@ -135,6 +137,13 @@ static void init(Main a)
 	    	db_is.close();
 	    	
 			db = SQLiteDatabase.openDatabase(path, null, SQLiteDatabase.OPEN_READONLY);
+			
+			Cursor c = db.rawQuery("SELECT version FROM db_version", null);
+			c.moveToFirst();
+			int version = c.getInt(0);
+			c.close();
+			
+			G.db_version = version;
 
 		}
 	

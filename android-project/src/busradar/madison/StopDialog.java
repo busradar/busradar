@@ -85,7 +85,8 @@ public final class StopDialog extends Dialog {
 	
 	final static Pattern num_vehicles_re = Pattern.compile("Next (\\d) Vehicles Arrive at:");
 	final static Pattern time_re = Pattern.compile("(\\d\\d?:\\d\\d [AP]\\.M\\.).*TO (.*)<");
-	//final static Pattern time_re = Pattern.compile("(\\d\\d?:\\d\\d [AP]\\.M\\.)");
+	final static Pattern time_re_backup = Pattern.compile("(\\d\\d?:\\d\\d [AP]\\.M\\.)");
+	
 	//final static Pattern no_busses_re = Pattern.compile("No stops with upcoming crossings times found\\.");
 	//final static Pattern no_timepoints_re = Pattern.compile("No stop information is found with this time point\\.");
 	final static int route_list_id = 1;
@@ -336,11 +337,12 @@ public final class StopDialog extends Dialog {
 								v = new CellView(ctx);
 							else
 								v = (CellView) convertView;
-
-							v.setBackgroundColor(G.route_points[curr_times.get(position).route].color | 0xff000000);
-							v.route_textview.setText(G.route_points[curr_times.get(position).route].name);
-							v.dir_textview.setText("to "+ curr_times.get(position).dir);
-							v.time_textview.setText(curr_times.get(position).time);
+							
+							RouteTime rt = curr_times.get(position);
+							v.setBackgroundColor(G.route_points[rt.route].color | 0xff000000);
+							v.route_textview.setText(G.route_points[rt.route].name);
+							if (rt.dir != null) v.dir_textview.setText("to "+ rt.dir);
+							v.time_textview.setText(rt.time);
 
 							return v;
 
@@ -435,6 +437,21 @@ public final class StopDialog extends Dialog {
 								time.route = r.route;
 								time.time = scan.match().group(1).replace(".", "");
 								time.dir = scan.match().group(2);
+								//time.date = DateFormat.getTimeInstance(DateFormat.SHORT).parse(time.time);
+								
+								SimpleDateFormat f = new SimpleDateFormat("h:mm aa", Locale.US);
+								time.date = f.parse(time.time);
+								r.status = RouteURL.DONE;
+								
+								//outstr_cur += String.format("%s to %s\n", time.time, time.dir);
+								curtimes.add(time);
+							}
+							
+							while (scan.findWithinHorizon(time_re_backup, 0) != null) {
+								RouteTime time = new RouteTime();
+								time.route = r.route;
+								time.time = scan.match().group(1).replace(".", "");
+								//time.dir = scan.match().group(2);
 								//time.date = DateFormat.getTimeInstance(DateFormat.SHORT).parse(time.time);
 								
 								SimpleDateFormat f = new SimpleDateFormat("h:mm aa", Locale.US);

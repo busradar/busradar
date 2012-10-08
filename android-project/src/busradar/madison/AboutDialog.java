@@ -44,7 +44,10 @@ public class AboutDialog extends Dialog {
 		        	catch (NameNotFoundException  e) {
 		        		version_string = "??";
 		        	}
-		        	setText(Html.fromHtml(ctx.getString(R.string.about).replace("$VERSION$", version_string)));
+		        	String text = ctx.getString(R.string.about).replace("$VERSION$", version_string)
+		        			                                   .replace("$DB_VERSION$", G.db_version + "");
+		        			
+		        	setText(Html.fromHtml(text));
 		        	
 		        }});
         	}});
