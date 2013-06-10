@@ -1,6 +1,7 @@
 package busradar.madison;
 
 import android.graphics.Typeface;
+import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
@@ -57,12 +58,12 @@ make_layout()
 					if (e) {
 						
 						setBackgroundColor(0xff000000 | G.route_points[ix].color);
-						setTextSize(text_size*1.5f);
+						setTextSize(TypedValue.COMPLEX_UNIT_PX, text_size*1.5f);
 						cur_button = this;
 					}
 					else {
 						setBackgroundColor(0x90000000 | G.route_points[ix].color);
-						setTextSize(text_size);
+						setTextSize(TypedValue.COMPLEX_UNIT_PX, text_size);
 					}
 				}
 					

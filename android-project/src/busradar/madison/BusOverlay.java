@@ -17,9 +17,11 @@ import com.google.android.maps.GeoPoint;
 import com.google.android.maps.MapView;
 import com.google.android.maps.Projection;
 
+import static busradar.madison.G.*;
+
 class BusOverlay extends com.google.android.maps.Overlay {
 
-final static int touch_allowance = 10; 
+final static int touch_allowance = 12; 
 GeoPoint selection;
 int zoom_level = 0;
 
@@ -38,7 +40,7 @@ static final Paint paint = new Paint(); {
 }
 
 static final Paint line_paint = new Paint(); {
-	line_paint.setStrokeWidth(5);
+	line_paint.setStrokeWidth(dp2px(5));
 	line_paint.setAntiAlias(true);
 	line_paint.setColor(0x90ff0000);
 	line_paint.setStyle(Paint.Style.STROKE);
@@ -46,6 +48,8 @@ static final Paint line_paint = new Paint(); {
 }
 
 static final Paint text_paint = new Paint(); {
+	float size = text_paint.getTextSize();
+	text_paint.setTextSize( metrics.density * size * 1.0f );
 	text_paint.setTypeface(Typeface.create(text_paint.getTypeface(), Typeface.BOLD));
 	text_paint.setAntiAlias(true);
 	text_paint.setColor(0xff000000);
@@ -55,6 +59,12 @@ static final Paint label_paint = new Paint(); {
 	text_paint.setAntiAlias(true);
 	label_paint.setColor(0xB0ffffff);
 }
+
+static final Paint circle_paint = new Paint() {{
+	this.setColor(0x90EBA05A);
+	this.setStrokeWidth(0);
+	this.setStyle(Style.FILL);
+}};
 
 @Override public final void 
 draw(Canvas canvas, MapView map, boolean shadow) 
@@ -91,9 +101,10 @@ draw(Canvas canvas, MapView map, boolean shadow)
 		selection = null;
 		
 	if (selection != null) {
-		line_paint.setColor(0x90EBA05A); 
+		
 		proj.toPixels(selection, point);
-		canvas.drawCircle(point.x, point.y, 15, line_paint);
+		//canvas.drawPoint(point.x, point.y, line_paint);
+		canvas.drawCircle(point.x, point.y, 10*metrics.density, circle_paint);
 	}
 	zoom_level = x;
 	
@@ -194,10 +205,10 @@ draw(Canvas canvas, MapView map, boolean shadow)
 								
 				if (point.x > max.x) {
 					if (point.y < min.y) {
-						draw_text_right(canvas, msg, max.x, min.y + 13+16*upper_right_count++);
+						draw_text_right(canvas, msg, max.x, min.y + (13+16*upper_right_count++)*metrics.density);
 					}
 					else if (point.y > max.y - 45) {
-						draw_text_right(canvas, msg, max.x, max.y - 45-16*lower_right_count++);
+						draw_text_right(canvas, msg, max.x, max.y - (45-16*lower_right_count++)*metrics.density);
 					}
 					else {
 						draw_text_right(canvas, msg, max.x, point.y);
@@ -205,21 +216,21 @@ draw(Canvas canvas, MapView map, boolean shadow)
 				}
 				else if (point.x < min.x) {
 					if (point.y < min.y) {
-						draw_text_left(canvas, msg, min.x+3, min.y+13+16*upper_left_count++);
+						draw_text_left(canvas, msg, min.x+3*metrics.density, min.y+(13+16*upper_left_count++)*metrics.density);
 					}
 					else if (point.y > max.y - 45) {
-						draw_text_left(canvas, msg, min.x+3, max.y-45-16*lower_left_count++);
+						draw_text_left(canvas, msg, min.x+3*metrics.density, max.y-(45-16*lower_left_count++)*metrics.density);
 					}
 					else {
-						draw_text_left(canvas, msg, min.x+3, point.y);
+						draw_text_left(canvas, msg, min.x+3*metrics.density, point.y);
 					}
 					
 				}
 				else if (point.y > max.y) {
-					draw_text_left(canvas, msg, point.x, max.y-45);
+					draw_text_left(canvas, msg, point.x, max.y-45*metrics.density);
 				}
 				else { //if (point.y < min.y) {
-					draw_text_left(canvas, msg, point.x, min.y+13);
+					draw_text_left(canvas, msg, point.x, min.y+13*metrics.density);
 				}
 				
 				continue;
@@ -265,11 +276,12 @@ public boolean onTap(GeoPoint p, MapView map) {
 	int lon = p.getLongitudeE6();
 	
 	int pixel = map.getLongitudeSpan() / map.getWidth();
-	ArrayList<QuadTree.Element> geopoints = G.stops_tree.get(lon-pixel*32, lat-pixel*32, lon+pixel*32, lat+pixel*32, pixel);
+	ArrayList<QuadTree.Element> geopoints = G.stops_tree.get(lon-pixel*dp2px(32), lat-pixel*dp2px(32), lon+pixel*dp2px(32), lat+pixel*dp2px(32), pixel);
 	
 	Projection proj = map.getProjection();
 	Point point = new Point();
 	Point touch = new Point();
+	proj.toPixels(p, touch);
 	
 	final ArrayList<QuadTree.Element> touched = new ArrayList<QuadTree.Element>();
 	
@@ -280,41 +292,37 @@ public boolean onTap(GeoPoint p, MapView map) {
 		
 		//pgp.lat = e.lat; pgp.lon = e.lon;
 		proj.toPixels(new GeoPoint(e.lat, e.lon), point);
-		proj.toPixels(p, touch);
+		
 		
 		switch (e.dir) {
 			case 'N': 
 				b = G.bitmap_stop_north;
-				touch.x -= point.x;
-				touch.y -= point.y - b.getHeight()/2;		
+				point.x += b.getWidth()/2;		
 				break;
 				
 			case 'S': 
 				b = G.bitmap_stop_south;
-				touch.x -= point.x-b.getWidth();
-				touch.y -= point.y-b.getHeight()/2;
+				point.x -= b.getWidth()/2;
 				break;
 				
 			case 'E': 
 				b = G.bitmap_stop_east;
-				touch.x -= point.x-b.getWidth()/2;
-				touch.y -= point.y;
+				point.y += b.getHeight()/2;
 				break;
 				
 			case 'W': 
 				b = G.bitmap_stop_west;
-				touch.x -= point.x-b.getWidth()/2;
-				touch.y -= point.y-b.getHeight();
+				point.y -= b.getHeight();
 				break;
 				
 			default: 
 				b = G.bitmap_stop_nodir;
-				touch.x -= point.x-b.getWidth()/2;
-				touch.y -= point.y-b.getHeight();
+				point.y -= b.getHeight()/2;
 		}
 		
-		if (touch.x >= 0-touch_allowance && touch.x <= b.getWidth()+touch_allowance && 
-			touch.y >= 0-touch_allowance && touch.y < b.getHeight()+touch_allowance) {
+		double dist = Math.sqrt(Math.pow(point.x-touch.x, 2) + Math.pow(point.y-touch.y, 2));
+		
+		if (dist < touch_allowance * metrics.density) {
 			touched.add(e);
 		}
 	}
@@ -363,21 +371,21 @@ public boolean onTap(GeoPoint p, MapView map) {
 }
 	
 final static void 
-draw_text_right(Canvas canvas, String msg, int x, int y)
+draw_text_right(Canvas canvas, String msg, float x, float y)
 {	
 	float len = text_paint.measureText(msg);
-	RectF rect = new RectF(x-len-3, y-13, x+3, y+3);
-	canvas.drawRoundRect(rect, 3, 3, label_paint);
+	RectF rect = new RectF(x-len-3*metrics.density, y-13*metrics.density, x+3*metrics.density, y+3*metrics.density);
+	canvas.drawRoundRect(rect, 3*metrics.density, 3*metrics.density, label_paint);
 	
 	canvas.drawText(msg, x-len, y, text_paint);
 }
 
 final static void 
-draw_text_left(Canvas canvas, String msg, int x, int y)
+draw_text_left(Canvas canvas, String msg, float x, float y)
 {	
 	float len = text_paint.measureText(msg);
-	RectF rect = new RectF(x-3, y-13, x+len+3, y+3);
-	canvas.drawRoundRect(rect, 3, 3, label_paint);
+	RectF rect = new RectF(x-3*metrics.density, y-13*metrics.density, x+len+3*metrics.density, y+3*metrics.density);
+	canvas.drawRoundRect(rect, 3*metrics.density, 3*metrics.density, label_paint);
 	
 	canvas.drawText(msg, x, y, text_paint);
 }

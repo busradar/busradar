@@ -17,11 +17,14 @@ import android.database.sqlite.SQLiteException;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Point;
+import android.util.DisplayMetrics;
 import android.widget.Toast;
 
 import com.google.android.maps.MyLocationOverlay;
 
 public class G {
+
+public static DisplayMetrics metrics;
 	
 static Bitmap bitmap_stop_west;
 static Bitmap bitmap_stop_east;
@@ -57,12 +60,15 @@ static boolean first_time = true;
 static boolean inited = false;
 static int db_version = -1;
 
+
 static void init(Main a) 
 {
 	activity = a;
 	
 	if (inited)
 		return;
+	
+	metrics = a.getResources().getDisplayMetrics();
 	
    	bitmap_stop_west = BitmapFactory.decodeResource(a.getResources(), R.drawable.stop_west);
    	bitmap_stop_north = BitmapFactory.decodeResource(a.getResources(), R.drawable.stop_north);
@@ -241,6 +247,10 @@ is_today_weekend_or_holiday()
 		return "";
 	
 	return null;
+}
+
+static final int dp2px(int dp) {
+	return (int) (dp * metrics.density + 0.5f);
 }
 
 }

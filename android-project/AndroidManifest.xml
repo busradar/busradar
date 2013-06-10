@@ -5,17 +5,20 @@
       android:versionName="1.0.19"
       android:installLocation="auto">
 	
-	<uses-sdk android:minSdkVersion="3" android:targetSdkVersion="4"/>
+	<uses-sdk android:minSdkVersion="3" android:targetSdkVersion="17"/>
 	<uses-permission android:name="android.permission.INTERNET"/>
 	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<supports-screens
+	    android:xlargeScreens="false"
+	    />
 
     <application android:label="@string/app_name"
     			 android:icon="@drawable/icon"
-     			 android:theme="@android:style/Theme.NoTitleBar" android:debuggable="false">
+     			 android:theme="@android:style/Theme.NoTitleBar">
 		<uses-library android:name="com.google.android.maps"/>
         <activity android:name="Main"
                   android:label="BusRadar"
-                  android:configChanges="orientation"
+                  android:configChanges="orientation|screenSize"
                   android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

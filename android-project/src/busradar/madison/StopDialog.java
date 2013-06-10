@@ -35,8 +35,10 @@ import android.graphics.Typeface;
 import android.text.Html;
 import android.text.TextUtils;
 import android.text.method.LinkMovementMethod;
+import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.BaseAdapter;
@@ -46,6 +48,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
+import android.widget.RelativeLayout.LayoutParams;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -139,7 +142,7 @@ public final class StopDialog extends Dialog {
 					setId(1);
 					setTextColor(0xffffffff);
 					setTypeface(Typeface.DEFAULT_BOLD);
-					setTextSize(getTextSize() * 2f);
+					setTextSize(TypedValue.COMPLEX_UNIT_PX, getTextSize() * 2f);
 				}
 			}, new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT,
 					LayoutParams.WRAP_CONTENT) {
@@ -159,7 +162,7 @@ public final class StopDialog extends Dialog {
 			});
 			addView(time_textview = new TextView(ctx) {
 				{
-					setTextSize(getTextSize() * 2f);
+					setTextSize(TypedValue.COMPLEX_UNIT_PX, getTextSize() * 2f);
 					setTextColor(0xffffffff);
 				}
 			}, new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT,
@@ -182,6 +185,8 @@ public final class StopDialog extends Dialog {
 		this.stopid = stopid;
 
 		// getWindow().requestFeature(Window.FEATURE_LEFT_ICON);
+		getWindow().setLayout(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT);
+
 
 		final String name = DB.getStopName(stopid);
 		setTitle(name);
@@ -259,10 +264,10 @@ public final class StopDialog extends Dialog {
 									public void setEnabled(boolean e) {
 										if (e) {
 											setBackgroundColor(0xff000000 | G.route_points[route.route].color);
-											setTextSize(text_size * 1.5f);
+											setTextSize(TypedValue.COMPLEX_UNIT_PX, text_size * 1.5f);
 										} else {
 											setBackgroundColor(0x90000000 | G.route_points[route.route].color);
-											setTextSize(text_size);
+											setTextSize(TypedValue.COMPLEX_UNIT_PX, text_size);
 										}
 									}
 
