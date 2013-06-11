@@ -1,4 +1,92 @@
 {
+    "0005": [
+        {
+            "direction": "UW Union", 
+            "routeno": "80", 
+            "stopname": "DAYTON &amp; ORCHARD [EB#0005]", 
+            "url": "r=80&d=125&s=3569"
+        }
+    ], 
+    "0010": [
+        {
+            "direction": "Eagle Hts", 
+            "routeno": "80", 
+            "stopname": "LANGDON &amp; N PARK [WB#0010](Memorial Union)", 
+            "url": "r=80&d=108&s=4033"
+        }
+    ], 
+    "0011": [
+        {
+            "direction": "UW Union", 
+            "routeno": "80", 
+            "stopname": "LANGDON &amp; N PARK [WB#0011](Arrive Memorial Union)", 
+            "url": "r=80&d=125&s=4034"
+        }
+    ], 
+    "0039": [
+        {
+            "direction": "UW Union", 
+            "routeno": "80", 
+            "stopname": "LAKE &amp; W JOHNSON [NB#0039]", 
+            "url": "r=80&d=125&s=3571"
+        }
+    ], 
+    "0040": [
+        {
+            "direction": "UW Union", 
+            "routeno": "80", 
+            "stopname": "LANGDON &amp; LAKE [WB#0040]", 
+            "url": "r=80&d=125&s=743"
+        }
+    ], 
+    "0052": [
+        {
+            "direction": "Eagle Hts", 
+            "routeno": "80", 
+            "stopname": "OBSERVATORY &amp; CHARTER [WB#0052]", 
+            "url": "r=80&d=108&s=747"
+        }
+    ], 
+    "0060": [
+        {
+            "direction": "Eagle Hts", 
+            "routeno": "80", 
+            "stopname": "OBSERVATORY &amp; BASCOM [WB#0060]", 
+            "url": "r=80&d=108&s=751"
+        }
+    ], 
+    "0061": [
+        {
+            "direction": "UW Union", 
+            "routeno": "80", 
+            "stopname": "DAYTON &amp; MILLS [EB#0061]", 
+            "url": "r=80&d=125&s=4037"
+        }
+    ], 
+    "0073": [
+        {
+            "direction": "UW Union", 
+            "routeno": "80", 
+            "stopname": "DAYTON &amp; E CAMPUS MALL [EB#0073]", 
+            "url": "r=80&d=125&s=3572"
+        }
+    ], 
+    "0077": [
+        {
+            "direction": "UW Union", 
+            "routeno": "80", 
+            "stopname": "DAYTON &amp; N PARK [EB#0077]", 
+            "url": "r=80&d=125&s=4039"
+        }
+    ], 
+    "0091": [
+        {
+            "direction": "UW Union", 
+            "routeno": "80", 
+            "stopname": "LAKE &amp; STATE [NB#0091]", 
+            "url": "r=80&d=125&s=3573"
+        }
+    ], 
     "0100": [
         {
             "direction": "WTP", 
@@ -333,6 +421,14 @@
             "url": "r=05&d=109&s=789"
         }
     ], 
+    "0184": [
+        {
+            "direction": "Eagle Hts", 
+            "routeno": "80", 
+            "stopname": "LINDEN &amp; HENRY MALL [WB#0184]", 
+            "url": "r=80&d=108&s=790"
+        }
+    ], 
     "0190": [
         {
             "direction": "STP", 
@@ -581,6 +677,14 @@
             "url": "r=13&d=121&s=815"
         }
     ], 
+    "0298": [
+        {
+            "direction": "UW Union", 
+            "routeno": "80", 
+            "stopname": "BABCOCK &amp; LINDEN [SB#0298]", 
+            "url": "r=80&d=125&s=817"
+        }
+    ], 
     "0300": [
         {
             "direction": "NTP", 
@@ -617,6 +721,12 @@
             "routeno": "7", 
             "stopname": "RANDALL &amp; ENGINEERING [SB#0336]", 
             "url": "r=07&d=131&s=3574"
+        }, 
+        {
+            "direction": "UW Union", 
+            "routeno": "80", 
+            "stopname": "RANDALL &amp; ENGINEERING [SB#0336](Randall &amp; Engineering)", 
+            "url": "r=80&d=125&s=3574"
         }
     ], 
     "0346": [
@@ -807,6 +917,14 @@
             "url": "r=08&d=102&s=841"
         }
     ], 
+    "0438": [
+        {
+            "direction": "UW Union", 
+            "routeno": "80", 
+            "stopname": "LINDEN &amp; CHARTER [EB#0438]", 
+            "url": "r=80&d=125&s=842"
+        }
+    ], 
     "0441": [
         {
             "direction": "NTP", 
@@ -951,6 +1069,14 @@
             "url": "r=13&d=123&s=857"
         }
     ], 
+    "0488": [
+        {
+            "direction": "Eagle Hts", 
+            "routeno": "80", 
+            "stopname": "LINDEN &amp; CHARTER [WB#0488]", 
+            "url": "r=80&d=108&s=859"
+        }
+    ], 
     "0499": [
         {
             "direction": "NTP", 
@@ -1037,6 +1163,14 @@
             "routeno": "4", 
             "stopname": "FISH HATCHERY &amp; APPLETON [SB#0530]", 
             "url": "r=04&d=121&s=868"
+        }
+    ], 
+    "0532": [
+        {
+            "direction": "Eagle Hts", 
+            "routeno": "80", 
+            "stopname": "LINDEN &amp; BABCOCK [WB#0532]", 
+            "url": "r=80&d=108&s=869"
         }
     ], 
     "0533": [
@@ -1169,6 +1303,14 @@
             "routeno": "8", 
             "stopname": "UNIV AVE &amp; FRANCES [WB#0568]", 
             "url": "r=08&d=120&s=882"
+        }
+    ], 
+    "0573": [
+        {
+            "direction": "UW Union", 
+            "routeno": "80", 
+            "stopname": "LINDEN &amp; HENRY MALL [EB#0573]", 
+            "url": "r=80&d=125&s=883"
         }
     ], 
     "0581": [
@@ -1351,6 +1493,14 @@
             "url": "r=08&d=120&s=906"
         }
     ], 
+    "0706": [
+        {
+            "direction": "UW Union", 
+            "routeno": "80", 
+            "stopname": "CHARTER &amp; UNIV AVE [SB#0706]", 
+            "url": "r=80&d=125&s=909"
+        }
+    ], 
     "0715": [
         {
             "direction": "UW", 
@@ -1407,6 +1557,12 @@
             "routeno": "6", 
             "stopname": "LAKE &amp; UNIV AVE [NB#0765]", 
             "url": "r=06&d=106&s=919"
+        }, 
+        {
+            "direction": "UW Union", 
+            "routeno": "80", 
+            "stopname": "LAKE &amp; UNIV AVE [NB#0765]", 
+            "url": "r=80&d=125&s=919"
         }
     ], 
     "0768": [
@@ -4009,6 +4165,210 @@
             "url": "r=05&d=121&s=1223"
         }
     ], 
+    "2007": [
+        {
+            "direction": "UW Union", 
+            "routeno": "80", 
+            "stopname": "OBSERVATORY &amp; WALNUT [EB#2007]", 
+            "url": "r=80&d=125&s=3533"
+        }
+    ], 
+    "2014": [
+        {
+            "direction": "Eagle Hts", 
+            "routeno": "80", 
+            "stopname": "LAKE MENDOTA &amp; LOT R [SB#2014]", 
+            "url": "r=80&d=108&s=1225"
+        }, 
+        {
+            "direction": "UW Union", 
+            "routeno": "80", 
+            "stopname": "LAKE MENDOTA &amp; LOT R [SB#2014]", 
+            "url": "r=80&d=125&s=1225"
+        }
+    ], 
+    "2018": [
+        {
+            "direction": "Eagle Hts", 
+            "routeno": "80", 
+            "stopname": "EAGLE HTS &amp; LOT E [WB#2018]", 
+            "url": "r=80&d=108&s=1226"
+        }
+    ], 
+    "2023": [
+        {
+            "direction": "Eagle Hts", 
+            "routeno": "80", 
+            "stopname": "MARSH &amp; HIGHLAND [EB#2023]", 
+            "url": "r=80&d=108&s=3879"
+        }
+    ], 
+    "2026": [
+        {
+            "direction": "Eagle Hts", 
+            "routeno": "80", 
+            "stopname": "EAGLE HTS &amp; LOT F [WB#2026]", 
+            "url": "r=80&d=108&s=1227"
+        }
+    ], 
+    "2027": [
+        {
+            "direction": "Eagle Hts", 
+            "routeno": "80", 
+            "stopname": "U BAY &amp; LOT 60 [NB#2027](University Bay Lot 60 OB)", 
+            "url": "r=80&d=108&s=1228"
+        }
+    ], 
+    "2034": [
+        {
+            "direction": "Eagle Hts", 
+            "routeno": "80", 
+            "stopname": "LAKE MENDOTA &amp; EAGLE HTS [SB#2034]", 
+            "url": "r=80&d=108&s=1229"
+        }, 
+        {
+            "direction": "UW Union", 
+            "routeno": "80", 
+            "stopname": "LAKE MENDOTA &amp; EAGLE HTS [SB#2034]", 
+            "url": "r=80&d=125&s=1229"
+        }
+    ], 
+    "2039": [
+        {
+            "direction": "Eagle Hts", 
+            "routeno": "80", 
+            "stopname": "LAKE MENDOTA &amp; LOT N [NB#2039]", 
+            "url": "r=80&d=108&s=1230"
+        }, 
+        {
+            "direction": "UW Union", 
+            "routeno": "80", 
+            "stopname": "LAKE MENDOTA &amp; LOT N [NB#2039]", 
+            "url": "r=80&d=125&s=1230"
+        }
+    ], 
+    "2041": [
+        {
+            "direction": "Eagle Hts", 
+            "routeno": "80", 
+            "stopname": "LAKE MENDOTA &amp; U BAY [NB#2041]", 
+            "url": "r=80&d=108&s=1231"
+        }
+    ], 
+    "2048": [
+        {
+            "direction": "Eagle Hts", 
+            "routeno": "80", 
+            "stopname": "LAKE MENDOTA &amp; U BAY [SB#2048]", 
+            "url": "r=80&d=108&s=1232"
+        }, 
+        {
+            "direction": "UW Union", 
+            "routeno": "80", 
+            "stopname": "LAKE MENDOTA &amp; U BAY [SB#2048]", 
+            "url": "r=80&d=125&s=1232"
+        }
+    ], 
+    "2050": [
+        {
+            "direction": "Eagle Hts", 
+            "routeno": "80", 
+            "stopname": "U BAY &amp; LOT 76 [SB#2050]", 
+            "url": "r=80&d=108&s=1233"
+        }, 
+        {
+            "direction": "UW Union", 
+            "routeno": "80", 
+            "stopname": "U BAY &amp; LOT 76 [SB#2050]", 
+            "url": "r=80&d=125&s=1233"
+        }
+    ], 
+    "2054": [
+        {
+            "direction": "Eagle Hts", 
+            "routeno": "80", 
+            "stopname": "EAGLE HTS &amp; LOT M [WB#2054]", 
+            "url": "r=80&d=108&s=1234"
+        }, 
+        {
+            "direction": "UW Union", 
+            "routeno": "80", 
+            "stopname": "EAGLE HTS &amp; LOT M [WB#2054]", 
+            "url": "r=80&d=125&s=1234"
+        }
+    ], 
+    "2061": [
+        {
+            "direction": "Eagle Hts", 
+            "routeno": "80", 
+            "stopname": "LAKE MENDOTA &amp; LOT P [NB#2061]", 
+            "url": "r=80&d=108&s=1235"
+        }, 
+        {
+            "direction": "UW Union", 
+            "routeno": "80", 
+            "stopname": "LAKE MENDOTA &amp; LOT P [NB#2061]", 
+            "url": "r=80&d=125&s=1235"
+        }
+    ], 
+    "2071": [
+        {
+            "direction": "Eagle Hts", 
+            "routeno": "80", 
+            "stopname": "LAKE MENDOTA &amp; LOT Q [NB#2071]", 
+            "url": "r=80&d=108&s=1236"
+        }, 
+        {
+            "direction": "UW Union", 
+            "routeno": "80", 
+            "stopname": "LAKE MENDOTA &amp; LOT Q [NB#2071]", 
+            "url": "r=80&d=125&s=1236"
+        }
+    ], 
+    "2076": [
+        {
+            "direction": "Eagle Hts", 
+            "routeno": "80", 
+            "stopname": "MARSH &amp; LOT 76 [WB#2076](Marsh &amp; Lot 76)", 
+            "url": "r=80&d=108&s=3534"
+        }, 
+        {
+            "direction": "UW Union", 
+            "routeno": "80", 
+            "stopname": "MARSH &amp; LOT 76 [WB#2076](Marsh &amp; Lot 76)", 
+            "url": "r=80&d=125&s=3534"
+        }
+    ], 
+    "2082": [
+        {
+            "direction": "Eagle Hts", 
+            "routeno": "80", 
+            "stopname": "EAGLE HTS &amp; SHELTER [WB#2082](Eagle Heights Shelter)", 
+            "url": "r=80&d=108&s=1237"
+        }, 
+        {
+            "direction": "UW Union", 
+            "routeno": "80", 
+            "stopname": "EAGLE HTS &amp; SHELTER [WB#2082](Eagle Heights Shelter)", 
+            "url": "r=80&d=125&s=1237"
+        }
+    ], 
+    "2088": [
+        {
+            "direction": "Eagle Hts", 
+            "routeno": "80", 
+            "stopname": "OBSERVATORY &amp; WALNUT [WB#2088]", 
+            "url": "r=80&d=108&s=3881"
+        }
+    ], 
+    "2091": [
+        {
+            "direction": "UW Union", 
+            "routeno": "80", 
+            "stopname": "OBSERVATORY &amp; HIGHLAND [EB#2091]", 
+            "url": "r=80&d=125&s=3882"
+        }
+    ], 
     "2100": [
         {
             "direction": "WTP", 
@@ -4107,6 +4467,12 @@
             "routeno": "2", 
             "stopname": "HIGHLAND &amp; OBSERVATORY [NB#2125]", 
             "url": "r=02&d=131&s=1249"
+        }, 
+        {
+            "direction": "Eagle Hts", 
+            "routeno": "80", 
+            "stopname": "HIGHLAND &amp; OBSERVATORY [NB#2125]", 
+            "url": "r=80&d=108&s=1249"
         }
     ], 
     "2131": [
@@ -4169,6 +4535,14 @@
             "routeno": "7", 
             "stopname": "MONROE &amp; WEST LAWN [EB#2139]", 
             "url": "r=07&d=109&s=1259"
+        }
+    ], 
+    "2145": [
+        {
+            "direction": "UW Union", 
+            "routeno": "80", 
+            "stopname": "OBSERVATORY &amp; BABCOCK [EB#2145]", 
+            "url": "r=80&d=125&s=1261"
         }
     ], 
     "2146": [
@@ -4357,6 +4731,14 @@
             "url": "r=08&d=120&s=1286"
         }
     ], 
+    "2195": [
+        {
+            "direction": "UW Union", 
+            "routeno": "80", 
+            "stopname": "OBSERVATORY &amp; ELM [EB#2195](Observatory &amp; Elm)", 
+            "url": "r=80&d=125&s=1288"
+        }
+    ], 
     "2196": [
         {
             "direction": "Prairie Twn Ctr", 
@@ -4489,7 +4871,7 @@
         {
             "direction": "CapSq", 
             "routeno": "8", 
-            "stopname": "UNIV AVE &amp; FLAMBEAU [SB#2230]", 
+            "stopname": "UNIV AVE &amp; TOMAHAWK [SB#2230]", 
             "url": "r=08&d=102&s=1305"
         }
     ], 
@@ -4607,6 +4989,14 @@
             "routeno": "7", 
             "stopname": "ODANA &amp; HURON [EB#2265]", 
             "url": "r=07&d=109&s=1322"
+        }
+    ], 
+    "2267": [
+        {
+            "direction": "UW Union", 
+            "routeno": "80", 
+            "stopname": "OBSERVATORY &amp; NATATORIUM [EB#2267]", 
+            "url": "r=80&d=125&s=1323"
         }
     ], 
     "2268": [
@@ -4797,6 +5187,12 @@
             "routeno": "2", 
             "stopname": "HIGHLAND &amp; MARSH [EB#2349]", 
             "url": "r=02&d=115&s=1347"
+        }, 
+        {
+            "direction": "UW Union", 
+            "routeno": "80", 
+            "stopname": "HIGHLAND &amp; MARSH [EB#2349]", 
+            "url": "r=80&d=125&s=1347"
         }
     ], 
     "2351": [
@@ -5051,6 +5447,14 @@
             "routeno": "7", 
             "stopname": "TOEPFER &amp; MEYER [NB#2435]", 
             "url": "r=07&d=109&s=1378"
+        }
+    ], 
+    "2442": [
+        {
+            "direction": "Eagle Hts", 
+            "routeno": "80", 
+            "stopname": "OBSERVATORY &amp; NATATORIUM [WB#2442]", 
+            "url": "r=80&d=108&s=1380"
         }
     ], 
     "2443": [
@@ -5965,6 +6369,20 @@
             "url": "r=07&d=131&s=1494"
         }
     ], 
+    "2881": [
+        {
+            "direction": "Eagle Hts", 
+            "routeno": "80", 
+            "stopname": "U BAY &amp; PICNIC PT [EB#2881]", 
+            "url": "r=80&d=108&s=1496"
+        }, 
+        {
+            "direction": "UW Union", 
+            "routeno": "80", 
+            "stopname": "U BAY &amp; PICNIC PT [EB#2881]", 
+            "url": "r=80&d=125&s=1496"
+        }
+    ], 
     "2883": [
         {
             "direction": "ETP", 
@@ -6105,6 +6523,14 @@
             "url": "r=07&d=109&s=1513"
         }
     ], 
+    "2938": [
+        {
+            "direction": "Eagle Hts", 
+            "routeno": "80", 
+            "stopname": "U BAY &amp; PICNIC PT [WB#2938]", 
+            "url": "r=80&d=108&s=1514"
+        }
+    ], 
     "2939": [
         {
             "direction": "ETP", 
@@ -6203,6 +6629,14 @@
             "url": "r=06&d=106&s=3891"
         }
     ], 
+    "2978": [
+        {
+            "direction": "Eagle Hts", 
+            "routeno": "80", 
+            "stopname": "OBSERVATORY &amp; ELM [WB#2978](Observatory &amp; Elm)", 
+            "url": "r=80&d=108&s=1525"
+        }
+    ], 
     "2980": [
         {
             "direction": "WTP", 
@@ -6243,6 +6677,14 @@
             "routeno": "68", 
             "stopname": "WHITNEY &amp; SCIENCE [SB#2984]", 
             "url": "r=68&d=131&s=1528"
+        }
+    ], 
+    "2996": [
+        {
+            "direction": "Eagle Hts", 
+            "routeno": "80", 
+            "stopname": "OBSERVATORY &amp; BABCOCK [WB#2996]", 
+            "url": "r=80&d=108&s=1530"
         }
     ], 
     "2998": [

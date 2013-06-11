@@ -318,7 +318,7 @@ public class Main extends MapActivity
 		// icons http://androiddrawableexplorer.appspot.com/
 		menu.add(0, 5, 0, "GPS on/off").setIcon(android.R.drawable.ic_menu_compass);
 		menu.add(0, 1, 0, "My Location").setIcon(android.R.drawable.ic_menu_mylocation);
-		menu.add(0, 4, 0, "Favorites").setIcon(R.drawable.ic_menu_star);
+		menu.add(0, 4, 0, "Favorites").setIcon(android.R.drawable.btn_star_big_off);
 		menu.add(0, 2, 0, "Map Mode").setIcon(android.R.drawable.ic_menu_mapmode);
 		menu.add(0, 6, 0, "Help").setIcon(android.R.drawable.ic_menu_help);
 		menu.add(0, 3, 0, "About").setIcon(android.R.drawable.ic_menu_info_details);

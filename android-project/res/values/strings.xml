@@ -5,8 +5,8 @@
 	$VERSION$</big><br>
 	Database version $DB_VERSION$
 	
-	<p>Copyright © 2010–2012 Aleksandr Dobkin, Michael Choi, and Christopher Mills. All rights reserved.
-	<p>Route paths and bus stop locations are accurate as of September 2012. Bus arrival estimates and bus locations are obtained on demand from the <a href="http://www.cityofmadison.com/metro/">Madison Metro</a> website. We assume no responsibility for this information.
+	<p>Copyright © 2010–2013 Aleksandr Dobkin, Michael Choi, and Christopher Mills. All rights reserved.
+	<p>Route paths and bus stop locations are accurate as of June 2013. Bus arrival estimates and bus locations are obtained on demand from the <a href="http://www.cityofmadison.com/metro/">Madison Metro</a> website. We assume no responsibility for this information.
 	<p>The Priority R-Tree implementation is based on <a href="http://www.khelekore.org/prtree/">PRTree</a> © 2008 Robert Olofsson.
 	<p>BusRadar is in not produced by or in any way affiliated with <a href="http://www.cityofmadison.com/metro/">Madison Metro Transit</a>.
 	<p>Thank you, and we hope that you enjoy your BusRadar experience! 

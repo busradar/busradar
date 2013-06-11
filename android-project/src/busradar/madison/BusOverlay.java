@@ -21,7 +21,7 @@ import static busradar.madison.G.*;
 
 class BusOverlay extends com.google.android.maps.Overlay {
 
-final static int touch_allowance = 12; 
+final static int touch_allowance = 15; 
 GeoPoint selection;
 int zoom_level = 0;
 

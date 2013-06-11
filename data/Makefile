@@ -9,7 +9,7 @@ paths/route_points.bin: combined-stops.json paths.json
 paths.json:
 	python get-paths.py
 
-db.sqlite: combined-stops.json
+db.sqlite: combined-stops.json make-sqlite.py
 	python make-sqlite.py
 
 combined-stops.json: mobiletracker-combined.json gtf

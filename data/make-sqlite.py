@@ -21,7 +21,7 @@ c.execute("CREATE TABLE android_metadata (locale TEXT DEFAULT 'en_US')")
 c.execute("INSERT INTO android_metadata VALUES ('en_US')")
 
 c.execute("CREATE TABLE db_version (version INT)")
-c.execute("INSERT INTO db_version VALUES (8)")
+c.execute("INSERT INTO db_version VALUES (9)")
 
 c.execute("CREATE TABLE routestops(stopid integer, route integer, url text)")
 c.execute("CREATE TABLE Stop (_ID INTEGER PRIMARY KEY, Name TEXT)")
