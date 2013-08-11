@@ -39,26 +39,26 @@ static final Paint paint = new Paint(); {
 	paint.setColor(0xffff0000);
 }
 
-static final Paint line_paint = new Paint(); {
-	line_paint.setStrokeWidth(dp2px(5));
-	line_paint.setAntiAlias(true);
-	line_paint.setColor(0x90ff0000);
-	line_paint.setStyle(Paint.Style.STROKE);
-	line_paint.setStrokeJoin(Paint.Join.ROUND);
-}
+static final Paint line_paint = new Paint() {{
+	setStrokeWidth(dp2px(5));
+	setAntiAlias(true);
+	setColor(0x90ff0000);
+	setStyle(Paint.Style.STROKE);
+	setStrokeJoin(Paint.Join.ROUND);
+}};
 
-static final Paint text_paint = new Paint(); {
-	float size = text_paint.getTextSize();
-	text_paint.setTextSize( metrics.density * size * 1.0f );
-	text_paint.setTypeface(Typeface.create(text_paint.getTypeface(), Typeface.BOLD));
-	text_paint.setAntiAlias(true);
-	text_paint.setColor(0xff000000);
-}
+static final Paint text_paint = new Paint() {{
+	float size = getTextSize();
+	setTextSize( metrics.density * size * 1.0f );
+	setTypeface(Typeface.create(getTypeface(), Typeface.BOLD));
+	setAntiAlias(true);
+	setColor(0xff000000);
+}};
 
-static final Paint label_paint = new Paint(); {
-	text_paint.setAntiAlias(true);
-	label_paint.setColor(0xB0ffffff);
-}
+static final Paint label_paint = new Paint() {{
+	setAntiAlias(true);
+	setColor(0xB0ffffff);
+}};
 
 static final Paint circle_paint = new Paint() {{
 	this.setColor(0x90EBA05A);
