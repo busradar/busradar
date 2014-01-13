@@ -33,6 +33,6 @@ gtf: mmt_gtfs.zip
 clean:
 	make -C quadtree clean
 	make -C paths clean
-	rm -f *.json
+	rm -f combined-stops.json mobiletracker-weekendsandholidays.json mobiletracker-combined.json  paths.json mobiletracker-weekdays.json
 	rm -f db.sqlite
 	rm -rf gtf

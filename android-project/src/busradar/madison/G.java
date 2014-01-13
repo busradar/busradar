@@ -115,7 +115,7 @@ static void init(Main a)
 			int version = c.getInt(0);
 			c.close();
 			
-			if (version < 9) {
+			if (version < 10) {
 				//System.out.println("BusRadar: Updating DB");
 				throw new SQLiteException();
 			}

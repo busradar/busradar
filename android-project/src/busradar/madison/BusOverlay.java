@@ -21,7 +21,7 @@ import static busradar.madison.G.*;
 
 class BusOverlay extends com.google.android.maps.Overlay {
 
-final static int touch_allowance = 15; 
+final static int touch_allowance = 20; 
 GeoPoint selection;
 int zoom_level = 0;
 
@@ -61,9 +61,10 @@ static final Paint label_paint = new Paint() {{
 }};
 
 static final Paint circle_paint = new Paint() {{
-	this.setColor(0x90EBA05A);
+	this.setColor(0x90FFFF99);
 	this.setStrokeWidth(0);
 	this.setStyle(Style.FILL);
+	this.setAntiAlias(true);
 }};
 
 @Override public final void 
@@ -104,7 +105,7 @@ draw(Canvas canvas, MapView map, boolean shadow)
 		
 		proj.toPixels(selection, point);
 		//canvas.drawPoint(point.x, point.y, line_paint);
-		canvas.drawCircle(point.x, point.y, 10*metrics.density, circle_paint);
+		canvas.drawCircle(point.x, point.y, Math.round(touch_allowance*metrics.density), circle_paint);
 	}
 	zoom_level = x;
 	

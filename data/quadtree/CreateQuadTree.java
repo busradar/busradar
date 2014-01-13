@@ -50,8 +50,10 @@ public static void main(String[] args) throws Exception
                                     }
 				}
 				
-				if (!found)
-                                    throw new Error();
+				if (!found) {
+                                    System.err.printf("Route %s not found. Maybe update ../routes.json ?\nGoodbye...\n", route_name);
+                                    System.exit(1);
+                                }
 				
 				routes[i] = index;
 			}

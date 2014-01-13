@@ -23,9 +23,6 @@
     "name": "8",
     "color": "EBA05A"
 },{
-    "name": "9",
-    "color": "B19C4A"
-},{
     "name": "10",
     "color": "92923C"
 },{
@@ -83,6 +80,9 @@
     "name": "30",
     "color": "E4AD73"
 },{
+    "name": "31",
+    "color": "9a061a"
+},{
     "name": "32",
     "color": "3183AB"
 },{
@@ -91,6 +91,9 @@
 },{
     "name": "34",
     "color": "9A6B20"
+},{
+    "name": "35",
+    "color": "e5477f"
 },{
     "name": "36",
     "color": "6A7840"
