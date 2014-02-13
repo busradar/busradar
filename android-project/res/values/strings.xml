@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!--
 Copyright (C) 2010 Aleksandr Dobkin, Michael Choi, and Christopher Mills.
 
@@ -13,7 +14,6 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 -->
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Madison BusRadar</string>
 <string name="about"><![CDATA[<big><b>Madison BusRadar</b><br>
