@@ -13,24 +13,6 @@
             "routeno": "80", 
             "stopname": "LANGDON &amp; N PARK [WB#0010](Memorial Union)", 
             "url": "r=80&d=108&s=4033"
-        }, 
-        {
-            "direction": "Johnson", 
-            "routeno": "81", 
-            "stopname": "LANGDON &amp; N PARK [WB#0010](Memorial Union)", 
-            "url": "r=81&d=147&s=4033"
-        }, 
-        {
-            "direction": "Observatory", 
-            "routeno": "81", 
-            "stopname": "LANGDON &amp; N PARK [WB#0010](Memorial Union)", 
-            "url": "r=81&d=148&s=4033"
-        }, 
-        {
-            "direction": "Regent", 
-            "routeno": "82", 
-            "stopname": "LANGDON &amp; N PARK [WB#0010](Memorial Union)", 
-            "url": "r=82&d=152&s=4033"
         }
     ], 
     "0011": [
@@ -39,32 +21,6 @@
             "routeno": "80", 
             "stopname": "LANGDON &amp; N PARK [WB#0011](Arrive Memorial Union)", 
             "url": "r=80&d=125&s=4034"
-        }, 
-        {
-            "direction": "Johnson", 
-            "routeno": "81", 
-            "stopname": "LANGDON &amp; N PARK [WB#0011](Arrive Memorial Union)", 
-            "url": "r=81&d=147&s=4034"
-        }, 
-        {
-            "direction": "Observatory", 
-            "routeno": "81", 
-            "stopname": "LANGDON &amp; N PARK [WB#0011](Arrive Memorial Union)", 
-            "url": "r=81&d=148&s=4034"
-        }, 
-        {
-            "direction": "Regent", 
-            "routeno": "82", 
-            "stopname": "LANGDON &amp; N PARK [WB#0011](Arrive Memorial Union)", 
-            "url": "r=82&d=152&s=4034"
-        }
-    ], 
-    "0028": [
-        {
-            "direction": "Johnson", 
-            "routeno": "81", 
-            "stopname": "LANGDON &amp; WISCONSIN [WB#0028]", 
-            "url": "r=81&d=147&s=4035"
         }
     ], 
     "0039": [
@@ -81,32 +37,6 @@
             "routeno": "80", 
             "stopname": "LANGDON &amp; LAKE [WB#0040]", 
             "url": "r=80&d=125&s=743"
-        }, 
-        {
-            "direction": "Johnson", 
-            "routeno": "81", 
-            "stopname": "LANGDON &amp; LAKE [WB#0040]", 
-            "url": "r=81&d=147&s=743"
-        }, 
-        {
-            "direction": "Observatory", 
-            "routeno": "81", 
-            "stopname": "LANGDON &amp; LAKE [WB#0040]", 
-            "url": "r=81&d=148&s=743"
-        }, 
-        {
-            "direction": "Regent", 
-            "routeno": "82", 
-            "stopname": "LANGDON &amp; LAKE [WB#0040]", 
-            "url": "r=82&d=152&s=743"
-        }
-    ], 
-    "0044": [
-        {
-            "direction": "Johnson", 
-            "routeno": "81", 
-            "stopname": "LANGDON &amp; LAKELAWN [WB#0044]", 
-            "url": "r=81&d=147&s=4036"
         }
     ], 
     "0052": [
@@ -115,20 +45,6 @@
             "routeno": "80", 
             "stopname": "OBSERVATORY &amp; CHARTER [WB#0052]", 
             "url": "r=80&d=108&s=747"
-        }, 
-        {
-            "direction": "Observatory", 
-            "routeno": "81", 
-            "stopname": "OBSERVATORY &amp; CHARTER [WB#0052]", 
-            "url": "r=81&d=148&s=747"
-        }
-    ], 
-    "0056": [
-        {
-            "direction": "Observatory", 
-            "routeno": "81", 
-            "stopname": "OBSERVATORY &amp; LIZ WATERS [WB#0056]", 
-            "url": "r=81&d=148&s=750"
         }
     ], 
     "0060": [
@@ -137,12 +53,6 @@
             "routeno": "80", 
             "stopname": "OBSERVATORY &amp; BASCOM [WB#0060]", 
             "url": "r=80&d=108&s=751"
-        }, 
-        {
-            "direction": "Observatory", 
-            "routeno": "81", 
-            "stopname": "OBSERVATORY &amp; BASCOM [WB#0060]", 
-            "url": "r=81&d=148&s=751"
         }
     ], 
     "0061": [
@@ -153,26 +63,12 @@
             "url": "r=80&d=125&s=4037"
         }
     ], 
-    "0063": [
-        {
-            "direction": "Johnson", 
-            "routeno": "81", 
-            "stopname": "WISCONSIN &amp; GORHAM [NB#0063]", 
-            "url": "r=81&d=147&s=4038"
-        }
-    ], 
     "0073": [
         {
             "direction": "UW Union", 
             "routeno": "80", 
             "stopname": "DAYTON &amp; E CAMPUS MALL [EB#0073]", 
             "url": "r=80&d=125&s=3572"
-        }, 
-        {
-            "direction": "Regent", 
-            "routeno": "82", 
-            "stopname": "DAYTON &amp; E CAMPUS MALL [EB#0073]", 
-            "url": "r=82&d=152&s=3572"
         }
     ], 
     "0077": [
@@ -183,32 +79,12 @@
             "url": "r=80&d=125&s=4039"
         }
     ], 
-    "0087": [
-        {
-            "direction": "Regent", 
-            "routeno": "82", 
-            "stopname": "BROOM &amp; GORHAM [NB#0087]", 
-            "url": "r=82&d=152&s=755"
-        }
-    ], 
     "0091": [
         {
             "direction": "UW Union", 
             "routeno": "80", 
             "stopname": "LAKE &amp; STATE [NB#0091]", 
             "url": "r=80&d=125&s=3573"
-        }, 
-        {
-            "direction": "Observatory", 
-            "routeno": "81", 
-            "stopname": "LAKE &amp; STATE [NB#0091]", 
-            "url": "r=81&d=148&s=3573"
-        }, 
-        {
-            "direction": "Regent", 
-            "routeno": "82", 
-            "stopname": "LAKE &amp; STATE [NB#0091]", 
-            "url": "r=82&d=152&s=3573"
         }
     ], 
     "0100": [
@@ -247,12 +123,6 @@
             "routeno": "13", 
             "stopname": "UNIV AVE &amp; N PARK [WB#0100](University &amp; Park)", 
             "url": "r=13&d=123&s=760"
-        }, 
-        {
-            "direction": "Regent", 
-            "routeno": "82", 
-            "stopname": "UNIV AVE &amp; N PARK [WB#0100]", 
-            "url": "r=82&d=152&s=760"
         }
     ], 
     "0104": [
@@ -303,12 +173,6 @@
             "routeno": "13", 
             "stopname": "N PARK &amp; REGENT [NB#0115]", 
             "url": "r=13&d=123&s=765"
-        }, 
-        {
-            "direction": "Regent", 
-            "routeno": "82", 
-            "stopname": "N PARK &amp; REGENT [NB#0115]", 
-            "url": "r=82&d=152&s=765"
         }
     ], 
     "0121": [
@@ -425,20 +289,6 @@
             "routeno": "8", 
             "stopname": "UNIV AVE &amp; RANDALL [WB#0160]", 
             "url": "r=08&d=120&s=777"
-        }, 
-        {
-            "direction": "Regent", 
-            "routeno": "82", 
-            "stopname": "UNIV AVE &amp; RANDALL [WB#0160]", 
-            "url": "r=82&d=152&s=777"
-        }
-    ], 
-    "0161": [
-        {
-            "direction": "Regent", 
-            "routeno": "82", 
-            "stopname": "BROOM &amp; DOTY [NB#0161]", 
-            "url": "r=82&d=152&s=778"
         }
     ], 
     "0162": [
@@ -541,12 +391,6 @@
             "routeno": "8", 
             "stopname": "UNIV AVE &amp; ORCHARD [WB#0178]", 
             "url": "r=08&d=120&s=787"
-        }, 
-        {
-            "direction": "Regent", 
-            "routeno": "82", 
-            "stopname": "UNIV AVE &amp; ORCHARD [WB#0178]", 
-            "url": "r=82&d=152&s=787"
         }
     ], 
     "0180": [
@@ -673,12 +517,6 @@
             "routeno": "8", 
             "stopname": "UNIV AVE &amp; MILLS [WB#0234]", 
             "url": "r=08&d=120&s=803"
-        }, 
-        {
-            "direction": "Regent", 
-            "routeno": "82", 
-            "stopname": "UNIV AVE &amp; MILLS [WB#0234]", 
-            "url": "r=82&d=152&s=803"
         }
     ], 
     "0235": [
@@ -855,14 +693,6 @@
             "url": "r=04&d=115&s=818"
         }
     ], 
-    "0313": [
-        {
-            "direction": "Regent", 
-            "routeno": "82", 
-            "stopname": "WILSON &amp; BASSETT [EB#0313]", 
-            "url": "r=82&d=152&s=820"
-        }
-    ], 
     "0320": [
         {
             "direction": "STP", 
@@ -883,12 +713,6 @@
             "routeno": "7", 
             "stopname": "REGENT &amp; MILLS [EB#0327]", 
             "url": "r=07&d=109&s=822"
-        }, 
-        {
-            "direction": "Regent", 
-            "routeno": "82", 
-            "stopname": "REGENT &amp; MILLS [EB#0327]", 
-            "url": "r=82&d=152&s=822"
         }
     ], 
     "0336": [
@@ -1071,12 +895,6 @@
             "routeno": "8", 
             "stopname": "GORHAM &amp; BASSETT [WB#0428]", 
             "url": "r=08&d=120&s=3456"
-        }, 
-        {
-            "direction": "Regent", 
-            "routeno": "82", 
-            "stopname": "GORHAM &amp; BASSETT [WB#0428]", 
-            "url": "r=82&d=152&s=3456"
         }
     ], 
     "0435": [
@@ -1097,12 +915,6 @@
             "routeno": "8", 
             "stopname": "W JOHNSON &amp; LAKE [EB#0435]", 
             "url": "r=08&d=102&s=841"
-        }, 
-        {
-            "direction": "Johnson", 
-            "routeno": "81", 
-            "stopname": "W JOHNSON &amp; LAKE [EB#0435]", 
-            "url": "r=81&d=147&s=841"
         }
     ], 
     "0438": [
@@ -1111,12 +923,6 @@
             "routeno": "80", 
             "stopname": "LINDEN &amp; CHARTER [EB#0438]", 
             "url": "r=80&d=125&s=842"
-        }, 
-        {
-            "direction": "Observatory", 
-            "routeno": "81", 
-            "stopname": "LINDEN &amp; CHARTER [EB#0438]", 
-            "url": "r=81&d=148&s=842"
         }
     ], 
     "0441": [
@@ -1147,14 +953,6 @@
             "routeno": "13", 
             "stopname": "N RUSK &amp; SUNNYMEADE [SB#0448]", 
             "url": "r=13&d=123&s=845"
-        }
-    ], 
-    "0454": [
-        {
-            "direction": "Regent", 
-            "routeno": "82", 
-            "stopname": "BREESE &amp; HOYT [SB#0454]", 
-            "url": "r=82&d=152&s=846"
         }
     ], 
     "0455": [
@@ -1193,18 +991,6 @@
             "routeno": "13", 
             "stopname": "W JOHNSON &amp; N PARK [EB#0455]", 
             "url": "r=13&d=123&s=847"
-        }, 
-        {
-            "direction": "Johnson", 
-            "routeno": "81", 
-            "stopname": "W JOHNSON &amp; N PARK [EB#0455]", 
-            "url": "r=81&d=147&s=847"
-        }, 
-        {
-            "direction": "Observatory", 
-            "routeno": "81", 
-            "stopname": "W JOHNSON &amp; N PARK [EB#0455]", 
-            "url": "r=81&d=148&s=847"
         }
     ], 
     "0456": [
@@ -1281,12 +1067,6 @@
             "routeno": "13", 
             "stopname": "N PARK &amp; SPRING [NB#0483]", 
             "url": "r=13&d=123&s=857"
-        }, 
-        {
-            "direction": "Regent", 
-            "routeno": "82", 
-            "stopname": "N PARK &amp; SPRING [NB#0483]", 
-            "url": "r=82&d=152&s=857"
         }
     ], 
     "0488": [
@@ -1295,14 +1075,6 @@
             "routeno": "80", 
             "stopname": "LINDEN &amp; CHARTER [WB#0488]", 
             "url": "r=80&d=108&s=859"
-        }
-    ], 
-    "0490": [
-        {
-            "direction": "Observatory", 
-            "routeno": "81", 
-            "stopname": "CHARTER &amp; W JOHNSON [SB#0490]", 
-            "url": "r=81&d=148&s=3798"
         }
     ], 
     "0499": [
@@ -1377,14 +1149,6 @@
             "url": "r=13&d=123&s=3934"
         }
     ], 
-    "0520": [
-        {
-            "direction": "Regent", 
-            "routeno": "82", 
-            "stopname": "BASSETT &amp; DOTY [SB#0520]", 
-            "url": "r=82&d=152&s=865"
-        }
-    ], 
     "0522": [
         {
             "direction": "UW", 
@@ -1421,12 +1185,6 @@
             "routeno": "7", 
             "stopname": "REGENT &amp; BREESE [EB#0533]", 
             "url": "r=07&d=109&s=870"
-        }, 
-        {
-            "direction": "Regent", 
-            "routeno": "82", 
-            "stopname": "REGENT &amp; BREESE [EB#0533](Regent &amp; Breese)", 
-            "url": "r=82&d=152&s=870"
         }
     ], 
     "0536": [
@@ -1449,20 +1207,6 @@
             "routeno": "7", 
             "stopname": "N PARK &amp; UNIV AVE [SB#0538](University &amp; Park)", 
             "url": "r=07&d=131&s=872"
-        }, 
-        {
-            "direction": "Johnson", 
-            "routeno": "81", 
-            "stopname": "N PARK &amp; UNIV AVE [SB#0538]", 
-            "url": "r=81&d=147&s=872"
-        }
-    ], 
-    "0542": [
-        {
-            "direction": "Regent", 
-            "routeno": "82", 
-            "stopname": "BREESE &amp; UNIV AVE [SB#0542]", 
-            "url": "r=82&d=152&s=873"
         }
     ], 
     "0546": [
@@ -1519,20 +1263,6 @@
             "routeno": "8", 
             "stopname": "W JOHNSON &amp; BASSETT [EB#0555]", 
             "url": "r=08&d=102&s=876"
-        }, 
-        {
-            "direction": "Johnson", 
-            "routeno": "81", 
-            "stopname": "W JOHNSON &amp; BASSETT [EB#0555]", 
-            "url": "r=81&d=147&s=876"
-        }
-    ], 
-    "0558": [
-        {
-            "direction": "Regent", 
-            "routeno": "82", 
-            "stopname": "BEDFORD &amp; MIFFLIN [SB#0558]", 
-            "url": "r=82&d=152&s=877"
         }
     ], 
     "0561": [
@@ -1553,20 +1283,6 @@
             "routeno": "13", 
             "stopname": "N PARK &amp; DAYTON [NB#0561]", 
             "url": "r=13&d=123&s=879"
-        }, 
-        {
-            "direction": "Regent", 
-            "routeno": "82", 
-            "stopname": "N PARK &amp; DAYTON [NB#0561]", 
-            "url": "r=82&d=152&s=879"
-        }
-    ], 
-    "0567": [
-        {
-            "direction": "Johnson", 
-            "routeno": "81", 
-            "stopname": "W JOHNSON &amp; CARROLL [EB#0567]", 
-            "url": "r=81&d=147&s=881"
         }
     ], 
     "0568": [
@@ -1587,12 +1303,6 @@
             "routeno": "8", 
             "stopname": "UNIV AVE &amp; FRANCES [WB#0568]", 
             "url": "r=08&d=120&s=882"
-        }, 
-        {
-            "direction": "Regent", 
-            "routeno": "82", 
-            "stopname": "UNIV AVE &amp; FRANCES [WB#0568]", 
-            "url": "r=82&d=152&s=882"
         }
     ], 
     "0573": [
@@ -1601,12 +1311,6 @@
             "routeno": "80", 
             "stopname": "LINDEN &amp; HENRY MALL [EB#0573]", 
             "url": "r=80&d=125&s=883"
-        }, 
-        {
-            "direction": "Observatory", 
-            "routeno": "81", 
-            "stopname": "LINDEN &amp; HENRY MALL [EB#0573]", 
-            "url": "r=81&d=148&s=883"
         }
     ], 
     "0581": [
@@ -1641,12 +1345,6 @@
             "routeno": "7", 
             "stopname": "REGENT &amp; ORCHARD [EB#0583]", 
             "url": "r=07&d=109&s=887"
-        }, 
-        {
-            "direction": "Regent", 
-            "routeno": "82", 
-            "stopname": "REGENT &amp; ORCHARD [EB#0583]", 
-            "url": "r=82&d=152&s=887"
         }
     ], 
     "0588": [
@@ -1669,22 +1367,6 @@
             "routeno": "40", 
             "stopname": "BADGER &amp; CYPRESS [WB#0590]", 
             "url": "r=40&d=155&s=889"
-        }
-    ], 
-    "0593": [
-        {
-            "direction": "Regent", 
-            "routeno": "82", 
-            "stopname": "BROOM &amp; DAYTON [NB#0593]", 
-            "url": "r=82&d=152&s=891"
-        }
-    ], 
-    "0597": [
-        {
-            "direction": "Johnson", 
-            "routeno": "81", 
-            "stopname": "E JOHNSON &amp; PINCKNEY [EB#0597]", 
-            "url": "r=81&d=147&s=892"
         }
     ], 
     "0602": [
@@ -1817,20 +1499,6 @@
             "routeno": "80", 
             "stopname": "CHARTER &amp; UNIV AVE [SB#0706]", 
             "url": "r=80&d=125&s=909"
-        }, 
-        {
-            "direction": "Observatory", 
-            "routeno": "81", 
-            "stopname": "CHARTER &amp; UNIV AVE [SB#0706]", 
-            "url": "r=81&d=148&s=909"
-        }
-    ], 
-    "0710": [
-        {
-            "direction": "Regent", 
-            "routeno": "82", 
-            "stopname": "BASSETT &amp; WEST WASH [SB#0710]", 
-            "url": "r=82&d=152&s=910"
         }
     ], 
     "0715": [
@@ -1867,12 +1535,6 @@
             "routeno": "8", 
             "stopname": "W JOHNSON &amp; MILLS [EB#0741]", 
             "url": "r=08&d=102&s=914"
-        }, 
-        {
-            "direction": "Observatory", 
-            "routeno": "81", 
-            "stopname": "W JOHNSON &amp; MILLS [EB#0741]", 
-            "url": "r=81&d=148&s=914"
         }
     ], 
     "0745": [
@@ -1881,14 +1543,6 @@
             "routeno": "5", 
             "stopname": "S PARK &amp; WINGRA [NB#0745]", 
             "url": "r=05&d=109&s=915"
-        }
-    ], 
-    "0758": [
-        {
-            "direction": "Johnson", 
-            "routeno": "81", 
-            "stopname": "GORHAM &amp; PINCKNEY [WB#0758]", 
-            "url": "r=81&d=147&s=918"
         }
     ], 
     "0765": [
@@ -1909,12 +1563,6 @@
             "routeno": "80", 
             "stopname": "LAKE &amp; UNIV AVE [NB#0765]", 
             "url": "r=80&d=125&s=919"
-        }, 
-        {
-            "direction": "Observatory", 
-            "routeno": "81", 
-            "stopname": "LAKE &amp; UNIV AVE [NB#0765]", 
-            "url": "r=81&d=148&s=919"
         }
     ], 
     "0768": [
@@ -2031,12 +1679,6 @@
             "routeno": "8", 
             "stopname": "W JOHNSON &amp; BROOM [EB#0839]", 
             "url": "r=08&d=102&s=933"
-        }, 
-        {
-            "direction": "Johnson", 
-            "routeno": "81", 
-            "stopname": "W JOHNSON &amp; BROOM [EB#0839]", 
-            "url": "r=81&d=147&s=933"
         }
     ], 
     "0840": [
@@ -2075,14 +1717,6 @@
             "routeno": "4", 
             "stopname": "FISH HATCHERY &amp; PLAENERT [NB#0845]", 
             "url": "r=04&d=115&s=936"
-        }
-    ], 
-    "0853": [
-        {
-            "direction": "Regent", 
-            "routeno": "82", 
-            "stopname": "DAYTON &amp; MARION [EB#0853]", 
-            "url": "r=82&d=152&s=937"
         }
     ], 
     "0862": [
@@ -2259,12 +1893,6 @@
             "routeno": "8", 
             "stopname": "W JOHNSON &amp; FRANCES [EB#0941]", 
             "url": "r=08&d=102&s=954"
-        }, 
-        {
-            "direction": "Johnson", 
-            "routeno": "81", 
-            "stopname": "W JOHNSON &amp; FRANCES [EB#0941]", 
-            "url": "r=81&d=147&s=954"
         }
     ], 
     "0962": [
@@ -2281,26 +1909,12 @@
             "url": "r=07&d=131&s=956"
         }
     ], 
-    "0965": [
-        {
-            "direction": "Regent", 
-            "routeno": "82", 
-            "stopname": "BROOM &amp; WEST WASH [NB#0965]", 
-            "url": "r=82&d=152&s=957"
-        }
-    ], 
     "0967": [
         {
             "direction": "ETP", 
             "routeno": "5", 
             "stopname": "WEST WASH &amp; BEDFORD [EB#0967]", 
             "url": "r=05&d=109&s=958"
-        }, 
-        {
-            "direction": "Regent", 
-            "routeno": "82", 
-            "stopname": "WEST WASH &amp; BEDFORD [EB#0967](W Washington &amp; Bedford)", 
-            "url": "r=82&d=152&s=958"
         }
     ], 
     "0971": [
@@ -2315,12 +1929,6 @@
             "routeno": "7", 
             "stopname": "REGENT &amp; RANDALL [EB#0971]", 
             "url": "r=07&d=109&s=960"
-        }, 
-        {
-            "direction": "Regent", 
-            "routeno": "82", 
-            "stopname": "REGENT &amp; RANDALL [EB#0971]", 
-            "url": "r=82&d=152&s=960"
         }
     ], 
     "0989": [
@@ -3157,20 +2765,20 @@
             "url": "r=06&d=131&s=3597"
         }
     ], 
+    "1353": [
+        {
+            "direction": "ETP", 
+            "routeno": "7", 
+            "stopname": "FAIR OAKS &amp; EMMET RR [NB#1353]", 
+            "url": "r=07&d=109&s=4165"
+        }
+    ], 
     "1354": [
         {
             "direction": "WTP", 
             "routeno": "2", 
             "stopname": "SHERMAN &amp; THORNTON [WB#1354]", 
             "url": "r=02&d=131&s=1046"
-        }
-    ], 
-    "1358": [
-        {
-            "direction": "Johnson", 
-            "routeno": "81", 
-            "stopname": "GORHAM &amp; HANCOCK [WB#1358](Gorham &amp; Hancock)", 
-            "url": "r=81&d=147&s=1048"
         }
     ], 
     "1379": [
@@ -3671,14 +3279,6 @@
             "url": "r=07&d=109&s=3603"
         }
     ], 
-    "1593": [
-        {
-            "direction": "Johnson", 
-            "routeno": "81", 
-            "stopname": "FRANKLIN &amp; E JOHNSON [NB#1593]", 
-            "url": "r=81&d=147&s=4040"
-        }
-    ], 
     "1595": [
         {
             "direction": "NTP", 
@@ -3745,6 +3345,14 @@
             "url": "r=05&d=121&s=1123"
         }
     ], 
+    "1640": [
+        {
+            "direction": "WTP", 
+            "routeno": "7", 
+            "stopname": "FAIR OAKS &amp; EMMET RR [SB#1640]", 
+            "url": "r=07&d=131&s=4166"
+        }
+    ], 
     "1643": [
         {
             "direction": "ETP", 
@@ -3773,20 +3381,6 @@
             "routeno": "6", 
             "stopname": "EAST WASH &amp; INGERSOLL [WB#1650](E Washington &amp; Ingersoll)", 
             "url": "r=06&d=131&s=1126"
-        }
-    ], 
-    "1657": [
-        {
-            "direction": "NTP", 
-            "routeno": "4", 
-            "stopname": "BALDWIN &amp; WILLIAMSON [NB#1657]", 
-            "url": "r=04&d=115&s=1128"
-        }, 
-        {
-            "direction": "ETP", 
-            "routeno": "7", 
-            "stopname": "BALDWIN &amp; WILLIAMSON [NB#1657]", 
-            "url": "r=07&d=109&s=1128"
         }
     ], 
     "1658": [
@@ -4635,14 +4229,6 @@
             "url": "r=05&d=121&s=1223"
         }
     ], 
-    "2003": [
-        {
-            "direction": "Observatory", 
-            "routeno": "81", 
-            "stopname": "LINDEN &amp; BABCOCK [EB#2003]", 
-            "url": "r=81&d=148&s=3952"
-        }
-    ], 
     "2007": [
         {
             "direction": "UW Union", 
@@ -4787,14 +4373,6 @@
             "routeno": "80", 
             "stopname": "LAKE MENDOTA &amp; LOT P [NB#2061]", 
             "url": "r=80&d=125&s=1235"
-        }
-    ], 
-    "2064": [
-        {
-            "direction": "Observatory", 
-            "routeno": "81", 
-            "stopname": "ELM &amp; OBSERVATORY [SB#2064](Observatory &amp; Elm)", 
-            "url": "r=81&d=148&s=3953"
         }
     ], 
     "2071": [
@@ -7119,12 +6697,6 @@
             "routeno": "80", 
             "stopname": "OBSERVATORY &amp; BABCOCK [WB#2996]", 
             "url": "r=80&d=108&s=1530"
-        }, 
-        {
-            "direction": "Observatory", 
-            "routeno": "81", 
-            "stopname": "OBSERVATORY &amp; BABCOCK [WB#2996]", 
-            "url": "r=81&d=148&s=1530"
         }
     ], 
     "2998": [

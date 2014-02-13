@@ -1,33 +1,34 @@
 all: quadtree/stops.bin paths/route_points.bin db.sqlite
 
-quadtree/stops.bin: combined-stops.json
+quadtree/stops.bin: combined-stops.json UPDATE
 	make -C quadtree
 
-paths/route_points.bin: combined-stops.json paths.json
+paths/route_points.bin: combined-stops.json paths.json UPDATE
 	make -C paths
 	
-paths.json:
+paths.json: UPDATE
 	python get-paths.py
 
-db.sqlite: combined-stops.json make-sqlite.py
+db.sqlite: combined-stops.json make-sqlite.py UPDATE
 	python make-sqlite.py
 
-combined-stops.json: mobiletracker-combined.json gtf
+combined-stops.json: mobiletracker-combined.json gtf UPDATE
 	python stops-from-gtf.py
 
-mobiletracker-weekdays.json:
+mobiletracker-weekdays.json: UPDATE
 	python get-mobiletracker.py
 
-mobiletracker-weekendsandholidays.json:
+mobiletracker-weekendsandholidays.json: UPDATE
 	python get-mobiletracker.py
 	
-mobiletracker-combined.json: mobiletracker-weekdays.json mobiletracker-weekendsandholidays.json
+mobiletracker-combined.json: mobiletracker-weekdays.json mobiletracker-weekendsandholidays.json UPDATE
 	python combine-mobiletracker.py
 
-mmt_gtfs.zip:
-	wget http://www.cityofmadison.com/metro/gtfs/mmt_gtfs.zip 
+mmt_gtfs.zip: UPDATE
+	curl http://www.cityofmadison.com/metro/gtfs/mmt_gtfs.zip > mmt_gtfs.zip
 
-gtf: mmt_gtfs.zip
+gtf: mmt_gtfs.zip UPDATE
+	rm -rf gtf
 	unzip -d gtf mmt_gtfs.zip
 
 clean:
@@ -36,3 +37,4 @@ clean:
 	rm -f combined-stops.json mobiletracker-weekendsandholidays.json mobiletracker-combined.json  paths.json mobiletracker-weekdays.json
 	rm -f db.sqlite
 	rm -rf gtf
+	rm -f mmt_gtfs.zip
