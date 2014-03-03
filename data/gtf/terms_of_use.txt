@@ -1,0 +1,47 @@
+City of Madison, Metro Transit
+Transit Data Developer License Agreement and Terms of Use
+
+City of Madison, Metro Transit, (collectively "City"), owns and maintains certain electronic data, including but not limited to, Metro Transit Tracker live tracking data and scheduled transit service data (the "Data"). City hereby grants you (“Licensee”) non-exclusive, non-transferable, limited and revocable rights to use, reproduce, and redistribute the Data subject to the following terms and conditions:
+
+Terms of Use
+By by downloading and/or using the Data, Licensee agrees to be bound by all of the terms and conditions set forth in this Transit Data Developer License Agreement and Terms of Use (the “Agreement”).
+IF YOU (LICENSEE) DO NOT AGREE TO BE BOUND BY THE TERMS OF THIS AGREEMENT, DO NOT DOWNLOAD OR USE THE DATA.
+
+Limited License
+This License is limited to uses that utilize the Data for assisting mass transit riders or in furtherance of promoting public transportation.
+
+Ownership of Data
+All right, title and interest to and in any copyrights, patents or other intellectual property rights to and in the Data and/or embodied in the Data, including but not limited to, any new or useful art, discovery, improvement, technical development or invention, whether or not patentable, and all related know-how, designs, mask works, trademarks, formulae, processes, trade secrets, ideas, artworks, software or other copyrightable or patentable work, are City's sole and exclusive property, except for any pre-existing rights belonging to a third party, which remain solely and exclusively the property of that party. For purposes of this Agreement, Data includes any data and/or information derived from any electronically transferred data and/or information received by Licensee from City.
+
+Identification of Data
+Licensee shall have the option, but not the obligation, to credit City for the Data. If Licensee so chooses, the credit line should be placed as close to the actual Data information as reasonably possible. Any such credit line shall read: “Data provided under license granted by City of Madison, WI, Metro Transit.” 
+
+Disclaimer of Warranties
+Licensee agrees that the Data is provided on an “as is” and “as available basis.” The burden of determining fitness for use rests entirely on Licensee. CITY EXPRESSLY DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, COMPLETENESS OR NON-INFRINGEMENT. Licensee agrees its use of the Data is at Licensee’s sole risk. 
+
+No Guarantee or Warranty of Availability of Data
+Licensee agrees that the Data is provided on an “as is” and “as available basis.” The burden of determining fitness for use rests entirely on Licensee. CITY EXPRESSLY DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, COMPLETENESS OR NON-INFRINGEMENT. Licensee agrees its use of the Data is at Licensee’s sole risk. 
+
+Indemnification
+LICENSEE AGREES TO INDEMNIFY, DEFEND AND HOLD HARMLESS CITY, AND ITS OFFICERS, OFFICIALS, AGENTS AND EMPLOYEES FROM AND AGAINST ALL FINES, SUITS, PROCEEDINGS, CLAIMS, CAUSES OF ACTION, DEMANDS, DAMAGES, LIABILITIES AND EXPENSES (INCLUDING LIABILITY COSTS AND ATTORNEY FEES) OF ANY KIND OR OF ANY NATURE WHATSOEVER ARISING OUT OF, IN CONNECTION WITH, CAUSED BY OR RESULTING FROM LICENSEE’S USE OF THE DATA OR PRODUCTS DERIVED THEREFROM.
+
+Limitation on Liability
+LICENSEE AGREES THAT CITY, AND ITS EMPLOYEES, OFFICERS, OFFICIALS AND AGENTS WILL NOT BE LIABLE FOR DAMAGES OF ANY KIND ARISING FROM THE ACCURACY OF OR LICENSEE’S USE OF THE DATA, INCLUDING BUT NOT LIMITED TO, DIRECT, INDIRECT, INCIDENTAL, PUNITIVE AND CONSEQUENTIAL DAMAGES REGARDLESS OF WHETHER SUCH DAMAGES ARISE BASED UPON CONTRACT, NEGLIGENCE, STRICT LIABILITY IN TORT, WARRANTY OR OTHER LEGAL THEORY.
+
+Severability
+To the extent a court of competent jurisdiction determines that any part or provision of this Agreement is unenforceable as a matter of law, such part or provision of this Agreement will be deemed severable and the remainder of this Agreement shall survive and remain enforceable.
+
+Applicable Law and Forum
+This Agreement shall be governed by and construed, interpreted and enforced in accordance with the laws of the State of Wisconsin. The parties agree, for any claim or suit or other dispute relating to this Agreement that cannot be mutually resolved, the venue shall be a court of competent jurisdiction within the State of Wisconsin and the parties agree to submit themselves to the jurisdiction of said court, to the exclusion of any other judicial district that may have jurisdiction over such a dispute according to any law. Any use made of the Data shall be deemed made in the State of Wisconsin, USA, regardless of the location of the Licensee.
+
+Entire Agreement
+This Agreement constitutes the complete and exclusive agreement between City and Licensee with respect to the subject matter hereof and supersedes all prior oral or written understandings, communications, or agreements not specifically incorporated herein.
+
+No Waiver
+Waiver by City of strict performances of any provision of this Agreement will not be a waiver of or prejudice City's right to require strict performance of the same provision in the future or of any other provision of this Agreement.
+
+Third Party Beneficiaries and Joint Enterprise Disclaimer
+No provision of this Agreement, nor any act of the Licensee and/or City shall be deemed or construed by either of the parties, or by third persons, to create any relationship of third party beneficiary, or of principal or agent, or of limited or general partnership, or of joint venture, or of any association or relationship involving the Licensee and City.
+
+Termination
+City reserves the right to modify, terminate or revoke this Agreement at any time.

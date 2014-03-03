@@ -43,7 +43,7 @@
         "dir": "W", 
         "lat": "43.075933", 
         "lon": "-89.399932", 
-        "name": "LANGDON: ARRIVALs ONLY (WB)", 
+        "name": "LANGDON: ARRIVALS ONLY (WB)", 
         "routes": [
             {
                 "direction": "UW Union", 
@@ -13698,6 +13698,13 @@
             }
         ]
     }, 
+    "1572": {
+        "dir": "W", 
+        "lat": "43.111635", 
+        "lon": "-89.363421", 
+        "name": "ROTH & N SHERMAN (WB)", 
+        "routes": {}
+    }, 
     "1575": {
         "dir": "N", 
         "lat": "43.094228", 
@@ -21688,8 +21695,8 @@
     }, 
     "2376": {
         "dir": "W", 
-        "lat": "43.073002", 
-        "lon": "-89.463929", 
+        "lat": "43.073046", 
+        "lon": "-89.463780", 
         "name": "SHEBOYGAN & EAU CLAIRE (WB)", 
         "routes": [
             {
@@ -33973,15 +33980,15 @@
     }, 
     "5000": {
         "dir": "?", 
-        "lat": "43.112847", 
-        "lon": "-89.358591", 
+        "lat": "43.112945", 
+        "lon": "-89.358504", 
         "name": "NORTH TRANSFER POINT", 
         "routes": {}
     }, 
     "5100": {
         "dir": "S", 
-        "lat": "43.112847", 
-        "lon": "-89.358591", 
+        "lat": "43.112654", 
+        "lon": "-89.358504", 
         "name": "NORTH TRANSFER POINT", 
         "routes": [
             {
@@ -34048,8 +34055,8 @@
     }, 
     "5101": {
         "dir": "S", 
-        "lat": "43.112847", 
-        "lon": "-89.358448", 
+        "lat": "43.113236", 
+        "lon": "-89.358504", 
         "name": "NORTH TRANSFER: ARRIVALS ONLY", 
         "routes": [
             {
@@ -36480,8 +36487,8 @@
     }, 
     "6000": {
         "dir": "?", 
-        "lat": "43.053811", 
-        "lon": "-89.475418", 
+        "lat": "43.053874", 
+        "lon": "-89.475252", 
         "name": "WEST TRANSFER POINT", 
         "routes": {}
     }, 
@@ -43462,8 +43469,8 @@
     }, 
     "7000": {
         "dir": "?", 
-        "lat": "43.098545", 
-        "lon": "-89.322482", 
+        "lat": "43.098601", 
+        "lon": "-89.322167", 
         "name": "EAST TRANSFER POINT", 
         "routes": {}
     }, 
