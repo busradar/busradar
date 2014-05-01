@@ -76,6 +76,7 @@ make_layout()
 						cur_button = this;
 					}
 					else {
+						//setBackgroundColor(0xff000000 | G.route_points[ix].color);
 						setBackgroundColor(0x90000000 | G.route_points[ix].color);
 						setTextSize(TypedValue.COMPLEX_UNIT_PX, text_size);
 					}

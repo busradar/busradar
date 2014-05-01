@@ -28,11 +28,14 @@ import android.graphics.Paint.Style;
 import android.graphics.drawable.Drawable;
 import android.location.Location;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.google.android.maps.GeoPoint;
 import com.google.android.maps.MapActivity;
@@ -193,12 +196,34 @@ public class Main extends MapActivity
         map_view.getOverlays().add(G.location_overlay);
         
         map_view.getOverlays().add(G.bus_overlay=new BusOverlay());
+        map_view.setId(1);
+        route_bar=new RouteBar();
+        route_bar.setId(2);
+//        setContentView(new LinearLayout(this) {{
+//        	setOrientation(LinearLayout.VERTICAL);
+//        	setGravity(Gravity.BOTTOM);
+//        	
+//        	addView(route_bar);
+//        	addView(new LinearLayout(Main.this) {{
+//        		addView(new Button(Main.this));
+//        	}});
+        	
+        	
+//        }});
+        
+        final Button btn = new Button(Main.this);
+        btn.setId(1);
         
  		setContentView(new RelativeLayout(this) {{
- 			addView(map_view);
- 			addView(route_bar=new RouteBar(), new RelativeLayout.LayoutParams(android.view.ViewGroup.LayoutParams.WRAP_CONTENT, android.view.ViewGroup.LayoutParams.WRAP_CONTENT) {{
- 			addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
- 		}});
+ 			addView(new TextView(Main.this) {{
+ 				setBackgroundColor(0xffffffff);
+ 			}}, new RelativeLayout.LayoutParams(android.view.ViewGroup.LayoutParams.FILL_PARENT, android.view.ViewGroup.LayoutParams.FILL_PARENT));
+ 			addView(map_view, new RelativeLayout.LayoutParams(android.view.ViewGroup.LayoutParams.FILL_PARENT, android.view.ViewGroup.LayoutParams.FILL_PARENT) {{
+ 				addRule(RelativeLayout.ABOVE, 2);
+ 			}});
+ 			addView(route_bar, new RelativeLayout.LayoutParams(android.view.ViewGroup.LayoutParams.WRAP_CONTENT, android.view.ViewGroup.LayoutParams.WRAP_CONTENT) {{
+ 				addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
+ 			}});
  			addView(map_view.getZoomControls(), new RelativeLayout.LayoutParams(android.view.ViewGroup.LayoutParams.WRAP_CONTENT, android.view.ViewGroup.LayoutParams.WRAP_CONTENT) {{
  				//addRule(RelativeLayout.ABOVE, routes_id);
  				addRule(RelativeLayout.ALIGN_TOP);
