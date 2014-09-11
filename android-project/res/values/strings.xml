@@ -18,7 +18,7 @@ GNU General Public License for more details.
     <string name="app_name">Madison BusRadar</string>
 <string name="about"><![CDATA[<big><b>Madison BusRadar</b><br>
 	$VERSION$</big><br>
-	Database version $DB_VERSION$
+	Database version $DB_VERSION$, accurate as of $DB_NAME$.
 	
 	<p>Copyright © 2010–2014 Aleksandr Dobkin, Michael Choi, and Christopher Mills.
         <p>BusRadar is free software; you can redistribute it and/or modify
@@ -29,7 +29,7 @@ GNU General Public License for more details.
         but WITHOUT ANY WARRANTY; without even the implied warranty of
         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
         GNU General Public License for more details.
-	<p>Route paths and bus stop locations are accurate as of February 2014. Bus arrival estimates and bus locations are obtained on demand from the <a href="http://www.cityofmadison.com/metro/">Madison Metro</a> website. We assume no responsibility for this information.
+	<p>Route paths and bus stop locations are accurate as of $DB_NAME$. Bus arrival estimates and bus locations are obtained on demand from the <a href="http://www.cityofmadison.com/metro/">Madison Metro</a> website. We assume no responsibility for this information.
 	<p>The Priority R-Tree implementation is based on <a href="http://www.khelekore.org/prtree/">PRTree</a> © 2008 Robert Olofsson.
 	<p>BusRadar is in not produced by or in any way affiliated with <a href="http://www.cityofmadison.com/metro/">Madison Metro Transit</a>.
 	<p>Thank you, and we hope that you enjoy your BusRadar experience! 

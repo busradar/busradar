@@ -73,6 +73,7 @@ static boolean first_time = true;
     
 static boolean inited = false;
 static int db_version = -1;
+static String db_name = "undefined";
 
 
 static void init(Main a) 
@@ -124,16 +125,18 @@ static void init(Main a)
 		
 		try {
 			db = SQLiteDatabase.openDatabase(path, null, SQLiteDatabase.OPEN_READONLY);
-			Cursor c = db.rawQuery("SELECT version FROM db_version", null);
+			Cursor c = db.rawQuery("SELECT version, name FROM db_version", null);
 			c.moveToFirst();
 			int version = c.getInt(0);
+			String name = c.getString(1);
 			c.close();
 			
-			if (version < 11) {
+			if (version < 12) {
 				//System.out.println("BusRadar: Updating DB");
 				throw new SQLiteException();
 			}
 			G.db_version = version;
+			G.db_name = name;
 		}
 		catch (SQLiteException e)
 		{
@@ -158,12 +161,14 @@ static void init(Main a)
 	    	
 			db = SQLiteDatabase.openDatabase(path, null, SQLiteDatabase.OPEN_READONLY);
 			
-			Cursor c = db.rawQuery("SELECT version FROM db_version", null);
+			Cursor c = db.rawQuery("SELECT version, name FROM db_version", null);
 			c.moveToFirst();
 			int version = c.getInt(0);
+			String name = c.getString(1);
 			c.close();
 			
 			G.db_version = version;
+			G.db_name = name;
 
 		}
 	

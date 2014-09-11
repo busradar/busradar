@@ -59,7 +59,8 @@ public class AboutDialog extends Dialog {
 		        		version_string = "??";
 		        	}
 		        	String text = ctx.getString(R.string.about).replace("$VERSION$", version_string)
-		        			                                   .replace("$DB_VERSION$", G.db_version + "");
+		        			                                   .replace("$DB_VERSION$", G.db_version + "")
+		        			                                   .replace("$DB_NAME$", G.db_name);
 		        			
 		        	setText(Html.fromHtml(text));
 		        	
