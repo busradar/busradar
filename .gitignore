@@ -4,3 +4,5 @@
 /android-project/ant.properties
 /android-project/local.properties
 *.kate-swp
+*.class
+*.pyc

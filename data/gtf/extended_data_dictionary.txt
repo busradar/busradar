@@ -43,13 +43,17 @@ trips.txt:direction_name,Abbreviated route direction name (similar to paired val
 
 trips.txt:shape_code,Field duplicated from shapes.txt file. Matched to shape_id key field.
 
+trips.txt:trip_sort,Trip scheduled departure time in seconds past midnight format (43200 SPM equaling 12 noon).
+
 trips.txt:trip_type,Text character flag to identify specific trip characteristics.
-D,Delay between stop_times.txt:arrival_time and stop_times.txt:departure_time values.
-F,Friday or Saturday service trip on a combined weekday schedule only operates on Friday service dates.
-H,Saturday service trip on a combined weekend/holiday schedule does not operate on Holiday service dates.
-L,Limited stops along trip.
-R,Saturday service trip on a combined weekend/holiday schedule does not operate on Recess service dates.
-U,Saturday service trip on a combined weekend/holiday schedule does not operate on Sunday, Holiday and/or Recess service dates.
+C,First scheduled trip serving a complete pattern of stops from earliest route origin to furthest route desintation [incomplete data].
+D,Delay scheduled for vehicle block at a mid-route bus stop, between two trips going in the same direction.
+F,Trip only operates on Friday Standard service dates (on a combined Standard weekday schedule - trip not operate on Monday-Thursday service dates).
+H,Trip only operates on Saturday and/or Sunday service dates (on a combined weekend/holiday schedule - trip does not operate on Holiday service dates).
+L,Limited stops along regular route are not served by this specific trip.
+R,Trip only operates on Saturday and/or Sunday Standard service dates (on a combined Standard/Recess weekend schedule - trip does not operate on Recess service dates).
+S,Trip only operates on Saturday service dates (on a combined weekend/holiday schedule - trip does not operate on Sunday and/or Holiday service dates).
+U,Trip only operates on Saturday Standard service dates (on a combined Standard/Recess weekend schedule - trip does not operate on Sunday and/or Recess service dates).
 X,Extra trip only operated on specific dates.
 
 stop_times.txt:timepoint,Value for departure_time is a published schedule time and should generally be accurate (i.e. vehicle will wait at stop before departing if early).

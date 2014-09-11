@@ -82,18 +82,24 @@ public static void main(String[] args) throws Exception
 
     
 	
-	FileOutputStream file2 = new FileOutputStream("route_points.bin");
+	FileOutputStream file2 = new FileOutputStream("route_points.bin.tmp");
 	DataOutputStream out = new DataOutputStream(file2);
 	
 	out.writeInt(routes_dict.values().size());
 	for (String k : routes_dict.keySet())
 	{
             Route r = routes_dict.get(k);
+            if (r.tree == null) {
+                System.err.printf("Paths for route %s are missing!\n", k);
+                System.exit(1);
+            }
             System.out.println(k+"-"+r);
             r.write(out);
         }
                 
 	out.close();
+	
+	new File("route_points.bin.tmp").renameTo(new File("route_points.bin"));
 	
 	System.out.printf("%s %s\n", routes_dict.values().size(), routes_info.length());
 	
