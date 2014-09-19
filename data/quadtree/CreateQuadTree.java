@@ -88,9 +88,9 @@ public static void main(String[] args) throws Exception
 		points.add(e); 
 	}
 	
-	for (QuadTree.Element p : points) {
-			out.printf("%d %d\n", p.lat, p.lon);
-	}
+	//for (QuadTree.Element p : points) {
+	//		out.printf("%d %d\n", p.lat, p.lon);
+	//}
 	
 	
 	QuadTree tree = new QuadTree(points);

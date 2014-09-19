@@ -21,6 +21,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
+import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
+
 
 public class RouteBar extends HorizontalScrollView 
 {
@@ -54,7 +56,7 @@ make_layout()
 {
 	return new LinearLayout(G.activity) 
 	{{
-		setGravity(Gravity.BOTTOM);
+		//setGravity(Gravity.BOTTOM);
 		for (int i = 0; i < G.route_points.length; i++) 
 		{
 			
@@ -66,6 +68,7 @@ make_layout()
 			
 			final int ix = i; 
 			final Route route = G.route_points[i];
+			setBaselineAligned(false);
 			addView(G.route_points[i].button=new Button(G.activity) {
 				@Override
 				public void setEnabled(boolean e) {
@@ -116,6 +119,8 @@ make_layout()
 							}
 						}
 		 			});
+		 		}}, new LinearLayout.LayoutParams(WRAP_CONTENT, WRAP_CONTENT) {{
+                                    gravity = Gravity.BOTTOM;
 		 		}});
 		}
 	}};

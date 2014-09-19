@@ -86,6 +86,7 @@ public static void main(String[] args) throws Exception
 	DataOutputStream out = new DataOutputStream(file2);
 	
 	out.writeInt(routes_dict.values().size());
+	int i = 0;
 	for (String k : routes_dict.keySet())
 	{
             Route r = routes_dict.get(k);
@@ -93,8 +94,9 @@ public static void main(String[] args) throws Exception
                 System.err.printf("Paths for route %s are missing!\n", k);
                 System.exit(1);
             }
-            System.out.println(k+"-"+r);
+            System.out.printf("%d: %s:%s\n", i, k, r);
             r.write(out);
+            i++;
         }
                 
 	out.close();

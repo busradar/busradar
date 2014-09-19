@@ -65,7 +65,9 @@ import android.widget.RelativeLayout;
 import android.widget.RelativeLayout.LayoutParams;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.view.Gravity;
 
+import static busradar.madison.G.dp2px;
 import static busradar.madison.ProblemReporter.*;
 
 public final class StopDialog extends Dialog {
@@ -150,7 +152,7 @@ public final class StopDialog extends Dialog {
 		CellView(Context ctx) {
 			super(ctx);
 
-			setPadding(5, 0, 5, 0);
+			setPadding(dp2px(5), 0, dp2px(5), 0);
 			addView(route_textview = new TextView(ctx) {
 				{
 					setId(1);
@@ -214,7 +216,7 @@ public final class StopDialog extends Dialog {
 			addView(new TextView(ctx) {{
 					setId(stop_num_id);
 					setText(Html.fromHtml(String.format("[<a href='http://www.cityofmadison.com/metro/BusStopDepartures/StopID/%04d.pdf'>%04d</a>]", stopid, stopid)));
-					setPadding(0, 0, 5, 0);
+					setPadding(0, 0, dp2px(5), 0);
 					this.setMovementMethod(LinkMovementMethod.getInstance());
 			}}, new RelativeLayout.LayoutParams(WRAP_CONTENT, WRAP_CONTENT) {{
 				addRule(ALIGN_PARENT_RIGHT);
@@ -241,7 +243,7 @@ public final class StopDialog extends Dialog {
 					setImageResource(enabled ?
 							R.drawable.love_enabled : R.drawable.love_disabled);
 					
-					setPadding(0, 0, 10, 0);
+					setPadding(0, 0, dp2px(10), 0);
 					setOnClickListener(new OnClickListener() {
 						public void onClick(View v) {							
 							setEnabled(!enabled);
@@ -249,12 +251,12 @@ public final class StopDialog extends Dialog {
 				});
 			}}, new RelativeLayout.LayoutParams(WRAP_CONTENT, WRAP_CONTENT) {{
 				addRule(LEFT_OF, stop_num_id);
-				setMargins(0, -3, 0, 0);
+				setMargins(0, dp2px(-3), 0, 0);
 			}});
 			
 			addView(cur_loading_text = new TextView(ctx) {{
 				setText("Loading...");
-				setPadding(5, 0, 0, 0);
+				setPadding(dp2px(5), 0, 0, 0);
 			}});
 			addView(new HorizontalScrollView(ctx) {
 				{
@@ -265,6 +267,7 @@ public final class StopDialog extends Dialog {
 						float text_size;
 						Button cur_button;
 						{
+                                                         setBaselineAligned(false);
 							int last_route = -1;
 							for (int i = 0; i < routes.length; i++) {
 									
@@ -322,7 +325,9 @@ public final class StopDialog extends Dialog {
 										});
 
 									}
-								});
+								}, new LinearLayout.LayoutParams(WRAP_CONTENT, WRAP_CONTENT) {{
+                                                                    gravity = Gravity.BOTTOM;
+                                                                 }});
 							}
 						}
 					});
@@ -558,7 +563,7 @@ public final class StopDialog extends Dialog {
 									addView(new TextView(ctx) {{
 										setId(1);
 										setText(Html.fromHtml(msg));
-										setPadding(5, 5, 5, 5);
+										setPadding(dp2px(5), dp2px(5), dp2px(5), dp2px(5));
 										this.setMovementMethod(LinkMovementMethod.getInstance());
 									}}, new RelativeLayout.LayoutParams(WRAP_CONTENT, WRAP_CONTENT));
 									

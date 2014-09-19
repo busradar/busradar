@@ -269,7 +269,7 @@ is_today_weekend_or_holiday()
 }
 
 static final int dp2px(int dp) {
-	return (int) (dp * metrics.density + 0.5f);
+	return (int) Math.round(dp * metrics.density);
 }
 
 }
