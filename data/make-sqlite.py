@@ -5,9 +5,16 @@ import sqlite3
 import json
 import sys
 import os
+import math
+import datetime
 
 stops = json.load(open("combined-stops.json"))
 route_info = json.load(open("routes.json"))
+
+modified_time = int(math.floor(os.stat("UPDATE").st_mtime))
+date_string = datetime.datetime.fromtimestamp(modified_time).strftime("%-d %B %Y")
+
+print "DATE:", date_string
 
 try:
 	os.remove("./db.sqlite")
@@ -21,7 +28,7 @@ c.execute("CREATE TABLE android_metadata (locale TEXT DEFAULT 'en_US')")
 c.execute("INSERT INTO android_metadata VALUES ('en_US')")
 
 c.execute("CREATE TABLE db_version (version INT, name STRING)")
-c.execute("INSERT INTO db_version VALUES (12, 'August 2014')")
+c.execute("INSERT INTO db_version VALUES (?, ?)", (int(modified_time), date_string))
 
 c.execute("CREATE TABLE routestops(stopid integer, route integer, url text)")
 c.execute("CREATE TABLE Stop (_ID INTEGER PRIMARY KEY, Name TEXT)")

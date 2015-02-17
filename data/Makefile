@@ -27,6 +27,9 @@ mobiletracker-combined.json: mobiletracker-weekdays.json mobiletracker-weekendsa
 mmt_gtfs.zip: UPDATE
 	curl http://www.cityofmadison.com/metro/gtfs/mmt_gtfs.zip > mmt_gtfs.zip
 
+config.java: config.java.tmpl UPDATE
+	cpp -P -DDATABASE_VERSION=`stat --format=%Y UPDATE` config.java.tmpl > config.java
+	
 gtf: mmt_gtfs.zip UPDATE
 	rm -rf gtf
 	unzip -d gtf mmt_gtfs.zip

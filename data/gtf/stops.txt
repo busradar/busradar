@@ -252,10 +252,10 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,agency_id,stop_jurisdict
 1105,1105,MILWAUKEE & WALTER (EB),This stop (#1105) is eastbound on the 3509 block of MILWAUKEE ST farside WALTER ST,43.098067,-89.326187,MMT,CMAD,0,,farside,eastbound,1
 1107,1107,EAST WASH & S SECOND (EB),This stop (#1107) is eastbound on the 1999 block of E WASHINGTON AVE nearside SECOND ST (S),43.09369,-89.35699,MMT,CMAD,0,,nearside,eastbound,1
 1112,1112,EAST WASH & MILWAUKEE (WB),This stop (#1112) is westbound on the 2598 block of E WASHINGTON AVE farside MILWAUKEE ST,43.10023,-89.34913,MMT,CMAD,0,,farside,westbound,1
-1113,1113,NORTH & E DAYTON (NB),This stop (#1113) is northbound on the 201 block of NORTH ST farside DAYTON ST (E),43.102299,-89.34977,MMT,CMAD,0,,farside,northbound,0
 1115,1115,COMMERCIAL & OAK (EB),This stop (#1115) is eastbound on the 2899 block of COMMERCIAL AVE nearside OAK ST,43.106655,-89.34317,MMT,CMAD,0,,nearside,eastbound,1
 1116,1116,FORDEM & LAKEWOOD (SB),This stop (#1116) is southbound on the 1898 block of FORDEM AVE farside LAKEWOOD GARDEN LN,43.096657,-89.363804,MMT,CMAD,0,,farside,southbound,1
 1117,1117,COMMERCIAL & KEDZIE (EB),This stop (#1117) is eastbound on the 2699 block of COMMERCIAL AVE nearside KEDZIE ST,43.106703,-89.347665,MMT,CMAD,0,,nearside,eastbound,1
+1121,1121,E JOHNSON & N LIVINGSTON (EB),This stop (#1121) is eastbound on the 799 block of JOHNSON ST (E) nearside LIVINGSTON ST (N),43.082937,-89.378175,MMT,CMAD,0,,nearside,eastbound,1
 1122,1122,N SHERMAN & OXFORD (SB),This stop (#1122) is southbound on the 1000 block of SHERMAN AVE (N) nearside OXFORD PL,43.11014,-89.363978,MMT,CMAD,0,,nearside,southbound,1
 1123,1123,ROTH & RUSKIN (EB),This stop (#1123) is eastbound on the 1799 block of ROTH ST nearside RUSKIN ST,43.111258,-89.361482,MMT,CMAD,0,,nearside,eastbound,0
 1125,1125,S FIRST & E MAIN (NB),This stop (#1125) is northbound on the 101 block of FIRST ST (S) nearside MAIN ST (E),43.091497,-89.358067,MMT,CMAD,0,,nearside,northbound,0
@@ -348,7 +348,6 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,agency_id,stop_jurisdict
 1427,1427,PACKERS & COMMERCIAL (NB),This stop (#1427) is northbound on the 601 block of PACKERS AVE farside COMMERCIAL AVE,43.107091,-89.354359,MMT,CMAD,0,,farside,northbound,1
 1435,1435,COMMERCIAL & NORTH (EB),This stop (#1435) is eastbound on the 2499 block of COMMERCIAL AVE nearside NORTH ST,43.106714,-89.351445,MMT,CMAD,0,,nearside,eastbound,1
 1437,1437,MILWAUKEE & S FAIR OAKS (EB),This stop (#1437) is eastbound on the 3399 block of MILWAUKEE ST nearside FAIR OAKS AVE (S),43.099602,-89.332669,MMT,CMAD,0,,nearside,eastbound,0
-1440,1440,NORTH & E JOHNSON (SB),This stop (#1440) is southbound on the 300 block of NORTH ST nearside JOHNSON ST (E),43.103275,-89.350534,MMT,CMAD,0,,nearside,southbound,0
 1441,1441,OAKRIDGE & WELCH (EB),This stop (#1441) is eastbound on the 3199 block of OAKRIDGE AVE nearside WELCH AVE,43.09128,-89.338841,MMT,CMAD,0,,nearside,eastbound,1
 1447,1447,ROGERS & SPAIGHT (NB),This stop (#1447) is northbound on the 601 block of ROGERS ST nearside SPAIGHT ST,43.085668,-89.357047,MMT,CMAD,0,,nearside,northbound,0
 1453,1453,EAST WASH & S BLOUNT (EB),This stop (#1453) is eastbound on the 699 block of E WASHINGTON AVE nearside BLOUNT ST (S),43.079562,-89.376905,MMT,CMAD,0,,nearside,eastbound,1
@@ -370,8 +369,8 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,agency_id,stop_jurisdict
 1504,1504,ABERG & RUSKIN (WB),This stop (#1504) is westbound on the 1798 block of ABERG AVE farside RUSKIN ST,43.114329,-89.361825,MMT,CMAD,0,,farside,westbound,1
 1505,1505,JENIFER & S INGERSOLL (EB),This stop (#1505) is eastbound on the 1099 block of JENIFER ST nearside INGERSOLL ST (S),43.081151,-89.365311,MMT,CMAD,0,,nearside,eastbound,1
 1509,1509,WILLIAMSON & S BLOUNT (EB),This stop (#1509) is eastbound on the 699 block of WILLIAMSON ST farside BLOUNT ST (S),43.07717,-89.372784,MMT,CMAD,0,,farside,eastbound,1
-1511,1511,E JOHNSON & NORTH (EB),This stop (#1511) is eastbound on the 2599 block of JOHNSON ST (E) nearside NORTH ST,43.102998,-89.350461,MMT,CMAD,0,,nearside,eastbound,1
 1513,1513,EAST WASH & YAHARA (EB),This stop (#1513) is eastbound on the 1851 block of E WASHINGTON AVE adjacent YAHARA RIVER,43.089771,-89.362415,MMT,CMAD,0,,adjacent,eastbound,1
+1518,1518,NORTH & E JOHNSON (SB),This stop (#1518) is southbound on the 298 block of NORTH ST farside JOHNSON ST (E),43.102845,-89.350325,MMT,CMAD,0,,farside,southbound,1
 1519,1519,OAKRIDGE & MAPLE (EB),This stop (#1519) is eastbound on the 2999 block of OAKRIDGE AVE nearside MAPLE AVE,43.090825,-89.340743,MMT,CMAD,0,,nearside,eastbound,1
 1521,1521,N INGERSOLL & E JOHNSON (NB),This stop (#1521) is northbound on the 301 block of INGERSOLL ST (N) farside JOHNSON ST (E),43.087224,-89.372764,MMT,CMAD,0,,farside,northbound,1
 1526,1526,WILLIAMSON & S DICKINSON (WB),This stop (#1526) is westbound on the 1398 block of WILLIAMSON ST farside DICKINSON ST (S),43.085634,-89.361147,MMT,CMAD,0,,farside,westbound,1
@@ -494,6 +493,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,agency_id,stop_jurisdict
 1984,1984,S FAIR OAKS & MILWAUKEE (SB),This stop (#1984) is southbound on the 2 block of FAIR OAKS AVE (S) farside MILWAUKEE ST,43.099468,-89.332768,MMT,CMAD,0,,farside,southbound,0
 1986,1986,E JOHNSON & N SEVENTH (WB),This stop (#1986) is westbound on the 2498 block of JOHNSON ST (E) farside SEVENTH ST (N),43.101745,-89.3525,MMT,CMAD,0,,farside,westbound,1
 1995,1995,DIVISION & OAKRIDGE (NB),This stop (#1995) is northbound on the 601 block of DIVISION ST nearside OAKRIDGE AVE,43.090159,-89.350906,MMT,CMAD,0,,nearside,northbound,1
+1996,1996,E GORHAM & N LIVINGSTON (WB),This stop (#1996) is westbound on the 800 block of GORHAM ST (E) nearside LIVINGSTON ST (N),43.084003,-89.378804,MMT,CMAD,0,,nearside,westbound,1
 1998,1998,OAKRIDGE & EVERGREEN (WB),This stop (#1998) is westbound on the 2300 block of OAKRIDGE AVE nearside EVERGREEN AVE,43.090632,-89.347288,MMT,CMAD,0,,nearside,westbound,1
 2003,2003,LINDEN & BABCOCK (EB),This stop (#2003) is eastbound on the 1601 block of LINDEN DR nearside BABCOCK DR,43.075048,-89.412931,MMT,UWIS,0,,nearside,eastbound,1
 2007,2007,OBSERVATORY & WALNUT (EB),This stop (#2007) is eastbound on the 2299 block of OBSERVATORY DR farside WALNUT ST,43.076436,-89.424388,MMT,UWIS,0,,farside,eastbound,1
@@ -627,7 +627,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,agency_id,stop_jurisdict
 2376,2376,SHEBOYGAN & EAU CLAIRE (WB),This stop (#2376) is westbound on the 4998 block of SHEBOYGAN AVE nearside EAU CLAIRE AVE (N),43.073082,-89.46373,MMT,CMAD,0,,nearside,westbound,1
 2377,2377,REGENT & HIGHLAND (EB),This stop (#2377) is eastbound on the 2399 block of REGENT ST farside HIGHLAND AVE,43.067841,-89.42777,MMT,CMAD,0,,farside,eastbound,1
 2379,2379,ODANA & S WHITNEY (EB),This stop (#2379) is eastbound on the 5555 block of ODANA RD nearside WHITNEY WAY (S),43.04989,-89.475588,MMT,CMAD,0,,nearside,eastbound,1
-2380,2380,MONROE & KNICKERBOCKER (WB),This stop (#2380) is westbound on the 2698 block of MONROE ST nearside KNICKERBOCKER ST,43.057412,-89.428756,MMT,CMAD,0,,nearside,westbound,0
+2380,2380,MONROE & KNICKERBOCKER (WB),This stop (#2380) is westbound on the 2698 block of MONROE ST nearside KNICKERBOCKER ST,43.057412,-89.428756,MMT,CMAD,0,,nearside,westbound,1
 2383,2383,S WHITNEY & MEDICAL (NB),This stop (#2383) is northbound on the 751 block of WHITNEY WAY (S) nearside MEDICAL CIR,43.048772,-89.473243,MMT,CMAD,0,,nearside,northbound,1
 2385,2385,N ROSA & MARCONI (NB),This stop (#2385) is northbound on the 301 block of ROSA RD (N) farside MARCONI ST,43.071169,-89.477962,MMT,CMAD,0,,farside,northbound,1
 2387,2387,TOEPFER & ST CLAIR (NB),This stop (#2387) is northbound on the 547 block of TOEPFER AVE farside SAINT CLAIR ST,43.056076,-89.44174,MMT,CMAD,0,,farside,northbound,1
@@ -916,6 +916,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,agency_id,stop_jurisdict
 4216,4216,TODD & POST (SB),This stop (#4216) is southbound on the 3298 block of TODD DR nearside POST RD,43.026974,-89.42625,MMT,CMAD,0,,nearside,southbound,1
 4217,4217,BRITTA & NIEMANN (EB),This stop (#4217) is eastbound on the 4351 block of BRITTA PKWY nearside NIEMANN PL,43.034911,-89.451333,MMT,CMAD,0,,nearside,eastbound,1
 4224,4224,GREENWAY & COHO (WB),This stop (#4224) is westbound on the 1998 block of GREENWAY CROSS nearside COHO ST,43.031029,-89.414468,MMT,CFIT,0,,nearside,westbound,0
+4240,4240,MCKEE & COMMERCE PARK (WB),This stop (#4240) is westbound on the 6100 block of MCKEE RD farside COMMERCE PARK DR,43.015615,-89.467717,MMT,CFIT,0,,farside,westbound,0
 4245,4245,E CHERYL & WOODS HLW (EB),This stop (#4245) is eastbound on the 5465 block of E CHERYL PKWY nearside WOODS HOLLOW RD,43.004808,-89.420637,MMT,CFIT,0,,nearside,eastbound,0
 4253,4253,LACY & E CHERYL (EB),This stop (#4253) is eastbound on the 5099 block of LACY RD farside E CHERYL PKWY,43.006801,-89.39073,MMT,CFIT,0,,farside,eastbound,1
 4257,4257,NAKOMA & HURON (EB),This stop (#4257) is eastbound on the 3795 block of NAKOMA RD farside HURON HL,43.048539,-89.438332,MMT,CMAD,0,,farside,eastbound,0
@@ -975,7 +976,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,agency_id,stop_jurisdict
 4551,4551,S MIDVALE & CHEROKEE (NB),This stop (#4551) is northbound on the 1001 block of MIDVALE BLVD (S) nearside CHEROKEE DR,43.042324,-89.450879,MMT,CMAD,0,,nearside,northbound,1
 4552,4552,E CHERYL & NO OAKS (WB),This stop (#4552) is westbound on the 5150 block of E CHERYL PKWY nearside NO OAKS RDG,43.007249,-89.394689,MMT,CFIT,0,,nearside,westbound,0
 4556,4556,E VERONA & ENTERPRISE (WB),This stop (#4556) is westbound on the 498 block of VERONA AVE (E) farside ENTERPRISE DR,42.99287,-89.526778,MMT,CVER,0,,farside,westbound,1
-4559,4559,W VERONA & WESTRIDGE (EB),This stop (#4559) is eastbound on the 799 block of VERONA AVE (W) farside WESTRIDGE PKWY,42.987718,-89.552773,MMT,CVER,0,,farside,eastbound,0
+4559,4559,W VERONA & WESTRIDGE (EB),This stop (#4559) is eastbound on the 801 block of VERONA AVE (W) nearside WESTRIDGE PKWY,42.987673,-89.553340,MMT,CVER,0,,nearside,eastbound,0
 4560,4560,S BELTLINE FT & SEMINOLE (WB),This stop (#4560) is westbound on the 4200 block of BELTLINE FRONTAGE (S) farside SEMINOLE HWY,43.034554,-89.443979,MMT,CMAD,0,,farside,westbound,1
 4572,4572,TODD & PELHAM (SB),This stop (#4572) is southbound on the 3098 block of TODD DR nearside PELHAM RD,43.029999,-89.425016,MMT,CMAD,0,,nearside,southbound,0
 4573,4573,LOVELL & CHALET GDNS (EB),This stop (#4573) is eastbound on the 4999 block of LOVELL LN farside CHALET GARDENS RD,43.026646,-89.461877,MMT,CFIT,0,,farside,eastbound,0
@@ -1023,7 +1024,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,agency_id,stop_jurisdict
 4801,4801,RESEARCH PK & LACY (NB),This stop (#4801) is northbound on the 2700 block of RESEARCH PARK DR farside LACY RD,43.001541,-89.425311,MMT,CFIT,0,,farside,northbound,0
 4806,4806,ALLIED & LOVELL (SB),This stop (#4806) is southbound on the 2400 block of ALLIED DR farside LOVELL LN,43.026548,-89.459916,MMT,CMAD,0,,farside,southbound,1
 4810,4810,E VERONA FT & CAP CITY PATH (SB),This stop (#4810) is southbound on the 5198 block of VERONA FRONTAGE (E) adjacent CAPITOL CITY PATH,43.025946,-89.466478,MMT,CFIT,0,,adjacent,southbound,0
-4812,4812,W VERONA & WESTRIDGE (WB),This stop (#4812) is westbound on the 800 block of VERONA AVE (W) farside WESTRIDGE PKWY,42.988039,-89.55355,MMT,CVER,0,,farside,westbound,0
+4812,4812,W VERONA & WESTRIDGE (WB),This stop (#4812) is westbound on the 798 block of VERONA AVE (W) nearside WESTRIDGE PKWY,42.988076,-89.552983,MMT,CVER,0,,nearside,westbound,0
 4818,4818,TODD & GREENWAY (SB),This stop (#4818) is southbound on the 2936 block of TODD DR nearside GREENWAY VW,43.031844,-89.423215,MMT,CMAD,0,,nearside,southbound,0
 4820,4820,E VERONA FT & WILLIAMSBURG (SB),This stop (#4820) is southbound on the 5298 block of VERONA FRONTAGE (E) nearside WILLIAMSBURG WAY,43.023555,-89.468031,MMT,CFIT,0,,nearside,southbound,0
 4821,4821,S FISH HATCHERY & CHERYL (NB),This stop (#4821) is northbound on the 2760 block of FISH HATCHERY RD (S) nearside CHERYL DR,43.004951,-89.427544,MMT,CFIT,0,,nearside,northbound,0

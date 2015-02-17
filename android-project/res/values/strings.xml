@@ -18,9 +18,9 @@ GNU General Public License for more details.
     <string name="app_name">Madison BusRadar</string>
 <string name="about"><![CDATA[<big><b>Madison BusRadar</b><br>
 	$VERSION$</big><br>
-	Database version $DB_VERSION$, accurate as of $DB_NAME$.
+	Database accurate as of $DB_NAME$.
 	
-	<p>Copyright © 2010–2014 Aleksandr Dobkin, Michael Choi, and Christopher Mills.
+	<p>Copyright © 2010–2015 Aleksandr Dobkin, Michael Choi, and Christopher Mills.
         <p>BusRadar is free software; you can redistribute it and/or modify
         it under the terms of the GNU General Public License as published by
         the Free Software Foundation; either version 3 of the License, or
