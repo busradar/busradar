@@ -493,7 +493,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,agency_id,stop_jurisdict
 1984,1984,S FAIR OAKS & MILWAUKEE (SB),This stop (#1984) is southbound on the 2 block of FAIR OAKS AVE (S) farside MILWAUKEE ST,43.099468,-89.332768,MMT,CMAD,0,,farside,southbound,0
 1986,1986,E JOHNSON & N SEVENTH (WB),This stop (#1986) is westbound on the 2498 block of JOHNSON ST (E) farside SEVENTH ST (N),43.101745,-89.3525,MMT,CMAD,0,,farside,westbound,1
 1995,1995,DIVISION & OAKRIDGE (NB),This stop (#1995) is northbound on the 601 block of DIVISION ST nearside OAKRIDGE AVE,43.090159,-89.350906,MMT,CMAD,0,,nearside,northbound,1
-1996,1996,E GORHAM & N LIVINGSTON (WB),This stop (#1996) is westbound on the 800 block of GORHAM ST (E) nearside LIVINGSTON ST (N),43.084003,-89.378804,MMT,CMAD,0,,nearside,westbound,1
+1996,1996,E GORHAM & N LIVINGSTON (WB),This stop (#1996) is westbound on the 800 block of GORHAM ST (E) nearside LIVINGSTON ST (N),43.084003,-89.378804,MMT,CMAD,0,,nearside,westbound,0
 1998,1998,OAKRIDGE & EVERGREEN (WB),This stop (#1998) is westbound on the 2300 block of OAKRIDGE AVE nearside EVERGREEN AVE,43.090632,-89.347288,MMT,CMAD,0,,nearside,westbound,1
 2003,2003,LINDEN & BABCOCK (EB),This stop (#2003) is eastbound on the 1601 block of LINDEN DR nearside BABCOCK DR,43.075048,-89.412931,MMT,UWIS,0,,nearside,eastbound,1
 2007,2007,OBSERVATORY & WALNUT (EB),This stop (#2007) is eastbound on the 2299 block of OBSERVATORY DR farside WALNUT ST,43.076436,-89.424388,MMT,UWIS,0,,farside,eastbound,1
@@ -900,6 +900,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,agency_id,stop_jurisdict
 4151,4151,KING JAMES & K JAMES CT (EB),This stop (#4151) is eastbound on the 2900 block of KING JAMES WAY nearside KING JAMES CT,43.020938,-89.477454,MMT,CFIT,0,,nearside,eastbound,1
 4156,4156,MCKEE & CHAPEL VLY (WB),This stop (#4156) is westbound on the 6100 block of MCKEE RD farside CHAPEL VALLEY RD,43.015855,-89.432268,MMT,CFIT,0,,farside,westbound,0
 4158,4158,ALLIED & THURSTON (SB),This stop (#4158) is southbound on the 2100 block of ALLIED DR farside THURSTON LN,43.031051,-89.459202,MMT,CMAD,0,,farside,southbound,1
+4160,4160,E VERONA & OLD PB (WB),This stop (#4160) is westbound on the 998 block of VERONA AVE (E) farside OLD PB,42.994627,-89.512341,MMT,CVER,0,,farside,westbound,1
 4163,4163,MICKELSON & PED PATH (NB),This stop (#4163) is northbound on the 2851 block of MICKELSON PKWY adjacent PEDESTRIAN PATH,43.011558,-89.429579,MMT,CFIT,0,,adjacent,northbound,0
 4171,4171,S WHITNEY & WILLIAMSBURG (NB),This stop (#4171) is northbound on the 2599 block of WHITNEY WAY (S) farside WILLIAMSBURG WAY,43.024949,-89.475076,MMT,CFIT,0,,farside,northbound,0
 4176,4176,S MIDVALE & YUMA (SB),This stop (#4176) is southbound on the 898 block of MIDVALE BLVD (S) nearside YUMA DR,43.045654,-89.451411,MMT,CMAD,0,,nearside,southbound,0
@@ -960,6 +961,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,agency_id,stop_jurisdict
 4446,4446,ALLIED & JENEWEIN (SB),This stop (#4446) is southbound on the 2300 block of ALLIED DR nearside JENEWEIN RD,43.029045,-89.459522,MMT,CMAD,0,,nearside,southbound,1
 4450,4450,KING JAMES & K JAMES CT (WB),This stop (#4450) is westbound on the 2933 block of KING JAMES WAY nearside KING JAMES CT,43.020875,-89.476578,MMT,CFIT,0,,nearside,westbound,0
 4456,4456,E VERONA FT & BRITTA (SB),This stop (#4456) is southbound on the 4600 block of VERONA FRONTAGE (E) farside BRITTA PKWY,43.035036,-89.454664,MMT,CMAD,0,,farside,southbound,1
+4457,4457,E VERONA & OLD PB (EB),This stop (#4457) is eastbound on the 999 block of VERONA AVE (E) nearside OLD PB,42.994438,-89.513007,MMT,CVER,0,,nearside,eastbound,1
 4466,4466,GRANDVIEW & KINGSTON (SB),This stop (#4466) is southbound on the 3100 block of GRANDVIEW BLVD farside KINGSTON DR,43.029686,-89.431851,MMT,CMAD,0,,farside,southbound,1
 4493,4493,EXECUTIVE & MARKETPLACE (EB),This stop (#4493) is eastbound on the 5950 block of EXECUTIVE DR farside MARKETPLACE DR,43.01304,-89.457232,MMT,CFIT,0,,farside,eastbound,0
 4500,4500,RED ARROW & THURSTON (SB),This stop (#4500) is southbound on the 2100 block of RED ARROW TRL farside THURSTON LN,43.030944,-89.456698,MMT,CFIT,0,,farside,southbound,1
@@ -976,7 +978,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,agency_id,stop_jurisdict
 4551,4551,S MIDVALE & CHEROKEE (NB),This stop (#4551) is northbound on the 1001 block of MIDVALE BLVD (S) nearside CHEROKEE DR,43.042324,-89.450879,MMT,CMAD,0,,nearside,northbound,1
 4552,4552,E CHERYL & NO OAKS (WB),This stop (#4552) is westbound on the 5150 block of E CHERYL PKWY nearside NO OAKS RDG,43.007249,-89.394689,MMT,CFIT,0,,nearside,westbound,0
 4556,4556,E VERONA & ENTERPRISE (WB),This stop (#4556) is westbound on the 498 block of VERONA AVE (E) farside ENTERPRISE DR,42.99287,-89.526778,MMT,CVER,0,,farside,westbound,1
-4559,4559,W VERONA & WESTRIDGE (EB),This stop (#4559) is eastbound on the 801 block of VERONA AVE (W) nearside WESTRIDGE PKWY,42.987673,-89.553340,MMT,CVER,0,,nearside,eastbound,0
+4559,4559,W VERONA & WESTRIDGE (EB),This stop (#4559) is eastbound on the 801 block of VERONA AVE (W) nearside WESTRIDGE PKWY,42.987673,-89.55334,MMT,CVER,0,,nearside,eastbound,0
 4560,4560,S BELTLINE FT & SEMINOLE (WB),This stop (#4560) is westbound on the 4200 block of BELTLINE FRONTAGE (S) farside SEMINOLE HWY,43.034554,-89.443979,MMT,CMAD,0,,farside,westbound,1
 4572,4572,TODD & PELHAM (SB),This stop (#4572) is southbound on the 3098 block of TODD DR nearside PELHAM RD,43.029999,-89.425016,MMT,CMAD,0,,nearside,southbound,0
 4573,4573,LOVELL & CHALET GDNS (EB),This stop (#4573) is eastbound on the 4999 block of LOVELL LN farside CHALET GARDENS RD,43.026646,-89.461877,MMT,CFIT,0,,farside,eastbound,0
@@ -996,7 +998,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,agency_id,stop_jurisdict
 4660,4660,MICKELSON & PED PATH (SB),This stop (#4660) is southbound on the 2850 block of MICKELSON PKWY adjacent PEDESTRIAN PATH,43.011746,-89.429801,MMT,CFIT,0,,adjacent,southbound,0
 4663,4663,ALLIED & THURSTON (NB),This stop (#4663) is northbound on the 2101 block of ALLIED DR nearside THURSTON LN,43.031167,-89.458882,MMT,CMAD,0,,nearside,northbound,1
 4682,4682,S FISH HATCHERY & CAHILL (SB),This stop (#4682) is southbound on the 2971 block of FISH HATCHERY RD (S) farside CAHILL MAIN,43.016321,-89.423264,MMT,CFIT,0,,farside,southbound,0
-4685,4685,S BELTLINE FT & DANBURY (EB),This stop (#4685) is eastbound on the 4271 block of BELTLINE FRONTAGE (S) nearside DANBURY ST,43.034375,-89.446879,MMT,CMAD,0,,nearside,eastbound,1
+4685,4685,S BELTLINE FT & DANBURY (EB),This stop (#4685) is eastbound on the 4245 block of BELTLINE FRONTAGE (S) farside DANBURY ST,43.034339,-89.444732,MMT,CMAD,0,,farside,eastbound,1
 4699,4699,CADDIS & CAHILL (EB),This stop (#4699) is eastbound on the 5401 block of CADDIS BND farside CAHILL MAIN,43.019624,-89.420341,MMT,CFIT,0,,farside,eastbound,0
 4700,4700,CRAWFORD & HELENE (WB),This stop (#4700) is westbound on the 4398 block of CRAWFORD DR nearside HELENE PKWY,43.032342,-89.452603,MMT,CMAD,0,,nearside,westbound,0
 4701,4701,BRENDAN & CHAPEL VLY (EB),This stop (#4701) is eastbound on the 5599 block of BRENDAN AVE farside CHAPEL VALLEY RD,43.013966,-89.431688,MMT,CFIT,0,,farside,eastbound,0
@@ -1328,7 +1330,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,agency_id,stop_jurisdict
 6450,6450,RANDOLPH & TREE (SB),This stop (#6450) is southbound on the 200 block of RANDOLPH DR farside TREE LN,43.063881,-89.512727,MMT,CMAD,0,,farside,southbound,0
 6455,6455,S JUNCTION & WATTS (NB),This stop (#6455) is northbound on the 499 block of JUNCTION RD (S) farside WATTS RD,43.05592,-89.527329,MMT,CMAD,0,,farside,northbound,1
 6457,6457,JUNCTION & PRAIRIE TWN CTR (NB),This stop (#6457) is northbound on the 201 block of JUNCTION RD adjacent PRAIRIE TOWNE CENTER,43.064193,-89.526638,MMT,CMAD,0,,adjacent,northbound,1
-6458,6458,FRANKLIN & BRISTOL (WB),This stop (#6458) is westbound on the 7298 block of FRANKLIN AVE nearside BRISTOL ST,43.098362,-89.508091,MMT,CMID,0,,nearside,westbound,0
+6458,6458,FRANKLIN & BRISTOL (WB),This stop (#6458) is westbound on the 7298 block of FRANKLIN AVE nearside BRISTOL ST,43.098407,-89.506362,MMT,CMID,0,,nearside,westbound,0
 6459,6459,INNER & YELLOWSTONE (EB),This stop (#6459) is eastbound on the 6501 block of INNER DR nearside YELLOWSTONE DR (S),43.067402,-89.493488,MMT,CMAD,0,,nearside,eastbound,0
 6460,6460,TREE & S GAMMON (WB),This stop (#6460) is westbound on the 7000 block of TREE LN farside GAMMON RD (S),43.065677,-89.503447,MMT,CMAD,0,,farside,westbound,1
 6464,6464,WATTS & WALMART (WB),This stop (#6464) is westbound on the 7202 block of WATTS RD adjacent WALMART DRIVEWAY,43.050679,-89.508316,MMT,CMAD,0,,adjacent,westbound,1
@@ -1500,7 +1502,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,agency_id,stop_jurisdict
 6924,6924,DEMING & DISCOVERY (SB),This stop (#6924) is southbound on the 2298 block of DEMING WAY farside DISCOVERY DR,43.101148,-89.518505,MMT,CMID,0,,farside,southbound,0
 6925,6925,JUNCTION & COPPS (NB),This stop (#6925) is northbound on the 261 block of JUNCTION RD adjacent PRAIRIE TOWNE,43.065214,-89.525368,MMT,CMAD,0,,adjacent,northbound,0
 6926,6926,GANSER & MINERAL PT (SB),This stop (#6926) is southbound on the 7699 block of GANSER WAY farside MINERAL POINT RD,43.060226,-89.51582,MMT,CMAD,0,,farside,southbound,1
-6927,6927,FRANKLIN & BRISTOL (EB),This stop (#6927) is eastbound on the 7301 block of FRANKLIN AVE nearside BRISTOL ST,43.098137,-89.508474,MMT,CMID,0,,nearside,eastbound,0
+6927,6927,FRANKLIN & BRISTOL (EB),This stop (#6927) is eastbound on the 7301 block of FRANKLIN AVE nearside BRISTOL ST,43.098183,-89.506745,MMT,CMID,0,,nearside,eastbound,0
 6929,6929,DONNA & PARK (EB),This stop (#6929) is eastbound on the 7001 block of DONNA DR nearside PARK ST,43.105689,-89.502394,MMT,CMID,0,,nearside,eastbound,0
 6931,6931,FOURIER & 1233 (NB),This stop (#6931) is northbound on the 1233 block of FOURIER DR adjacent 1233 FOURIER DRIVEWAY,43.084041,-89.526841,MMT,CMAD,0,,adjacent,northbound,1
 6934,6934,S GAMMON & MEMORIAL HS (SB),This stop (#6934) is southbound on the 200 block of GAMMON RD (S) opposite MEMORIAL HS DRIVEWAY,43.063574,-89.502914,MMT,CMAD,0,,opposite,southbound,1
@@ -1922,6 +1924,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,agency_id,stop_jurisdict
 9111,9111,N FAIR OAKS & EAST WASH (NB),This stop (#9111) is northbound on the 1099 block of FAIR OAKS AVE (N) nearside E WASHINGTON AVE,43.11261,-89.330342,MMT,CMAD,0,,nearside,northbound,0
 9113,9113,W TERRACE & 5117 (EB),This stop (#9113) is eastbound on the 5117 block of TERRACE DR (W) adjacent 5117 TERRACE DRIVEWAY,43.142305,-89.293663,MMT,CMAD,0,,adjacent,eastbound,0
 9116,9116,MELODY & INDEPENDENCE (WB),This stop (#9116) is westbound on the 4398 block of MELODY LN farside INDEPENDENCE LN,43.130707,-89.31024,MMT,CMAD,0,,farside,westbound,1
+9118,9118,CROSSROADS & HI CROSSING (SB),This stop (#9118) is southbound on the 3098 block of CROSSROADS DR farside HIGH CROSSING BLVD,43.1359,-89.29066,MMT,CMAD,0,,farside,southbound,0
 9131,9131,CITY VIEW & HI CROSSING (EB),This stop (#9131) is eastbound on the 3498 block of CITY VIEW DR farside HIGH CROSSING BLVD,43.138405,-89.289135,MMT,CMAD,0,,farside,eastbound,1
 9132,9132,PORTAGE & VILLAGE (SB),This stop (#9132) is southbound on the 3698 block of PORTAGE RD farside VILLAGE LN,43.140547,-89.309582,MMT,CMAD,0,,farside,southbound,0
 9133,9133,EAST WASH & REINDAHL (EB),This stop (#9133) is eastbound on the 3499 block of E WASHINGTON AVE nearside REINDAHL AVE,43.114104,-89.328573,MMT,CMAD,0,,nearside,eastbound,1
@@ -1940,9 +1943,10 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,agency_id,stop_jurisdict
 9163,9163,EAST WASH & INDEPENDENCE (EB),This stop (#9163) is eastbound on the 4501 block of E WASHINGTON AVE farside INDEPENDENCE LN,43.128037,-89.307786,MMT,CMAD,0,,farside,eastbound,1
 9167,9167,SWANTON & MILWAUKEE (NB),This stop (#9167) is northbound on the 1 block of SWANTON RD farside MILWAUKEE ST,43.099138,-89.301462,MMT,CMAD,0,,farside,northbound,0
 9168,9168,INTERNATIONAL & DARWIN (SB),This stop (#9168) is southbound on the 3098 block of INTERNATIONAL LN farside DARWIN RD,43.128496,-89.348803,MMT,CMAD,0,,farside,southbound,1
-9169,9169,AIRPORT & ARRIVALS SIX (NB),This stop (#9169) is northbound on the 4000 block of AIRPORT COMMERCIAL LN adjacent ARRIVALS DOORWAY SIX,43.137305,-89.346446,MMT,PRIV,0,,adjacent,northbound,1
+9169,9169,AIRPORT & TERM DOOR 6 (NB),This stop (#9169) is northbound on the 4000 block of AIRPORT COMMERCIAL LN adjacent TERMINAL DOOR SIX,43.137305,-89.346446,MMT,PRIV,0,,adjacent,northbound,1
 9171,9171,WRIGHT & STRAUBEL (NB),This stop (#9171) is northbound on the 1601 block of WRIGHT ST farside STRAUBEL ST,43.117301,-89.330422,MMT,CMAD,0,,farside,northbound,1
 9172,9172,EAST WASH & LEXINGTON (WB),This stop (#9172) is westbound on the 3300 block of E WASHINGTON AVE farside LEXINGTON AVE,43.110679,-89.334198,MMT,CMAD,0,,farside,westbound,1
+9173,9173,E SPRINGS & HI CROSSING (NB),This stop (#9173) is northbound on the 2500 block of EAST SPRINGS DR farside HIGH CROSSING BLVD,43.131842,-89.29839,MMT,CMAD,0,,farside,northbound,1
 9174,9174,SWANTON & MILWAUKEE (SB),This stop (#9174) is southbound on the 2 block of SWANTON RD nearside MILWAUKEE ST,43.098951,-89.301759,MMT,CMAD,0,,nearside,southbound,1
 9175,9175,N STOUGHTON FT & ORIN (NB),This stop (#9175) is northbound on the 1799 block of STOUGHTON FRONTAGE (N) nearside ORIN RD,43.122866,-89.324571,MMT,CMAD,0,,nearside,northbound,1
 9176,9176,N COMMERCIAL FT & REDLAND (WB),This stop (#9176) is westbound on the 4398 block of COMMERCIAL FRONTAGE (N) farside REDLAND DR,43.106779,-89.305228,MMT,CMAD,0,,farside,westbound,1
@@ -1965,15 +1969,17 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,agency_id,stop_jurisdict
 9237,9237,N STOUGHTON FT & N STOUGHTON (EB),This stop (#9237) is eastbound on the 1601 block of STOUGHTON FRONTAGE (N) farside STOUGHTON RD (N),43.120959,-89.324524,MMT,CMAD,0,,farside,eastbound,0
 9243,9243,N THOMPSON & N COMMERCIAL (NB),This stop (#9243) is northbound on the 701 block of THOMPSON DR (N) farside COMMERCIAL AVE (N),43.106864,-89.300461,MMT,CMAD,0,,farside,northbound,1
 9246,9246,BILTMORE & 4702 (SB),This stop (#9246) is southbound on the 4702 block of BILTMORE LN adjacent 4702 BILTMORE DRIVEWAY,43.147839,-89.294245,MMT,CMAD,0,,adjacent,southbound,0
-9252,9252,E WASH FT & 4822 (WB),This stop (#9252) is westbound on the 4822 block of E WASHINGTON FRONTAGE adjacent 4822 FRONTAGE DRIVEWAY,43.133725,-89.30129,MMT,CMAD,0,,adjacent,westbound,0
+9252,9252,E WASH FT & 4822 (WB),This stop (#9252) is westbound on the 4822 block of E WASHINGTON FRONTAGE adjacent 4822 FRONTAGE DRIVEWAY,43.133725,-89.30129,MMT,CMAD,0,,adjacent,westbound,1
 9259,9259,ANDERSON & HOFFMAN (EB),This stop (#9259) is eastbound on the 3301 block of ANDERSON ST farside HOFFMAN ST,43.120106,-89.333333,MMT,CMAD,0,,farside,eastbound,1
 9264,9264,HI CROSSING & CROSSROADS (WB),This stop (#9264) is westbound on the 5198 block of HIGH CROSSING BLVD farside CROSSROADS DR,43.135847,-89.291488,MMT,CMAD,0,,farside,westbound,0
+9273,9273,HI CROSSING & CITY VIEW (EB),This stop (#9273) is eastbound on the 5099 block of HIGH CROSSING BLVD farside CITY VIEW DR,43.13879,-89.288961,MMT,CMAD,0,,farside,eastbound,0
 9274,9274,SHOPKO DR & COPPS (WB),This stop (#9274) is westbound on the 2602 block of SHOPKO DR adjacent COPPS,43.112872,-89.348004,MMT,PRIV,0,,adjacent,westbound,1
 9276,9276,N THOMPSON & WESTWYNN (SB),This stop (#9276) is southbound on the 1500 block of THOMPSON DR (N) nearside WESTWYNN CIR,43.118349,-89.297932,MMT,CMAD,0,,nearside,southbound,0
 9282,9282,PORTAGE & DEREK (SB),This stop (#9282) is southbound on the 2798 block of PORTAGE RD nearside DEREK RD,43.134195,-89.315795,MMT,CMAD,0,,nearside,southbound,1
 9285,9285,ANNIVERSARY & HAYES (NB),This stop (#9285) is northbound on the 4898 block of ANNIVERSARY LN farside HAYES RD,43.13564,-89.300199,MMT,CMAD,0,,farside,northbound,1
 9288,9288,N FAIR OAKS & N COMMERCIAL (SB),This stop (#9288) is southbound on the 650 block of FAIR OAKS AVE (N) nearside COMMERCIAL AVE (N),43.107113,-89.330744,MMT,CMAD,0,,nearside,southbound,0
 9291,9291,N THOMPSON & WAYWOOD (NB),This stop (#9291) is northbound on the 1599 block of THOMPSON DR (N) nearside WAYRIDGE DR,43.118993,-89.297622,MMT,CMAD,0,,nearside,northbound,0
+9300,9300,EASTPARK & UWH AM CTR DR (WB),This stop (#9300) is westbound on the 4650 block of EASTPARK BLVD adjacent UW HEALTH AM CTR DRIVEWAY,43.153791,-89.301341,MMT,CMAD,0,,adjacent,westbound,1
 9306,9306,N STOUGHTON FT & N STOUGHTON (SB),This stop (#9306) is southbound on the 1600 block of STOUGHTON FRONTAGE (N) nearside STOUGHTON RD (N),43.12147,-89.324647,MMT,CMAD,0,,nearside,southbound,1
 9310,9310,E SPRINGS & PETSMART (SB),This stop (#9310) is southbound on the 2300 block of EAST SPRINGS DR adjacent PETSMART DRIVEWAY,43.129529,-89.294898,MMT,CMAD,0,,adjacent,southbound,1
 9313,9313,MELODY & PORTAGE (EB),This stop (#9313) is eastbound on the 4001 block of MELODY LN farside PORTAGE RD,43.130693,-89.315195,MMT,CMAD,0,,farside,eastbound,1
@@ -1985,6 +1991,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,agency_id,stop_jurisdict
 9339,9339,EAST WASH & MELVIN (EB),This stop (#9339) is eastbound on the 3201 block of E WASHINGTON AVE farside MELVIN CT,43.109247,-89.335385,MMT,CMAD,0,,farside,eastbound,1
 9340,9340,INTERNATIONAL & ECON LOT (SB),This stop (#9340) is southbound on the 3500 block of INTERNATIONAL LN adjacent ECON LOT DRIVEWAY,43.131361,-89.348664,MMT,PRIV,0,,adjacent,southbound,0
 9344,9344,EAST WASH & REINDAHL (WB),This stop (#9344) is westbound on the 3498 block of E WASHINGTON AVE farside REINDAHL AVE,43.114292,-89.329055,MMT,CMAD,0,,farside,westbound,1
+9348,9348,EAST TOWNE & E SPRINGS (WB),This stop (#9348) is westbound on the 4798 block of EAST TOWNE BLVD farside EAST SPRINGS DR,43.130664,-89.302148,MMT,CMAD,0,,farside,westbound,0
 9349,9349,CROSSROADS & 2801 (NB),This stop (#9349) is northbound on the 2801 block of CROSSROADS DR adjacent 2801 CROSSROADS DRIVEWAY,43.134323,-89.290156,MMT,CMAD,0,,adjacent,northbound,1
 9351,9351,EAST TOWNE & E SPRINGS (EB),This stop (#9351) is eastbound on the 4799 block of EAST TOWNE BLVD nearside EAST SPRINGS DR,43.13069,-89.301814,MMT,CMAD,0,,nearside,eastbound,1
 9358,9358,BILTMORE & BUTTONWOOD (SB),This stop (#9358) is southbound on the 4900 block of BILTMORE LN farside BUTTONWOOD DR,43.150372,-89.293549,MMT,CMAD,0,,farside,southbound,0
@@ -1997,8 +2004,9 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,agency_id,stop_jurisdict
 9383,9383,ANDERSON & PEARSON (EB),This stop (#9383) is eastbound on the 3099 block of ANDERSON ST nearside PEARSON ST,43.120547,-89.337397,MMT,CMAD,0,,nearside,eastbound,0
 9388,9388,WALSH & NAKOOSA (SB),This stop (#9388) is southbound on the 898 block of WALSH RD farside NAKOOSA TRL,43.109935,-89.310114,MMT,CMAD,0,,farside,southbound,0
 9391,9391,EAST TOWNE & ZEIER (EB),This stop (#9391) is eastbound on the 4701 block of EAST TOWNE BLVD farside ZEIER RD,43.12909,-89.3043,MMT,CMAD,0,,farside,eastbound,1
-9396,9396,HAYES & MORNINGSIDE APT (WB),This stop (#9396) is westbound on the 4652 block of HAYES RD opposite MORNINGSIDE/GREEN DRIVEWAY,43.142519,-89.302918,MMT,CMAD,0,,opposite,westbound,0
+9396,9396,HAYES & MORNINGSIDE APT (WB),This stop (#9396) is westbound on the 4652 block of HAYES RD opposite MORNINGSIDE/GREEN DRIVEWAY,43.142519,-89.302918,MMT,CMAD,0,,opposite,westbound,1
 9405,9405,WRIGHT & EAST WASH (NB),This stop (#9405) is northbound on the 1401 block of WRIGHT ST farside E WASHINGTON AVE,43.113962,-89.330488,MMT,CMAD,0,,farside,northbound,1
+9412,9412,CROSSROADS & 2810 (SB),This stop (#9412) is southbound on the 2810 block of CROSSROADS DR adjacent 2810 EAST SPRINGS DRIVEWAY,43.13435,-89.290478,MMT,CMAD,0,,adjacent,southbound,1
 9420,9420,N THOMPSON & GOLDEN LF (SB),This stop (#9420) is southbound on the 920 block of THOMPSON DR (N) nearside GOLDEN LEAF TRL,43.111937,-89.296351,MMT,CMAD,0,,nearside,southbound,0
 9432,9432,LIEN & ZEIER (WB),This stop (#9432) is westbound on the 4698 block of LIEN RD farside ZEIER RD,43.121163,-89.30046,MMT,CMAD,0,,farside,westbound,1
 9438,9438,ANDERSON & WRIGHT (WB),This stop (#9438) is westbound on the 3400 block of ANDERSON ST nearside WRIGHT ST,43.120238,-89.329504,MMT,CMAD,0,,nearside,westbound,1
@@ -2008,19 +2016,21 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,agency_id,stop_jurisdict
 9472,9472,AMERICAN & EASTPARK (SB),This stop (#9472) is southbound on the 4598 block of AMERICAN PKWY farside EASTPARK BLVD,43.147351,-89.290045,MMT,CMAD,0,,farside,southbound,0
 9475,9475,EAST WASH & E SPRINGS (EB),This stop (#9475) is eastbound on the 4801 block of E WASHINGTON AVE farside EAST SPRINGS DR,43.131703,-89.302517,MMT,CMAD,0,,farside,eastbound,1
 9480,9480,FOREST RUN & FOREST RUN CT (SB),This stop (#9480) is southbound on the 4700 block of FOREST RUN RD farside FOREST RUN CT,43.137595,-89.30347,MMT,CMAD,0,,farside,southbound,0
+9486,9486,EASTPARK & BILTMORE (SB),This stop (#9486) is southbound on the 4701 block of EASTPARK BLVD farside BILTMORE LN,43.151801,-89.299058,MMT,CMAD,0,,farside,southbound,0
 9488,9488,INTERNATIONAL & ELDER CARE (SB),This stop (#9488) is southbound on the 2800 block of INTERNATIONAL LN adjacent ELDER CARE DRIVEWAY,43.127494,-89.349323,MMT,CMAD,0,,adjacent,southbound,1
 9491,9491,EAST WASH & LIEN (EB),This stop (#9491) is eastbound on the 3901 block of E WASHINGTON AVE farside LIEN RD,43.121383,-89.317433,MMT,CMAD,0,,farside,eastbound,1
 9493,9493,INTERNATIONAL & AMERICAN (NB),This stop (#9493) is northbound on the 2701 block of INTERNATIONAL LN farside AMERICAN LN,43.12573,-89.349732,MMT,CMAD,0,,farside,northbound,1
 9494,9494,PORTAGE & RIEDER (SB),This stop (#9494) is southbound on the 3000 block of PORTAGE RD nearside RIEDER RD,43.135627,-89.315817,MMT,CMAD,0,,nearside,southbound,0
-9498,9498,CITY VIEW & HOLBURN (SB),This stop (#9498) is southbound on the 2800 block of CITY VIEW DR farside HOLBURN CIR,43.133193,-89.287984,MMT,CMAD,0,,farside,southbound,0
+9498,9498,CITY VIEW & WALL (SB),This stop (#9498) is southbound on the 2800 block of CITY VIEW DR nearside WALL ST,43.132754,-89.287898,MMT,CMAD,0,,nearside,southbound,0
+9501,9501,HI CROSSING & CROSS HILL (EB),This stop (#9501) is eastbound on the 5499 block of HIGH CROSSING BLVD nearside CROSS HILL DR,43.142573,-89.284234,MMT,CMAD,0,,nearside,eastbound,0
 9503,9503,INTERNATIONAL & AIR FRT (NB),This stop (#9503) is northbound on the 3501 block of INTERNATIONAL LN adjacent AIR FREIGHT DRIVEWAY,43.131871,-89.347168,MMT,PRIV,0,,adjacent,northbound,0
 9520,9520,EAST WASH & E SPRINGS (WB),This stop (#9520) is westbound on the 4798 block of E WASHINGTON AVE farside EAST SPRINGS DR,43.131605,-89.303456,MMT,CMAD,0,,farside,westbound,1
 9524,9524,LIEN & PARKSIDE (WB),This stop (#9524) is westbound on the 3998 block of LIEN RD farside PARKSIDE DR,43.121095,-89.31558,MMT,CMAD,0,,farside,westbound,0
-9527,9527,W TERRACE & TERRACE (EB),This stop (#9527) is eastbound on the 5101 block of TERRACE DR (W) nearside TERRACE CT,43.143533,-89.295712,MMT,CMAD,0,,nearside,eastbound,0
+9527,9527,W TERRACE & EASTPARK (EB),This stop (#9527) is eastbound on the 5101 block of TERRACE DR (W) farside EASTPARK BLVD,43.144008,-89.295464,MMT,CMAD,0,,farside,eastbound,0
 9531,9531,LIEN & EAGAN (EB),This stop (#9531) is eastbound on the 4301 block of LIEN RD farside EAGAN RD,43.120882,-89.306933,MMT,CMAD,0,,farside,eastbound,1
 9532,9532,ANDERSON & PEARSON (WB),This stop (#9532) is westbound on the 3100 block of ANDERSON ST nearside PEARSON ST,43.120655,-89.337039,MMT,CMAD,0,,nearside,westbound,0
 9545,9545,MELODY & INDEPENDENCE (EB),This stop (#9545) is eastbound on the 4399 block of MELODY LN nearside INDEPENDENCE LN,43.130465,-89.310228,MMT,CMAD,0,,nearside,eastbound,0
-9549,9549,HAYES & MORNINGSIDE APT (EB),This stop (#9549) is eastbound on the 4665 block of HAYES RD adjacent MORNINGSIDE/GREEN DRIVEWAY,43.142305,-89.303289,MMT,CMAD,0,,adjacent,eastbound,0
+9549,9549,HAYES & MORNINGSIDE APT (EB),This stop (#9549) is eastbound on the 4665 block of HAYES RD adjacent MORNINGSIDE/GREEN DRIVEWAY,43.142305,-89.303289,MMT,CMAD,0,,adjacent,eastbound,1
 9551,9551,EAST WASH & MAC ARTHUR (EB),This stop (#9551) is eastbound on the 3701 block of E WASHINGTON AVE farside MACARTHUR RD,43.11743,-89.323306,MMT,CMAD,0,,farside,eastbound,1
 9552,9552,EAST WASH & MELVIN (WB),This stop (#9552) is westbound on the 3200 block of E WASHINGTON AVE nearside MELVIN CT,43.109372,-89.335929,MMT,CMAD,0,,nearside,westbound,1
 9554,9554,EAST WASH & MENDOTA (WB),This stop (#9554) is westbound on the 3798 block of E WASHINGTON AVE farside MENDOTA ST,43.118826,-89.321909,MMT,CMAD,0,,farside,westbound,1
@@ -2041,6 +2051,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,agency_id,stop_jurisdict
 9636,9636,N THOMPSON & OAK VALLEY (SB),This stop (#9636) is southbound on the 1200 block of THOMPSON DR (N) nearside OAK VALLEY DR,43.11593,-89.296467,MMT,CMAD,0,,nearside,southbound,0
 9642,9642,WRIGHT & STRAUBEL (SB),This stop (#9642) is southbound on the 1598 block of WRIGHT ST nearside STRAUBEL ST,43.117167,-89.330718,MMT,CMAD,0,,nearside,southbound,0
 9645,9645,N THOMPSON & OAK VALLEY (NB),This stop (#9645) is northbound on the 1201 block of THOMPSON DR (N) farside OAK VALLEY DR,43.116154,-89.296343,MMT,CMAD,0,,farside,northbound,0
+9651,9651,EASTPARK & UWH AM CTR DR (EB),This stop (#9651) is eastbound on the 4651 block of EASTPARK BLVD opposite UW HEALTH AM CTR DRIVEWAY,43.153513,-89.301094,MMT,CMAD,0,,opposite,eastbound,1
 9652,9652,SWANTON & N THOMPSON (SB),This stop (#9652) is southbound on the 398 block of SWANTON RD farside THOMPSON RD (N),43.104151,-89.300749,MMT,CMAD,0,,farside,southbound,1
 9666,9666,ANDERSON & PANKRATZ (WB),This stop (#9666) is westbound on the 2298 block of ANDERSON ST farside PANKRATZ ST,43.122525,-89.349798,MMT,CMAD,0,,farside,westbound,1
 9670,9670,MELODY & STUART (WB),This stop (#9670) is westbound on the 4198 block of MELODY LN farside STUART CT,43.130763,-89.312835,MMT,CMAD,0,,farside,westbound,1
@@ -2051,7 +2062,9 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,agency_id,stop_jurisdict
 9693,9693,N FAIR OAKS & LEXINGTON (NB),This stop (#9693) is northbound on the 899 block of FAIR OAKS AVE (N) nearside LEXINGTON AVE,43.110389,-89.330394,MMT,CMAD,0,,nearside,northbound,0
 9701,9701,HI CROSSING & E SPRINGS (EB),This stop (#9701) is eastbound on the 4801 block of HIGH CROSSING BLVD farside EAST SPRINGS DR,43.131985,-89.297648,MMT,CMAD,0,,farside,eastbound,1
 9715,9715,PORTAGE & VILLAGE (NB),This stop (#9715) is northbound on the 3699 block of PORTAGE RD nearside VILLAGE LN,43.140501,-89.309248,MMT,CMAD,0,,nearside,northbound,0
+9717,9717,EASTPARK & BILTMORE (NB),This stop (#9717) is northbound on the 4698 block of EASTPARK BLVD farside BILTMORE LN,43.152258,-89.298958,MMT,CMAD,0,,farside,northbound,1
 9719,9719,EAGAN & LIEN (NB),This stop (#9719) is northbound on the 1701 block of EAGAN RD farside LIEN RD,43.121258,-89.307155,MMT,CMAD,0,,farside,northbound,1
+9720,9720,CROSSROADS & WALL (SB),This stop (#9720) is southbound on the 2500 block of CROSSROADS DR nearside WALL ST,43.13247,-89.290654,MMT,CMAD,0,,nearside,southbound,1
 9723,9723,PORTAGE & RIEDER (NB),This stop (#9723) is northbound on the 3001 block of PORTAGE RD farside RIEDER RD,43.135761,-89.31552,MMT,CMAD,0,,farside,northbound,0
 9724,9724,ANDERSON & HOFFMAN (WB),This stop (#9724) is westbound on the 3298 block of ANDERSON ST farside HOFFMAN ST,43.120357,-89.334334,MMT,CMAD,0,,farside,westbound,1
 9725,9725,KINSMAN & WRIGHT (EB),This stop (#9725) is eastbound on the 3501 block of KINSMAN BLVD farside WRIGHT ST,43.125574,-89.329781,MMT,CMAD,0,,farside,eastbound,1
@@ -2071,6 +2084,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,agency_id,stop_jurisdict
 9785,9785,N THOMPSON & MILWAUKEE (NB),This stop (#9785) is northbound on the 1 block of THOMPSON DR (N) farside MILWAUKEE ST,43.099278,-89.288582,MMT,CMAD,0,,farside,northbound,0
 9787,9787,KINSMAN & N STOUGHTON (EB),This stop (#9787) is eastbound on the 3647 block of KINSMAN BLVD nearside STOUGHTON RD (N),43.125518,-89.32726,MMT,CMAD,0,,nearside,eastbound,0
 9790,9790,INTERNATIONAL & AMERICAN (SB),This stop (#9790) is southbound on the 2698 block of INTERNATIONAL LN farside AMERICAN LN,43.125256,-89.350239,MMT,CMAD,0,,farside,southbound,1
+9793,9793,CITY VIEW & BURKE (NB),This stop (#9793) is northbound on the 3099 block of CITY VIEW DR nearside BURKE RD,43.135691,-89.287732,MMT,CMAD,0,,nearside,northbound,0
 9797,9797,KINSMAN & BARTILLON (EB),This stop (#9797) is eastbound on the 3701 block of KINSMAN BLVD nearside BARTILLON DR,43.125507,-89.323307,MMT,CMAD,0,,nearside,eastbound,1
 9802,9802,N FAIR OAKS & LEXINGTON (SB),This stop (#9802) is southbound on the 900 block of FAIR OAKS AVE (N) nearside LEXINGTON AVE,43.110801,-89.330678,MMT,CMAD,0,,nearside,southbound,0
 9803,9803,AMERICAN & TANCHO (NB),This stop (#9803) is northbound on the 5599 block of AMERICAN PKWY nearside TANCHO DR,43.154599,-89.285272,MMT,CMAD,0,,nearside,northbound,0
@@ -2078,7 +2092,9 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,agency_id,stop_jurisdict
 9811,9811,SWANTON & EASLEY (NB),This stop (#9811) is northbound on the 115 block of SWANTON RD nearside EASLEY LN,43.101386,-89.301421,MMT,CMAD,0,,nearside,northbound,0
 9812,9812,NAKOOSA & WALMART (WB),This stop (#9812) is westbound on the 4198 block of NAKOOSA TRL adjacent WALMART DRIVEWAY,43.109301,-89.312523,MMT,CMAD,0,,adjacent,westbound,0
 9817,9817,INTERNATIONAL & DARWIN (NB),This stop (#9817) is northbound on the 3101 block of INTERNATIONAL LN farside DARWIN RD,43.129033,-89.348308,MMT,CMAD,0,,farside,northbound,1
+9822,9822,HI CROSSING & CROSS HILL (WB),This stop (#9822) is westbound on the 5498 block of HIGH CROSSING BLVD farside CROSS HILL DR,43.142716,-89.284728,MMT,CMAD,0,,farside,westbound,0
 9826,9826,CITY VIEW & BURKE (SB),This stop (#9826) is southbound on the 3098 block of CITY VIEW DR farside BURKE RD,43.135557,-89.288029,MMT,CMAD,0,,farside,southbound,0
+9829,9829,BILTMORE & BUTTONWOOD (NB),This stop (#9829) is northbound on the 4901 block of BILTMORE LN farside BUTTONWOOD DR,43.150891,-89.293313,MMT,CMAD,0,,farside,northbound,0
 9837,9837,SHOPKO & ABERG (NB),This stop (#9837) is northbound on the 2699 block of SHOPKO DR farside ABERG AVE,43.111179,-89.346808,MMT,CMAD,0,,farside,northbound,1
 9842,9842,FOREST RUN & HAYES (WB),This stop (#9842) is westbound on the 4898 block of FOREST RUN RD farside HAYES RD,43.138148,-89.300565,MMT,CMAD,0,,farside,westbound,0
 9844,9844,N THOMPSON & N COMMERCIAL (SB),This stop (#9844) is southbound on the 700 block of THOMPSON DR (N) nearside COMMERCIAL AVE (N),43.107079,-89.300732,MMT,CMAD,0,,nearside,southbound,1
@@ -2091,17 +2107,19 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,agency_id,stop_jurisdict
 9892,9892,N THOMPSON & MESTA (SB),This stop (#9892) is southbound on the 828 block of THOMPSON DR (N) nearside MESTA LN,43.109788,-89.296713,MMT,CMAD,0,,nearside,southbound,0
 9897,9897,EAST WASH & WRIGHT (EB),This stop (#9897) is eastbound on the 3401 block of E WASHINGTON AVE farside WRIGHT ST,43.11312,-89.330094,MMT,CMAD,0,,farside,eastbound,1
 9900,9900,AM FAM DR & HQ BLDG (SB),This stop (#9900) is southbound on the 6000 block of AMERICAN FAMILY LOT adjacent AMERICAN FAMILY HQ DOOR,43.156741,-89.287653,MMT,PRIV,0,,adjacent,southbound,1
-9901,9901,E TERRACE & UW CLINIC (EB),This stop (#9901) is eastbound on the 5249 block of EAST TERRACE DR adjacent UW CLINIC DRIVEWAY,43.144737,-89.29021,MMT,CMAD,0,,adjacent,eastbound,0
+9901,9901,E TERRACE & UW CLINIC (EB),This stop (#9901) is eastbound on the 5249 block of TERRACE DR (E) adjacent UW CLINIC DRIVEWAY,43.145256,-89.290123,MMT,CMAD,0,,adjacent,eastbound,0
 9917,9917,ZEIER & TOYS-R-US EAST (NB),This stop (#9917) is northbound on the 2161 block of ZEIER RD adjacent TOYS-R-US DRIVEWAY,43.127002,-89.301734,MMT,CMAD,0,,adjacent,northbound,0
 9918,9918,KINSMAN & N STOUGHTON (WB),This stop (#9918) is westbound on the 3698 block of KINSMAN BLVD farside STOUGHTON RD (N),43.125876,-89.325889,MMT,CMAD,0,,farside,westbound,0
 9928,9928,EAST TOWNE & ZEIER (WB),This stop (#9928) is westbound on the 4698 block of EAST TOWNE BLVD farside ZEIER RD,43.128858,-89.305042,MMT,CMAD,0,,farside,westbound,1
+9932,9932,EASTPARK & GLOBE UNIV (SB),This stop (#9932) is southbound on the 4901 block of EASTPARK BLVD adjacent GLOBE UNIV DRIVEWAY,43.14598,-89.297586,MMT,CMAD,0,,adjacent,southbound,0
 9939,9939,PORTAGE & TOMSCOT (NB),This stop (#9939) is northbound on the 3499 block of PORTAGE RD nearside TOMSCOT TRL,43.138392,-89.313094,MMT,CMAD,0,,nearside,northbound,0
 9950,9950,WALL & CITY VIEW (WB),This stop (#9950) is westbound on the 5398 block of WALL ST farside CITY VIEW DR,43.132656,-89.288183,MMT,CMAD,0,,farside,westbound,0
 9951,9951,N THOMPSON & SYCAMORE (NB),This stop (#9951) is northbound on the 1101 block of THOMPSON DR (N) farside SYCAMORE AVE,43.114166,-89.295951,MMT,CMAD,0,,farside,northbound,1
+9957,9957,CITY VIEW & WALL (NB),This stop (#9957) is northbound on the 2501 block of CITY VIEW DR farside WALL ST,43.132915,-89.287676,MMT,CMAD,0,,farside,northbound,0
 9967,9967,WALSH & NAKOOSA (NB),This stop (#9967) is northbound on the 899 block of WALSH RD nearside NAKOOSA TRL,43.110051,-89.309817,MMT,CMAD,0,,nearside,northbound,0
 9975,9975,CONTINENTAL & EAST WASH (NB),This stop (#9975) is northbound on the 1901 block of CONTINENTAL LN farside E WASHINGTON AVE,43.126956,-89.310864,MMT,CMAD,0,,farside,northbound,1
 9977,9977,FOREST RUN & HAYES (EB),This stop (#9977) is eastbound on the 4899 block of FOREST RUN RD nearside HAYES RD,43.137915,-89.300516,MMT,CMAD,0,,nearside,eastbound,0
 9984,9984,EAST WASH & LIEN (WB),This stop (#9984) is westbound on the 3898 block of E WASHINGTON AVE farside LIEN RD,43.12125,-89.318323,MMT,CMAD,0,,farside,westbound,1
 9989,9989,SWANTON & N THOMPSON (NB),This stop (#9989) is northbound on the 399 block of SWANTON RD nearside THOMPSON RD (N),43.103954,-89.30054,MMT,CMAD,0,,nearside,northbound,0
-9993,9993,E WASH FT & 4810 (EB),This stop (#9993) is eastbound on the 4810 block of E WASHINGTON FRONTAGE opposite 4810 FRONTAGE DRIVEWAY,43.133385,-89.301303,MMT,CMAD,0,,opposite,eastbound,0
+9993,9993,E WASH FT & 4810 (EB),This stop (#9993) is eastbound on the 4810 block of E WASHINGTON FRONTAGE opposite 4810 FRONTAGE DRIVEWAY,43.133385,-89.301303,MMT,CMAD,0,,opposite,eastbound,1
 9996,9996,EAGAN & EAST TOWNE (SB),This stop (#9996) is southbound on the 1748 block of EAGAN RD farside EAST TOWNE BLVD,43.124886,-89.309002,MMT,CMAD,0,,farside,southbound,1

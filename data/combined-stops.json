@@ -24,18 +24,6 @@
                 "routeno": "80", 
                 "stopname": "LANGDON &amp; N PARK [WB#0010](Memorial Union)", 
                 "url": "r=80&d=108&s=4033"
-            }, 
-            {
-                "direction": "Observatory", 
-                "routeno": "81", 
-                "stopname": "LANGDON &amp; N PARK [WB#0010](Memorial Union)", 
-                "url": "r=81&d=148&s=4033"
-            }, 
-            {
-                "direction": "Breese", 
-                "routeno": "82", 
-                "stopname": "LANGDON &amp; N PARK [WB#0010](Memorial Union)", 
-                "url": "r=82&d=145&s=4033"
             }
         ]
     }, 
@@ -50,18 +38,6 @@
                 "routeno": "80", 
                 "stopname": "LANGDON &amp; N PARK [WB#0011](Arrive Memorial Union)", 
                 "url": "r=80&d=125&s=4034"
-            }, 
-            {
-                "direction": "Johnson", 
-                "routeno": "81", 
-                "stopname": "LANGDON &amp; N PARK [WB#0011](Arrive Memorial Union)", 
-                "url": "r=81&d=147&s=4034"
-            }, 
-            {
-                "direction": "W Washington", 
-                "routeno": "82", 
-                "stopname": "LANGDON &amp; N PARK [WB#0011](Arrive Memorial Union)", 
-                "url": "r=82&d=163&s=4034"
             }
         ]
     }, 
@@ -70,14 +46,7 @@
         "lat": "43.075691", 
         "lon": "-89.396944", 
         "name": "LANGDON & N LAKE (EB)", 
-        "routes": [
-            {
-                "direction": "Johnson", 
-                "routeno": "81", 
-                "stopname": "LANGDON &amp; N LAKE [EB#0025]", 
-                "url": "r=81&d=147&s=742"
-            }
-        ]
+        "routes": {}
     }, 
     "0039": {
         "dir": "N", 
@@ -104,18 +73,6 @@
                 "routeno": "80", 
                 "stopname": "LANGDON &amp; N LAKE [WB#0040]", 
                 "url": "r=80&d=125&s=743"
-            }, 
-            {
-                "direction": "Johnson", 
-                "routeno": "81", 
-                "stopname": "LANGDON &amp; N LAKE [WB#0040]", 
-                "url": "r=81&d=147&s=743"
-            }, 
-            {
-                "direction": "W Washington", 
-                "routeno": "82", 
-                "stopname": "LANGDON &amp; N LAKE [WB#0040]", 
-                "url": "r=82&d=163&s=743"
             }
         ]
     }, 
@@ -124,14 +81,7 @@
         "lat": "43.078482", 
         "lon": "-89.38982", 
         "name": "LANGDON & N CARROLL (EB)", 
-        "routes": [
-            {
-                "direction": "Johnson", 
-                "routeno": "81", 
-                "stopname": "LANGDON &amp; N CARROLL [EB#0045]", 
-                "url": "r=81&d=147&s=744"
-            }
-        ]
+        "routes": {}
     }, 
     "0047": {
         "dir": "N", 
@@ -178,12 +128,6 @@
                 "routeno": "80", 
                 "stopname": "OBSERVATORY &amp; N CHARTER [WB#0052]", 
                 "url": "r=80&d=108&s=747"
-            }, 
-            {
-                "direction": "Observatory", 
-                "routeno": "81", 
-                "stopname": "OBSERVATORY &amp; N CHARTER [WB#0052]", 
-                "url": "r=81&d=148&s=747"
             }
         ]
     }, 
@@ -192,14 +136,7 @@
         "lat": "43.075781", 
         "lon": "-89.403882", 
         "name": "OBSERVATORY & NORTH HALL (EB)", 
-        "routes": [
-            {
-                "direction": "Observatory", 
-                "routeno": "81", 
-                "stopname": "OBSERVATORY &amp; NORTH HALL [EB#0053]", 
-                "url": "r=81&d=148&s=748"
-            }
-        ]
+        "routes": {}
     }, 
     "0054": {
         "dir": "W", 
@@ -220,14 +157,7 @@
         "lat": "43.07665", 
         "lon": "-89.407141", 
         "name": "OBSERVATORY & LIZ WATERS (WB)", 
-        "routes": [
-            {
-                "direction": "Observatory", 
-                "routeno": "81", 
-                "stopname": "OBSERVATORY &amp; LIZ WATERS [WB#0056]", 
-                "url": "r=81&d=148&s=750"
-            }
-        ]
+        "routes": {}
     }, 
     "0060": {
         "dir": "W", 
@@ -240,12 +170,6 @@
                 "routeno": "80", 
                 "stopname": "OBSERVATORY &amp; BASCOM [WB#0060]", 
                 "url": "r=80&d=108&s=751"
-            }, 
-            {
-                "direction": "Observatory", 
-                "routeno": "81", 
-                "stopname": "OBSERVATORY &amp; BASCOM [WB#0060]", 
-                "url": "r=81&d=148&s=751"
             }
         ]
     }, 
@@ -268,28 +192,14 @@
         "lat": "43.072172", 
         "lon": "-89.397625", 
         "name": "N LAKE & W JOHNSON (SB)", 
-        "routes": [
-            {
-                "direction": "W Washington", 
-                "routeno": "82", 
-                "stopname": "N LAKE &amp; W JOHNSON [SB#0068]", 
-                "url": "r=82&d=163&s=753"
-            }
-        ]
+        "routes": {}
     }, 
     "0070": {
         "dir": "S", 
         "lat": "43.07433", 
         "lon": "-89.400784", 
         "name": "N PARK & LATHROP (SB)", 
-        "routes": [
-            {
-                "direction": "Breese", 
-                "routeno": "82", 
-                "stopname": "N PARK &amp; LATHROP [SB#0070]", 
-                "url": "r=82&d=145&s=754"
-            }
-        ]
+        "routes": {}
     }, 
     "0073": {
         "dir": "E", 
@@ -348,12 +258,6 @@
                 "routeno": "38", 
                 "stopname": "N BROOM &amp; W GORHAM [NB#0087]", 
                 "url": "r=38&d=119&s=755"
-            }, 
-            {
-                "direction": "W Washington", 
-                "routeno": "82", 
-                "stopname": "N BROOM &amp; W GORHAM [NB#0087]", 
-                "url": "r=82&d=163&s=755"
             }
         ]
     }, 
@@ -362,14 +266,7 @@
         "lat": "43.076844", 
         "lon": "-89.392142", 
         "name": "LANGDON & N HENRY (EB)", 
-        "routes": [
-            {
-                "direction": "Johnson", 
-                "routeno": "81", 
-                "stopname": "LANGDON &amp; N HENRY [EB#0089]", 
-                "url": "r=81&d=147&s=757"
-            }
-        ]
+        "routes": {}
     }, 
     "0091": {
         "dir": "N", 
@@ -390,46 +287,14 @@
         "lat": "43.077515", 
         "lon": "-89.388055", 
         "name": "WISCONSIN & W GORHAM (SB)", 
-        "routes": [
-            {
-                "direction": "Johnson", 
-                "routeno": "81", 
-                "stopname": "WISCONSIN &amp; W GORHAM [SB#0096]", 
-                "url": "r=81&d=147&s=759"
-            }
-        ]
+        "routes": {}
     }, 
     "0099": {
         "dir": "E", 
         "lat": "43.075745", 
         "lon": "-89.400179", 
         "name": "LANGDON & N PARK (EB)", 
-        "routes": [
-            {
-                "direction": "Johnson", 
-                "routeno": "81", 
-                "stopname": "LANGDON &amp; N PARK [EB#0099](Memorial Union)", 
-                "url": "r=81&d=147&s=4167"
-            }, 
-            {
-                "direction": "Observatory", 
-                "routeno": "81", 
-                "stopname": "LANGDON &amp; N PARK [EB#0099](Memorial Union)", 
-                "url": "r=81&d=148&s=4167"
-            }, 
-            {
-                "direction": "Breese", 
-                "routeno": "82", 
-                "stopname": "LANGDON &amp; N PARK [EB#0099](Memorial Union)", 
-                "url": "r=82&d=145&s=4167"
-            }, 
-            {
-                "direction": "W Washington", 
-                "routeno": "82", 
-                "stopname": "LANGDON &amp; N PARK [EB#0099](Memorial Union)", 
-                "url": "r=82&d=163&s=4167"
-            }
-        ]
+        "routes": {}
     }, 
     "0100": {
         "dir": "W", 
@@ -894,12 +759,6 @@
                 "url": "r=58&d=102&s=770"
             }, 
             {
-                "direction": "Breese", 
-                "routeno": "82", 
-                "stopname": "UNIV AVE &amp; N BREESE [EB#0133](University &amp; Breese)", 
-                "url": "r=82&d=145&s=770"
-            }, 
-            {
                 "direction": "CapSq", 
                 "routeno": "8", 
                 "stopname": "UNIV AVE &amp; N BREESE [EB#0133](University &amp; Breese)", 
@@ -1214,12 +1073,6 @@
                 "routeno": "38", 
                 "stopname": "S BROOM &amp; W DOTY [NB#0161]", 
                 "url": "r=38&d=119&s=778"
-            }, 
-            {
-                "direction": "W Washington", 
-                "routeno": "82", 
-                "stopname": "S BROOM &amp; W DOTY [NB#0161]", 
-                "url": "r=82&d=163&s=778"
             }
         ]
     }, 
@@ -1656,12 +1509,6 @@
                 "url": "r=48&d=121&s=788"
             }, 
             {
-                "direction": "Breese", 
-                "routeno": "82", 
-                "stopname": "N PARK &amp; W DAYTON [SB#0180]", 
-                "url": "r=82&d=145&s=788"
-            }, 
-            {
                 "direction": "WTP", 
                 "routeno": "7", 
                 "stopname": "N PARK &amp; W DAYTON [SB#0180]", 
@@ -1832,12 +1679,6 @@
                 "url": "r=06&d=131&s=798"
             }, 
             {
-                "direction": "Breese", 
-                "routeno": "82", 
-                "stopname": "REGENT &amp; N ORCHARD [WB#0208]", 
-                "url": "r=82&d=145&s=798"
-            }, 
-            {
                 "direction": "PM", 
                 "routeno": "W1", 
                 "stopname": "REGENT &amp; N ORCHARD [WB#0208]", 
@@ -1924,6 +1765,12 @@
                 "routeno": "L5", 
                 "stopname": "FISHER &amp; BRAM [SB#0222]", 
                 "url": "r=L5&d=150&s=800"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "FISHER &amp; BRAM [SB#0222]", 
+                "url": "r=W3&d=150&s=800"
             }, 
             {
                 "direction": "PM", 
@@ -2248,6 +2095,12 @@
         "name": "MONROE & REGENT (EB)", 
         "routes": [
             {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "MONROE &amp; REGENT [EB#0249]", 
+                "url": "r=W5&d=150&s=3577"
+            }, 
+            {
                 "direction": "ETP", 
                 "routeno": "7", 
                 "stopname": "MONROE &amp; REGENT [EB#0249]", 
@@ -2519,6 +2372,12 @@
             }, 
             {
                 "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "REGENT &amp; S PARK [EB#0271]", 
+                "url": "r=W5&d=150&s=810"
+            }, 
+            {
+                "direction": "PM", 
                 "routeno": "W7", 
                 "stopname": "REGENT &amp; S PARK [EB#0271]", 
                 "url": "r=W7&d=150&s=810"
@@ -2536,6 +2395,12 @@
                 "routeno": "27", 
                 "stopname": "REGENT &amp; E CAMPUS MALL [EB#0273](Regent &amp; Murray)", 
                 "url": "r=27&d=115&s=811"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "REGENT &amp; E CAMPUS MALL [EB#0273]", 
+                "url": "r=W5&d=150&s=811"
             }, 
             {
                 "direction": "PM", 
@@ -2778,12 +2643,6 @@
                 "routeno": "38", 
                 "stopname": "W WILSON &amp; S BASSETT [EB#0313]", 
                 "url": "r=38&d=43&s=820"
-            }, 
-            {
-                "direction": "W Washington", 
-                "routeno": "82", 
-                "stopname": "W WILSON &amp; S BASSETT [EB#0313]", 
-                "url": "r=82&d=163&s=820"
             }
         ]
     }, 
@@ -2804,6 +2663,12 @@
                 "routeno": "L5", 
                 "stopname": "FISHER &amp; DANE [SB#0320]", 
                 "url": "r=L5&d=150&s=821"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "FISHER &amp; DANE [SB#0320]", 
+                "url": "r=W3&d=150&s=821"
             }, 
             {
                 "direction": "PM", 
@@ -2888,14 +2753,7 @@
         "lat": "43.07314", 
         "lon": "-89.400414", 
         "name": "N PARK & UNIV AVE (NB)", 
-        "routes": [
-            {
-                "direction": "Breese", 
-                "routeno": "82", 
-                "stopname": "N PARK &amp; UNIV AVE [NB#0341]", 
-                "url": "r=82&d=145&s=823"
-            }
-        ]
+        "routes": {}
     }, 
     "0346": {
         "dir": "W", 
@@ -2934,12 +2792,6 @@
                 "routeno": "58", 
                 "stopname": "BREESE &amp; REGENT [NB#0349]", 
                 "url": "r=58&d=102&s=825"
-            }, 
-            {
-                "direction": "Breese", 
-                "routeno": "82", 
-                "stopname": "BREESE &amp; REGENT [NB#0349]", 
-                "url": "r=82&d=145&s=825"
             }
         ]
     }, 
@@ -3118,12 +2970,6 @@
                 "url": "r=47&d=100&s=830"
             }, 
             {
-                "direction": "Breese", 
-                "routeno": "82", 
-                "stopname": "N PARK &amp; SPRING [SB#0388]", 
-                "url": "r=82&d=145&s=830"
-            }, 
-            {
                 "direction": "WTP", 
                 "routeno": "7", 
                 "stopname": "N PARK &amp; SPRING [SB#0388]", 
@@ -3196,12 +3042,6 @@
                 "url": "r=06&d=131&s=833"
             }, 
             {
-                "direction": "Breese", 
-                "routeno": "82", 
-                "stopname": "REGENT &amp; N RANDALL [WB#0398]", 
-                "url": "r=82&d=145&s=833"
-            }, 
-            {
                 "direction": "PM", 
                 "routeno": "W1", 
                 "stopname": "REGENT &amp; N RANDALL [WB#0398]", 
@@ -3262,6 +3102,12 @@
                 "routeno": "W5", 
                 "stopname": "FISH HATCHERY &amp; CATALPA [NB#0405]", 
                 "url": "r=W5&d=149&s=835"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "FISH HATCHERY &amp; CATALPA [NB#0405]", 
+                "url": "r=W5&d=150&s=835"
             }
         ]
     }, 
@@ -4260,12 +4106,6 @@
                 "routeno": "28", 
                 "stopname": "W GORHAM &amp; N HENRY [WB#0480]", 
                 "url": "r=28&d=131&s=856"
-            }, 
-            {
-                "direction": "Johnson", 
-                "routeno": "81", 
-                "stopname": "W GORHAM &amp; N HENRY [WB#0480]", 
-                "url": "r=81&d=147&s=856"
             }
         ]
     }, 
@@ -4444,6 +4284,12 @@
                 "routeno": "W5", 
                 "stopname": "FISH HATCHERY &amp; W BADGER [NB#0499]", 
                 "url": "r=W5&d=149&s=860"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "FISH HATCHERY &amp; W BADGER [NB#0499]", 
+                "url": "r=W5&d=150&s=860"
             }
         ]
     }, 
@@ -4496,18 +4342,6 @@
                 "routeno": "29", 
                 "stopname": "STATE &amp; N FRANCES [WB#0506]", 
                 "url": "r=29&d=9&s=863"
-            }, 
-            {
-                "direction": "Johnson", 
-                "routeno": "81", 
-                "stopname": "STATE &amp; N FRANCES [WB#0506]", 
-                "url": "r=81&d=147&s=863"
-            }, 
-            {
-                "direction": "W Washington", 
-                "routeno": "82", 
-                "stopname": "STATE &amp; N FRANCES [WB#0506]", 
-                "url": "r=82&d=163&s=863"
             }
         ]
     }, 
@@ -4566,6 +4400,12 @@
                 "routeno": "47", 
                 "stopname": "WEST WASH &amp; REGENT [WB#0516]", 
                 "url": "r=47&d=100&s=3583"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "WEST WASH &amp; REGENT [WB#0516]", 
+                "url": "r=W5&d=150&s=3583"
             }, 
             {
                 "direction": "PM", 
@@ -4654,12 +4494,6 @@
                 "routeno": "38", 
                 "stopname": "S BASSETT &amp; W DOTY [SB#0520]", 
                 "url": "r=38&d=43&s=865"
-            }, 
-            {
-                "direction": "W Washington", 
-                "routeno": "82", 
-                "stopname": "S BASSETT &amp; W DOTY [SB#0520]", 
-                "url": "r=82&d=163&s=865"
             }
         ]
     }, 
@@ -4842,12 +4676,6 @@
                 "url": "r=47&d=100&s=872"
             }, 
             {
-                "direction": "Breese", 
-                "routeno": "82", 
-                "stopname": "N PARK &amp; UNIV AVE [SB#0538]", 
-                "url": "r=82&d=145&s=872"
-            }, 
-            {
                 "direction": "WTP", 
                 "routeno": "7", 
                 "stopname": "N PARK &amp; UNIV AVE [SB#0538](University &amp; Park)", 
@@ -4956,12 +4784,6 @@
                 "routeno": "6", 
                 "stopname": "REGENT &amp; N MILLS [WB#0548]", 
                 "url": "r=06&d=131&s=874"
-            }, 
-            {
-                "direction": "Breese", 
-                "routeno": "82", 
-                "stopname": "REGENT &amp; N MILLS [WB#0548]", 
-                "url": "r=82&d=145&s=874"
             }, 
             {
                 "direction": "PM", 
@@ -5148,14 +4970,7 @@
         "lat": "43.0697", 
         "lon": "-89.393799", 
         "name": "N BEDFORD & W MIFFLIN (SB)", 
-        "routes": [
-            {
-                "direction": "W Washington", 
-                "routeno": "82", 
-                "stopname": "N BEDFORD &amp; W MIFFLIN [SB#0558]", 
-                "url": "r=82&d=163&s=877"
-            }
-        ]
+        "routes": {}
     }, 
     "0561": {
         "dir": "N", 
@@ -5460,12 +5275,6 @@
                 "routeno": "80", 
                 "stopname": "LINDEN &amp; HENRY MALL [EB#0573]", 
                 "url": "r=80&d=125&s=883"
-            }, 
-            {
-                "direction": "Observatory", 
-                "routeno": "81", 
-                "stopname": "LINDEN &amp; HENRY MALL [EB#0573]", 
-                "url": "r=81&d=148&s=883"
             }
         ]
     }, 
@@ -5578,12 +5387,6 @@
                 "url": "r=72&d=102&s=886"
             }, 
             {
-                "direction": "Breese", 
-                "routeno": "82", 
-                "stopname": "W JOHNSON &amp; N CHARTER [EB#0581]", 
-                "url": "r=82&d=145&s=886"
-            }, 
-            {
                 "direction": "ETP", 
                 "routeno": "7", 
                 "stopname": "W JOHNSON &amp; N CHARTER [EB#0581]", 
@@ -5655,6 +5458,12 @@
             }, 
             {
                 "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "BELD &amp; KENWARD [SB#0588]", 
+                "url": "r=W3&d=150&s=888"
+            }, 
+            {
+                "direction": "PM", 
                 "routeno": "W5", 
                 "stopname": "BELD &amp; KENWARD [SB#0588]", 
                 "url": "r=W5&d=150&s=888"
@@ -5690,6 +5499,12 @@
                 "routeno": "W5", 
                 "stopname": "W BADGER &amp; CYPRESS [WB#0590]", 
                 "url": "r=W5&d=149&s=889"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "W BADGER &amp; CYPRESS [WB#0590]", 
+                "url": "r=W5&d=150&s=889"
             }
         ]
     }, 
@@ -5722,12 +5537,6 @@
                 "routeno": "38", 
                 "stopname": "N BROOM &amp; W DAYTON [NB#0593]", 
                 "url": "r=38&d=119&s=891"
-            }, 
-            {
-                "direction": "W Washington", 
-                "routeno": "82", 
-                "stopname": "N BROOM &amp; W DAYTON [NB#0593]", 
-                "url": "r=82&d=163&s=891"
             }
         ]
     }, 
@@ -5754,12 +5563,6 @@
                 "routeno": "28", 
                 "stopname": "E JOHNSON &amp; N PINCKNEY [EB#0597]", 
                 "url": "r=28&d=115&s=892"
-            }, 
-            {
-                "direction": "Johnson", 
-                "routeno": "81", 
-                "stopname": "E JOHNSON &amp; N PINCKNEY [EB#0597]", 
-                "url": "r=81&d=147&s=892"
             }, 
             {
                 "direction": "AM", 
@@ -6202,12 +6005,6 @@
                 "routeno": "29", 
                 "stopname": "STATE &amp; W GILMAN [WB#0688]", 
                 "url": "r=29&d=9&s=905"
-            }, 
-            {
-                "direction": "Johnson", 
-                "routeno": "81", 
-                "stopname": "STATE &amp; W GILMAN [WB#0688]", 
-                "url": "r=81&d=147&s=905"
             }
         ]
     }, 
@@ -6374,12 +6171,6 @@
                 "routeno": "38", 
                 "stopname": "S BASSETT &amp; WEST WASH [SB#0710]", 
                 "url": "r=38&d=43&s=910"
-            }, 
-            {
-                "direction": "W Washington", 
-                "routeno": "82", 
-                "stopname": "S BASSETT &amp; WEST WASH [SB#0710]", 
-                "url": "r=82&d=163&s=910"
             }
         ]
     }, 
@@ -6606,12 +6397,6 @@
                 "url": "r=72&d=102&s=914"
             }, 
             {
-                "direction": "Breese", 
-                "routeno": "82", 
-                "stopname": "W JOHNSON &amp; N MILLS [EB#0741]", 
-                "url": "r=82&d=145&s=914"
-            }, 
-            {
                 "direction": "ETP", 
                 "routeno": "7", 
                 "stopname": "W JOHNSON &amp; N MILLS [EB#0741]", 
@@ -6662,12 +6447,6 @@
                 "routeno": "58", 
                 "stopname": "BREESE &amp; HOYT [NB#0751]", 
                 "url": "r=58&d=102&s=916"
-            }, 
-            {
-                "direction": "Breese", 
-                "routeno": "82", 
-                "stopname": "BREESE &amp; HOYT [NB#0751]", 
-                "url": "r=82&d=145&s=916"
             }, 
             {
                 "direction": "AM", 
@@ -6732,12 +6511,6 @@
                 "routeno": "28", 
                 "stopname": "E GORHAM &amp; N PINCKNEY [WB#0758]", 
                 "url": "r=28&d=131&s=918"
-            }, 
-            {
-                "direction": "Johnson", 
-                "routeno": "81", 
-                "stopname": "E GORHAM &amp; N PINCKNEY [WB#0758]", 
-                "url": "r=81&d=147&s=918"
             }
         ]
     }, 
@@ -6831,6 +6604,12 @@
             }, 
             {
                 "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "WEST WASH &amp; PED BRIDGE [WB#0770]", 
+                "url": "r=W5&d=150&s=3590"
+            }, 
+            {
+                "direction": "PM", 
                 "routeno": "W7", 
                 "stopname": "WEST WASH &amp; PED BRIDGE [WB#0770]", 
                 "url": "r=W7&d=150&s=3590"
@@ -6886,6 +6665,12 @@
                 "routeno": "W5", 
                 "stopname": "W BADGER &amp; FIEDLER [WB#0782]", 
                 "url": "r=W5&d=149&s=922"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "W BADGER &amp; FIEDLER [WB#0782]", 
+                "url": "r=W5&d=150&s=922"
             }
         ]
     }, 
@@ -6964,14 +6749,7 @@
         "lat": "43.074599", 
         "lon": "-89.400488", 
         "name": "N PARK & STATE ST MALL (NB)", 
-        "routes": [
-            {
-                "direction": "Breese", 
-                "routeno": "82", 
-                "stopname": "N PARK &amp; STATE ST MALL [NB#0795]", 
-                "url": "r=82&d=145&s=926"
-            }
-        ]
+        "routes": {}
     }, 
     "0803": {
         "dir": "E", 
@@ -7106,12 +6884,6 @@
                 "routeno": "72", 
                 "stopname": "CAMPUS &amp; BABCOCK RR [EB#0809]", 
                 "url": "r=72&d=102&s=3457"
-            }, 
-            {
-                "direction": "Breese", 
-                "routeno": "82", 
-                "stopname": "CAMPUS &amp; BABCOCK RR [EB#0809]", 
-                "url": "r=82&d=145&s=3457"
             }, 
             {
                 "direction": "CapSq", 
@@ -7468,14 +7240,7 @@
         "lat": "43.070748", 
         "lon": "-89.394922", 
         "name": "W DAYTON & MARION (EB)", 
-        "routes": [
-            {
-                "direction": "W Washington", 
-                "routeno": "82", 
-                "stopname": "W DAYTON &amp; MARION [EB#0853]", 
-                "url": "r=82&d=163&s=937"
-            }
-        ]
+        "routes": {}
     }, 
     "0862": {
         "dir": "S", 
@@ -7514,12 +7279,6 @@
                 "routeno": "6", 
                 "stopname": "REGENT &amp; MADISON [WB#0866]", 
                 "url": "r=06&d=131&s=939"
-            }, 
-            {
-                "direction": "Breese", 
-                "routeno": "82", 
-                "stopname": "REGENT &amp; MADISON [WB#0866]", 
-                "url": "r=82&d=145&s=939"
             }, 
             {
                 "direction": "PM", 
@@ -7895,6 +7654,12 @@
             }, 
             {
                 "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "WINGRA &amp; S PARK [EB#0901]", 
+                "url": "r=W3&d=150&s=947"
+            }, 
+            {
+                "direction": "PM", 
                 "routeno": "W5", 
                 "stopname": "WINGRA &amp; S PARK [EB#0901]", 
                 "url": "r=W5&d=150&s=947"
@@ -8040,12 +7805,6 @@
                 "routeno": "28", 
                 "stopname": "W GORHAM &amp; N CARROLL [WB#0918]", 
                 "url": "r=28&d=131&s=952"
-            }, 
-            {
-                "direction": "Johnson", 
-                "routeno": "81", 
-                "stopname": "W GORHAM &amp; N CARROLL [WB#0918]", 
-                "url": "r=81&d=147&s=952"
             }
         ]
     }, 
@@ -8072,12 +7831,6 @@
                 "routeno": "29", 
                 "stopname": "N LAKE &amp; STATE [SB#0926]", 
                 "url": "r=29&d=9&s=953"
-            }, 
-            {
-                "direction": "W Washington", 
-                "routeno": "82", 
-                "stopname": "N LAKE &amp; STATE [SB#0926]", 
-                "url": "r=82&d=163&s=953"
             }
         ]
     }, 
@@ -8234,12 +7987,6 @@
                 "url": "r=06&d=131&s=956"
             }, 
             {
-                "direction": "Breese", 
-                "routeno": "82", 
-                "stopname": "REGENT &amp; N PARK [WB#0962]", 
-                "url": "r=82&d=145&s=956"
-            }, 
-            {
                 "direction": "PM", 
                 "routeno": "W1", 
                 "stopname": "REGENT &amp; N PARK [WB#0962]", 
@@ -8300,12 +8047,6 @@
                 "routeno": "38", 
                 "stopname": "S BROOM &amp; WEST WASH [NB#0965]", 
                 "url": "r=38&d=119&s=957"
-            }, 
-            {
-                "direction": "W Washington", 
-                "routeno": "82", 
-                "stopname": "S BROOM &amp; WEST WASH [NB#0965]", 
-                "url": "r=82&d=163&s=957"
             }
         ]
     }, 
@@ -8338,12 +8079,6 @@
                 "routeno": "75", 
                 "stopname": "WEST WASH &amp; S BEDFORD [EB#0967]", 
                 "url": "r=75&d=102&s=958"
-            }, 
-            {
-                "direction": "W Washington", 
-                "routeno": "82", 
-                "stopname": "WEST WASH &amp; S BEDFORD [EB#0967](W Washington &amp; Bedford)", 
-                "url": "r=82&d=163&s=958"
             }, 
             {
                 "direction": "PM", 
@@ -9068,6 +8803,12 @@
                 "url": "r=28&d=131&s=970"
             }, 
             {
+                "direction": "PM", 
+                "routeno": "E3", 
+                "stopname": "FORDEM &amp; LAKEWOOD [SB#1116]", 
+                "url": "r=E3&d=150&s=970"
+            }, 
+            {
                 "direction": "AM", 
                 "routeno": "E5", 
                 "stopname": "FORDEM &amp; LAKEWOOD [SB#1116]", 
@@ -9275,6 +9016,12 @@
                 "url": "r=E1&d=149&s=977"
             }, 
             {
+                "direction": "PM", 
+                "routeno": "E3", 
+                "stopname": "E JOHNSON &amp; N THIRD [EB#1131]", 
+                "url": "r=E3&d=150&s=977"
+            }, 
+            {
                 "direction": "AM", 
                 "routeno": "E5", 
                 "stopname": "E JOHNSON &amp; N THIRD [EB#1131]", 
@@ -9362,12 +9109,6 @@
                 "routeno": "28", 
                 "stopname": "E GORHAM &amp; N BLAIR [WB#1138]", 
                 "url": "r=28&d=131&s=979"
-            }, 
-            {
-                "direction": "Johnson", 
-                "routeno": "81", 
-                "stopname": "E GORHAM &amp; N BLAIR [WB#1138]", 
-                "url": "r=81&d=147&s=979"
             }, 
             {
                 "direction": "PM", 
@@ -9534,12 +9275,6 @@
                 "routeno": "28", 
                 "stopname": "E JOHNSON &amp; N PATERSON [EB#1151]", 
                 "url": "r=28&d=115&s=984"
-            }, 
-            {
-                "direction": "Johnson", 
-                "routeno": "81", 
-                "stopname": "E JOHNSON &amp; N PATERSON [EB#1151]", 
-                "url": "r=81&d=147&s=984"
             }, 
             {
                 "direction": "AM", 
@@ -10357,12 +10092,6 @@
                 "url": "r=28&d=115&s=4174"
             }, 
             {
-                "direction": "Johnson", 
-                "routeno": "81", 
-                "stopname": "E JOHNSON &amp; N HAMILTON [EB#1223]", 
-                "url": "r=81&d=147&s=4174"
-            }, 
-            {
                 "direction": "AM", 
                 "routeno": "E1", 
                 "stopname": "E JOHNSON &amp; N HAMILTON [EB#1223]", 
@@ -10745,6 +10474,12 @@
                 "routeno": "25", 
                 "stopname": "EAST WASH &amp; E JOHNSON [EB#1269](East Washington &amp; Johnson)", 
                 "url": "r=25&d=153&s=1023"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "E3", 
+                "stopname": "EAST WASH &amp; E JOHNSON [EB#1269]", 
+                "url": "r=E3&d=150&s=1023"
             }
         ]
     }, 
@@ -11191,6 +10926,12 @@
                 "url": "r=25&d=153&s=1033"
             }, 
             {
+                "direction": "PM", 
+                "routeno": "E3", 
+                "stopname": "EAST WASH &amp; MILWAUKEE [EB#1311]", 
+                "url": "r=E3&d=150&s=1033"
+            }, 
+            {
                 "direction": "AM", 
                 "routeno": "E5", 
                 "stopname": "EAST WASH &amp; MILWAUKEE [EB#1311]", 
@@ -11227,6 +10968,12 @@
                 "routeno": "E1", 
                 "stopname": "E JOHNSON &amp; N SEVENTH [EB#1319]", 
                 "url": "r=E1&d=149&s=1035"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "E3", 
+                "stopname": "E JOHNSON &amp; N SEVENTH [EB#1319]", 
+                "url": "r=E3&d=150&s=1035"
             }, 
             {
                 "direction": "AM", 
@@ -11605,12 +11352,6 @@
                 "routeno": "28", 
                 "stopname": "E GORHAM &amp; N HANCOCK [WB#1358]", 
                 "url": "r=28&d=131&s=1048"
-            }, 
-            {
-                "direction": "Johnson", 
-                "routeno": "81", 
-                "stopname": "E GORHAM &amp; N HANCOCK [WB#1358]", 
-                "url": "r=81&d=147&s=1048"
             }
         ]
     }, 
@@ -11951,12 +11692,6 @@
                 "routeno": "28", 
                 "stopname": "E JOHNSON &amp; N BLOUNT [EB#1397]", 
                 "url": "r=28&d=115&s=4175"
-            }, 
-            {
-                "direction": "Johnson", 
-                "routeno": "81", 
-                "stopname": "E JOHNSON &amp; N BLOUNT [EB#1397]", 
-                "url": "r=81&d=147&s=4175"
             }, 
             {
                 "direction": "AM", 
@@ -12499,6 +12234,12 @@
                 "routeno": "6", 
                 "stopname": "EAST WASH &amp; N MARQUETTE [EB#1481]", 
                 "url": "r=06&d=106&s=3800"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "E3", 
+                "stopname": "EAST WASH &amp; N MARQUETTE [EB#1481]", 
+                "url": "r=E3&d=150&s=3800"
             }
         ]
     }, 
@@ -12915,6 +12656,12 @@
                 "url": "r=E1&d=149&s=4271"
             }, 
             {
+                "direction": "PM", 
+                "routeno": "E3", 
+                "stopname": "NORTH &amp; E JOHNSON [SB#1518]", 
+                "url": "r=E3&d=150&s=4271"
+            }, 
+            {
                 "direction": "AM", 
                 "routeno": "E5", 
                 "stopname": "NORTH &amp; E JOHNSON [SB#1518]", 
@@ -12941,14 +12688,7 @@
         "lat": "43.087224", 
         "lon": "-89.372764", 
         "name": "N INGERSOLL & E JOHNSON (NB)", 
-        "routes": [
-            {
-                "direction": "Johnson", 
-                "routeno": "81", 
-                "stopname": "N INGERSOLL &amp; E JOHNSON [NB#1521](E Johnson &amp; Ingersoll)", 
-                "url": "r=81&d=147&s=4168"
-            }
-        ]
+        "routes": {}
     }, 
     "1526": {
         "dir": "W", 
@@ -13593,6 +13333,12 @@
                 "url": "r=E1&d=149&s=1114"
             }, 
             {
+                "direction": "PM", 
+                "routeno": "E3", 
+                "stopname": "NORTH &amp; E MIFFLIN [SB#1598]", 
+                "url": "r=E3&d=150&s=1114"
+            }, 
+            {
                 "direction": "AM", 
                 "routeno": "E5", 
                 "stopname": "NORTH &amp; E MIFFLIN [SB#1598]", 
@@ -14231,12 +13977,6 @@
                 "url": "r=28&d=131&s=1133"
             }, 
             {
-                "direction": "Johnson", 
-                "routeno": "81", 
-                "stopname": "E GORHAM &amp; N BLOUNT [WB#1664]", 
-                "url": "r=81&d=147&s=1133"
-            }, 
-            {
                 "direction": "PM", 
                 "routeno": "E1", 
                 "stopname": "E GORHAM &amp; N BLOUNT [WB#1664]", 
@@ -14273,6 +14013,12 @@
                 "routeno": "E1", 
                 "stopname": "E JOHNSON &amp; N FOURTH [EB#1675](E Johnson &amp; Fourth)", 
                 "url": "r=E1&d=149&s=1134"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "E3", 
+                "stopname": "E JOHNSON &amp; N FOURTH [EB#1675]", 
+                "url": "r=E3&d=150&s=1134"
             }, 
             {
                 "direction": "AM", 
@@ -14383,6 +14129,12 @@
                 "routeno": "28", 
                 "stopname": "FORDEM &amp; MCGUIRE [SB#1692](Fordem &amp; McGuire)", 
                 "url": "r=28&d=131&s=1139"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "E3", 
+                "stopname": "FORDEM &amp; MCGUIRE [SB#1692]", 
+                "url": "r=E3&d=150&s=1139"
             }, 
             {
                 "direction": "AM", 
@@ -14977,6 +14729,12 @@
                 "routeno": "6", 
                 "stopname": "EAST WASH &amp; ABERG [EB#1757]", 
                 "url": "r=06&d=106&s=3950"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "E3", 
+                "stopname": "EAST WASH &amp; ABERG [EB#1757]", 
+                "url": "r=E3&d=150&s=3950"
             }
         ]
     }, 
@@ -15751,12 +15509,6 @@
                 "url": "r=28&d=115&s=1180"
             }, 
             {
-                "direction": "Johnson", 
-                "routeno": "81", 
-                "stopname": "E JOHNSON &amp; N BLAIR [EB#1831]", 
-                "url": "r=81&d=147&s=1180"
-            }, 
-            {
                 "direction": "AM", 
                 "routeno": "E1", 
                 "stopname": "E JOHNSON &amp; N BLAIR [EB#1831]", 
@@ -15799,12 +15551,6 @@
                 "routeno": "28", 
                 "stopname": "E GORHAM &amp; N PATERSON [WB#1834]", 
                 "url": "r=28&d=131&s=1181"
-            }, 
-            {
-                "direction": "Johnson", 
-                "routeno": "81", 
-                "stopname": "E GORHAM &amp; N PATERSON [WB#1834]", 
-                "url": "r=81&d=147&s=1181"
             }, 
             {
                 "direction": "PM", 
@@ -15921,6 +15667,12 @@
                 "routeno": "E1", 
                 "stopname": "E JOHNSON &amp; N FIRST [EB#1843]", 
                 "url": "r=E1&d=149&s=1185"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "E3", 
+                "stopname": "E JOHNSON &amp; N FIRST [EB#1843]", 
+                "url": "r=E3&d=150&s=1185"
             }, 
             {
                 "direction": "AM", 
@@ -16795,6 +16547,12 @@
                 "url": "r=E1&d=149&s=1213"
             }, 
             {
+                "direction": "PM", 
+                "routeno": "E3", 
+                "stopname": "E JOHNSON &amp; N SIXTH [EB#1949]", 
+                "url": "r=E3&d=150&s=1213"
+            }, 
+            {
                 "direction": "AM", 
                 "routeno": "E5", 
                 "stopname": "E JOHNSON &amp; N SIXTH [EB#1949]", 
@@ -16915,6 +16673,12 @@
                 "routeno": "28", 
                 "stopname": "N SHERMAN &amp; FORDEM [SB#1968]", 
                 "url": "r=28&d=131&s=3981"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "E3", 
+                "stopname": "N SHERMAN &amp; FORDEM [SB#1968]", 
+                "url": "r=E3&d=150&s=3981"
             }, 
             {
                 "direction": "AM", 
@@ -17123,14 +16887,7 @@
         "lat": "43.075048", 
         "lon": "-89.412931", 
         "name": "LINDEN & BABCOCK (EB)", 
-        "routes": [
-            {
-                "direction": "Observatory", 
-                "routeno": "81", 
-                "stopname": "LINDEN &amp; BABCOCK [EB#2003]", 
-                "url": "r=81&d=148&s=3952"
-            }
-        ]
+        "routes": {}
     }, 
     "2007": {
         "dir": "E", 
@@ -17465,14 +17222,7 @@
         "lat": "43.077045", 
         "lon": "-89.424906", 
         "name": "WALNUT & OBSERVATORY (NB)", 
-        "routes": [
-            {
-                "direction": "Eagle Hts", 
-                "routeno": "80", 
-                "stopname": "WALNUT &amp; OBSERVATORY [NB#2053]", 
-                "url": "r=80&d=108&s=3880"
-            }
-        ]
+        "routes": {}
     }, 
     "2054": {
         "dir": "W", 
@@ -17555,14 +17305,7 @@
         "lat": "43.076176", 
         "lon": "-89.416079", 
         "name": "ELM & OBSERVATORY (SB)", 
-        "routes": [
-            {
-                "direction": "Observatory", 
-                "routeno": "81", 
-                "stopname": "ELM &amp; OBSERVATORY [SB#2064](Observatory &amp; Elm)", 
-                "url": "r=81&d=148&s=3953"
-            }
-        ]
+        "routes": {}
     }, 
     "2071": {
         "dir": "N", 
@@ -17856,6 +17599,12 @@
             }, 
             {
                 "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "ODANA &amp; FREDERICK [EB#2105]", 
+                "url": "r=W5&d=150&s=1240"
+            }, 
+            {
+                "direction": "PM", 
                 "routeno": "W7", 
                 "stopname": "ODANA &amp; FREDERICK [EB#2105]", 
                 "url": "r=W7&d=150&s=1240"
@@ -18036,6 +17785,12 @@
             }, 
             {
                 "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "ODANA &amp; CHARLES [EB#2119]", 
+                "url": "r=W5&d=150&s=1247"
+            }, 
+            {
+                "direction": "PM", 
                 "routeno": "W7", 
                 "stopname": "ODANA &amp; CHARLES [EB#2119]", 
                 "url": "r=W7&d=150&s=1247"
@@ -18153,6 +17908,12 @@
                 "routeno": "W1", 
                 "stopname": "U BAY &amp; UNIV AVE [NB#2131]", 
                 "url": "r=W1&d=150&s=1251"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "U BAY &amp; UNIV AVE [NB#2131]", 
+                "url": "r=W3&d=150&s=1251"
             }
         ]
     }, 
@@ -18217,6 +17978,12 @@
                 "routeno": "W3", 
                 "stopname": "MINERAL PT &amp; S OWEN [EB#2133]", 
                 "url": "r=W3&d=149&s=1253"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "MINERAL PT &amp; S OWEN [EB#2133]", 
+                "url": "r=W3&d=150&s=1253"
             }, 
             {
                 "direction": "PM", 
@@ -18377,6 +18144,18 @@
                 "routeno": "58", 
                 "stopname": "MONROE &amp; WEST LAWN [EB#2139]", 
                 "url": "r=58&d=102&s=1259"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "MONROE &amp; WEST LAWN [EB#2139]", 
+                "url": "r=W3&d=150&s=1259"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "MONROE &amp; WEST LAWN [EB#2139]", 
+                "url": "r=W5&d=150&s=1259"
             }, 
             {
                 "direction": "ETP", 
@@ -18677,6 +18456,12 @@
                 "url": "r=W1&d=150&s=1274"
             }, 
             {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "N FRANKLIN &amp; UNIV AVE [NB#2171]", 
+                "url": "r=W3&d=150&s=1274"
+            }, 
+            {
                 "direction": "CapSq", 
                 "routeno": "8", 
                 "stopname": "N FRANKLIN &amp; UNIV AVE [NB#2171](Franklin &amp; University)", 
@@ -18727,6 +18512,12 @@
                 "routeno": "W1", 
                 "stopname": "TOEPFER &amp; ST CLAIR [SB#2174]", 
                 "url": "r=W1&d=150&s=1276"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "TOEPFER &amp; ST CLAIR [SB#2174]", 
+                "url": "r=W3&d=150&s=1276"
             }, 
             {
                 "direction": "WTP", 
@@ -18811,6 +18602,12 @@
                 "url": "r=14&d=109&s=1278"
             }, 
             {
+                "direction": "PM", 
+                "routeno": "W1", 
+                "stopname": "KENDALL &amp; RIDGE [EB#2177]", 
+                "url": "r=W1&d=150&s=1278"
+            }, 
+            {
                 "direction": "AM", 
                 "routeno": "W3", 
                 "stopname": "KENDALL &amp; RIDGE [EB#2177]", 
@@ -18893,6 +18690,12 @@
                 "routeno": "18", 
                 "stopname": "TOKAY &amp; S SEGOE [WB#2182]", 
                 "url": "r=18&d=131&s=1282"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "TOKAY &amp; S SEGOE [WB#2182]", 
+                "url": "r=W3&d=150&s=1282"
             }, 
             {
                 "direction": "WTP", 
@@ -19097,6 +18900,12 @@
                 "url": "r=48&d=123&s=1286"
             }, 
             {
+                "direction": "PM", 
+                "routeno": "W1", 
+                "stopname": "UNIV AVE &amp; WALNUT [WB#2192]", 
+                "url": "r=W1&d=150&s=1286"
+            }, 
+            {
                 "direction": "Spring Harbor", 
                 "routeno": "8", 
                 "stopname": "UNIV AVE &amp; WALNUT [WB#2192]", 
@@ -19141,6 +18950,12 @@
                 "routeno": "11", 
                 "stopname": "N MIDVALE &amp; REGENT [SB#2194]", 
                 "url": "r=11&d=101&s=3607"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "N MIDVALE &amp; REGENT [SB#2194]", 
+                "url": "r=W3&d=150&s=3607"
             }
         ]
     }, 
@@ -19397,6 +19212,12 @@
                 "url": "r=W1&d=150&s=1294"
             }, 
             {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "TOKAY &amp; WEDGEWOOD [WB#2202]", 
+                "url": "r=W3&d=150&s=1294"
+            }, 
+            {
                 "direction": "WTP", 
                 "routeno": "7", 
                 "stopname": "TOKAY &amp; WEDGEWOOD [WB#2202]", 
@@ -19591,6 +19412,12 @@
                 "url": "r=W1&d=150&s=1301"
             }, 
             {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "TOKAY &amp; CHARLES [WB#2222]", 
+                "url": "r=W3&d=150&s=1301"
+            }, 
+            {
                 "direction": "WTP", 
                 "routeno": "7", 
                 "stopname": "TOKAY &amp; CHARLES [WB#2222]", 
@@ -19667,6 +19494,12 @@
                 "routeno": "18", 
                 "stopname": "TOKAY &amp; BLUEBIRD [WB#2226]", 
                 "url": "r=18&d=131&s=1303"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "TOKAY &amp; BLUEBIRD [WB#2226]", 
+                "url": "r=W3&d=150&s=1303"
             }, 
             {
                 "direction": "WTP", 
@@ -19858,6 +19691,12 @@
             }, 
             {
                 "direction": "PM", 
+                "routeno": "W1", 
+                "stopname": "N ALLEN &amp; UNIV AVE [NB#2239]", 
+                "url": "r=W1&d=150&s=1310"
+            }, 
+            {
+                "direction": "PM", 
                 "routeno": "W7", 
                 "stopname": "N ALLEN &amp; UNIV AVE [NB#2239]", 
                 "url": "r=W7&d=150&s=1310"
@@ -19870,12 +19709,6 @@
         "lon": "-89.426659", 
         "name": "MARSH & LOT 60 (WB)", 
         "routes": [
-            {
-                "direction": "Eagle Hts", 
-                "routeno": "80", 
-                "stopname": "MARSH &amp; LOT 60 [WB#2240]", 
-                "url": "r=80&d=108&s=1311"
-            }, 
             {
                 "direction": "Eagle Hts", 
                 "routeno": "84", 
@@ -19901,6 +19734,12 @@
                 "routeno": "W1", 
                 "stopname": "TOEPFER &amp; MEYER [SB#2246]", 
                 "url": "r=W1&d=150&s=1313"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "TOEPFER &amp; MEYER [SB#2246]", 
+                "url": "r=W3&d=150&s=1313"
             }, 
             {
                 "direction": "WTP", 
@@ -19994,6 +19833,12 @@
             }, 
             {
                 "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "ODANA &amp; DEARHOLT [EB#2253]", 
+                "url": "r=W5&d=150&s=1316"
+            }, 
+            {
+                "direction": "PM", 
                 "routeno": "W7", 
                 "stopname": "ODANA &amp; DEARHOLT [EB#2253]", 
                 "url": "r=W7&d=150&s=1316"
@@ -20023,6 +19868,18 @@
                 "routeno": "58", 
                 "stopname": "MONROE &amp; GARFIELD [EB#2255]", 
                 "url": "r=58&d=102&s=1317"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "MONROE &amp; GARFIELD [EB#2255]", 
+                "url": "r=W3&d=150&s=1317"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "MONROE &amp; GARFIELD [EB#2255]", 
+                "url": "r=W5&d=150&s=1317"
             }, 
             {
                 "direction": "ETP", 
@@ -20063,6 +19920,12 @@
                 "routeno": "W3", 
                 "stopname": "MINERAL PT &amp; S MIDVALE [EB#2263]", 
                 "url": "r=W3&d=149&s=1320"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "MINERAL PT &amp; S MIDVALE [EB#2263]", 
+                "url": "r=W3&d=150&s=1320"
             }
         ]
     }, 
@@ -20115,6 +19978,12 @@
                 "routeno": "58", 
                 "stopname": "ODANA &amp; HURON [EB#2265]", 
                 "url": "r=58&d=102&s=1322"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "ODANA &amp; HURON [EB#2265]", 
+                "url": "r=W5&d=150&s=1322"
             }, 
             {
                 "direction": "PM", 
@@ -20329,6 +20198,12 @@
                 "url": "r=W1&d=150&s=1326"
             }, 
             {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "TOKAY &amp; HILLTOP [WB#2274]", 
+                "url": "r=W3&d=150&s=1326"
+            }, 
+            {
                 "direction": "WTP", 
                 "routeno": "7", 
                 "stopname": "TOKAY &amp; HILLTOP [WB#2274]", 
@@ -20531,6 +20406,12 @@
                 "url": "r=W1&d=150&s=1337"
             }, 
             {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "TOEPFER &amp; TOKAY [SB#2316]", 
+                "url": "r=W3&d=150&s=1337"
+            }, 
+            {
                 "direction": "WTP", 
                 "routeno": "7", 
                 "stopname": "TOEPFER &amp; TOKAY [SB#2316](Toepfer &amp; Tokay)", 
@@ -20660,6 +20541,12 @@
             }, 
             {
                 "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "MINERAL PT &amp; WESTMORLAND [EB#2325]", 
+                "url": "r=W3&d=150&s=1340"
+            }, 
+            {
+                "direction": "PM", 
                 "routeno": "W5", 
                 "stopname": "MINERAL PT &amp; WESTMORLAND [EB#2325]", 
                 "url": "r=W5&d=150&s=1340"
@@ -20689,6 +20576,12 @@
                 "routeno": "W1", 
                 "stopname": "TOKAY &amp; CHATHAM [WB#2336]", 
                 "url": "r=W1&d=150&s=1342"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "TOKAY &amp; CHATHAM [WB#2336]", 
+                "url": "r=W3&d=150&s=1342"
             }, 
             {
                 "direction": "WTP", 
@@ -20852,6 +20745,12 @@
             }, 
             {
                 "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "ODANA &amp; ANTHONY [EB#2357]", 
+                "url": "r=W5&d=150&s=1350"
+            }, 
+            {
+                "direction": "PM", 
                 "routeno": "W7", 
                 "stopname": "ODANA &amp; ANTHONY [EB#2357]", 
                 "url": "r=W7&d=150&s=1350"
@@ -20907,6 +20806,12 @@
                 "routeno": "11", 
                 "stopname": "N MIDVALE &amp; HILLDALE [SB#2362]", 
                 "url": "r=11&d=101&s=3566"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "N MIDVALE &amp; HILLDALE [SB#2362]", 
+                "url": "r=W3&d=150&s=3566"
             }
         ]
     }, 
@@ -21249,6 +21154,18 @@
                 "url": "r=58&d=102&s=1362"
             }, 
             {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "MONROE &amp; LEONARD [EB#2389]", 
+                "url": "r=W3&d=150&s=1362"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "MONROE &amp; LEONARD [EB#2389]", 
+                "url": "r=W5&d=150&s=1362"
+            }, 
+            {
                 "direction": "ETP", 
                 "routeno": "7", 
                 "stopname": "MONROE &amp; LEONARD [EB#2389]", 
@@ -21273,6 +21190,12 @@
                 "routeno": "W1", 
                 "stopname": "TOKAY &amp; FREDERICK [WB#2390]", 
                 "url": "r=W1&d=150&s=1363"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "TOKAY &amp; FREDERICK [WB#2390]", 
+                "url": "r=W3&d=150&s=1363"
             }, 
             {
                 "direction": "WTP", 
@@ -21662,6 +21585,12 @@
             }, 
             {
                 "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "ODANA &amp; S MIDVALE [EB#2433]", 
+                "url": "r=W5&d=150&s=1377"
+            }, 
+            {
+                "direction": "PM", 
                 "routeno": "W7", 
                 "stopname": "ODANA &amp; S MIDVALE [EB#2433]", 
                 "url": "r=W7&d=150&s=1377"
@@ -21787,6 +21716,18 @@
                 "routeno": "58", 
                 "stopname": "MONROE &amp; EDGEWOOD [EB#2447]", 
                 "url": "r=58&d=102&s=1382"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "MONROE &amp; EDGEWOOD [EB#2447]", 
+                "url": "r=W3&d=150&s=1382"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "MONROE &amp; EDGEWOOD [EB#2447]", 
+                "url": "r=W5&d=150&s=1382"
             }, 
             {
                 "direction": "ETP", 
@@ -22041,6 +21982,12 @@
                 "url": "r=14&d=109&s=1387"
             }, 
             {
+                "direction": "PM", 
+                "routeno": "W1", 
+                "stopname": "REGENT &amp; MEADOW [EB#2487]", 
+                "url": "r=W1&d=150&s=1387"
+            }, 
+            {
                 "direction": "AM", 
                 "routeno": "W3", 
                 "stopname": "REGENT &amp; MEADOW [EB#2487]", 
@@ -22165,6 +22112,18 @@
                 "url": "r=58&d=102&s=1392"
             }, 
             {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "MONROE &amp; COMMONWEALTH [EB#2499]", 
+                "url": "r=W3&d=150&s=1392"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "MONROE &amp; COMMONWEALTH [EB#2499]", 
+                "url": "r=W5&d=150&s=1392"
+            }, 
+            {
                 "direction": "ETP", 
                 "routeno": "7", 
                 "stopname": "MONROE &amp; COMMONWEALTH [EB#2499]", 
@@ -22255,6 +22214,18 @@
                 "routeno": "W1", 
                 "stopname": "MONROE &amp; GLENWAY [EB#2505](Monroe &amp; Glenway)", 
                 "url": "r=W1&d=149&s=1395"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "MONROE &amp; GLENWAY [EB#2505]", 
+                "url": "r=W3&d=150&s=1395"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "MONROE &amp; GLENWAY [EB#2505]", 
+                "url": "r=W5&d=150&s=1395"
             }, 
             {
                 "direction": "PM", 
@@ -22509,6 +22480,12 @@
                 "url": "r=W1&d=150&s=1404"
             }, 
             {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "TOEPFER &amp; EUCLID [SB#2538]", 
+                "url": "r=W3&d=150&s=1404"
+            }, 
+            {
                 "direction": "WTP", 
                 "routeno": "7", 
                 "stopname": "TOEPFER &amp; EUCLID [SB#2538]", 
@@ -22527,6 +22504,12 @@
                 "routeno": "19", 
                 "stopname": "N ALLEN &amp; CHAMBERLAIN [NB#2559]", 
                 "url": "r=19&d=102&s=1407"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W1", 
+                "stopname": "N ALLEN &amp; CHAMBERLAIN [NB#2559]", 
+                "url": "r=W1&d=150&s=1407"
             }, 
             {
                 "direction": "PM", 
@@ -22746,6 +22729,12 @@
             }, 
             {
                 "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "ODANA &amp; SENECA [EB#2593]", 
+                "url": "r=W5&d=150&s=1413"
+            }, 
+            {
+                "direction": "PM", 
                 "routeno": "W7", 
                 "stopname": "ODANA &amp; SENECA [EB#2593]", 
                 "url": "r=W7&d=150&s=1413"
@@ -22837,6 +22826,12 @@
                 "routeno": "58", 
                 "stopname": "ODANA &amp; WEDGEWOOD [EB#2597]", 
                 "url": "r=58&d=102&s=1415"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "ODANA &amp; WEDGEWOOD [EB#2597]", 
+                "url": "r=W5&d=150&s=1415"
             }, 
             {
                 "direction": "PM", 
@@ -23385,6 +23380,12 @@
                 "url": "r=48&d=123&s=1431"
             }, 
             {
+                "direction": "PM", 
+                "routeno": "W1", 
+                "stopname": "HIGHLAND &amp; UNIV AVE [NB#2643]", 
+                "url": "r=W1&d=150&s=1431"
+            }, 
+            {
                 "direction": "Spring Harbor", 
                 "routeno": "8", 
                 "stopname": "HIGHLAND &amp; UNIV AVE [NB#2643]", 
@@ -23443,6 +23444,12 @@
                 "routeno": "14", 
                 "stopname": "BLUFF &amp; PALOMINO [EB#2663]", 
                 "url": "r=14&d=109&s=1434"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W1", 
+                "stopname": "BLUFF &amp; PALOMINO [EB#2663]", 
+                "url": "r=W1&d=150&s=1434"
             }, 
             {
                 "direction": "AM", 
@@ -23660,6 +23667,18 @@
             }, 
             {
                 "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "MONROE &amp; PICKFORD [EB#2673]", 
+                "url": "r=W3&d=150&s=1439"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "MONROE &amp; PICKFORD [EB#2673]", 
+                "url": "r=W5&d=150&s=1439"
+            }, 
+            {
+                "direction": "PM", 
                 "routeno": "W7", 
                 "stopname": "MONROE &amp; PICKFORD [EB#2673]", 
                 "url": "r=W7&d=150&s=1439"
@@ -23791,6 +23810,12 @@
                 "routeno": "14", 
                 "stopname": "REGENT &amp; N OWEN [EB#2693]", 
                 "url": "r=14&d=109&s=1443"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W1", 
+                "stopname": "REGENT &amp; N OWEN [EB#2693]", 
+                "url": "r=W1&d=150&s=1443"
             }, 
             {
                 "direction": "AM", 
@@ -24229,6 +24254,12 @@
                 "url": "r=14&d=109&s=1456"
             }, 
             {
+                "direction": "PM", 
+                "routeno": "W1", 
+                "stopname": "BLUFF &amp; LES CHATEAUX APT [EB#2725]", 
+                "url": "r=W1&d=150&s=1456"
+            }, 
+            {
                 "direction": "AM", 
                 "routeno": "W3", 
                 "stopname": "BLUFF &amp; LES CHATEAUX APT [EB#2725]", 
@@ -24265,6 +24296,12 @@
                 "routeno": "58", 
                 "stopname": "ODANA &amp; HILLTOP [EB#2729]", 
                 "url": "r=58&d=102&s=1457"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "ODANA &amp; HILLTOP [EB#2729]", 
+                "url": "r=W5&d=150&s=1457"
             }, 
             {
                 "direction": "PM", 
@@ -24499,6 +24536,18 @@
                 "url": "r=58&d=102&s=1464"
             }, 
             {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "MONROE &amp; HARRISON [EB#2749]", 
+                "url": "r=W3&d=150&s=1464"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "MONROE &amp; HARRISON [EB#2749]", 
+                "url": "r=W5&d=150&s=1464"
+            }, 
+            {
                 "direction": "ETP", 
                 "routeno": "7", 
                 "stopname": "MONROE &amp; HARRISON [EB#2749]", 
@@ -24626,6 +24675,18 @@
             }, 
             {
                 "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "MONROE &amp; CHAPMAN [EB#2759]", 
+                "url": "r=W3&d=150&s=1467"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "MONROE &amp; CHAPMAN [EB#2759]", 
+                "url": "r=W5&d=150&s=1467"
+            }, 
+            {
+                "direction": "PM", 
                 "routeno": "W7", 
                 "stopname": "MONROE &amp; CHAPMAN [EB#2759]", 
                 "url": "r=W7&d=150&s=1467"
@@ -24733,6 +24794,12 @@
                 "routeno": "14", 
                 "stopname": "BLUFF &amp; N BLACKHAWK [EB#2775]", 
                 "url": "r=14&d=109&s=1472"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W1", 
+                "stopname": "BLUFF &amp; N BLACKHAWK [EB#2775]", 
+                "url": "r=W1&d=150&s=1472"
             }, 
             {
                 "direction": "AM", 
@@ -25021,6 +25088,12 @@
                 "routeno": "11", 
                 "stopname": "N MIDVALE &amp; UNIV AVE [SB#2812]", 
                 "url": "r=11&d=101&s=3568"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "N MIDVALE &amp; UNIV AVE [SB#2812]", 
+                "url": "r=W3&d=150&s=3568"
             }
         ]
     }, 
@@ -25341,6 +25414,12 @@
                 "url": "r=W1&d=150&s=1494"
             }, 
             {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "TOEPFER &amp; MINERAL PT [SB#2874]", 
+                "url": "r=W3&d=150&s=1494"
+            }, 
+            {
                 "direction": "WTP", 
                 "routeno": "7", 
                 "stopname": "TOEPFER &amp; MINERAL PT [SB#2874]", 
@@ -25426,6 +25505,18 @@
             }, 
             {
                 "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "MONROE &amp; KNICKERBOCKER [EB#2883]", 
+                "url": "r=W3&d=150&s=1497"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "MONROE &amp; KNICKERBOCKER [EB#2883]", 
+                "url": "r=W5&d=150&s=1497"
+            }, 
+            {
+                "direction": "PM", 
                 "routeno": "W7", 
                 "stopname": "MONROE &amp; KNICKERBOCKER [EB#2883]", 
                 "url": "r=W7&d=150&s=1497"
@@ -25455,6 +25546,18 @@
                 "routeno": "58", 
                 "stopname": "MONROE &amp; S PROSPECT [EB#2887]", 
                 "url": "r=58&d=102&s=1498"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "MONROE &amp; S PROSPECT [EB#2887]", 
+                "url": "r=W3&d=150&s=1498"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "MONROE &amp; S PROSPECT [EB#2887]", 
+                "url": "r=W5&d=150&s=1498"
             }, 
             {
                 "direction": "ETP", 
@@ -26275,6 +26378,12 @@
                 "url": "r=14&d=109&s=1522"
             }, 
             {
+                "direction": "PM", 
+                "routeno": "W1", 
+                "stopname": "KENDALL &amp; N FRANKLIN [EB#2965]", 
+                "url": "r=W1&d=150&s=1522"
+            }, 
+            {
                 "direction": "AM", 
                 "routeno": "W3", 
                 "stopname": "KENDALL &amp; N FRANKLIN [EB#2965]", 
@@ -26375,6 +26484,12 @@
                 "routeno": "W1", 
                 "stopname": "TOKAY &amp; S MIDVALE [WB#2972]", 
                 "url": "r=W1&d=150&s=3619"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "TOKAY &amp; S MIDVALE [WB#2972]", 
+                "url": "r=W3&d=150&s=3619"
             }, 
             {
                 "direction": "WTP", 
@@ -26573,12 +26688,6 @@
                 "routeno": "80", 
                 "stopname": "OBSERVATORY &amp; BABCOCK [WB#2996]", 
                 "url": "r=80&d=108&s=1530"
-            }, 
-            {
-                "direction": "Observatory", 
-                "routeno": "81", 
-                "stopname": "OBSERVATORY &amp; BABCOCK [WB#2996]", 
-                "url": "r=81&d=148&s=1530"
             }
         ]
     }, 
@@ -28694,6 +28803,12 @@
                 "routeno": "W1", 
                 "stopname": "NAKOMA &amp; WABAN [EB#4129]", 
                 "url": "r=W1&d=149&s=1601"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "NAKOMA &amp; WABAN [EB#4129]", 
+                "url": "r=W3&d=150&s=1601"
             }
         ]
     }, 
@@ -28742,6 +28857,12 @@
                 "routeno": "W3", 
                 "stopname": "S BELTLINE FT &amp; GRANDVIEW [EB#4139]", 
                 "url": "r=W3&d=150&s=1603"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "S BELTLINE FT &amp; GRANDVIEW [EB#4139]", 
+                "url": "r=W5&d=150&s=1603"
             }
         ]
     }, 
@@ -28880,6 +29001,26 @@
                 "routeno": "59", 
                 "stopname": "ALLIED &amp; THURSTON [SB#4158]", 
                 "url": "r=59&d=131&s=1608"
+            }
+        ]
+    }, 
+    "4160": {
+        "dir": "W", 
+        "lat": "42.994627", 
+        "lon": "-89.512341", 
+        "name": "E VERONA & OLD PB (WB)", 
+        "routes": [
+            {
+                "direction": "Verona-EPIC", 
+                "routeno": "55", 
+                "stopname": "E VERONA &amp; OLD PB [WB#4160]", 
+                "url": "r=55&d=93&s=4272"
+            }, 
+            {
+                "direction": "Verona-EPIC", 
+                "routeno": "75", 
+                "stopname": "E VERONA &amp; OLD PB [WB#4160]", 
+                "url": "r=75&d=93&s=4272"
             }
         ]
     }, 
@@ -29250,6 +29391,12 @@
                 "routeno": "W3", 
                 "stopname": "TODD &amp; POST [SB#4216]", 
                 "url": "r=W3&d=150&s=4078"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "TODD &amp; POST [SB#4216]", 
+                "url": "r=W5&d=150&s=4078"
             }
         ]
     }, 
@@ -29370,6 +29517,12 @@
                 "routeno": "W1", 
                 "stopname": "NAKOMA &amp; HURON [EB#4257]", 
                 "url": "r=W1&d=149&s=1623"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "NAKOMA &amp; HURON [EB#4257]", 
+                "url": "r=W3&d=150&s=1623"
             }
         ]
     }, 
@@ -29504,6 +29657,12 @@
                 "routeno": "W3", 
                 "stopname": "TODD &amp; S BELTINE FT [SB#4324]", 
                 "url": "r=W3&d=150&s=4081"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "TODD &amp; S BELTINE FT [SB#4324]", 
+                "url": "r=W5&d=150&s=4081"
             }
         ]
     }, 
@@ -29524,6 +29683,12 @@
                 "routeno": "W3", 
                 "stopname": "COHO &amp; POST [NB#4325]", 
                 "url": "r=W3&d=150&s=3649"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "COHO &amp; POST [NB#4325]", 
+                "url": "r=W5&d=150&s=3649"
             }
         ]
     }, 
@@ -29602,6 +29767,12 @@
                 "routeno": "W1", 
                 "stopname": "MOHAWK &amp; DANBURY [WB#4340]", 
                 "url": "r=W1&d=149&s=1625"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "MOHAWK &amp; DANBURY [WB#4340]", 
+                "url": "r=W3&d=150&s=1625"
             }
         ]
     }, 
@@ -29676,6 +29847,12 @@
                 "routeno": "W1", 
                 "stopname": "NAKOMA &amp; SEMINOLE [EB#4347]", 
                 "url": "r=W1&d=149&s=1628"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "NAKOMA &amp; SEMINOLE [EB#4347]", 
+                "url": "r=W3&d=150&s=1628"
             }
         ]
     }, 
@@ -29844,6 +30021,12 @@
                 "routeno": "40", 
                 "stopname": "GREENWAY &amp; FISH HATCHERY [EB#4373]", 
                 "url": "r=40&d=160&s=3651"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "GREENWAY &amp; FISH HATCHERY [EB#4373]", 
+                "url": "r=W5&d=150&s=3651"
             }
         ]
     }, 
@@ -29864,6 +30047,12 @@
                 "routeno": "W3", 
                 "stopname": "S BELTLINE FT &amp; LANDMARK [EB#4377]", 
                 "url": "r=W3&d=150&s=3652"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "S BELTLINE FT &amp; LANDMARK [EB#4377]", 
+                "url": "r=W5&d=150&s=3652"
             }
         ]
     }, 
@@ -29984,6 +30173,12 @@
                 "routeno": "W3", 
                 "stopname": "S BELTLINE FT &amp; GRANDVIEW [WB#4412]", 
                 "url": "r=W3&d=149&s=1635"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "S BELTLINE FT &amp; GRANDVIEW [WB#4412]", 
+                "url": "r=W3&d=150&s=1635"
             }
         ]
     }, 
@@ -30138,6 +30333,12 @@
                 "routeno": "W1", 
                 "stopname": "MOHAWK &amp; NAKOMA [WB#4438]", 
                 "url": "r=W1&d=149&s=1639"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "MOHAWK &amp; NAKOMA [WB#4438]", 
+                "url": "r=W3&d=150&s=1639"
             }
         ]
     }, 
@@ -30188,6 +30389,12 @@
                 "routeno": "W3", 
                 "stopname": "FISH HATCHERY &amp; GREENWAY [NB#4443]", 
                 "url": "r=W3&d=150&s=4186"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "FISH HATCHERY &amp; GREENWAY [NB#4443]", 
+                "url": "r=W5&d=150&s=4186"
             }
         ]
     }, 
@@ -30284,6 +30491,26 @@
                 "routeno": "W3", 
                 "stopname": "E VERONA FT &amp; BRITTA [SB#4456]", 
                 "url": "r=W3&d=149&s=4187"
+            }
+        ]
+    }, 
+    "4457": {
+        "dir": "E", 
+        "lat": "42.994438", 
+        "lon": "-89.513007", 
+        "name": "E VERONA & OLD PB (EB)", 
+        "routes": [
+            {
+                "direction": "WTP", 
+                "routeno": "55", 
+                "stopname": "E VERONA &amp; OLD PB [EB#4457]", 
+                "url": "r=55&d=131&s=4273"
+            }, 
+            {
+                "direction": "CapSq", 
+                "routeno": "75", 
+                "stopname": "E VERONA &amp; OLD PB [EB#4457]", 
+                "url": "r=75&d=102&s=4273"
             }
         ]
     }, 
@@ -30522,6 +30749,12 @@
                 "routeno": "W3", 
                 "stopname": "S BELTLINE FT &amp; SEMINOLE [EB#4539]", 
                 "url": "r=W3&d=150&s=3925"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "S BELTLINE FT &amp; SEMINOLE [EB#4539]", 
+                "url": "r=W5&d=150&s=3925"
             }
         ]
     }, 
@@ -30616,7 +30849,7 @@
     "4559": {
         "dir": "E", 
         "lat": "42.987673", 
-        "lon": "-89.553340", 
+        "lon": "-89.55334", 
         "name": "W VERONA & WESTRIDGE (EB)", 
         "routes": [
             {
@@ -30682,6 +30915,12 @@
                 "routeno": "W3", 
                 "stopname": "TODD &amp; PELHAM [SB#4572]", 
                 "url": "r=W3&d=150&s=4084"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "TODD &amp; PELHAM [SB#4572]", 
+                "url": "r=W5&d=150&s=4084"
             }
         ]
     }, 
@@ -30806,6 +31045,12 @@
                 "routeno": "W3", 
                 "stopname": "POST &amp; TRACEWAY [EB#4613]", 
                 "url": "r=W3&d=150&s=1664"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "POST &amp; TRACEWAY [EB#4613]", 
+                "url": "r=W5&d=150&s=1664"
             }
         ]
     }, 
@@ -31016,6 +31261,12 @@
                 "routeno": "W1", 
                 "stopname": "NAKOMA &amp; SPRING [EB#4655]", 
                 "url": "r=W1&d=149&s=1665"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "NAKOMA &amp; SPRING [EB#4655]", 
+                "url": "r=W3&d=150&s=1665"
             }
         ]
     }, 
@@ -31075,8 +31326,8 @@
     }, 
     "4685": {
         "dir": "E", 
-        "lat": "43.034375", 
-        "lon": "-89.446879", 
+        "lat": "43.034339", 
+        "lon": "-89.444732", 
         "name": "S BELTLINE FT & DANBURY (EB)", 
         "routes": [
             {
@@ -31382,6 +31633,12 @@
                 "routeno": "W3", 
                 "stopname": "GREENWAY &amp; COHO [EB#4739](Greenway &amp; Coho)", 
                 "url": "r=W3&d=150&s=3665"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "GREENWAY &amp; COHO [EB#4739]", 
+                "url": "r=W5&d=150&s=3665"
             }
         ]
     }, 
@@ -31540,6 +31797,12 @@
                 "routeno": "W1", 
                 "stopname": "MOHAWK &amp; SEMINOLE [WB#4770]", 
                 "url": "r=W1&d=149&s=1677"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "MOHAWK &amp; SEMINOLE [WB#4770]", 
+                "url": "r=W3&d=150&s=1677"
             }
         ]
     }, 
@@ -31560,6 +31823,12 @@
                 "routeno": "W3", 
                 "stopname": "S BELTLINE FT &amp; RIVER BEND [WB#4776]", 
                 "url": "r=W3&d=149&s=1678"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "S BELTLINE FT &amp; RIVER BEND [WB#4776]", 
+                "url": "r=W3&d=150&s=1678"
             }
         ]
     }, 
@@ -31814,6 +32083,12 @@
                 "routeno": "W3", 
                 "stopname": "TODD &amp; GREENWAY [SB#4818]", 
                 "url": "r=W3&d=150&s=1685"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "TODD &amp; GREENWAY [SB#4818]", 
+                "url": "r=W5&d=150&s=1685"
             }
         ]
     }, 
@@ -31966,6 +32241,12 @@
                 "routeno": "W3", 
                 "stopname": "POST &amp; LEOPOLD [EB#4837]", 
                 "url": "r=W3&d=150&s=1689"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "POST &amp; LEOPOLD [EB#4837]", 
+                "url": "r=W5&d=150&s=1689"
             }
         ]
     }, 
@@ -32006,6 +32287,12 @@
                 "routeno": "W3", 
                 "stopname": "S BELTLINE FT &amp; TODD [EB#4841]", 
                 "url": "r=W3&d=150&s=1690"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "S BELTLINE FT &amp; TODD [EB#4841]", 
+                "url": "r=W5&d=150&s=1690"
             }
         ]
     }, 
@@ -32302,6 +32589,12 @@
                 "routeno": "W3", 
                 "stopname": "S BELTLINE FT &amp; RIVER BEND [EB#4873]", 
                 "url": "r=W3&d=150&s=1700"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W5", 
+                "stopname": "S BELTLINE FT &amp; RIVER BEND [EB#4873]", 
+                "url": "r=W5&d=150&s=1700"
             }
         ]
     }, 
@@ -32340,6 +32633,12 @@
                 "routeno": "W3", 
                 "stopname": "S BELTLINE FT &amp; SERGENIANS [WB#4876]", 
                 "url": "r=W3&d=149&s=1701"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "S BELTLINE FT &amp; SERGENIANS [WB#4876]", 
+                "url": "r=W3&d=150&s=1701"
             }
         ]
     }, 
@@ -32360,6 +32659,12 @@
                 "routeno": "W1", 
                 "stopname": "NAKOMA &amp; WHENONA [EB#4879]", 
                 "url": "r=W1&d=149&s=1702"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "NAKOMA &amp; WHENONA [EB#4879]", 
+                "url": "r=W3&d=150&s=1702"
             }
         ]
     }, 
@@ -32518,6 +32823,12 @@
                 "routeno": "W1", 
                 "stopname": "MOHAWK &amp; WHENONA [WB#4916]", 
                 "url": "r=W1&d=149&s=1708"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "MOHAWK &amp; WHENONA [WB#4916]", 
+                "url": "r=W3&d=150&s=1708"
             }
         ]
     }, 
@@ -32578,6 +32889,12 @@
                 "routeno": "W1", 
                 "stopname": "SEMINOLE &amp; DONCASTER [NB#4929]", 
                 "url": "r=W1&d=149&s=1710"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "SEMINOLE &amp; DONCASTER [NB#4929]", 
+                "url": "r=W3&d=150&s=1710"
             }
         ]
     }, 
@@ -32824,6 +33141,12 @@
                 "routeno": "W3", 
                 "stopname": "S BELTLINE FT &amp; LANDMARK [WB#4968]", 
                 "url": "r=W3&d=149&s=1717"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "S BELTLINE FT &amp; LANDMARK [WB#4968]", 
+                "url": "r=W3&d=150&s=1717"
             }
         ]
     }, 
@@ -35780,6 +36103,12 @@
                 "routeno": "W1", 
                 "stopname": "ARIV WEST TP &amp; TOKAY [WB#6101](West Transfer Point)", 
                 "url": "r=W1&d=150&s=1843"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "W3", 
+                "stopname": "ARIV WEST TP &amp; TOKAY [WB#6101](West Transfer Point)", 
+                "url": "r=W3&d=150&s=1843"
             }, 
             {
                 "direction": "WTP", 
@@ -39032,8 +39361,8 @@
     }, 
     "6458": {
         "dir": "W", 
-        "lat": "43.098362", 
-        "lon": "-89.508091", 
+        "lat": "43.098407", 
+        "lon": "-89.506362", 
         "name": "FRANKLIN & BRISTOL (WB)", 
         "routes": [
             {
@@ -42610,8 +42939,8 @@
     }, 
     "6927": {
         "dir": "E", 
-        "lat": "43.098137", 
-        "lon": "-89.508474", 
+        "lat": "43.098183", 
+        "lon": "-89.506745", 
         "name": "FRANKLIN & BRISTOL (EB)", 
         "routes": [
             {
@@ -43933,6 +44262,12 @@
             }, 
             {
                 "direction": "PM", 
+                "routeno": "L1", 
+                "stopname": "MILWAUKEE &amp; WALBRIDGE [EB#7167]", 
+                "url": "r=L1&d=150&s=2192"
+            }, 
+            {
+                "direction": "PM", 
                 "routeno": "L3", 
                 "stopname": "MILWAUKEE &amp; WALBRIDGE [EB#7167]", 
                 "url": "r=L3&d=150&s=2192"
@@ -44044,6 +44379,12 @@
                 "routeno": "33", 
                 "stopname": "MILWAUKEE &amp; SWANTON [EB#7175]", 
                 "url": "r=33&d=159&s=2198"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "L1", 
+                "stopname": "MILWAUKEE &amp; SWANTON [EB#7175]", 
+                "url": "r=L1&d=150&s=2198"
             }, 
             {
                 "direction": "AM", 
@@ -44436,6 +44777,12 @@
                 "routeno": "35", 
                 "stopname": "MILWAUKEE &amp; PORTLAND [EB#7209]", 
                 "url": "r=35&d=157&s=2215"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "L1", 
+                "stopname": "MILWAUKEE &amp; PORTLAND [EB#7209]", 
+                "url": "r=L1&d=150&s=2215"
             }
         ]
     }, 
@@ -45542,6 +45889,12 @@
                 "url": "r=33&d=159&s=2259"
             }, 
             {
+                "direction": "PM", 
+                "routeno": "L1", 
+                "stopname": "MILWAUKEE &amp; DAFFODIL [EB#7381]", 
+                "url": "r=L1&d=150&s=2259"
+            }, 
+            {
                 "direction": "AM", 
                 "routeno": "L3", 
                 "stopname": "MILWAUKEE &amp; DAFFODIL [EB#7381]", 
@@ -46566,6 +46919,12 @@
                 "routeno": "33", 
                 "stopname": "MILWAUKEE &amp; S THOMPSON [EB#7547]", 
                 "url": "r=33&d=159&s=4127"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "L1", 
+                "stopname": "MILWAUKEE &amp; S THOMPSON [EB#7547]", 
+                "url": "r=L1&d=150&s=4127"
             }
         ]
     }, 
@@ -47088,6 +47447,12 @@
                 "routeno": "35", 
                 "stopname": "MILWAUKEE &amp; MILO [EB#7633]", 
                 "url": "r=35&d=157&s=2308"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "L1", 
+                "stopname": "MILWAUKEE &amp; MILO [EB#7633]", 
+                "url": "r=L1&d=150&s=2308"
             }
         ]
     }, 
@@ -48922,6 +49287,12 @@
                 "url": "r=33&d=159&s=4150"
             }, 
             {
+                "direction": "PM", 
+                "routeno": "L1", 
+                "stopname": "MILWAUKEE &amp; KURT [EB#7913]", 
+                "url": "r=L1&d=150&s=4150"
+            }, 
+            {
                 "direction": "AM", 
                 "routeno": "L3", 
                 "stopname": "MILWAUKEE &amp; KURT [EB#7913]", 
@@ -49248,6 +49619,12 @@
                 "routeno": "33", 
                 "stopname": "MCCLELLAN &amp; SHARPSBURG [SB#7960]", 
                 "url": "r=33&d=59&s=4155"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "L1", 
+                "stopname": "MCCLELLAN &amp; SHARPSBURG [SB#7960]", 
+                "url": "r=L1&d=150&s=4155"
             }, 
             {
                 "direction": "PM", 
@@ -49630,6 +50007,12 @@
                 "routeno": "57", 
                 "stopname": "MANCHESTER &amp; WESTIN [NB#8137]", 
                 "url": "r=57&d=113&s=2402"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "M3", 
+                "stopname": "MANCHESTER &amp; WESTIN [NB#8137]", 
+                "url": "r=M3&d=150&s=2402"
             }
         ]
     }, 
@@ -49810,6 +50193,12 @@
                 "url": "r=57&d=113&s=3474"
             }, 
             {
+                "direction": "PM", 
+                "routeno": "M3", 
+                "stopname": "MANCHESTER &amp; MCKEE [NB#8163]", 
+                "url": "r=M3&d=150&s=3474"
+            }, 
+            {
                 "direction": "AM", 
                 "routeno": "M5", 
                 "stopname": "MANCHESTER &amp; MCKEE [NB#8163]", 
@@ -49947,6 +50336,12 @@
             }, 
             {
                 "direction": "PM", 
+                "routeno": "M3", 
+                "stopname": "STONECREEK &amp; MCKEE [SB#8184]", 
+                "url": "r=M3&d=150&s=2420"
+            }, 
+            {
+                "direction": "PM", 
                 "routeno": "M5", 
                 "stopname": "STONECREEK &amp; MCKEE [SB#8184]", 
                 "url": "r=M5&d=150&s=2420"
@@ -50031,6 +50426,12 @@
             }, 
             {
                 "direction": "PM", 
+                "routeno": "M3", 
+                "stopname": "MCKENNA &amp; LANCASTER [SB#8194]", 
+                "url": "r=M3&d=150&s=2423"
+            }, 
+            {
+                "direction": "PM", 
                 "routeno": "M5", 
                 "stopname": "MCKENNA &amp; LANCASTER [SB#8194]", 
                 "url": "r=M5&d=150&s=2423"
@@ -50054,6 +50455,12 @@
                 "routeno": "M5", 
                 "stopname": "MUIR FIELD &amp; TEMPE [SB#8196]", 
                 "url": "r=M5&d=150&s=2424"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "M7", 
+                "stopname": "MUIR FIELD &amp; TEMPE [SB#8196]", 
+                "url": "r=M7&d=150&s=2424"
             }
         ]
     }, 
@@ -50074,6 +50481,12 @@
                 "routeno": "56", 
                 "stopname": "PILGRIM &amp; MCKENNA [WB#8200]", 
                 "url": "r=56&d=113&s=2425"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "M3", 
+                "stopname": "PILGRIM &amp; MCKENNA [WB#8200]", 
+                "url": "r=M3&d=150&s=2425"
             }
         ]
     }, 
@@ -50138,6 +50551,12 @@
                 "routeno": "M5", 
                 "stopname": "MUIR FIELD &amp; LINDFIELD [SB#8224]", 
                 "url": "r=M5&d=150&s=2428"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "M7", 
+                "stopname": "MUIR FIELD &amp; LINDFIELD [SB#8224]", 
+                "url": "r=M7&d=150&s=2428"
             }
         ]
     }, 
@@ -50464,6 +50883,12 @@
                 "routeno": "56", 
                 "stopname": "MAPLE GR &amp; STRATFORD [SB#8288]", 
                 "url": "r=56&d=113&s=2440"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "M3", 
+                "stopname": "MAPLE GR &amp; STRATFORD [SB#8288]", 
+                "url": "r=M3&d=150&s=2440"
             }, 
             {
                 "direction": "PM", 
@@ -50828,6 +51253,12 @@
                 "routeno": "M5", 
                 "stopname": "MUIR FIELD &amp; MCKEE [SB#8376]", 
                 "url": "r=M5&d=150&s=2455"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "M7", 
+                "stopname": "MUIR FIELD &amp; MCKEE [SB#8376]", 
+                "url": "r=M7&d=150&s=2455"
             }
         ]
     }, 
@@ -51216,6 +51647,12 @@
                 "routeno": "57", 
                 "stopname": "MUIR FIELD &amp; LANCASTER [SB#8480]", 
                 "url": "r=57&d=113&s=2470"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "M7", 
+                "stopname": "MUIR FIELD &amp; LANCASTER [SB#8480]", 
+                "url": "r=M7&d=150&s=2470"
             }
         ]
     }, 
@@ -51369,6 +51806,12 @@
             }, 
             {
                 "direction": "PM", 
+                "routeno": "M3", 
+                "stopname": "STRATFORD &amp; SHEFFORD [EB#8561]", 
+                "url": "r=M3&d=150&s=2480"
+            }, 
+            {
+                "direction": "PM", 
                 "routeno": "M5", 
                 "stopname": "STRATFORD &amp; SHEFFORD [EB#8561]", 
                 "url": "r=M5&d=150&s=2480"
@@ -51430,6 +51873,12 @@
                 "routeno": "M5", 
                 "stopname": "MUIR FIELD &amp; GLADSTONE [SB#8572]", 
                 "url": "r=M5&d=150&s=2482"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "M7", 
+                "stopname": "MUIR FIELD &amp; GLADSTONE [SB#8572]", 
+                "url": "r=M7&d=150&s=2482"
             }
         ]
     }, 
@@ -51784,6 +52233,12 @@
                 "routeno": "56", 
                 "stopname": "PILGRIM &amp; PILGRIM [WB#8654]", 
                 "url": "r=56&d=113&s=2496"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "M3", 
+                "stopname": "PILGRIM &amp; PILGRIM [WB#8654]", 
+                "url": "r=M3&d=150&s=2496"
             }
         ]
     }, 
@@ -52012,6 +52467,12 @@
                 "routeno": "M5", 
                 "stopname": "MUIR FIELD &amp; RAYMOND [SB#8714]", 
                 "url": "r=M5&d=150&s=2507"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "M7", 
+                "stopname": "MUIR FIELD &amp; RAYMOND [SB#8714]", 
+                "url": "r=M7&d=150&s=2507"
             }
         ]
     }, 
@@ -52032,6 +52493,12 @@
                 "routeno": "57", 
                 "stopname": "STONECREEK &amp; E PASS [SB#8718]", 
                 "url": "r=57&d=113&s=2508"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "M3", 
+                "stopname": "STONECREEK &amp; E PASS [SB#8718]", 
+                "url": "r=M3&d=150&s=2508"
             }, 
             {
                 "direction": "PM", 
@@ -52176,6 +52643,12 @@
                 "routeno": "57", 
                 "stopname": "MANCHESTER &amp; THORNEBURY [NB#8747]", 
                 "url": "r=57&d=113&s=2514"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "M3", 
+                "stopname": "MANCHESTER &amp; THORNEBURY [NB#8747]", 
+                "url": "r=M3&d=150&s=2514"
             }
         ]
     }, 
@@ -52441,6 +52914,12 @@
             }, 
             {
                 "direction": "PM", 
+                "routeno": "M3", 
+                "stopname": "MCKENNA &amp; YORKTOWN [SB#8818]", 
+                "url": "r=M3&d=150&s=2525"
+            }, 
+            {
+                "direction": "PM", 
                 "routeno": "M5", 
                 "stopname": "MCKENNA &amp; YORKTOWN [SB#8818]", 
                 "url": "r=M5&d=150&s=2525"
@@ -52530,6 +53009,12 @@
                 "routeno": "M5", 
                 "stopname": "MUIR FIELD &amp; CIMARRON [SB#8836]", 
                 "url": "r=M5&d=150&s=2531"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "M7", 
+                "stopname": "MUIR FIELD &amp; CIMARRON [SB#8836]", 
+                "url": "r=M7&d=150&s=2531"
             }
         ]
     }, 
@@ -52884,6 +53369,12 @@
                 "routeno": "M5", 
                 "stopname": "MUIR FIELD &amp; CARNWOOD [SB#8934]", 
                 "url": "r=M5&d=150&s=2549"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "M7", 
+                "stopname": "MUIR FIELD &amp; CARNWOOD [SB#8934]", 
+                "url": "r=M7&d=150&s=2549"
             }
         ]
     }, 
@@ -53166,6 +53657,12 @@
                 "routeno": "25", 
                 "stopname": "W TERRACE &amp; 5117 [EB#9113]", 
                 "url": "r=25&d=154&s=2560"
+            }, 
+            {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "W TERRACE &amp; 5117 [EB#9113]", 
+                "url": "r=26&d=141&s=2560"
             }
         ]
     }, 
@@ -53183,12 +53680,32 @@
             }
         ]
     }, 
+    "9118": {
+        "dir": "S", 
+        "lat": "43.1359", 
+        "lon": "-89.29066", 
+        "name": "CROSSROADS & HI CROSSING (SB)", 
+        "routes": [
+            {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "CROSSROADS &amp; HI CROSSING [SB#9118]", 
+                "url": "r=26&d=141&s=4274"
+            }
+        ]
+    }, 
     "9131": {
         "dir": "E", 
         "lat": "43.138405", 
         "lon": "-89.289135", 
         "name": "CITY VIEW & HI CROSSING (EB)", 
         "routes": [
+            {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "CITY VIEW &amp; HI CROSSING [EB#9131]", 
+                "url": "r=26&d=141&s=3899"
+            }, 
             {
                 "direction": "City Vw-E Towne", 
                 "routeno": "36", 
@@ -53529,18 +54046,18 @@
         "dir": "N", 
         "lat": "43.137305", 
         "lon": "-89.346446", 
-        "name": "AIRPORT & ARRIVALS SIX (NB)", 
+        "name": "AIRPORT & TERM DOOR 6 (NB)", 
         "routes": [
             {
                 "direction": "E Towne", 
                 "routeno": "20", 
-                "stopname": "AIRPORT &amp; ARRIVALS SIX [NB#9169](Dane County Airport)", 
+                "stopname": "AIRPORT &amp; TERM DOOR 6 [NB#9169](Dane County Airport)", 
                 "url": "r=20&d=106&s=2583"
             }, 
             {
                 "direction": "NTP", 
                 "routeno": "20", 
-                "stopname": "AIRPORT &amp; ARRIVALS SIX [NB#9169](Dane County Airport)", 
+                "stopname": "AIRPORT &amp; TERM DOOR 6 [NB#9169](Dane County Airport)", 
                 "url": "r=20&d=115&s=2583"
             }
         ]
@@ -53618,6 +54135,20 @@
                 "routeno": "E3", 
                 "stopname": "EAST WASH &amp; LEXINGTON [WB#9172]", 
                 "url": "r=E3&d=149&s=2585"
+            }
+        ]
+    }, 
+    "9173": {
+        "dir": "N", 
+        "lat": "43.131842", 
+        "lon": "-89.29839", 
+        "name": "E SPRINGS & HI CROSSING (NB)", 
+        "routes": [
+            {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "E SPRINGS &amp; HI CROSSING [NB#9173]", 
+                "url": "r=26&d=141&s=2586"
             }
         ]
     }, 
@@ -54070,12 +54601,6 @@
                 "routeno": "25", 
                 "stopname": "BILTMORE &amp; 4702 [SB#9246]", 
                 "url": "r=25&d=154&s=2602"
-            }, 
-            {
-                "direction": "Am Ctr-E Towne", 
-                "routeno": "26", 
-                "stopname": "BILTMORE &amp; 4702 [SB#9246]", 
-                "url": "r=26&d=141&s=2602"
             }
         ]
     }, 
@@ -54114,10 +54639,30 @@
         "name": "HI CROSSING & CROSSROADS (WB)", 
         "routes": [
             {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "HI CROSSING &amp; CROSSROADS [WB#9264]", 
+                "url": "r=26&d=141&s=2604"
+            }, 
+            {
                 "direction": "City Vw-E Towne", 
                 "routeno": "36", 
                 "stopname": "HI CROSSING &amp; CROSSROADS [WB#9264]", 
                 "url": "r=36&d=142&s=2604"
+            }
+        ]
+    }, 
+    "9273": {
+        "dir": "E", 
+        "lat": "43.13879", 
+        "lon": "-89.288961", 
+        "name": "HI CROSSING & CITY VIEW (EB)", 
+        "routes": [
+            {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "HI CROSSING &amp; CITY VIEW [EB#9273]", 
+                "url": "r=26&d=141&s=4275"
             }
         ]
     }, 
@@ -54226,6 +54771,26 @@
                 "routeno": "30", 
                 "stopname": "N THOMPSON &amp; WAYWOOD [NB#9291]", 
                 "url": "r=30&d=106&s=2611"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "E3", 
+                "stopname": "N THOMPSON &amp; WAYWOOD [NB#9291]", 
+                "url": "r=E3&d=150&s=2611"
+            }
+        ]
+    }, 
+    "9300": {
+        "dir": "W", 
+        "lat": "43.153791", 
+        "lon": "-89.301341", 
+        "name": "EASTPARK & UWH AM CTR DR (WB)", 
+        "routes": [
+            {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "EASTPARK &amp; UWH AM CTR DR [WB#9300](Eastpark &amp; UW Health)", 
+                "url": "r=26&d=141&s=4276"
             }
         ]
     }, 
@@ -54461,12 +55026,32 @@
             }
         ]
     }, 
+    "9348": {
+        "dir": "W", 
+        "lat": "43.130664", 
+        "lon": "-89.302148", 
+        "name": "EAST TOWNE & E SPRINGS (WB)", 
+        "routes": [
+            {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "EAST TOWNE &amp; E SPRINGS [WB#9348]", 
+                "url": "r=26&d=141&s=2624"
+            }
+        ]
+    }, 
     "9349": {
         "dir": "N", 
         "lat": "43.134323", 
         "lon": "-89.290156", 
         "name": "CROSSROADS & 2801 (NB)", 
         "routes": [
+            {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "CROSSROADS &amp; 2801 [NB#9349]", 
+                "url": "r=26&d=141&s=3907"
+            }, 
             {
                 "direction": "City Vw-E Towne", 
                 "routeno": "36", 
@@ -54481,6 +55066,12 @@
         "lon": "-89.301814", 
         "name": "EAST TOWNE & E SPRINGS (EB)", 
         "routes": [
+            {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "EAST TOWNE &amp; E SPRINGS [EB#9351]", 
+                "url": "r=26&d=141&s=2625"
+            }, 
             {
                 "direction": "City Vw-E Towne", 
                 "routeno": "36", 
@@ -54506,12 +55097,6 @@
                 "routeno": "25", 
                 "stopname": "BILTMORE &amp; BUTTONWOOD [SB#9358]", 
                 "url": "r=25&d=154&s=2627"
-            }, 
-            {
-                "direction": "Am Ctr-E Towne", 
-                "routeno": "26", 
-                "stopname": "BILTMORE &amp; BUTTONWOOD [SB#9358]", 
-                "url": "r=26&d=141&s=2627"
             }
         ]
     }, 
@@ -54676,6 +55261,12 @@
         "name": "EAST TOWNE & ZEIER (EB)", 
         "routes": [
             {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "EAST TOWNE &amp; ZEIER [EB#9391]", 
+                "url": "r=26&d=141&s=3767"
+            }, 
+            {
                 "direction": "City Vw-E Towne", 
                 "routeno": "36", 
                 "stopname": "EAST TOWNE &amp; ZEIER [EB#9391]", 
@@ -54735,6 +55326,20 @@
             }
         ]
     }, 
+    "9412": {
+        "dir": "S", 
+        "lat": "43.13435", 
+        "lon": "-89.290478", 
+        "name": "CROSSROADS & 2810 (SB)", 
+        "routes": [
+            {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "CROSSROADS &amp; 2810 [SB#9412]", 
+                "url": "r=26&d=141&s=2636"
+            }
+        ]
+    }, 
     "9420": {
         "dir": "S", 
         "lat": "43.111937", 
@@ -54766,6 +55371,12 @@
                 "routeno": "30", 
                 "stopname": "LIEN &amp; ZEIER [WB#9432]", 
                 "url": "r=30&d=106&s=2638"
+            }, 
+            {
+                "direction": "PM", 
+                "routeno": "E3", 
+                "stopname": "LIEN &amp; ZEIER [WB#9432]", 
+                "url": "r=E3&d=150&s=2638"
             }
         ]
     }, 
@@ -54891,6 +55502,20 @@
             }
         ]
     }, 
+    "9486": {
+        "dir": "S", 
+        "lat": "43.151801", 
+        "lon": "-89.299058", 
+        "name": "EASTPARK & BILTMORE (SB)", 
+        "routes": [
+            {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "EASTPARK &amp; BILTMORE [SB#9486]", 
+                "url": "r=26&d=141&s=4277"
+            }
+        ]
+    }, 
     "9488": {
         "dir": "S", 
         "lat": "43.127494", 
@@ -54967,15 +55592,35 @@
     }, 
     "9498": {
         "dir": "S", 
-        "lat": "43.133193", 
-        "lon": "-89.287984", 
-        "name": "CITY VIEW & HOLBURN (SB)", 
+        "lat": "43.132754", 
+        "lon": "-89.287898", 
+        "name": "CITY VIEW & WALL (SB)", 
         "routes": [
+            {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "CITY VIEW &amp; WALL [SB#9498](Wall &amp; City View)", 
+                "url": "r=26&d=141&s=3910"
+            }, 
             {
                 "direction": "City Vw-E Towne", 
                 "routeno": "36", 
-                "stopname": "CITY VIEW &amp; HOLBURN [SB#9498]", 
+                "stopname": "CITY VIEW &amp; WALL [SB#9498](Wall &amp; City View)", 
                 "url": "r=36&d=142&s=3910"
+            }
+        ]
+    }, 
+    "9501": {
+        "dir": "E", 
+        "lat": "43.142573", 
+        "lon": "-89.284234", 
+        "name": "HI CROSSING & CROSS HILL (EB)", 
+        "routes": [
+            {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "HI CROSSING &amp; CROSS HILL [EB#9501](High Crossing &amp; Cross Hill)", 
+                "url": "r=26&d=141&s=4278"
             }
         ]
     }, 
@@ -55029,21 +55674,27 @@
     }, 
     "9527": {
         "dir": "E", 
-        "lat": "43.143533", 
-        "lon": "-89.295712", 
-        "name": "W TERRACE & TERRACE (EB)", 
+        "lat": "43.144008", 
+        "lon": "-89.295464", 
+        "name": "W TERRACE & EASTPARK (EB)", 
         "routes": [
             {
                 "direction": "American Ctr", 
                 "routeno": "25", 
-                "stopname": "W TERRACE &amp; TERRACE [EB#9527]", 
+                "stopname": "W TERRACE &amp; EASTPARK [EB#9527]", 
                 "url": "r=25&d=153&s=2651"
             }, 
             {
                 "direction": "CapSq/E Towne", 
                 "routeno": "25", 
-                "stopname": "W TERRACE &amp; TERRACE [EB#9527]", 
+                "stopname": "W TERRACE &amp; EASTPARK [EB#9527]", 
                 "url": "r=25&d=154&s=2651"
+            }, 
+            {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "W TERRACE &amp; EASTPARK [EB#9527]", 
+                "url": "r=26&d=141&s=2651"
             }
         ]
     }, 
@@ -55340,6 +55991,12 @@
                 "routeno": "25", 
                 "stopname": "E TERRACE &amp; HERZING UNIV [EB#9581]", 
                 "url": "r=25&d=154&s=2663"
+            }, 
+            {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "E TERRACE &amp; HERZING UNIV [EB#9581]", 
+                "url": "r=26&d=141&s=2663"
             }
         ]
     }, 
@@ -55426,6 +56083,12 @@
                 "routeno": "25", 
                 "stopname": "AMERICAN &amp; AMERICAN FAM [NB#9595]", 
                 "url": "r=25&d=154&s=2667"
+            }, 
+            {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "AMERICAN &amp; AMERICAN FAM [NB#9595]", 
+                "url": "r=26&d=141&s=2667"
             }
         ]
     }, 
@@ -55462,6 +56125,12 @@
         "name": "CROSSROADS & WALL (NB)", 
         "routes": [
             {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "CROSSROADS &amp; WALL [NB#9615]", 
+                "url": "r=26&d=141&s=3913"
+            }, 
+            {
                 "direction": "City Vw-E Towne", 
                 "routeno": "36", 
                 "stopname": "CROSSROADS &amp; WALL [NB#9615]", 
@@ -55478,7 +56147,7 @@
             {
                 "direction": "City Vw-E Towne", 
                 "routeno": "36", 
-                "stopname": "E SPRINGS &amp; MENARDS [WB#9620]", 
+                "stopname": "E SPRINGS &amp; MENARDS [WB#9620](E Springs &amp; Menards)", 
                 "url": "r=36&d=142&s=2672"
             }
         ]
@@ -55572,6 +56241,20 @@
                 "routeno": "E3", 
                 "stopname": "N THOMPSON &amp; OAK VALLEY [NB#9645]", 
                 "url": "r=E3&d=150&s=2676"
+            }
+        ]
+    }, 
+    "9651": {
+        "dir": "E", 
+        "lat": "43.153513", 
+        "lon": "-89.301094", 
+        "name": "EASTPARK & UWH AM CTR DR (EB)", 
+        "routes": [
+            {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "EASTPARK &amp; UWH AM CTR DR [EB#9651]", 
+                "url": "r=26&d=141&s=4279"
             }
         ]
     }, 
@@ -55704,6 +56387,12 @@
                 "routeno": "25", 
                 "stopname": "AM FAM DR &amp; AMERICAN [WB#9684]", 
                 "url": "r=25&d=154&s=2681"
+            }, 
+            {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "AM FAM DR &amp; AMERICAN [WB#9684]", 
+                "url": "r=26&d=141&s=2681"
             }
         ]
     }, 
@@ -55742,6 +56431,12 @@
         "name": "HI CROSSING & E SPRINGS (EB)", 
         "routes": [
             {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "HI CROSSING &amp; E SPRINGS [EB#9701]", 
+                "url": "r=26&d=141&s=2684"
+            }, 
+            {
                 "direction": "City Vw-E Towne", 
                 "routeno": "36", 
                 "stopname": "HI CROSSING &amp; E SPRINGS [EB#9701]", 
@@ -55775,6 +56470,20 @@
             }
         ]
     }, 
+    "9717": {
+        "dir": "N", 
+        "lat": "43.152258", 
+        "lon": "-89.298958", 
+        "name": "EASTPARK & BILTMORE (NB)", 
+        "routes": [
+            {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "EASTPARK &amp; BILTMORE [NB#9717]", 
+                "url": "r=26&d=141&s=4280"
+            }
+        ]
+    }, 
     "9719": {
         "dir": "N", 
         "lat": "43.121258", 
@@ -55792,6 +56501,20 @@
                 "routeno": "30", 
                 "stopname": "EAGAN &amp; LIEN [NB#9719]", 
                 "url": "r=30&d=106&s=2686"
+            }
+        ]
+    }, 
+    "9720": {
+        "dir": "S", 
+        "lat": "43.13247", 
+        "lon": "-89.290654", 
+        "name": "CROSSROADS & WALL (SB)", 
+        "routes": [
+            {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "CROSSROADS &amp; WALL [SB#9720]", 
+                "url": "r=26&d=141&s=2687"
             }
         ]
     }, 
@@ -55930,7 +56653,7 @@
             {
                 "direction": "Am Ctr-E Towne", 
                 "routeno": "26", 
-                "stopname": "BUTTONWOOD &amp; AMERICAN FAM [WB#9744](Buttonwood &amp; American)", 
+                "stopname": "BUTTONWOOD &amp; AMERICAN FAM [WB#9744]", 
                 "url": "r=26&d=141&s=2694"
             }
         ]
@@ -55972,6 +56695,12 @@
                 "routeno": "25", 
                 "stopname": "E TERRACE &amp; EASTPARK [EB#9747]", 
                 "url": "r=25&d=154&s=2696"
+            }, 
+            {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "E TERRACE &amp; EASTPARK [EB#9747]", 
+                "url": "r=26&d=141&s=2696"
             }
         ]
     }, 
@@ -56058,12 +56787,6 @@
                 "routeno": "25", 
                 "stopname": "BILTMORE &amp; EASTPARK [SB#9766]", 
                 "url": "r=25&d=154&s=2700"
-            }, 
-            {
-                "direction": "Am Ctr-E Towne", 
-                "routeno": "26", 
-                "stopname": "BILTMORE &amp; EASTPARK [SB#9766]", 
-                "url": "r=26&d=141&s=2700"
             }
         ]
     }, 
@@ -56101,6 +56824,12 @@
         "lon": "-89.307009", 
         "name": "EAST TOWNE & INDEPENDENCE (EB)", 
         "routes": [
+            {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "EAST TOWNE &amp; INDEPENDENCE [EB#9783]", 
+                "url": "r=26&d=141&s=2706"
+            }, 
             {
                 "direction": "City Vw-E Towne", 
                 "routeno": "36", 
@@ -56172,6 +56901,20 @@
                 "routeno": "20", 
                 "stopname": "INTERNATIONAL &amp; AMERICAN [SB#9790]", 
                 "url": "r=20&d=115&s=2709"
+            }
+        ]
+    }, 
+    "9793": {
+        "dir": "N", 
+        "lat": "43.135691", 
+        "lon": "-89.287732", 
+        "name": "CITY VIEW & BURKE (NB)", 
+        "routes": [
+            {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "CITY VIEW &amp; BURKE [NB#9793]", 
+                "url": "r=26&d=141&s=2710"
             }
         ]
     }, 
@@ -56314,6 +57057,12 @@
                 "routeno": "25", 
                 "stopname": "AMERICAN &amp; TANCHO [NB#9803]", 
                 "url": "r=25&d=154&s=2713"
+            }, 
+            {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "AMERICAN &amp; TANCHO [NB#9803]", 
+                "url": "r=26&d=141&s=2713"
             }
         ]
     }, 
@@ -56409,6 +57158,20 @@
             }
         ]
     }, 
+    "9822": {
+        "dir": "W", 
+        "lat": "43.142716", 
+        "lon": "-89.284728", 
+        "name": "HI CROSSING & CROSS HILL (WB)", 
+        "routes": [
+            {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "HI CROSSING &amp; CROSS HILL [WB#9822](High Crossing &amp; Cross Hill)", 
+                "url": "r=26&d=141&s=4281"
+            }
+        ]
+    }, 
     "9826": {
         "dir": "S", 
         "lat": "43.135557", 
@@ -56416,10 +57179,30 @@
         "name": "CITY VIEW & BURKE (SB)", 
         "routes": [
             {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "CITY VIEW &amp; BURKE [SB#9826]", 
+                "url": "r=26&d=141&s=3919"
+            }, 
+            {
                 "direction": "City Vw-E Towne", 
                 "routeno": "36", 
                 "stopname": "CITY VIEW &amp; BURKE [SB#9826]", 
                 "url": "r=36&d=142&s=3919"
+            }
+        ]
+    }, 
+    "9829": {
+        "dir": "N", 
+        "lat": "43.150891", 
+        "lon": "-89.293313", 
+        "name": "BILTMORE & BUTTONWOOD (NB)", 
+        "routes": [
+            {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "BILTMORE &amp; BUTTONWOOD [NB#9829]", 
+                "url": "r=26&d=141&s=4282"
             }
         ]
     }, 
@@ -56666,13 +57449,19 @@
                 "routeno": "25", 
                 "stopname": "AM FAM DR &amp; HQ BLDG [SB#9900](American Family)", 
                 "url": "r=25&d=154&s=2732"
+            }, 
+            {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "AM FAM DR &amp; HQ BLDG [SB#9900](American Family)", 
+                "url": "r=26&d=141&s=2732"
             }
         ]
     }, 
     "9901": {
         "dir": "E", 
-        "lat": "43.144737", 
-        "lon": "-89.29021", 
+        "lat": "43.145256", 
+        "lon": "-89.290123", 
         "name": "E TERRACE & UW CLINIC (EB)", 
         "routes": [
             {
@@ -56686,6 +57475,12 @@
                 "routeno": "25", 
                 "stopname": "E TERRACE &amp; UW CLINIC [EB#9901](West Terrace &amp; UW Health)", 
                 "url": "r=25&d=154&s=2733"
+            }, 
+            {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "E TERRACE &amp; UW CLINIC [EB#9901]", 
+                "url": "r=26&d=141&s=2733"
             }
         ]
     }, 
@@ -56749,6 +57544,20 @@
             }
         ]
     }, 
+    "9932": {
+        "dir": "S", 
+        "lat": "43.14598", 
+        "lon": "-89.297586", 
+        "name": "EASTPARK & GLOBE UNIV (SB)", 
+        "routes": [
+            {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "EASTPARK &amp; GLOBE UNIV [SB#9932]", 
+                "url": "r=26&d=141&s=4284"
+            }
+        ]
+    }, 
     "9939": {
         "dir": "N", 
         "lat": "43.138392", 
@@ -56768,14 +57577,7 @@
         "lat": "43.132656", 
         "lon": "-89.288183", 
         "name": "WALL & CITY VIEW (WB)", 
-        "routes": [
-            {
-                "direction": "City Vw-E Towne", 
-                "routeno": "36", 
-                "stopname": "WALL &amp; CITY VIEW [WB#9950](Wall &amp; City View)", 
-                "url": "r=36&d=142&s=3922"
-            }
-        ]
+        "routes": {}
     }, 
     "9951": {
         "dir": "N", 
@@ -56788,6 +57590,20 @@
                 "routeno": "30", 
                 "stopname": "N THOMPSON &amp; SYCAMORE [NB#9951]", 
                 "url": "r=30&d=106&s=2741"
+            }
+        ]
+    }, 
+    "9957": {
+        "dir": "N", 
+        "lat": "43.132915", 
+        "lon": "-89.287676", 
+        "name": "CITY VIEW & WALL (NB)", 
+        "routes": [
+            {
+                "direction": "Am Ctr-E Towne", 
+                "routeno": "26", 
+                "stopname": "CITY VIEW &amp; WALL [NB#9957](Wall &amp; City View)", 
+                "url": "r=26&d=141&s=4283"
             }
         ]
     }, 
