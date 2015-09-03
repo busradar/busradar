@@ -1,2 +1,2 @@
 feed_publisher_name,feed_publisher_url,feed_lang,feed_start_date,feed_end_date,feed_version
-Metro Transit-City of Madison,http://mymetrobus.com,en,20150301,20150822,201505040924
+Metro Transit-City of Madison,http://mymetrobus.com,en,20150524,20151205,201508061634
