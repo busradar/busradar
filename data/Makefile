@@ -1,4 +1,4 @@
-all: quadtree/stops.bin paths/route_points.bin db.sqlite
+all: quadtree/stops.bin paths/route_points.bin db.sqlite config.java
 
 quadtree/stops.bin: combined-stops.json UPDATE
 	make -C quadtree
@@ -37,7 +37,9 @@ gtf: mmt_gtfs.zip UPDATE
 clean:
 	make -C quadtree clean
 	make -C paths clean
-	rm -f combined-stops.json mobiletracker-weekendsandholidays.json mobiletracker-combined.json  paths.json mobiletracker-weekdays.json
+	rm -f combined-stops.json mobiletracker-weekendsandholidays.json \
+		mobiletracker-combined.json  \
+		paths.json mobiletracker-weekdays.json config.java
 	rm -f db.sqlite
 	rm -rf gtf
 	rm -f mmt_gtfs.zip
