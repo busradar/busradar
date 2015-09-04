@@ -19,40 +19,46 @@ for opt in indexsoup.findAll("option"):
 
 routes = {}
 
+def float2fixed(val):
+    return int(round(float(val) * 1E6))
 
 for route in route_names:
     print "fetching route %s..." % route
-    params = urllib.urlopen("http://webwatch.cityofmadison.com/webwatch/Scripts/Route%0s_trace.js" % route).read()
+    parms = urllib.urlopen("http://webwatch.cityofmadison.com/webwatch/Scripts/Route%0s_trace.js" % route).read()
 
-    legslist = []
-
-    try:
-        legs = params.split("*")[1].split("|")
-    except:
-        continue
-    del legs[-1]
-    for leg in legs:
-        ends = leg.split(";")
-
-        lat0 = ends[0].split(' ')[1];
-        lon0 = ends[0].split(' ')[0];
+    polylines = []
     
-        lat1 = ends[1].split(' ')[1];
-        lon1 = ends[1].split(' ')[0];
+    # http://webwatch.cityofmadison.com/webwatch/Scripts/LoadMap.js
+    parameters = parms.split("*");
+    #unit = parameters[0]
+    legs = parameters[1].split("|")
+    # penParms = parameters[2].split(",")
+    # latLons = legs[0].split(";")
+    # coordinates = latLongs[0].split(" ")
     
-        new = [int(round(float(lat0)*1E6)), int(round(float(lon0)*1E6)), int(round(float(lat1)*1E6)), int(round(float(lon1)*1E6))]
-        if new[1] > new[3]:
-            tmp1 = new[0]
-            tmp2 = new[1]
-            new[0] = new[2]
-            new[1] = new[3]
-            new[2] = tmp1
-            new[3] = tmp2
+    for i in range(0, len(legs)-1):
+        leg = legs[i]
+
+        points = leg.split(";")
         
-        legslist.append(new)
+        coords = points[0].split(" ")
+        prev_lat = float2fixed(coords[1])
+        prev_lng = float2fixed(coords[0])
+        
+        for j in range(1, len(points)):
+            point = points[j]
+            if point == "":
+                continue
+            coords = point.split(" ")
+            lat = float2fixed(coords[1])
+            lng = float2fixed(coords[0])
+            
+            polylines.append([prev_lat, prev_lng, lat, lng])
+            
+            prev_lat = lat
+            prev_lng = lng
 
-    legslist.sort(key=lambda x: x[1])	
-    routes[route] = legslist
+    routes[route] = polylines
 
 print >>open('paths.json', 'w'), json.dumps(routes, sort_keys=True, indent=4)
 
