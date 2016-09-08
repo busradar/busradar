@@ -1,2 +1,0 @@
-agency_id,checkin_duration,agency_name,agency_url,agency_timezone,agency_lang,agency_phone,agency_fare_url,bike_policy_url
-MMT,300,Metro Transit-City of Madison,http://www.mymetrobus.com,America/Chicago,en,608-266-4466,https://www.cityofmadison.com/epayment/metro/busPass/index.cfm,http://www.cityofmadison.com/Metro/planyourtrip/bikeRacks.cfm
