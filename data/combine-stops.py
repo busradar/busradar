@@ -4,103 +4,65 @@
 import json
 import sys
 import re
+import urllib2
 
-mapdata_wk = json.load(open("map-weekday.json"))
-mapdata_hl = json.load(open("map-holiday.json"))
-stopsdata = json.load(open("stops.json"))
-mbdata_week = json.load(open("mobiletracker-combined.json"))
+#mapdata_wk = json.load(open("map-weekday.json"))
+#mapdata_hl = json.load(open("map-holiday.json"))
+#stopsdata = json.load(open("stops.json"))
+mobiletracker_data = json.load(open("mobiletracker-combined.json"))
 #mbdata_holidays = json.load(open("mobiletracker-weekendsandholidays.json"))
 
-def find_in_map(sid, stopname2):
-	print stopname2, sid
-	sid = int(sid)
-	for route in mapdata_wk:
-		for stopname in mapdata_wk[route]:
-			if ("[ID#%04d]"%sid) in stopname:
-				#print "found", stopname
-				return mapdata_wk[route][stopname]
-				
-	for route in mapdata_hl:
-		for stopname in mapdata_hl[route]:
-			if ("[ID#%04d]"%sid) in stopname:
-				#print "found", stopname
-				return mapdata_hl[route][stopname]
-	
-	xstr = ("[ID#%04d]"%sid)
-	#print "not found %s" % xstr
-	#print sid, stopname2
+stops = {}
 
-	
-	stopname = re.search('\\((.*)\\)', stopname2)
-	if stopname != None:
-		stopname = stopname.group(1).replace("&amp;", "&").replace(' and ', '&')
-		print "OK", stopname
-	else:
-		stopname = re.search('(.*) \\[', stopname2).group(1).replace("&amp;", "&").replace(' and ', '&')
-		print "NOT OK", stopname
-	
-	for route in mapdata_wk:
-		for s in mapdata_wk[route]:
-			if s.lower().replace('&amp;', '&').replace(' and ', '&') == stopname.lower():
-				#print "found", stopname
-				return mapdata_wk[route][s]
-				
-				
-	for route in mapdata_hl:
-		for s in mapdata_hl[route]:
-			if s.lower().replace('&amp;', '&').replace(' and ', '&') == stopname.lower():
-				#print "found", stopname
-				return mapdata_hl[route][s]
-				
-	print "not found for", stopname
-	
+def rpc(url, data=None):
+    print 'rpc', url
+    headers = {
+        'Content-Type': 'application/json; charset=utf-8'
+    }
+    if data is None:
+        data = ''
+    else:
+        data = json.dumps(data)
+    req = urllib2.Request(url, data=data, headers=headers)
+    result = urllib2.urlopen(req).read();
+    return json.loads(result)
 
-def get_data(stopid, mbdata):
-	out = {}
-	
-	if 'stopname' not in mbdata[stopid][0]:
-		print "stopname missing for stop ", stopid
-		
-	result = find_in_map(stopid, mbdata[stopid][0]['stopname'])
-	
-	out['routes'] = mbdata[stopid]
-	out['lat'] = result['lat']
-	out['lon'] = result['lon']
-	
-	if stopid in stopsdata:
-		#if "lat" in stopsdata[stopid]:
-			#out[stopid]['lat'] = stopsdata[stopid]['lat']
-			#out[stopid]['lon'] = stopsdata[stopid]['lon']
-			
-		out['dir'] = stopsdata[stopid]['dir'][0]	
-			
-		name = "%s %s & %s" % ( stopsdata[stopid]['houseno'],
-								stopsdata[stopid]['addr1'].title(),
-								stopsdata[stopid]['addr2'].title())
-		out['name'] = name
-		
-	else:
-		name = mbdata[stopid][0]['stopname'].replace('&amp;', '&').title()
-		name = re.match('([^\\[]*)', name).group(1).strip()
-		
-		out['name'] = name
-		out['dir'] = '?'
-		
-	return out
+for route in rpc('http://webwatch.cityofmadison.com/tmwebwatch/Arrivals.aspx/getRoutes')['d']:
+    full_name = route['name']
+    print full_name
+    name = re.search('- \w+ ([a-zA-Z0-9_-]+)', full_name).group(1)
+    routeid = route['id']
+    
+    for stop in rpc(
+        'http://webwatch.cityofmadison.com/tmwebwatch/GoogleMap.aspx/getStops', {
+            'routeID': routeid
+        })['d']:
+        id = stop['stopID']
+        lat = stop['lat']
+        lon = stop['lon']
+        name = stop['stopName']
+        dir = '?'
+        
+        match = re.search(r'\[([NESW])B#', name)
+        if match:
+            dir = match.group(1)
+        
+        strid = str(id)
+        if strid in mobiletracker_data:
+            routes = mobiletracker_data[strid]
+        else:
+            routes = {}
+            print "mobile tracker data not found for", id, name
+            sys.exit(1)
+        
+        stops[id] = {
+            'lat': lat,
+            'lon': lon,
+            'name': name,
+            'dir': dir,
+            'routes': routes
+        }
 
 
-combined_stops = {}
 
-for stopid in mbdata_week:
-	combined_stops[stopid] = get_data(stopid, mbdata_week)
-	
-		
-#for stopid in mbdata_holidays:
-#	if stopid not in combined_stops:
-#		print stopid
-#		combined_stops[stopid] = get_data(stopid, mbdata_holidays)
-#	else:
-#		if len(combined_stops[stopid]['routes']) != len(mbdata_week[stopid]):
-#			print "mismatch"
-
-print >>open('combined-stops.json', 'w'), json.dumps(combined_stops, sort_keys=True, indent=4)
+print >>open('combined-stops.json', 'w'), json.dumps(stops, sort_keys=True, indent=4)

@@ -24,9 +24,11 @@ def rpc(url, data=None):
 def float2fixed(val):
     return int(round(float(val) * 1E6))
 
+
 for route in rpc('http://webwatch.cityofmadison.com/tmwebwatch/Arrivals.aspx/getRoutes')['d']:
     full_name = route['name']
-    name = re.search('- Route ([a-zA-Z0-9_-]+)', full_name).group(1)
+    print full_name
+    name = re.search('- \w+ ([a-zA-Z0-9_-]+)', full_name).group(1)
     id = route['id']
     routes[id] = {
         'name': name
@@ -46,9 +48,16 @@ for routeid in routes:
         lng0 = float2fixed(polyline[0]['lon'])
         lat1 = float2fixed(polyline[1]['lat'])
         lng1 = float2fixed(polyline[1]['lon'])
-        
-        print '(%s, %s) -> (%s, %s)' % (lat0, lng0, lat1, lng1)
         polylines.append([lat0, lng0, lat1, lng1])
+        
+        i = 2
+        while i < len(polyline):
+            lat0 = lat1
+            lng0 = lng1
+            lat1 = float2fixed(polyline[i]['lat'])
+            lng1 = float2fixed(polyline[i]['lon'])
+            i += 1
+            polylines.append([lat0, lng0, lat1, lng1])
     
     route['polylines'] = polylines
 

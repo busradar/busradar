@@ -26,6 +26,9 @@ public static void main(String[] args) throws Exception
             
             
             JSONObject ri = routes_info.getJSONObject(i);
+            if (ri.getBoolean("inactive")) {
+                continue;
+            }
             String name = ri.getString("name");
             int color = Integer.parseInt(ri.getString("color"), 16);
             
@@ -36,7 +39,7 @@ public static void main(String[] args) throws Exception
             r.color = color;
             r.days = BOTH;
             r.name = name;
-            id.id = ri.getInt("id")
+            r.id = ri.getInt("id");
             
             routes_dict.put(name, r);
             
@@ -53,13 +56,13 @@ public static void main(String[] args) throws Exception
 		JSONArray lines = routes.getJSONArray(route_name);
 		
 		try {
-                    route_name = Integer.parseInt(route_name) + "";
-                }
-                catch (NumberFormatException e) {}
+            route_name = Integer.parseInt(route_name) + "";
+        }
+        catch (NumberFormatException e) {}
                 
 		Route route = routes_dict.get(route_name);
 		
-		System.out.printf("processing %s\n", route_name);
+		System.out.printf("processing Route %s with %d lines\n", route_name, lines.length());
 		
 		RouteTree tree = new RouteTree();
 		List<RouteTree.Line> list = new ArrayList<RouteTree.Line>();	 
@@ -90,15 +93,15 @@ public static void main(String[] args) throws Exception
 	int i = 0;
 	for (String k : routes_dict.keySet())
 	{
-            Route r = routes_dict.get(k);
-            if (r.tree == null) {
-                System.err.printf("Paths for route %s are missing!\n", k);
-                System.exit(1);
-            }
-            System.out.printf("%d: %s:%s\n", i, k, r);
-            r.write(out);
-            i++;
+        Route r = routes_dict.get(k);
+        if (r.tree == null) {
+            System.err.printf("Paths for route %s are missing!\n", k);
+            System.exit(1);
         }
+        System.out.printf("%d: %s:%s\n", i, k, r);
+        r.write(out);
+        i++;
+    }
                 
 	out.close();
 	

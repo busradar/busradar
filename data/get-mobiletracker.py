@@ -23,7 +23,7 @@ stops = {}
 namedb = []
 
 for a in BeautifulSoup(html).findAll('a', {'class': 'adalink'}):
-    res = re.search('- Route ([a-zA-Z0-9_-]+)', a.string)
+    res = re.search('- \w+ ([a-zA-Z0-9_-]+)', a.string)
     if not res:
         continue
     routename = res.group(1)

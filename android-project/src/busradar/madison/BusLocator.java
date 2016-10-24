@@ -72,39 +72,44 @@ public class BusLocator extends AsyncTask<Integer, ArrayList<BusOverlay.BusLocat
         
 	}
 	
+	void try_fetch(int routeid) throws Exception {
+        ArrayList<BusOverlay.BusLocation> bus_locs = new ArrayList<BusOverlay.BusLocation>();
+        JSONObject result = rpc(routeid);
+        if (result.isNull("d")) {
+            return;
+        }
+        JSONArray vehicles = result.getJSONArray("d");
+        for (int i = 0; i < vehicles.length(); i++) {
+            JSONObject vehicle = vehicles.getJSONObject(i);
+            double lat = vehicle.getDouble("lat");
+            double lng = vehicle.getDouble("lon");
+            int heading = vehicle.getInt("heading");
+            
+            BusOverlay.BusLocation bus_loc = new BusOverlay.BusLocation();
+            bus_loc.loc = new GeoPoint(
+                    (int) (lat*1E6),
+                    (int) (lng*1E6));
+            bus_loc.heading = heading;
+            bus_locs.add(bus_loc);
+            
+        }
+        publishProgress(bus_locs);
+}
+	
 	@SuppressWarnings("unchecked")
 	@Override
 	protected ArrayList<BusOverlay.BusLocation> doInBackground(Integer... r) {
 		int routeid = r[0];
 		for (;;) {
-			ArrayList<BusOverlay.BusLocation> bus_locs = new ArrayList<BusOverlay.BusLocation>();
-			String route_formatted = null;
-			
 			try {
-				JSONArray vehicles = rpc(routeid).getJSONArray("d");
-                for (int i = 0; i < vehicles.length(); i++) {
-                    JSONObject vehicle = vehicles.getJSONObject(i);
-                    double lat = vehicle.getDouble("lat");
-                    double lng = vehicle.getDouble("lon");
-                    int heading = vehicle.getInt("heading");
-                    
-                    BusOverlay.BusLocation bus_loc = new BusOverlay.BusLocation();
-                    bus_loc.loc = new GeoPoint(
-                            (int) (lat*1E6),
-                            (int) (lng*1E6));
-                    bus_loc.heading = heading;
-                    bus_locs.add(bus_loc);
-                    
-                }
-				publishProgress(bus_locs);
-				
+				try_fetch(routeid);
 			} catch(Exception e) {
 				
 				if (e instanceof InterruptedException) {
 					return null;
 				}
 				
-				System.out.printf("BusLoactor: error getting bus location");
+				System.out.printf("BusRadar: error getting bus location\n");
 				e.printStackTrace();
 				return null;
 			}

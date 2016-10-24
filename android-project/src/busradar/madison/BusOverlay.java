@@ -130,8 +130,11 @@ draw(Canvas canvas, MapView map, boolean shadow)
 		
 		RouteTree tree = G.route_points[G.active_route].tree;
 		tree.find(minlon-5*pixel, minlat-5*pixel, maxlon+5*pixel, maxlat+5*pixel, lines);
+		//System.out.printf("BusRadar:  tree find %s, %d, %dn %d total=%d leaves=%d\n",
+        //    minlon-5*pixel, minlat-5*pixel, maxlon+5*pixel, maxlat+5*pixel,
+        //    lines.size(), tree.getNumberOfLeaves());
 		
-		Path path = new Path();		
+		Path path = new Path();
 		for (RouteTree.Line line : lines) {
 			
 			proj.toPixels(new GeoPoint(line.lat1, line.lon1), p1);

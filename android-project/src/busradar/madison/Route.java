@@ -39,6 +39,7 @@ public class Route
         name = s.readUTF();
         id = s.readInt();
 		tree = new RouteTree(s);
+		//System.out.printf("Loaded path %s %d %d\n", name, id, tree.getNumberOfLeaves());
 		color = s.readInt();
 		days = s.readByte();
 	}

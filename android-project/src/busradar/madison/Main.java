@@ -302,7 +302,7 @@ public class Main extends MapActivity
 		}
 		
 		if (G.active_route >= 0) {
-			G.bus_locator.start(G.route_points[G.active_route].name);
+			G.bus_locator.start(G.route_points[G.active_route].id);
 		}
 		
 		{

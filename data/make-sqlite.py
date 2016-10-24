@@ -46,12 +46,16 @@ for stopid in stops:
                 found = False
                 
                 for rinfo in route_info:
+                    if rinfo['inactive']:
+                        continue
                     if rinfo['name'] == route_name:
                         found = True
                         break
                     id += 1
                     
                 if not found:
+                    print "Not found!", route_name
+                    continue
                     raise "Not found"
                 
             

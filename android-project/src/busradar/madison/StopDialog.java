@@ -103,8 +103,7 @@ public final class StopDialog extends Dialog {
 //	}
 	
 	final static Pattern num_vehicles_re = Pattern.compile("Next (\\d) Vehicles Arrive at:");
-	final static Pattern time_re = Pattern.compile("(\\d\\d?:\\d\\d [AP]\\.M\\.).*TO (.*)<");
-	final static Pattern time_re_backup = Pattern.compile("(\\d\\d?:\\d\\d [AP]\\.M\\.)");
+	final static Pattern time_re = Pattern.compile("(\\d\\d?:\\d\\d [a]m).*<a.*>(.*)<");
 	
 	//final static Pattern no_busses_re = Pattern.compile("No stops with upcoming crossings times found\\.");
 	//final static Pattern no_timepoints_re = Pattern.compile("No stop information is found with this time point\\.");
@@ -116,7 +115,7 @@ public final class StopDialog extends Dialog {
 	TextView status_text;
 	TextView cur_loading_text;
 	BaseAdapter times_adapter;
-	final static String TRANSITTRACKER_URL = "http://webwatch.cityofmadison.com/tmwebwatch/LiveADAArrivalTimes?";
+	final static String TRANSITTRACKER_URL = "http://webwatch.cityofmadison.com/tmwebwatch/LiveADAArrivalTimes";
 
 	static class RouteURL {
 		static final int LOADING = 0;
@@ -453,29 +452,17 @@ public final class StopDialog extends Dialog {
 						Scanner scan = new Scanner(is, "UTF-8");
 
 						//String outstr_cur = "Route " + r.route + "\n";
+						//scan.findWithinHorizon("(.*)", 0);
+						//System.out.printf("BusRadar: %s\n", scan.nextLine());
 						
 						if (scan.findWithinHorizon(num_vehicles_re, 0) != null) {
-
+                            System.out.printf("BusRadar: found num vehicles re\n");
 							while (scan.findWithinHorizon(time_re, 0) != null) {
+							    System.out.printf("BusRadar: time re: %s\n", scan.match().group(0));
 								RouteTime time = new RouteTime();
 								time.route = r.route;
 								time.time = scan.match().group(1).replace(".", "");
 								time.dir = scan.match().group(2);
-								//time.date = DateFormat.getTimeInstance(DateFormat.SHORT).parse(time.time);
-								
-								SimpleDateFormat f = new SimpleDateFormat("h:mm aa", Locale.US);
-								time.date = f.parse(time.time);
-								r.status = RouteURL.DONE;
-								
-								//outstr_cur += String.format("%s to %s\n", time.time, time.dir);
-								curtimes.add(time);
-							}
-							
-							while (scan.findWithinHorizon(time_re_backup, 0) != null) {
-								RouteTime time = new RouteTime();
-								time.route = r.route;
-								time.time = scan.match().group(1).replace(".", "");
-								//time.dir = scan.match().group(2);
 								//time.date = DateFormat.getTimeInstance(DateFormat.SHORT).parse(time.time);
 								
 								SimpleDateFormat f = new SimpleDateFormat("h:mm aa", Locale.US);

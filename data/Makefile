@@ -9,14 +9,14 @@ quadtree/stops.bin: combined-stops.json
 paths/route_points.bin: combined-stops.json paths.json
 	make -C paths
 	
-paths.json:
+paths.json: get-paths.py
 	python get-paths.py
 
 db.sqlite: combined-stops.json make-sqlite.py UPDATE
 	python make-sqlite.py
 
-combined-stops.json: mobiletracker-combined.json gtf
-	python stops-from-gtf.py
+combined-stops.json: mobiletracker-combined.json
+	python combine-stops.py
 
 mobiletracker-weekdays.json:
 	python get-mobiletracker.py
@@ -28,7 +28,7 @@ mobiletracker-combined.json: mobiletracker-weekdays.json mobiletracker-weekendsa
 	python combine-mobiletracker.py
 
 mmt_gtfs.zip:
-	curl http://www.cityofmadison.com/metro/gtfs/mmt_gtfs.zip > mmt_gtfs.zip
+	curl http://transitdata.cityofmadison.com/GTFS/mmt_gtfs.zip > mmt_gtfs.zip
 
 config.java: config.java.tmpl UPDATE
 	cpp -P -DDATABASE_VERSION=`stat --format=%Y UPDATE` config.java.tmpl > config.java

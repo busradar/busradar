@@ -38,7 +38,7 @@ route_info = {}
 
 for route in rpc('http://webwatch.cityofmadison.com/tmwebwatch/Arrivals.aspx/getRoutes')['d']:
     full_name = route['name']
-    name = re.search('- Route ([a-zA-Z0-9_-]+)', full_name).group(1)
+    name = re.search('- \w+ ([a-zA-Z0-9_-]+)', full_name).group(1)
     id = route['id']
     route_info[name] = {
         'name': name,
