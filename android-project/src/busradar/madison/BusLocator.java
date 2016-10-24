@@ -18,16 +18,19 @@ import java.io.InputStream;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.IllegalFormatException;
+import java.net.*;
+import java.io.*;
+import org.json.*;
 
 import android.os.AsyncTask;
 
 import com.google.android.maps.GeoPoint;
 
-public class BusLocator extends AsyncTask<String, ArrayList<BusOverlay.BusLocation>, ArrayList<BusOverlay.BusLocation> > {
+public class BusLocator extends AsyncTask<Integer, ArrayList<BusOverlay.BusLocation>, ArrayList<BusOverlay.BusLocation> > {
 	BusLocator curr = null;
 	Thread t;
 	
-	void start(String r) {
+	void start(int r) {
 		if (curr != null)
 			curr.cancel(true);
 		
@@ -44,61 +47,55 @@ public class BusLocator extends AsyncTask<String, ArrayList<BusOverlay.BusLocati
 		G.bus_locs = null;
 	}
 	
+	static final String VEHICLES_URL = "http://webwatch.cityofmadison.com/tmwebwatch/GoogleMap.aspx/getVehicles";
+	JSONObject rpc(int id) throws Exception {
+	
+        HttpURLConnection conn = (HttpURLConnection) new URL(VEHICLES_URL).openConnection();
+        conn.setRequestMethod("POST");
+        conn.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+        
+        JSONObject obj = new JSONObject();
+        obj.put("routeID", id);
+        
+        OutputStream os = conn.getOutputStream();
+        os.write(obj.toString(0).getBytes("UTF-8"));
+        os.close();
+        
+        InputStream is = conn.getInputStream();
+        byte[] b = new byte[1024*8];
+        String str = "";
+        while ( is.read(b) != -1 ) {
+            str += new String(b, "UTF-8");
+        }
+        
+        return new JSONObject(str);
+        
+	}
+	
 	@SuppressWarnings("unchecked")
 	@Override
-	protected ArrayList<BusOverlay.BusLocation> doInBackground(String... r) {
-		String route = r[0];
+	protected ArrayList<BusOverlay.BusLocation> doInBackground(Integer... r) {
+		int routeid = r[0];
 		for (;;) {
 			ArrayList<BusOverlay.BusLocation> bus_locs = new ArrayList<BusOverlay.BusLocation>();
 			String route_formatted = null;
 			
 			try {
-				String str = "";
-				
-				route_formatted = "http://webwatch.cityofmadison.com/webwatch/UpdateWebMap.aspx?u=" + r[0];
-				
-				InputStream is = new URL(route_formatted).openStream();
-				
-				byte[] b = new byte[1024*8];
-				while ( is.read(b) != -1 ) {
-					str += new String(b, "UTF-8");
-				}
-				
-				String[] vehicles = str.split("\\*")[2].split(";");
-				for (String v : vehicles) {
-					String[] parts = v.split("\\|");
-					String lat = parts[0];
-					String lon = parts[1];
-					String direction = parts[2];
-					//String content = parts[3];
-					
-					BusOverlay.BusLocation bus_loc = new BusOverlay.BusLocation();
-					bus_loc.loc = new GeoPoint((int)(Double.parseDouble(lat)*1E6),
-							   (int)(Double.parseDouble(lon)*1E6));
-					switch(Integer.parseInt(direction)) {
-			             case 1:
-			             case 2:
-			            	 bus_loc.dir = 'N';
-			            	 break;                          
-			             case 5:
-			             case 6:
-			            	 bus_loc.dir = 'S';
-			            	 break;           
-			             case 7:
-			             case 8:
-			            	 bus_loc.dir = 'W';
-			            	 break;
-			             case 3:
-			             case 4:
-			             default:
-			            	 bus_loc.dir = 'E';
-			            	 break; 
-	
-					}
-					
-					bus_locs.add( bus_loc );
-				}
-				
+				JSONArray vehicles = rpc(routeid).getJSONArray("d");
+                for (int i = 0; i < vehicles.length(); i++) {
+                    JSONObject vehicle = vehicles.getJSONObject(i);
+                    double lat = vehicle.getDouble("lat");
+                    double lng = vehicle.getDouble("lon");
+                    int heading = vehicle.getInt("heading");
+                    
+                    BusOverlay.BusLocation bus_loc = new BusOverlay.BusLocation();
+                    bus_loc.loc = new GeoPoint(
+                            (int) (lat*1E6),
+                            (int) (lng*1E6));
+                    bus_loc.heading = heading;
+                    bus_locs.add(bus_loc);
+                    
+                }
 				publishProgress(bus_locs);
 				
 			} catch(Exception e) {
@@ -107,7 +104,7 @@ public class BusLocator extends AsyncTask<String, ArrayList<BusOverlay.BusLocati
 					return null;
 				}
 				
-				System.out.printf("BusLoactor: error route %s url=%s\n", route, route_formatted);
+				System.out.printf("BusLoactor: error getting bus location");
 				e.printStackTrace();
 				return null;
 			}

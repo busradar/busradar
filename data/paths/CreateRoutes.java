@@ -36,6 +36,7 @@ public static void main(String[] args) throws Exception
             r.color = color;
             r.days = BOTH;
             r.name = name;
+            id.id = ri.getInt("id")
             
             routes_dict.put(name, r);
             

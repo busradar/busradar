@@ -116,7 +116,7 @@ public final class StopDialog extends Dialog {
 	TextView status_text;
 	TextView cur_loading_text;
 	BaseAdapter times_adapter;
-	final static String TRANSITTRACKER_URL = "http://webwatch.cityofmadison.com/webwatch/MobileAda.aspx?";
+	final static String TRANSITTRACKER_URL = "http://webwatch.cityofmadison.com/tmwebwatch/LiveADAArrivalTimes?";
 
 	static class RouteURL {
 		static final int LOADING = 0;

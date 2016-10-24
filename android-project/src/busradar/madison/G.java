@@ -49,7 +49,11 @@ static Bitmap bitmap_stop_nodir;
 static Bitmap bitmap_bus_west;
 static Bitmap bitmap_bus_east;
 static Bitmap bitmap_bus_north;
+static Bitmap bitmap_bus_northwest;
+static Bitmap bitmap_bus_northeast;
 static Bitmap bitmap_bus_south;
+static Bitmap bitmap_bus_southwest;
+static Bitmap bitmap_bus_southeast;
 	
 static QuadTree stops_tree;
 static Route[] route_points;
@@ -93,7 +97,11 @@ static void init(Main a)
    	
    	bitmap_bus_west = BitmapFactory.decodeResource(a.getResources(), R.drawable.bus_west);
    	bitmap_bus_north = BitmapFactory.decodeResource(a.getResources(), R.drawable.bus_north);
+   	bitmap_bus_northeast = BitmapFactory.decodeResource(a.getResources(), R.drawable.bus_northeast);
+   	bitmap_bus_northwest = BitmapFactory.decodeResource(a.getResources(), R.drawable.bus_northwest);
    	bitmap_bus_south = BitmapFactory.decodeResource(a.getResources(), R.drawable.bus_south);
+   	bitmap_bus_southeast = BitmapFactory.decodeResource(a.getResources(), R.drawable.bus_southeast);
+   	bitmap_bus_southwest = BitmapFactory.decodeResource(a.getResources(), R.drawable.bus_southwest);
    	bitmap_bus_east = BitmapFactory.decodeResource(a.getResources(), R.drawable.bus_east);
    	
 	try {

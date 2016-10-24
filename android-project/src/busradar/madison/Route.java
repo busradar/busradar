@@ -31,11 +31,13 @@ public class Route
 	public byte days;
 	public Button button;
 	public String name;
+	public int id;
 	
 	public Route() {}
 	
 	public Route(DataInputStream s) throws IOException {
         name = s.readUTF();
+        id = s.readInt();
 		tree = new RouteTree(s);
 		color = s.readInt();
 		days = s.readByte();
@@ -43,6 +45,7 @@ public class Route
 	
 	public void write(DataOutputStream s) throws IOException {
         s.writeUTF(name);
+        s.writeInt(id);
 		tree.write(s);
 		s.writeInt(color);
 		s.writeByte(days);

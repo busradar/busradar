@@ -15,58 +15,51 @@ import sys
 from BeautifulSoup import BeautifulSoup
 import datetime
 
-
-html = urllib.urlopen('http://webwatch.cityofmadison.com/webwatch/mobileada.aspx').read()
+URL = 'http://webwatch.cityofmadison.com/tmwebwatch/LiveADAArrivalTimes'
+html = urllib.urlopen(URL).read()
 soup = BeautifulSoup(html)
 
 stops = {}
 namedb = []
 
-for a in soup.findAll('a'):
-	if 'Route ' in a.string:
-		routeno = re.search('Route ([a-zA-Z0-9_-]+)', a.string).group(1)
-		print "route", routeno
-		# for each rote
-		
-		html = urllib.urlopen('http://webwatch.cityofmadison.com/webwatch/mobileada.aspx'+re.search('(\\?r=.*)', a['href']).group(1)).read()
-		
-		for dirs in re.findall('\\"MobileAda.aspx(\\?r=.*)\\">(.*?)<', html):
-			dirurl = dirs[0]
-			dirstr = dirs[1]
-			
-			html = urllib.urlopen('http://webwatch.cityofmadison.com/webwatch/mobileada.aspx'+dirurl).read()
-			
-			for stop in re.findall('\\"MobileAda.aspx\\?(r=.*)\\">(.*?)<', html):
-				url = stop[0]
-				stopname = stop[1]
-				
-				try:
-					stopid = re.search('\\[(.)B#(\\w+)\\]', stop[1]).group(2)
-				except Exception as e:
-					print >>sys.stderr, "stopname:", stopname, "routeno:", routeno, "url:", url, "exception", e 
-					continue
-				 
-				if stopid not in stops:
-					stops[stopid] = []
-				
-				
-				stops[stopid].append({
-					'routeno': routeno,
-					'direction': dirstr,
-					'url': url,
-					'stopname': stopname
-				})
-				
-				namedb.append(stopname + " route="+str(routeno) + " dir=" +dirstr)
-				
-			#break;
-	#break	
+for a in BeautifulSoup(html).findAll('a', {'class': 'adalink'}):
+    res = re.search('- Route ([a-zA-Z0-9_-]+)', a.string)
+    if not res:
+        continue
+    routename = res.group(1)
+    url = re.search(r'\?.*', a['href']).group(0)
+    routeid = re.search(r'r=(\d+)', url).group(1)
+    print "routename:", routename, "routeid:", routeid
+
+    url = URL + "?r=%s" % routeid
+    html = urllib.urlopen(url).read()
+    for a in BeautifulSoup(html).findAll('a', {'class': 'adalink'}):
+        url = re.search(r'\?.*', a['href']).group(0)
+        dirid = re.search(r'd=(\d+)', url).group(1)
+        dirname = a.string
+        
+        url = URL + '?r=%s&d=%s' % (routeid, dirid)
+        print '  dirname:', dirname, 'dirid:', dirid
+        html = urllib.urlopen(url).read()
+        for a in BeautifulSoup(html).findAll('a', {'class': 'adalink'}):
+            url = re.search(r'\?.*', a['href']).group(0)
+            stopname = a.string
+            stopid = re.search(r's=(\d+)', url).group(1)
+            print '    url:', url, 'stopname:', stopname, 'stopid:', stopid                
+            if stopid not in stops:
+                stops[stopid] = []
+            
+            
+            stops[stopid].append({
+                'routeno': routename,
+                'direction': dirname,
+                'url': url,
+                'stopname': stopname
+            })
 
 addname = "-weekdays"
 if datetime.date.today().strftime('%A') == 'Saturday' or \
    datetime.date.today().strftime('%A') == 'Sunday':
-	addname = '-weekendsandholidays'
-	
+    addname = '-weekendsandholidays'
 
 print >>open("mobiletracker"+addname+".json", "w"), json.dumps(stops, sort_keys=True, indent=4)
-#print >>open("names"+addname+".json", "w"), json.dumps(namedb, sort_keys=True, indent=4)

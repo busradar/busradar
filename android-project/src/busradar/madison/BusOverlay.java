@@ -41,7 +41,7 @@ int zoom_level = 0;
 
 static class BusLocation {
 	public GeoPoint loc;
-	public char dir;
+	public int heading;
 }
 
 BusOverlay() {	
@@ -203,11 +203,26 @@ draw(Canvas canvas, MapView map, boolean shadow)
 		for (BusOverlay.BusLocation bus_loc : G.bus_locs) {			
 			proj.toPixels(bus_loc.loc, point);
 			if (point.x < min.x || point.x > max.x || point.y < min.y || point.y > max.y) {
-
-				char dir = bus_loc.dir == 'N' ? '▲' :
-							bus_loc.dir == 'S' ? '▼' :
-								bus_loc.dir == 'E' ? '▶' :
-									bus_loc.dir == 'W' ? '◀' : ' ';
+			
+                int heading = bus_loc.heading;
+                char dir = ' ';
+                if (heading < (0+22) || bus_loc.heading >= (315+22)) {
+                    dir = '↑';
+                } else if (heading < (45+22)) {
+                    dir = '↗';
+                } else if (heading < (90+22)) {
+                    dir = '→';
+                } else if (heading < (135+22)) {
+                    dir = '↘';
+                } else if (heading < (180+22)) {
+                    dir = '↓';
+                }  else if (heading < (225+22)) {
+                    dir = '↙';
+                } else if (heading < (270+22)) {
+                    dir = '←';
+                } else if (heading < (315+22)) {
+                    dir = '↖';
+                }
 				
 				double dist = dist(center.getLatitudeE6()/1.E6, center.getLongitudeE6()/1.E6, 
 						bus_loc.loc.getLatitudeE6()/1.E6, bus_loc.loc.getLongitudeE6()/1.E6);
@@ -252,27 +267,32 @@ draw(Canvas canvas, MapView map, boolean shadow)
 			}
 				
 			Bitmap b;
-			switch (bus_loc.dir) {
-				case 'N': 
-					b = G.bitmap_bus_north;
-					canvas.drawBitmap(b, point.x, point.y-b.getHeight()/2, paint);
-					break;
-					
-				case 'S': 
-					b = G.bitmap_bus_south; 
-					canvas.drawBitmap(b, point.x-b.getWidth(), point.y-b.getHeight()/2, paint);
-					break;
-					
-				case 'E': 
-					b = G.bitmap_bus_east;
-					canvas.drawBitmap(b, point.x-b.getWidth()/2, point.y-b.getHeight(), paint);
-					break;
-					
-				case 'W': 
-					b = G.bitmap_bus_west;
-					canvas.drawBitmap(b, point.x-b.getWidth()/2, point.y-b.getHeight(), paint);
-					break;
-				}
+			int heading = bus_loc.heading;
+			if (heading < (0+22) || heading >= (315+22)) {
+                b = G.bitmap_bus_north;
+                canvas.drawBitmap(b, point.x, point.y-b.getHeight()/2, paint);
+            } else if (heading < (45+22)) {
+                b = G.bitmap_bus_northeast;
+                canvas.drawBitmap(b, point.x-b.getWidth()/2, point.y-b.getHeight(), paint);
+            } else if (heading < (90+22)) {
+                b = G.bitmap_bus_east;
+                canvas.drawBitmap(b, point.x-b.getWidth()/2, point.y-b.getHeight(), paint);
+            } else if (heading < (135+22)) {
+                b = G.bitmap_bus_southeast;
+                canvas.drawBitmap(b, point.x-b.getWidth()/2, point.y-b.getHeight(), paint);
+            } else if (heading < (180+22)) {
+                b = G.bitmap_bus_south;
+                canvas.drawBitmap(b, point.x-b.getWidth(), point.y-b.getHeight()/2, paint);
+            }  else if (heading < (225+22)) {
+                b = G.bitmap_bus_southwest;
+                canvas.drawBitmap(b, point.x-b.getWidth()/2, point.y-b.getHeight(), paint);
+            } else if (heading < (270+22)) {
+                b = G.bitmap_bus_west;
+                canvas.drawBitmap(b, point.x-b.getWidth()/2, point.y-b.getHeight(), paint);
+            } else if (heading < (315+22)) {
+                b = G.bitmap_bus_southwest;
+                canvas.drawBitmap(b, point.x-b.getWidth()/2, point.y-b.getHeight(), paint);
+            }
 			//canvas.drawCircle(point.x, point.y, 3, paint);
 		}
 	}
