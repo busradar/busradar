@@ -62,11 +62,7 @@ public class BusLocator extends AsyncTask<Integer, ArrayList<BusOverlay.BusLocat
         os.close();
         
         InputStream is = conn.getInputStream();
-        byte[] b = new byte[1024*8];
-        String str = "";
-        while ( is.read(b) != -1 ) {
-            str += new String(b, "UTF-8");
-        }
+        String str = util.read_fully(is);
         
         return new JSONObject(str);
         

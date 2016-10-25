@@ -31,7 +31,7 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.Locale;
 import java.util.Scanner;
-import java.util.regex.Pattern;
+import java.util.regex.*;
 
 import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.HttpsURLConnection;
@@ -102,10 +102,10 @@ public final class StopDialog extends Dialog {
 //	
 //	}
 	
-	final static Pattern num_vehicles_re = Pattern.compile("Next (\\d) Vehicles Arrive at:");
-	final static Pattern time_re = Pattern.compile("(\\d\\d?:\\d\\d [a]m).*<a.*>(.*)<");
+	final static Pattern num_vehicles_re = Pattern.compile("Next *\\d* *Vehicles? Arrives? at:");
+	final static Pattern time_re = Pattern.compile("(\\d+:\\d+ [ap]m).*<a.*>(.*)<");
 	
-	//final static Pattern no_busses_re = Pattern.compile("No stops with upcoming crossings times found\\.");
+	final static Pattern no_busses_re = Pattern.compile("No further buses scheduled for this stop");
 	//final static Pattern no_timepoints_re = Pattern.compile("No stop information is found with this time point\\.");
 	final static int route_list_id = 1;
 	final static int time_list_id = 2;
@@ -436,33 +436,20 @@ public final class StopDialog extends Dialog {
 					
 					final ArrayList<RouteTime> curtimes = new ArrayList<RouteTime>();
 					try {
-						System.err.printf("BusRadar URL %s\n", TRANSITTRACKER_URL+r.url);
-						URL url = new URL(TRANSITTRACKER_URL+r.url);
-					    URLConnection url_conn = url.openConnection();
-						if (url_conn instanceof HttpsURLConnection)
-						{
-							((HttpsURLConnection)url_conn).setHostnameVerifier(new HostnameVerifier() {
-								
-								public boolean verify(String hostname, SSLSession session) {
-									return true;
-								}
-							});
-						}
-						InputStream is = url_conn.getInputStream();
-						Scanner scan = new Scanner(is, "UTF-8");
-
+                        String data = util.http_get(TRANSITTRACKER_URL+r.url);
+                        System.err.printf("BusRadar URL %s: %s\n", TRANSITTRACKER_URL+r.url, data);
 						//String outstr_cur = "Route " + r.route + "\n";
 						//scan.findWithinHorizon("(.*)", 0);
 						//System.out.printf("BusRadar: %s\n", scan.nextLine());
 						
-						if (scan.findWithinHorizon(num_vehicles_re, 0) != null) {
-                            System.out.printf("BusRadar: found num vehicles re\n");
-							while (scan.findWithinHorizon(time_re, 0) != null) {
-							    System.out.printf("BusRadar: time re: %s\n", scan.match().group(0));
+						if (num_vehicles_re.matcher(data).find()) {
+                            //System.out.printf("BusRadar: found num vehicles re\n");
+                            Matcher m = time_re.matcher(data);
+                            while (m.find()) {
 								RouteTime time = new RouteTime();
 								time.route = r.route;
-								time.time = scan.match().group(1).replace(".", "");
-								time.dir = scan.match().group(2);
+								time.time = m.group(1).replace(".", "");
+								time.dir = m.group(2);
 								//time.date = DateFormat.getTimeInstance(DateFormat.SHORT).parse(time.time);
 								
 								SimpleDateFormat f = new SimpleDateFormat("h:mm aa", Locale.US);
@@ -474,10 +461,9 @@ public final class StopDialog extends Dialog {
 							}
 
 						}
-
-//						else if (scan.findWithinHorizon(no_busses_re, 0) != null) {
-//							r.status = RouteURL.NO_MORE_TODAY; 
-//						} 
+						else if (no_busses_re.matcher(data).find()) {
+							r.status = RouteURL.NO_MORE_TODAY; 
+						} 
 //						else if (scan.findWithinHorizon(no_timepoints_re, 0) != null) {
 //							r.status = RouteURL.NO_TIMEPOINTS;
 //						}
@@ -486,7 +472,7 @@ public final class StopDialog extends Dialog {
 //							System.out.printf("BusRadar: Could not get stop info for %s\n", r.url);
 //							
 //							throw new Exception("Error parsing TransitTracker webpage.");
-//						}
+//						}0
 						else {
 							r.status = RouteURL.NO_STOPS_UNKONWN;
 						}
@@ -595,10 +581,10 @@ public final class StopDialog extends Dialog {
 					status_text.setText("Loading...");
 					break;
 				case RouteURL.NO_MORE_TODAY:
-					status_text.setText("No more stops today.");
+					status_text.setText("No further buses scheduled for this stop");
 					break;
 				case RouteURL.NO_TIMEPOINTS:
-					status_text.setText("Does not run today.");
+					status_text.setText("This route does not run today.");
 					break;
 				case RouteURL.NO_STOPS_UNKONWN:
 					status_text.setText("No stops to show.");

@@ -36,13 +36,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.*;
+import android.view.*;
 
-import com.google.android.maps.GeoPoint;
-import com.google.android.maps.MapActivity;
-import com.google.android.maps.MapController;
-import com.google.android.maps.MapView;
-import com.google.android.maps.MyLocationOverlay;
-import com.google.android.maps.Projection;
+import com.google.android.maps.*;
 
 public class Main extends MapActivity
 {
@@ -67,6 +64,7 @@ public class Main extends MapActivity
         G.active_route = -1;
         map_view = new MapView(this,"0nhR5qUExunzdtDzAYrFjx2tcA9aSJISJEwxhYg"); // signed key
         //map_view = new MapView(this,"0Ig8W-xZ2oTTr3MmiHSsA98C7_KVHwhUQe849bQ"); // debug key
+        
  		G.location_overlay = new MyLocationOverlay(this, map_view) {
  			boolean droid_x_MyLocationOverlay_bug = false;
  			Bitmap bitmap_curloc_indicator = BitmapFactory.decodeResource(Main.this.getResources(), R.drawable.curloc_pointer);
@@ -184,14 +182,14 @@ public class Main extends MapActivity
  	@SuppressWarnings("deprecation")
 	public void onCreate2() 
  	{
- 		map_view.setBuiltInZoomControls(false);
+ 		map_view.setBuiltInZoomControls(true);
  		final MapController ctrl = map_view.getController();
 
  		ctrl.setCenter(new GeoPoint((int) (43.07166 * 1E6), (int) (-89.407088 * 1E6)));
  		
  		ctrl.setZoom(14);
  		map_view.setClickable(true);
- 		map_view.setBuiltInZoomControls(false);
+ 		//map_view.setBuiltInZoomControls(false);
  
         map_view.getOverlays().add(G.location_overlay);
         
@@ -231,6 +229,18 @@ public class Main extends MapActivity
  				//addRule(RelativeLayout.CENTER_HORIZONTAL);
  			}});
  		}});
+ 		
+ 		ZoomButtonsController zbc = map_view.getZoomButtonsController();
+        ViewGroup container = zbc.getContainer();
+        for (int i = 0; i < container.getChildCount(); i++) {
+            View child = container.getChildAt(i);
+            if (child instanceof ZoomControls) {
+                FrameLayout.LayoutParams lp = (FrameLayout.LayoutParams) child.getLayoutParams();
+                lp.gravity = Gravity.CENTER | Gravity.TOP;
+                child.requestLayout();
+                break;
+            } 
+        }
  		
  		G.location_overlay.runOnFirstFix(new Runnable() {
 			public void run() {

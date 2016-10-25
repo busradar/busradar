@@ -45,7 +45,7 @@ public class RouteTree extends PRTree<RouteTree.Line> implements Serializable
 	
 	public static class RouteMBRConverter implements MBRConverter<Line> {
 		public double getMinX (Line t) {
-			return t.lon1;
+			return t.lon1 <= t.lon2 ? t.lon1 : t.lon2;
 		}
 
 		public double getMinY (Line t) {
@@ -53,11 +53,11 @@ public class RouteTree extends PRTree<RouteTree.Line> implements Serializable
 		}
 
 		public double getMaxX (Line t) {
-			return t.lon2;
+			return t.lon1 >= t.lon2 ? t.lon1 : t.lon2;
 		}
 
 		public double getMaxY (Line t) {
-			return t.lat1 > t.lat2 ? t.lat1 : t.lat2;
+			return t.lat1 >=t.lat2 ? t.lat1 : t.lat2;
 		}
 	};
 

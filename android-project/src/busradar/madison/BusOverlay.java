@@ -129,7 +129,8 @@ draw(Canvas canvas, MapView map, boolean shadow)
 		line_paint.setColor(0x90000000 | G.route_points[G.active_route].color);
 		
 		RouteTree tree = G.route_points[G.active_route].tree;
-		tree.find(minlon-5*pixel, minlat-5*pixel, maxlon+5*pixel, maxlat+5*pixel, lines);
+		tree.find(minlon-10*pixel, minlat-10*pixel, maxlon+10*pixel, maxlat+10*pixel, lines);
+		//tree.find(Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE, lines);
 		//System.out.printf("BusRadar:  tree find %s, %d, %dn %d total=%d leaves=%d\n",
         //    minlon-5*pixel, minlat-5*pixel, maxlon+5*pixel, maxlat+5*pixel,
         //    lines.size(), tree.getNumberOfLeaves());
@@ -240,8 +241,8 @@ draw(Canvas canvas, MapView map, boolean shadow)
 					if (point.y < min.y) {
 						draw_text_right(canvas, msg, max.x, min.y + (13+16*upper_right_count++)*metrics.density);
 					}
-					else if (point.y > max.y - 45) {
-						draw_text_right(canvas, msg, max.x, max.y - (45-16*lower_right_count++)*metrics.density);
+					else if (point.y > max.y - 13) {
+						draw_text_right(canvas, msg, max.x, max.y - (45+16*lower_right_count++)*metrics.density);
 					}
 					else {
 						draw_text_right(canvas, msg, max.x, point.y);
@@ -251,8 +252,8 @@ draw(Canvas canvas, MapView map, boolean shadow)
 					if (point.y < min.y) {
 						draw_text_left(canvas, msg, min.x+3*metrics.density, min.y+(13+16*upper_left_count++)*metrics.density);
 					}
-					else if (point.y > max.y - 45) {
-						draw_text_left(canvas, msg, min.x+3*metrics.density, max.y-(45-16*lower_left_count++)*metrics.density);
+					else if (point.y > max.y - 13) {
+						draw_text_left(canvas, msg, min.x+3*metrics.density, max.y - (45+16*lower_left_count++)*metrics.density);
 					}
 					else {
 						draw_text_left(canvas, msg, min.x+3*metrics.density, point.y);
