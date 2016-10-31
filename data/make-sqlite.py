@@ -31,30 +31,37 @@ c.execute("CREATE TABLE db_version (version INT, name STRING)")
 c.execute("INSERT INTO db_version VALUES (?, ?)", (int(modified_time), date_string))
 
 c.execute("CREATE TABLE routestops(stopid integer, route integer, url text)")
-c.execute("CREATE TABLE Stop (_ID INTEGER PRIMARY KEY, Name TEXT)")
+c.execute("CREATE TABLE Stop (_ID INTEGER PRIMARY KEY, Name TEXT, stopno integer)")
 
 
 for stopid in stops:
         stopid_int = int(stopid)
-        c.execute("INSERT INTO Stop(_ID, Name) values (?, ?)", \
-                        (stopid_int, stops[stopid]['name']))
+        stop = stops[stopid]
+        stopno = stop['stopno']
+        if stopno != '?':
+            stopno = int(stopno)
+        else:
+            stopno = -1
+
+        c.execute("INSERT INTO Stop(_ID, Name, stopno) values (?, ?, ?)",
+                        (stopid_int, stops[stopid]['name'], stopno))
                         
         for route in stops[stopid]['routes']:
-                route_name = route['routeno']
+                routeid = route['routeid']
                 
-                id = 0;
+                id = -1;
                 found = False
                 
                 for rinfo in route_info:
                     if rinfo['inactive']:
                         continue
-                    if rinfo['name'] == route_name:
+                    if rinfo['id'] == routeid:
+                        id = rinfo['index']
                         found = True
                         break
-                    id += 1
                     
                 if not found:
-                    print "Not found!", route_name
+                    print "Not found!", routeid
                     continue
                     raise "Not found"
                 

@@ -65,7 +65,7 @@ static BusOverlay bus_overlay;
 static SQLiteDatabase db;
 static MyLocations favorites;
 
-static MyLocationOverlay location_overlay;
+static LocationOverlay location_overlay;
 static int active_route = -1;
 
 static ArrayList<BusOverlay.BusLocation> bus_locs;

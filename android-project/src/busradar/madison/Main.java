@@ -65,99 +65,12 @@ public class Main extends MapActivity
         map_view = new MapView(this,"0nhR5qUExunzdtDzAYrFjx2tcA9aSJISJEwxhYg"); // signed key
         //map_view = new MapView(this,"0Ig8W-xZ2oTTr3MmiHSsA98C7_KVHwhUQe849bQ"); // debug key
         
- 		G.location_overlay = new MyLocationOverlay(this, map_view) {
- 			boolean droid_x_MyLocationOverlay_bug = false;
- 			Bitmap bitmap_curloc_indicator = BitmapFactory.decodeResource(Main.this.getResources(), R.drawable.curloc_pointer);
- 			Paint paint = new Paint() {{ setFilterBitmap(true); }};
- 			Point p = new Point();
- 			
-			@Override protected void drawMyLocation(Canvas canvas, MapView mapView,
-					Location lastFix, GeoPoint myLocation, long when) 
-			{
-				if (!G.gps_enable)
-					return;
-				
-				mapView.getProjection().toPixels(myLocation, p);
-				
-				float bearing = this.getOrientation();
-				
-				if ( !Float.isNaN(bearing) ) {
-					canvas.save();
-					canvas.rotate(bearing, p.x, p.y);
-					
-					canvas.drawBitmap(bitmap_curloc_indicator, p.x-9, p.y-23, paint);
-					canvas.restore();
-				}
-				
-				if (!droid_x_MyLocationOverlay_bug) {
-					try {
-						super.drawMyLocation(canvas, mapView, lastFix, myLocation, when);
-						return;
-					} catch (Exception e) {
-						droid_x_MyLocationOverlay_bug = true;
-					}
-				}
-				
-				// code for Droid X bug
-				// see http://dimitar.me/applications-that-use-the-mylocationoverlay-class-crash-on-the-new-droid-x/
-				// http://community.developer.motorola.com/t5/Android-App-Development-for/Google-Maps/m-p/3421/highlight/true#M396
-				{
-					Drawable drawable;
-					Paint accuracyPaint;
-					int width, height;
-					Point center, left;
-
-					accuracyPaint = new Paint();
-					accuracyPaint.setAntiAlias(true);
-					accuracyPaint.setStrokeWidth(2.0f);
-					
-					drawable = mapView.getContext().getResources().getDrawable(R.drawable.ic_maps_indicator_current_position);
-					width = drawable.getIntrinsicWidth();
-					height = drawable.getIntrinsicHeight();
-					center = new Point();
-					left = new Point();
-						
-					Projection projection = mapView.getProjection();
-					
-					double latitude = lastFix.getLatitude();
-					double longitude = lastFix.getLongitude();
-					float accuracy = lastFix.getAccuracy();
-					
-					float[] result = new float[1];
-
-					Location.distanceBetween(latitude, longitude, latitude, longitude + 1, result);
-					float longitudeLineDistance = result[0];
-
-					GeoPoint leftGeo = new GeoPoint((int)(latitude*1e6), (int)((longitude-accuracy/longitudeLineDistance)*1e6));
-					projection.toPixels(leftGeo, left);
-					projection.toPixels(myLocation, center);
-					int radius = center.x - left.x;
-					
-					accuracyPaint.setColor(0xff6666ff);
-					accuracyPaint.setStyle(Style.STROKE);
-					canvas.drawCircle(center.x, center.y, radius, accuracyPaint);
-
-					accuracyPaint.setColor(0x186666ff);
-					accuracyPaint.setStyle(Style.FILL);
-					canvas.drawCircle(center.x, center.y, radius, accuracyPaint);
-								
-					drawable.setBounds(center.x - width / 2, center.y - height / 2, center.x + width / 2, center.y + height / 2);
-					drawable.draw(canvas);
-				}
-				
-			}
-
-			@Override protected void drawCompass(Canvas canvas, float bearing) {
-				return;
-			}
-			
-			
- 		};
+ 		G.location_overlay = new LocationOverlay(this, map_view);
+ 		
 
  		G.gps_enable = getPreferences(Context.MODE_PRIVATE).getBoolean("gps-enabled", true);
  		if (!G.gps_enable) {
- 			G.location_overlay.disableMyLocation();
- 			G.location_overlay.disableCompass();
+            G.location_overlay.enable();
  		}
  		
  		
@@ -193,7 +106,7 @@ public class Main extends MapActivity
  
         map_view.getOverlays().add(G.location_overlay);
         
-        map_view.getOverlays().add(G.bus_overlay=new BusOverlay());
+        map_view.getOverlays().add(G.bus_overlay=new BusOverlay(map_view));
         map_view.setId(1);
         route_bar=new RouteBar();
         route_bar.setId(2);
@@ -209,19 +122,26 @@ public class Main extends MapActivity
         	
 //        }});
         
-        final Button btn = new Button(Main.this);
-        btn.setId(1);
+        //final Button btn = new Button(Main.this);
+        //btn.setId(1);
+        route_bar.measure(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+        final int route_bar_height = route_bar.getMeasuredHeight();
+        final View spacer = new View(this);
+        spacer.setId(3);
         
  		setContentView(new RelativeLayout(this) {{
  			addView(new TextView(Main.this) {{
  				setBackgroundColor(0xffffffff);
  			}}, new RelativeLayout.LayoutParams(android.view.ViewGroup.LayoutParams.FILL_PARENT, android.view.ViewGroup.LayoutParams.FILL_PARENT));
  			addView(map_view, new RelativeLayout.LayoutParams(android.view.ViewGroup.LayoutParams.FILL_PARENT, android.view.ViewGroup.LayoutParams.FILL_PARENT) {{
- 				addRule(RelativeLayout.ABOVE, 2);
+ 				addRule(RelativeLayout.ABOVE, 3);
  			}});
  			addView(route_bar, new RelativeLayout.LayoutParams(android.view.ViewGroup.LayoutParams.WRAP_CONTENT, android.view.ViewGroup.LayoutParams.WRAP_CONTENT) {{
  				addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
  			}});
+ 			addView(spacer, new RelativeLayout.LayoutParams(android.view.ViewGroup.LayoutParams.WRAP_CONTENT, route_bar_height) {{
+                addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
+            }});
  			addView(map_view.getZoomControls(), new RelativeLayout.LayoutParams(android.view.ViewGroup.LayoutParams.WRAP_CONTENT, android.view.ViewGroup.LayoutParams.WRAP_CONTENT) {{
  				//addRule(RelativeLayout.ABOVE, routes_id);
  				addRule(RelativeLayout.ALIGN_TOP);
@@ -231,6 +151,7 @@ public class Main extends MapActivity
  		}});
  		
  		ZoomButtonsController zbc = map_view.getZoomButtonsController();
+ 		zbc.setVisible(true);
         ViewGroup container = zbc.getContainer();
         for (int i = 0; i < container.getChildCount(); i++) {
             View child = container.getChildAt(i);
@@ -246,6 +167,9 @@ public class Main extends MapActivity
 			public void run() {
 				G.activity.map_view.post(new Runnable() {
 					public void run() {
+                        if (!G.gps_enable) {
+                            return;
+                        }
 						for (int i = map_view.getZoomLevel(); i < 17; i++)
 							ctrl.zoomIn();
 						ctrl.setCenter(G.location_overlay.getMyLocation());
@@ -255,7 +179,6 @@ public class Main extends MapActivity
 						ArrayList<Integer> routes = new ArrayList<Integer>();
 						
 						Point C = new Point(p.getLongitudeE6(), p.getLatitudeE6());
-						System.out.printf("location is %d %d\n", C.x, C.y);
 						for (int r = 0; r < G.route_points.length; r++) {
 							if (G.route_points[r] == null)
 								continue;
@@ -307,8 +230,7 @@ public class Main extends MapActivity
 		G.favorites.open();
 		
 		if (G.gps_enable) {
-			G.location_overlay.enableMyLocation();
-			G.location_overlay.enableCompass();
+			G.location_overlay.enable();
 		}
 		
 		if (G.active_route >= 0) {
@@ -352,8 +274,7 @@ public class Main extends MapActivity
 		
 		//Debug.stopMethodTracing();
 		
-		G.location_overlay.disableMyLocation();
-		G.location_overlay.disableCompass();
+		G.location_overlay.disable();
 		G.bus_locator.stop();
 	}
 
@@ -403,13 +324,11 @@ public class Main extends MapActivity
 				
 				if (G.gps_enable) {
 					G.toast("GPS enabled");
-					G.location_overlay.enableMyLocation();
-					G.location_overlay.enableCompass();
+					G.location_overlay.enable();
 				}
 				else {
 					G.toast("GPS disabled");
-					G.location_overlay.disableCompass();
-					G.location_overlay.disableMyLocation();
+					G.location_overlay.disable();
 				}
 			} break;
 			

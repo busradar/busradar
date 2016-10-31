@@ -37,6 +37,8 @@ import android.widget.AdapterView.OnItemLongClickListener;
 
 import com.google.android.maps.GeoPoint;
 
+import static busradar.madison.G.dp2px;
+
 public class FavoriteDialog extends Dialog {
 	
 	private ListView lw;
@@ -48,7 +50,7 @@ public class FavoriteDialog extends Dialog {
 	
 	
 	public FavoriteDialog(final Main context) {
-		super(context);
+		super(context, android.R.style.Theme_DeviceDefault_Dialog);
 		
 		setTitle("My Favorite Locations");
 		
@@ -63,7 +65,7 @@ public class FavoriteDialog extends Dialog {
 		locations = G.favorites;//new MyLocations(context);
 		TextView tv = new TextView(context);
 		tv.setText("+ Add Favorite");
-		tv.setPadding(10, 10, 10, 10);
+		tv.setPadding(dp2px(10), dp2px(10), dp2px(10), dp2px(10));
 		tv.setTextSize(16);
 		lw.addHeaderView(tv);
 		
@@ -90,7 +92,6 @@ public class FavoriteDialog extends Dialog {
 		lw.setAdapter(adapter);
 		lw.setOnItemClickListener(new OnItemClickListener() {
     	    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-    	    	System.out.println("id is "+id);
     	    	if (position == 0) 
     	    	{
     	    		AddDialog ad = new AddDialog(context, FavoriteDialog.this, locations);
@@ -116,12 +117,12 @@ public class FavoriteDialog extends Dialog {
 
 			public boolean onItemLongClick(AdapterView<?> parent, View view, final int position, long id) {
 				if (position == 0) return false;
-				AlertDialog.Builder b = new AlertDialog.Builder(context);
+				AlertDialog.Builder b = new AlertDialog.Builder(context, android.R.style.Theme_DeviceDefault_Dialog);
 				b.setMessage("What would you like to do with "+ adapter.getItem(position - 1) + "?");
 				b.setTitle(adapter.getItem(position - 1));
 				b.setPositiveButton("Edit", new OnClickListener(){
 					public void onClick(DialogInterface dialog, int which) {
-						final Dialog d = new Dialog(context);
+						final Dialog d = new Dialog(context, android.R.style.Theme_DeviceDefault_Dialog);
 						d.setTitle("Edit");
 						TextView tv = new TextView(context);
 						tv.setText("What do you want to change the name to?");

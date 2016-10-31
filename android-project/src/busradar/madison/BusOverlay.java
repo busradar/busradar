@@ -26,6 +26,8 @@ import android.graphics.Path;
 import android.graphics.Point;
 import android.graphics.RectF;
 import android.graphics.Typeface;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 
 import com.google.android.maps.GeoPoint;
 import com.google.android.maps.MapView;
@@ -33,19 +35,25 @@ import com.google.android.maps.Projection;
 
 import static busradar.madison.G.*;
 
-class BusOverlay extends com.google.android.maps.Overlay {
+class BusOverlay extends com.google.android.maps.Overlay 
+    implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListener  {
 
+MapView map_view;
 final static int touch_allowance = 20; 
 GeoPoint selection;
 int zoom_level = 0;
+
+GestureDetector gesture_detector;
 
 static class BusLocation {
 	public GeoPoint loc;
 	public int heading;
 }
 
-BusOverlay() {	
-	
+BusOverlay(MapView map_view) {	
+	gesture_detector = new GestureDetector(this);
+	gesture_detector.setOnDoubleTapListener(this);
+	this.map_view = map_view;
 }
 
 
@@ -380,10 +388,10 @@ public boolean onTap(GeoPoint p, MapView map) {
 			String[] names = new String[touched.size()];
 			
 			for (int i = 0; i < names.length; i++)
-				names[i] = 	DB.getStopName(touched.get(i).id);
+				names[i] = 	DB.getStopInfo(touched.get(i).id).name;
 			
 			
-			new AlertDialog.Builder(G.activity)
+			new AlertDialog.Builder(G.activity, android.R.style.Theme_DeviceDefault_Dialog)
 				.setTitle("Choose a stop")
 				.setItems(names, 
 					new DialogInterface.OnClickListener() {
@@ -407,6 +415,65 @@ public boolean onTap(GeoPoint p, MapView map) {
 	}
 	
 	return false;
+}
+
+@Override
+public boolean onTouchEvent(MotionEvent e, MapView m) {
+    gesture_detector.onTouchEvent(e);
+    return false;
+}
+
+@Override
+public boolean onDoubleTap(MotionEvent e) {
+    if (selection != null) {
+        Projection proj = map_view.getProjection();
+        Point touch = new Point();
+        proj.toPixels(selection, touch);
+        map_view.getController().zoomInFixing(touch.x, touch.y);
+    } else {
+        map_view.getController().zoomIn();
+    }
+    return true;
+}
+
+@Override
+public boolean onDoubleTapEvent(MotionEvent e) {
+    return false;
+}
+
+@Override
+public boolean onSingleTapConfirmed(MotionEvent e) {
+    return false;
+}
+
+@Override
+public boolean onFling(MotionEvent e1, MotionEvent e2, float f1, float f2) {
+    return false;
+}
+
+@Override
+public boolean onScroll(MotionEvent e1, MotionEvent e2, float f1, float f2) {
+    return false;
+}
+
+@Override
+public void onLongPress(MotionEvent e1) {
+    
+}
+
+@Override
+public void onShowPress(MotionEvent e1) {
+    
+}
+
+@Override
+public boolean onSingleTapUp(MotionEvent e1) {
+    return false;
+}
+
+@Override
+public boolean onDown(MotionEvent e1) {
+    return false;
 }
 	
 final static void 

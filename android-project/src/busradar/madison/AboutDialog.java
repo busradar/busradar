@@ -25,20 +25,22 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
+import static busradar.madison.G.dp2px;
+
 public class AboutDialog extends Dialog {
 
 	public AboutDialog(final Context ctx) {
-		super(ctx);
+		super(ctx, android.R.style.Theme_DeviceDefault_Dialog_MinWidth);
 		
 		Window window = getWindow();
-		window.requestFeature(Window.FEATURE_LEFT_ICON);
+		//window.requestFeature(Window.FEATURE_LEFT_ICON);
 
 		setTitle("About BusRadar");
 		
         setContentView(new LinearLayout(ctx) {{
         	setBackgroundColor(0xffffffff);
         	addView(new ImageView(ctx) {{
-        		setPadding(0, 10, 5, 0);
+        		setPadding(0, dp2px(10), dp2px(5), 0);
         		setImageResource(R.drawable.icon);
         	}});
 	        //addView(new WebView(ctx) {{
@@ -47,7 +49,7 @@ public class AboutDialog extends Dialog {
 	        //}});
         	addView(new ScrollView(ctx) {{
         		addView(new TextView(ctx) {{
-	        		setPadding(0, 10, 10, 0);
+	        		setPadding(0, dp2px(10), dp2px(10), 0);
 	        		setTextColor(0xff000000);	        		
 		        	setMovementMethod(LinkMovementMethod.getInstance());
 		        	
@@ -68,8 +70,8 @@ public class AboutDialog extends Dialog {
         	}});
         }});
         
-        window.setFeatureDrawableResource(Window.FEATURE_LEFT_ICON,
-        		android.R.drawable.ic_dialog_info);
+        //window.setFeatureDrawableResource(Window.FEATURE_LEFT_ICON,
+        //		android.R.drawable.ic_dialog_info);
 	}
 
 }

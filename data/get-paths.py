@@ -24,11 +24,9 @@ def rpc(url, data=None):
 def float2fixed(val):
     return int(round(float(val) * 1E6))
 
-
-for route in rpc('http://webwatch.cityofmadison.com/tmwebwatch/Arrivals.aspx/getRoutes')['d']:
-    full_name = route['name']
-    print full_name
-    name = re.search('- \w+ ([a-zA-Z0-9_-]+)', full_name).group(1)
+for route in json.load(open('routes.json')):
+    name = route['name']
+    print name
     id = route['id']
     routes[id] = {
         'name': name

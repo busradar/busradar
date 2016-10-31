@@ -3,462 +3,539 @@
         "color": "E8D03B", 
         "id": 61, 
         "inactive": false, 
+        "index": 0, 
         "name": "1"
     }, 
     {
         "color": "B10069", 
         "id": 92, 
         "inactive": false, 
+        "index": 1, 
         "name": "2"
     }, 
     {
         "color": "CF8484", 
         "id": 122, 
         "inactive": false, 
+        "index": 2, 
         "name": "3"
     }, 
     {
         "color": "007A48", 
         "id": 14, 
         "inactive": false, 
+        "index": 3, 
         "name": "4"
     }, 
     {
         "color": "B6695C", 
         "id": 49, 
         "inactive": false, 
+        "index": 4, 
         "name": "5"
     }, 
     {
         "color": "ED1D24", 
         "id": 77, 
         "inactive": false, 
+        "index": 5, 
         "name": "6"
     }, 
     {
         "color": "A8C32E", 
         "id": 112, 
         "inactive": false, 
+        "index": 6, 
         "name": "7"
     }, 
     {
         "color": "EBA05A", 
         "id": 16, 
         "inactive": false, 
+        "index": 7, 
         "name": "8"
     }, 
     {
         "color": "92923C", 
         "id": 141, 
         "inactive": false, 
+        "index": 8, 
         "name": "10"
     }, 
     {
         "color": "D6886A", 
         "id": 66, 
         "inactive": false, 
+        "index": 9, 
         "name": "11"
     }, 
     {
         "color": "A0881A", 
         "id": 95, 
         "inactive": false, 
+        "index": 10, 
         "name": "12"
     }, 
     {
         "color": "813B08", 
         "id": 2, 
         "inactive": false, 
+        "index": 11, 
         "name": "13"
     }, 
     {
         "color": "7B8D1A", 
         "id": 41, 
         "inactive": false, 
+        "index": 12, 
         "name": "14"
     }, 
     {
         "color": "C3C91D", 
         "id": 73, 
         "inactive": false, 
+        "index": 13, 
         "name": "15"
     }, 
     {
         "color": "BBA7E5", 
         "id": 106, 
         "inactive": false, 
+        "index": 14, 
         "name": "16"
     }, 
     {
         "color": "346DB6", 
         "id": 10, 
         "inactive": false, 
+        "index": 15, 
         "name": "17"
     }, 
     {
         "color": "3069B3", 
         "id": 43, 
         "inactive": false, 
+        "index": 16, 
         "name": "18"
     }, 
     {
         "color": "BCDC9B", 
         "id": 74, 
         "inactive": false, 
+        "index": 17, 
         "name": "19"
     }, 
     {
         "color": "A9513D", 
         "id": 51, 
         "inactive": false, 
+        "index": 18, 
         "name": "20"
     }, 
     {
         "color": "749882", 
         "id": 81, 
         "inactive": false, 
+        "index": 19, 
         "name": "21"
     }, 
     {
         "color": "51BE9D", 
         "id": 114, 
         "inactive": false, 
+        "index": 20, 
         "name": "22"
     }, 
     {
         "color": "A4A19D", 
         "id": 35, 
         "inactive": false, 
+        "index": 21, 
         "name": "25"
     }, 
     {
         "color": "6F3996", 
         "id": 133, 
         "inactive": false, 
+        "index": 22, 
         "name": "26"
     }, 
     {
         "color": "7EC2D1", 
         "id": 96, 
         "inactive": false, 
+        "index": 23, 
         "name": "27"
     }, 
     {
         "color": "00BAD3", 
         "id": 64, 
         "inactive": false, 
+        "index": 24, 
         "name": "28"
     }, 
     {
         "color": "229BA6", 
         "id": 32, 
         "inactive": false, 
+        "index": 25, 
         "name": "29"
     }, 
     {
         "color": "E4AD73", 
         "id": 62, 
         "inactive": false, 
+        "index": 26, 
         "name": "30"
     }, 
     {
         "color": "9a061a", 
         "id": 29, 
         "inactive": false, 
+        "index": 27, 
         "name": "31"
     }, 
     {
         "color": "3183AB", 
         "id": 123, 
         "inactive": false, 
+        "index": 28, 
         "name": "32"
     }, 
     {
         "color": "00A99D", 
         "id": 91, 
         "inactive": false, 
+        "index": 29, 
         "name": "33"
     }, 
     {
         "color": "9A6B20", 
         "id": 47, 
         "inactive": false, 
+        "index": 30, 
         "name": "34"
     }, 
     {
         "color": "e5477f", 
         "id": 166, 
         "inactive": false, 
+        "index": 31, 
         "name": "35"
     }, 
     {
         "color": "6A7840", 
         "id": 134, 
         "inactive": false, 
+        "index": 32, 
         "name": "36"
     }, 
     {
         "color": "CD6C79", 
         "id": 79, 
         "inactive": false, 
+        "index": 33, 
         "name": "37"
     }, 
     {
         "color": "8D8BB6", 
         "id": 52, 
         "inactive": false, 
+        "index": 34, 
         "name": "38"
     }, 
     {
         "color": "6294AA", 
         "id": 17, 
         "inactive": false, 
+        "index": 35, 
         "name": "39"
     }, 
     {
         "color": "00AFD0", 
         "id": 25, 
         "inactive": false, 
+        "index": 36, 
         "name": "40"
     }, 
     {
         "color": "928B65", 
         "id": 18, 
         "inactive": false, 
+        "index": 37, 
         "name": "44"
     }, 
     {
         "color": "875EA1", 
         "id": 116, 
         "inactive": false, 
+        "index": 38, 
         "name": "47"
     }, 
     {
         "color": "F173AC", 
         "id": 12, 
         "inactive": false, 
+        "index": 39, 
         "name": "48"
     }, 
     {
         "color": "80c342", 
         "id": 167, 
         "inactive": false, 
+        "index": 40, 
         "name": "49"
     }, 
     {
         "color": "F36F21", 
         "id": 42, 
         "inactive": false, 
+        "index": 41, 
         "name": "50"
     }, 
     {
         "color": "EE4D9B", 
         "id": 71, 
         "inactive": false, 
+        "index": 42, 
         "name": "51"
     }, 
     {
         "color": "7D2657", 
         "id": 107, 
         "inactive": false, 
+        "index": 43, 
         "name": "52"
     }, 
     {
         "color": "D8BD5B", 
         "id": 75, 
         "inactive": false, 
+        "index": 44, 
         "name": "55"
     }, 
     {
         "color": "977B6D", 
         "id": 104, 
         "inactive": false, 
+        "index": 45, 
         "name": "56"
     }, 
     {
         "color": "87733B", 
         "id": 6, 
         "inactive": false, 
+        "index": 46, 
         "name": "57"
     }, 
     {
         "color": "A2A399", 
         "id": 38, 
         "inactive": false, 
+        "index": 47, 
         "name": "58"
     }, 
     {
         "color": "F49BC2", 
         "id": 140, 
         "inactive": false, 
+        "index": 48, 
         "name": "59"
     }, 
     {
         "color": "EB9E18", 
         "id": 19, 
         "inactive": false, 
+        "index": 49, 
         "name": "63"
     }, 
     {
         "color": "5186A7", 
         "id": 24, 
         "inactive": false, 
+        "index": 50, 
         "name": "67"
     }, 
     {
         "color": "00AB4F", 
         "id": 60, 
         "inactive": false, 
+        "index": 51, 
         "name": "68"
     }, 
     {
         "color": "A6B4DC", 
         "id": 56, 
         "inactive": false, 
+        "index": 52, 
         "name": "70"
     }, 
     {
         "color": "B88073", 
         "id": 26, 
         "inactive": false, 
+        "index": 53, 
         "name": "71"
     }, 
     {
         "color": "9A061A", 
         "id": 121, 
         "inactive": false, 
+        "index": 54, 
         "name": "72"
     }, 
     {
         "color": "EFB60F", 
         "id": 86, 
         "inactive": false, 
+        "index": 55, 
         "name": "73"
     }, 
     {
         "color": "f7941d", 
         "id": 162, 
         "inactive": false, 
+        "index": 56, 
         "name": "75"
     }, 
     {
         "color": "005CAB", 
         "id": 135, 
-        "inactive": true, 
+        "inactive": false, 
+        "index": 57, 
         "name": "78"
     }, 
     {
         "color": "CF2820", 
         "id": 40, 
         "inactive": false, 
+        "index": 58, 
         "name": "80"
     }, 
     {
         "color": "F58C22", 
         "id": 7, 
         "inactive": false, 
+        "index": 59, 
         "name": "81"
     }, 
     {
         "color": "086CB3", 
         "id": 105, 
         "inactive": false, 
+        "index": 60, 
         "name": "82"
     }, 
     {
         "color": "693294", 
         "id": 131, 
         "inactive": false, 
+        "index": 61, 
         "name": "84"
     }, 
     {
         "color": "93268f", 
         "id": 146, 
         "inactive": false, 
+        "index": 62, 
         "name": "E1"
     }, 
     {
         "color": "93268f", 
         "id": 147, 
         "inactive": false, 
+        "index": 63, 
         "name": "E3"
     }, 
     {
         "color": "93268f", 
         "id": 148, 
         "inactive": false, 
+        "index": 64, 
         "name": "E5"
     }, 
     {
         "color": "e93724", 
         "id": 149, 
         "inactive": false, 
+        "index": 65, 
         "name": "L1"
     }, 
     {
         "color": "e93724", 
         "id": 150, 
         "inactive": false, 
+        "index": 66, 
         "name": "L3"
     }, 
     {
         "color": "e93724", 
         "id": 151, 
         "inactive": false, 
+        "index": 67, 
         "name": "L5"
     }, 
     {
         "color": "e93724", 
         "id": 152, 
         "inactive": false, 
+        "index": 68, 
         "name": "L7"
     }, 
     {
         "color": "009b4b", 
         "id": 153, 
         "inactive": false, 
+        "index": 69, 
         "name": "M1"
     }, 
     {
         "color": "009b4b", 
         "id": 154, 
         "inactive": false, 
+        "index": 70, 
         "name": "M3"
     }, 
     {
         "color": "009b4b", 
         "id": 155, 
         "inactive": false, 
+        "index": 71, 
         "name": "M5"
     }, 
     {
         "color": "009b4b", 
         "id": 156, 
         "inactive": false, 
+        "index": 72, 
         "name": "M7"
     }, 
     {
         "color": "0072bc", 
         "id": 157, 
         "inactive": false, 
+        "index": 73, 
         "name": "W1"
     }, 
     {
         "color": "0072bc", 
         "id": 158, 
         "inactive": false, 
+        "index": 74, 
         "name": "W3"
     }, 
     {
         "color": "0072bc", 
         "id": 159, 
         "inactive": false, 
+        "index": 75, 
         "name": "W5"
     }, 
     {
         "color": "0072bc", 
         "id": 160, 
         "inactive": false, 
+        "index": 76, 
         "name": "W7"
     }
 ]

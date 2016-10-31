@@ -177,15 +177,26 @@ public class DB extends SQLiteOpenHelper{
 //		return stops;
 //	}
 
+    static class StopInfo {
+        String name;
+        int stopno;
+    }
 
-	public static String getStopName(int stopID)
+	public static StopInfo getStopInfo(int stopID)
 	{
 		String[] param = {String.valueOf(stopID)};
-		Cursor select = G.db.rawQuery("SELECT [Stop].[Name] FROM [Stop] WHERE [Stop].[_ID] = ?", param);
+		Cursor select = G.db.rawQuery("SELECT Name, stopno FROM Stop WHERE _ID = ?", param);
 		select.moveToFirst();
-		String name = select.getCount() > 0 ? select.getString(0) : "Unknown name";
+		boolean haveResult = select.getCount() > 0;
+		String name =  haveResult ? select.getString(0) : "Unknown name";
+		int stopno = haveResult ? select.getInt(1) : -1;
+		
 		select.close();
-		return name;
+		
+		StopInfo info = new StopInfo();
+		info.name = name;
+		info.stopno = stopno;
+		return info;
 	}
 	
 //	public static int[] getAllRoutes()

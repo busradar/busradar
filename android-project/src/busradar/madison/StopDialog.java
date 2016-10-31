@@ -196,15 +196,28 @@ public final class StopDialog extends Dialog {
 	RouteURL selected_route;
 
 	StopDialog(final Context ctx, final int stopid, final int lat, final int lon) {
-		super(ctx);
+		super(ctx, android.R.style.Theme_DeviceDefault_Dialog_MinWidth);
 		this.stopid = stopid;
 
 		// getWindow().requestFeature(Window.FEATURE_LEFT_ICON);
-		getWindow().setLayout(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT);
+		//getWindow().setLayout(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT);
 
 
-		final String name = DB.getStopName(stopid);
+		DB.StopInfo stop_info = DB.getStopInfo(stopid);
+		final String name = stop_info.name;
+		int stopno = stop_info.stopno;
+		
+		final String link_html = stopno == -1 ? "" : String.format(
+                "[<a href='http://www.cityofmadison.com/metro/BusStopDepartures/StopID/%04d.pdf'>%04d</a>]",
+                stopno, stopno);
 		setTitle(name);
+		
+        TextView title = (TextView) findViewById(android.R.id.title);
+        title.setHorizontallyScrolling(true);
+        title.setEllipsize(TextUtils.TruncateAt.MARQUEE);
+        title.setSelected(true);
+        title.setTextColor(0xffffffff);
+        title.setMarqueeRepeatLimit(-1);
 
 		routes = get_time_urls(StopDialog.this.stopid);
 		
@@ -214,7 +227,7 @@ public final class StopDialog extends Dialog {
 		setContentView(new RelativeLayout(ctx) {{
 			addView(new TextView(ctx) {{
 					setId(stop_num_id);
-					setText(Html.fromHtml(String.format("[<a href='http://www.cityofmadison.com/metro/BusStopDepartures/StopID/%04d.pdf'>%04d</a>]", stopid, stopid)));
+					setText(Html.fromHtml(link_html));
 					setPadding(0, 0, dp2px(5), 0);
 					this.setMovementMethod(LinkMovementMethod.getInstance());
 			}}, new RelativeLayout.LayoutParams(WRAP_CONTENT, WRAP_CONTENT) {{
@@ -250,7 +263,7 @@ public final class StopDialog extends Dialog {
 				});
 			}}, new RelativeLayout.LayoutParams(WRAP_CONTENT, WRAP_CONTENT) {{
 				addRule(LEFT_OF, stop_num_id);
-				setMargins(0, dp2px(-3), 0, 0);
+				setMargins(0, 0, 0, dp2px(3));
 			}});
 			
 			addView(cur_loading_text = new TextView(ctx) {{
@@ -261,8 +274,9 @@ public final class StopDialog extends Dialog {
 				{
 					setId(route_list_id);
 					setHorizontalScrollBarEnabled(false);
+					LinearLayout route_bar;
 
-					addView(new LinearLayout(ctx) {
+					addView(route_bar=new LinearLayout(ctx) {
 						float text_size;
 						Button cur_button;
 						{
@@ -330,6 +344,9 @@ public final class StopDialog extends Dialog {
 							}
 						}
 					});
+					
+					route_bar.measure(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+					route_bar.setMinimumHeight((int) (route_bar.getMeasuredHeight() * 1.5));
 				}
 			}, new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT,
 					LayoutParams.WRAP_CONTENT) {
@@ -390,11 +407,6 @@ public final class StopDialog extends Dialog {
 			}});
 		}});
 
-		TextView title = (TextView) findViewById(android.R.id.title);
-		title.setEllipsize(TextUtils.TruncateAt.MARQUEE);
-		title.setSelected(true);
-		title.setTextColor(0xffffffff);
-		title.setMarqueeRepeatLimit(-1);
 
 		// getWindow().set, value)
 		// getWindow().setFeatureDrawableResource(Window.FEATURE_LEFT_ICON,
@@ -557,6 +569,9 @@ public final class StopDialog extends Dialog {
 				G.activity.runOnUiThread(new Runnable() {
 					public void run() {
 						cur_loading_text.setText("");
+                        if (times.isEmpty()) {
+                            status_text.setText("No further buses scheduled for this stop.");
+                        }
 					}
 				});
 			}
@@ -581,7 +596,7 @@ public final class StopDialog extends Dialog {
 					status_text.setText("Loading...");
 					break;
 				case RouteURL.NO_MORE_TODAY:
-					status_text.setText("No further buses scheduled for this stop");
+					status_text.setText("No further buses scheduled for this stop.");
 					break;
 				case RouteURL.NO_TIMEPOINTS:
 					status_text.setText("This route does not run today.");

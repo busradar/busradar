@@ -12,10 +12,10 @@ paths/route_points.bin: combined-stops.json paths.json
 paths.json: get-paths.py
 	python get-paths.py
 
-db.sqlite: combined-stops.json make-sqlite.py UPDATE
+db.sqlite: combined-stops.json routes.json make-sqlite.py UPDATE
 	python make-sqlite.py
 
-combined-stops.json: mobiletracker-combined.json
+combined-stops.json: stops.json MMT_WebWatch_Crawldata_Truncated.txt combine-stops.py
 	python combine-stops.py
 
 mobiletracker-weekdays.json:

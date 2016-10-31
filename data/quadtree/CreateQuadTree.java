@@ -37,21 +37,20 @@ public static void main(String[] args) throws Exception
 
 			for(int i = 0; i < routes_json.length(); i++)
 			{
-				String route_name = routes_json.getJSONObject(i).getString("routeno");
+				int route_id = routes_json.getJSONObject(i).getInt("routeid");
 				
 				int index;
 				boolean found = false;
-				for (index = 0; index < routes_info_json.length(); index++)
-				{
-                                    if (routes_info_json.getJSONObject(index).getString("name").equals(route_name))
-                                    {
-                                        found = true;
-                                        break;
-                                    }
+				for (index = 0; index < routes_info_json.length(); index++) {
+                    if (routes_info_json.getJSONObject(index).getInt("id") == route_id)
+                    {
+                        found = true;
+                        break;
+                    }
 				}
 				
 				if (!found) {
-                                    System.err.printf("Route %s not found. Maybe update ../routes.json ?\nGoodbye...\n", route_name);
+                                    System.err.printf("Route %s not found. Maybe update ../routes.json ?\nGoodbye...\n", route_id);
                                     System.exit(1);
                                 }
 				
@@ -61,6 +60,7 @@ public static void main(String[] args) throws Exception
 			e.routes = routes;
 		} catch (Exception ex) {
 			e.routes = new int[0];
+			throw ex;
 		}
 		
 		if (dirstr.equals("W"))

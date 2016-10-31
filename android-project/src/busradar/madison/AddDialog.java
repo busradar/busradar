@@ -33,6 +33,8 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 
 import com.google.android.maps.GeoPoint;
 
+import static busradar.madison.G.dp2px;
+
 public class AddDialog extends View {
 
 	private Context mcontext;
@@ -42,7 +44,8 @@ public class AddDialog extends View {
 		super(context);
 		
 		final View view = View.inflate(context, R.layout.add_location, null);
-		d = new AlertDialog.Builder(context).setPositiveButton("Save", new DialogInterface.OnClickListener(){
+		d = new AlertDialog.Builder(context, android.R.style.Theme_DeviceDefault_Dialog)
+                .setPositiveButton("Save", new DialogInterface.OnClickListener(){
 			public void onClick(DialogInterface dialog, int which) {
 				GeoPoint gp;
 				switch (((RadioGroup) view.findViewById(R.id.LinearLayout01)).getCheckedRadioButtonId())

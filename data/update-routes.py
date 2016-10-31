@@ -45,12 +45,14 @@ for route in rpc('http://webwatch.cityofmadison.com/tmwebwatch/Arrivals.aspx/get
         'id': id
     }
     
+index = 0
 for route in routes_json:
     name = route['name']
     if name in route_info:
         route['id'] = route_info[name]['id']
-        route['inactive'] = False
-    else:
-        route['inactive'] = True
+        
+    if not route['inactive']:
+        route['index'] = index
+        index += 1
 
 print >>open('routes.json', 'w'), json.dumps(routes_json, sort_keys=True, indent=4)
