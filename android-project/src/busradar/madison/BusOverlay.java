@@ -106,7 +106,7 @@ draw(Canvas canvas, MapView map, boolean shadow)
 	GeoPoint center = map.getMapCenter();
 	
 	
-	int pixel = map.getLongitudeSpan() / map.getWidth();
+	double pixel = (double) map.getLongitudeSpan() / map.getWidth();
 	
 	int minlon = center.getLongitudeE6() - lonspan / 2;
 	int maxlon = center.getLongitudeE6() + lonspan / 2;
@@ -137,7 +137,9 @@ draw(Canvas canvas, MapView map, boolean shadow)
 		line_paint.setColor(0x90000000 | G.route_points[G.active_route].color);
 		
 		RouteTree tree = G.route_points[G.active_route].tree;
-		tree.find(minlon-10*pixel, minlat-10*pixel, maxlon+10*pixel, maxlat+10*pixel, lines);
+		tree.find(
+            round(minlon-10*pixel), round(minlat-10*pixel), 
+            round(maxlon+10*pixel), round(maxlat+10*pixel), lines);
 		//tree.find(Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE, lines);
 		//System.out.printf("BusRadar:  tree find %s, %d, %dn %d total=%d leaves=%d\n",
         //    minlon-5*pixel, minlat-5*pixel, maxlon+5*pixel, maxlat+5*pixel,
@@ -162,7 +164,9 @@ draw(Canvas canvas, MapView map, boolean shadow)
 	
 	//paint.setColor(0xffff0000);
 	if (map.getZoomLevel() >= 15) {
-		ArrayList<QuadTree.Element> geopoints = G.stops_tree.get(minlon-32*pixel, minlat-32*pixel, maxlon+32*pixel, maxlat+32*pixel, pixel*15);
+		ArrayList<QuadTree.Element> geopoints = G.stops_tree.get(
+                round(minlon-dp2px(32)*pixel), round(minlat-dp2px(32)*pixel), 
+                round(maxlon+dp2px(32)*pixel), round(maxlat+dp2px(32)*pixel));
 		//System.out.printf("draw %d points\n", geopoints.size());
 		
 		for (QuadTree.Element geopoint : geopoints ) {
@@ -322,8 +326,10 @@ public boolean onTap(GeoPoint p, MapView map) {
 	int lat = p.getLatitudeE6();
 	int lon = p.getLongitudeE6();
 	
-	int pixel = map.getLongitudeSpan() / map.getWidth();
-	ArrayList<QuadTree.Element> geopoints = G.stops_tree.get(lon-pixel*dp2px(32), lat-pixel*dp2px(32), lon+pixel*dp2px(32), lat+pixel*dp2px(32), pixel);
+	double pixel = (double) map.getLongitudeSpan() / map.getWidth();
+	ArrayList<QuadTree.Element> geopoints = G.stops_tree.get(
+            round(lon-pixel*dp2px(100)), round(lat-pixel*dp2px(100)), 
+            round(lon+pixel*dp2px(100)), round(lat+pixel*dp2px(100)));
 	
 	Projection proj = map.getProjection();
 	Point point = new Point();
@@ -331,7 +337,6 @@ public boolean onTap(GeoPoint p, MapView map) {
 	proj.toPixels(p, touch);
 	
 	final ArrayList<QuadTree.Element> touched = new ArrayList<QuadTree.Element>();
-	
 	Bitmap b;
 	for(QuadTree.Element e: geopoints) {
 		if (G.active_route >= 0 && Arrays.binarySearch(e.routes, G.active_route) < 0)
@@ -359,7 +364,7 @@ public boolean onTap(GeoPoint p, MapView map) {
 				
 			case 'W': 
 				b = G.bitmap_stop_west;
-				point.y -= b.getHeight();
+				point.y -= b.getHeight()/2;
 				break;
 				
 			default: 

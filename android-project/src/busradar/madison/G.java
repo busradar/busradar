@@ -216,6 +216,10 @@ static double dist(Point A, Point B){
     return sqrt(d1*d1 + d2*d2);
 }
 
+static int round(double n) {
+    return (int) Math.round(n);
+}
+
 
 static double pt_to_line_segment_dist(Point A, Point B, Point C) {       
     if (dot(A, B, C) > 0)

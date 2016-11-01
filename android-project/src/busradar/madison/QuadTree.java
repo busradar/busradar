@@ -158,7 +158,7 @@ public class QuadTree
 
 
 	public ArrayList<Element>
-	get(int xboundmin, int yboundmin, int xboundmax, int yboundmax, int span)
+	get(int xboundmin, int yboundmin, int xboundmax, int yboundmax)
 	{	
 		ArrayList<Element> l = new ArrayList<Element>();
 	
@@ -176,19 +176,19 @@ public class QuadTree
 		
 			if (yboundmin < midy) { // include south
 				if (xboundmin < midx) { // include west
-					l.addAll(sw.get(xboundmin, yboundmin, xboundmax, yboundmax, span));
+					l.addAll(sw.get(xboundmin, yboundmin, xboundmax, yboundmax));
 				}
 				if (xboundmax >= midx) { // include east
-					l.addAll(se.get(xboundmin, yboundmin, xboundmax, yboundmax, span));
+					l.addAll(se.get(xboundmin, yboundmin, xboundmax, yboundmax));
 				}
 			}
 		
 			if (yboundmax >= midy) { // include north
 				if (xboundmin < midx) { // include west
-					l.addAll(nw.get(xboundmin, yboundmin, xboundmax, yboundmax, span));
+					l.addAll(nw.get(xboundmin, yboundmin, xboundmax, yboundmax));
 				}
 				if (xboundmax >= midx) { // include east
-					l.addAll(ne.get(xboundmin, yboundmin, xboundmax, yboundmax, span));
+					l.addAll(ne.get(xboundmin, yboundmin, xboundmax, yboundmax));
 				}
 			}
 		
