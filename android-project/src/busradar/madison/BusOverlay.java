@@ -73,6 +73,7 @@ static final Paint line_paint = new Paint() {{
 	setColor(0x90ff0000);
 	setStyle(Paint.Style.STROKE);
 	setStrokeJoin(Paint.Join.ROUND);
+	setStrokeCap(Paint.Cap.ROUND);
 }};
 
 static final Paint text_paint = new Paint() {{
