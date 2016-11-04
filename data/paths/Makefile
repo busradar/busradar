@@ -1,10 +1,10 @@
 all: routes.bin
 
-routes.bin: CreatePaths.class  ../combined-stops.json ../paths.json
-	java -cp ../commons-io-2.0.1.jar:. CreatePaths
+routes.bin: CreateRoutes.class  ../combined-stops.json ../paths.json
+	java -cp ../commons-io-2.0.1.jar:. CreateRoutes
 	
-CreatePaths.class: CreatePaths.java
-	javac -cp ../commons-io-2.0.1.jar:. CreatePaths.java
+CreateRoutes.class: CreateRoutes.java
+	javac -cp ../commons-io-2.0.1.jar:. CreateRoutes.java
 	
 TestRoutes.class: TestRoutes.java
 	javac -cp ../commons-io-2.0.1.jar:. TestRoutes.java

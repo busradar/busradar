@@ -146,12 +146,35 @@ draw(Canvas canvas, MapView map, boolean shadow)
         line_paint.setStrokeWidth(stroke_width_2s);
     else
         line_paint.setStrokeWidth(stroke_width);
+    
 	if (G.active_route >= 0) { 
-		drawRoute(G.routes[G.active_route], minlon, maxlon, minlat, maxlat, p1, p2, proj, canvas);
-	} else if (G.active_route == -2) {
-        for (Route route : G.routes) {
-            drawRoute(route, minlon, maxlon, minlat, maxlat, p1, p2, proj, canvas);
+		ArrayList<RouteTree.Line> lines = new ArrayList<RouteTree.Line>();
+        line_paint.setColor(0x90000000 | G.routes[G.active_route].color);
+        
+        RouteTree tree = G.routes[G.active_route].tree;
+        tree.find(
+            round(minlon-10*pixel), round(minlat-10*pixel), 
+            round(maxlon+10*pixel), round(maxlat+10*pixel), lines);
+        //tree.find(Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE, lines);
+        //System.out.printf("BusRadar:  tree find %s, %d, %dn %d total=%d leaves=%d\n",
+        //    minlon-5*pixel, minlat-5*pixel, maxlon+5*pixel, maxlat+5*pixel,
+        //    lines.size(), tree.getNumberOfLeaves());
+        
+        Path path = new Path();
+        for (RouteTree.Line line : lines) {
+            
+            proj.toPixels(new GeoPoint(line.lat1, line.lon1), p1);
+            proj.toPixels(new GeoPoint(line.lat2, line.lon2), p2);
+            
+            path.moveTo(p1.x, p1.y);
+            path.lineTo(p2.x, p2.y);
+            
+            //canvas.drawLine(p1.x, p1.y, p2.x, p2.y, line_paint);
+            
+            //canvas.drawCircle(p1.x, p1.y, 3, paint);
+            //canvas.drawCircle(p2.x, p2.y, 3, paint);
         }
+        canvas.drawPath(path, line_paint);
 	}
 	
 	//paint.setColor(0xffff0000);
@@ -243,29 +266,29 @@ draw(Canvas canvas, MapView map, boolean shadow)
 			if (point.x < min.x || point.x > max.x || point.y < min.y || point.y > max.y) {
 			
                 int heading = bus_loc.heading;
-				
-				double dist = dist(center.getLatitudeE6()/1.E6, center.getLongitudeE6()/1.E6, 
-						bus_loc.loc.getLatitudeE6()/1.E6, bus_loc.loc.getLongitudeE6()/1.E6);
-				
-                String msg = ( ((int)(dist * 0.000621371192 * 100 + 0.5)) / 100.0) + "mi";
-                
+                char dir = ' ';
                 if (heading < (0+22) || bus_loc.heading >= (315+22)) {
-                    msg = msg + '↑';
+                    dir = '↑';
                 } else if (heading < (45+22)) {
-                    msg = msg + '↗';
+                    dir = '↗';
                 } else if (heading < (90+22)) {
-                    msg = msg + '→';
+                    dir = '→';
                 } else if (heading < (135+22)) {
-                    msg = msg + '↘';
+                    dir = '↘';
                 } else if (heading < (180+22)) {
-                    msg = msg + '↓';
+                    dir = '↓';
                 }  else if (heading < (225+22)) {
-                    msg = '↙' + msg;
+                    dir = '↙';
                 } else if (heading < (270+22)) {
-                    msg = '←' + msg;
+                    dir = '←';
                 } else if (heading < (315+22)) {
-                    msg = '↖' + msg;
+                    dir = '↖';
                 }
+                
+                double dist = dist(center.getLatitudeE6()/1.E6, center.getLongitudeE6()/1.E6, 
+                        bus_loc.loc.getLatitudeE6()/1.E6, bus_loc.loc.getLongitudeE6()/1.E6);
+                
+                String msg = ( ((int)(dist * 0.000621371192 * 100 + 0.5)) / 100.0) + "mi" + dir; 
 				//GeoPoint gps = map.getMapCenter(); //G.location_overlay.getMyLocation();
 				//float[] results = new float[1];
 				//Location.distanceBetween(gps.getLatitudeE6()/1.E6, gps.getLongitudeE6()/1.E6, 
@@ -334,59 +357,6 @@ draw(Canvas canvas, MapView map, boolean shadow)
 			//canvas.drawCircle(point.x, point.y, 3, paint);
 		}
 	}
-}
-
-void drawRoute(Route route, int minlon, int maxlon, int minlat, int maxlat,
-        Point p1, Point p2, Projection proj, Canvas canvas) {
-    line_paint.setColor(0x90000000 | route.color);
-    
-    Path path = new Path();
-    int[][] polylines = route.polylines;;
-    
-    int polylineCount = 0;
-    GeoPoint p1Geo, p2Geo;
-    int oob = 0;
-    int small = 0;
-    int draw = 0;
-    for (int[] polyline : polylines) {
-        proj.toPixels(p1Geo=new GeoPoint(polyline[0], polyline[1]), p1);
-        
-        boolean didSkip = true;
-        for (int i = 2; i < polyline.length; i += 2) {
-            p2Geo = new GeoPoint(polyline[i], polyline[i+1]);
-            
-            if ( (p1Geo.getLatitudeE6() < minlat && p2Geo.getLatitudeE6() < minlat)   ||
-                 (p1Geo.getLatitudeE6() > maxlat && p2Geo.getLatitudeE6() > maxlat)   ||
-                 (p1Geo.getLongitudeE6() < minlon && p2Geo.getLongitudeE6() < minlon) ||
-                 (p1Geo.getLongitudeE6() > maxlon && p2Geo.getLongitudeE6() > maxlon)    ) {
-                    p1Geo = p2Geo;
-                    didSkip = true;
-                    oob++;
-                    continue;
-            }
-            
-            proj.toPixels(p2Geo, p2);
-            if (p1.x == p2.x && p1.y == p2.y) {
-                small++;
-                continue;
-            }
-            if (didSkip) {
-                proj.toPixels(p1Geo, p1);
-                path.moveTo(p1.x, p1.y);
-                didSkip = false;
-            }
-            p1.x = p2.x;
-            p1.y = p2.y;;
-            p1Geo = p2Geo;
-            path.lineTo(p2.x, p2.y);
-            draw++;
-        }
-        //if (draw > 0)
-        //    System.out.printf("BusRadar: oob=%d small=%d draw=%d\n", oob, small, draw);
-        polylineCount++;
-    }
-    
-    canvas.drawPath(path, line_paint);
 }
 
 @Override

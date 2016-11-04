@@ -26,6 +26,7 @@ public class Route
 	
 	public String name;
 	public int id;
+	public RouteTree tree;
 	public int color;
 	public byte days;
 	public int[][] polylines;
@@ -36,32 +37,15 @@ public class Route
         name = s.readUTF();
         id = s.readInt();
 		color = s.readInt();
+		tree = new RouteTree();
 		days = s.readByte();
-		
-		int numPolylines = s.readInt();
-		polylines = new int[numPolylines][];
-		for (int i = 0; i < numPolylines; i++) {
-            int numCoords = s.readInt();
-            int[] coords = new int[numCoords];
-            polylines[i] = coords;
-            for (int j = 0; j < numCoords; j++) {
-                coords[j] = s.readInt();
-            }
-		}
 	}
 	
 	public void write(DataOutputStream s) throws IOException {
         s.writeUTF(name);
         s.writeInt(id);
+        tree.write(s);
 		s.writeInt(color);
 		s.writeByte(days);
-		
-		s.writeInt(polylines.length);
-		for (int[] polyline : polylines) {
-            s.writeInt(polyline.length);
-            for (int coord : polyline) {
-                s.writeInt(coord);
-            }
-		}
 	}
 }

@@ -176,45 +176,45 @@ public class Main extends MapActivity
 						
 						GeoPoint p = G.location_overlay.getMyLocation();
 						
-// 						ArrayList<Integer> routes = new ArrayList<Integer>();
-// 						
-// 						Point C = new Point(p.getLongitudeE6(), p.getLatitudeE6());
-// 						for (int r = 0; r < G.routes.length; r++) {
-// 							if (G.routes[r] == null)
-// 								continue;
-// 							
-// 							ArrayList<RouteTree.Line> lines = new ArrayList<RouteTree.Line>();
-// 							
-// 							RouteTree tree = G.route_points[r].tree;
-// 							
-// 							tree.find(C.x-100, C.y-100, C.x+100, C.y+100, lines);
-// 							//System.out.printf("for route %d, found %d\n", r, lines.size());
-// 		
-// 							for (RouteTree.Line line : lines) {
-// 								//Point A = proj.toPixels(new GeoPoint(line.lat1, line.lon1), null); //new Point(line.lat1, line.lon1);
-// 								Point A = new Point(line.lon1, line.lat1);
-// 								//Point B = proj.toPixels(new GeoPoint(line.lat2, line.lon2), null); //Point B = new Point(line.lat2, line.lon2);
-// 								Point B = new Point(line.lon2, line.lat2);
-// 								
-// 								double dist = G.pt_to_line_segment_dist(A, B, C);
-// 								if (dist < 100) 
-// 									routes.add(r);
-// 							}
-// 						}
-// 						
-// 						if (routes.size() != 0 && !routes.contains(G.active_route)) 
-// 						{
-// 							Collections.sort(routes);
-// 							
-// 							for (int i : routes) 
-// 							{
-// 								if (G.route_points[i].button != null) 
-// 								{
-// 									G.route_points[i].button.performClick();
-// 									break;
-// 								}
-// 							}
-// 						}
+						ArrayList<Integer> routes = new ArrayList<Integer>();
+						
+						Point C = new Point(p.getLongitudeE6(), p.getLatitudeE6());
+						for (int r = 0; r < G.routes.length; r++) {
+							if (G.routes[r] == null)
+								continue;
+							
+							ArrayList<RouteTree.Line> lines = new ArrayList<RouteTree.Line>();
+							
+							RouteTree tree = G.routes[r].tree;
+							
+							tree.find(C.x-100, C.y-100, C.x+100, C.y+100, lines);
+							//System.out.printf("for route %d, found %d\n", r, lines.size());
+		
+							for (RouteTree.Line line : lines) {
+								//Point A = proj.toPixels(new GeoPoint(line.lat1, line.lon1), null); //new Point(line.lat1, line.lon1);
+								Point A = new Point(line.lon1, line.lat1);
+								//Point B = proj.toPixels(new GeoPoint(line.lat2, line.lon2), null); //Point B = new Point(line.lat2, line.lon2);
+								Point B = new Point(line.lon2, line.lat2);
+								
+								double dist = G.pt_to_line_segment_dist(A, B, C);
+								if (dist < 100) 
+									routes.add(r);
+							}
+						}
+						
+						if (routes.size() != 0 && !routes.contains(G.active_route)) 
+						{
+							Collections.sort(routes);
+							
+							for (int i : routes) 
+							{
+								if (G.routes[i].button != null) 
+								{
+									G.routes[i].button.performClick();
+									break;
+								}
+							}
+						}
 						
 					}
 				});

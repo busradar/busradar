@@ -57,7 +57,7 @@ public class RouteTree extends PRTree<RouteTree.Line> implements Serializable
 		}
 
 		public double getMaxY (Line t) {
-			return t.lat1 >=t.lat2 ? t.lat1 : t.lat2;
+			return t.lat1 >= t.lat2 ? t.lat1 : t.lat2;
 		}
 	};
 

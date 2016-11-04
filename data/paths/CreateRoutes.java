@@ -86,7 +86,7 @@ public static void main(String[] args) throws Exception
 
     
 	
-	FileOutputStream file2 = new FileOutputStream("route_points.bin.tmp");
+	FileOutputStream file2 = new FileOutputStream("routes.bin.tmp");
 	DataOutputStream out = new DataOutputStream(file2);
 	
 	out.writeInt(routes_dict.values().size());
@@ -105,7 +105,7 @@ public static void main(String[] args) throws Exception
                 
 	out.close();
 	
-	new File("route_points.bin.tmp").renameTo(new File("route_points.bin"));
+	new File("routes.bin.tmp").renameTo(new File("routes.bin"));
 	
 	System.out.printf("%s %s\n", routes_dict.values().size(), routes_info.length());
 	

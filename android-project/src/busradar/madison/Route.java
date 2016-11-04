@@ -26,30 +26,29 @@ public class Route
 	public static final byte HOLIDAY = 2;
 	public static final byte BOTH = WEEKDAY | HOLIDAY;
 	
+	public RouteTree tree;
 	public int color;
 	public byte days;
 	public Button button;
 	public String name;
 	public int id;
-	public int[][] polylines;
 	
 	public Route() {}
 	
 	public Route(DataInputStream s) throws IOException {
         name = s.readUTF();
         id = s.readInt();
-        color = s.readInt();
-        days = s.readByte();
-        
-        int numPolylines = s.readInt();
-        polylines = new int[numPolylines][];
-        for (int i = 0; i < numPolylines; i++) {
-            int numCoords = s.readInt();
-            int[] coords = new int[numCoords];
-            polylines[i] = coords;
-            for (int j = 0; j < numCoords; j++) {
-                coords[j] = s.readInt();
-            }
-        }
+		tree = new RouteTree(s);
+		//System.out.printf("Loaded path %s %d %d\n", name, id, tree.getNumberOfLeaves());
+		color = s.readInt();
+		days = s.readByte();
+	}
+	
+	public void write(DataOutputStream s) throws IOException {
+        s.writeUTF(name);
+        s.writeInt(id);
+		tree.write(s);
+		s.writeInt(color);
+		s.writeByte(days);
 	}
 }
