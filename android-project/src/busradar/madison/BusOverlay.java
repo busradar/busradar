@@ -24,6 +24,7 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.Point;
+import android.graphics.Rect;
 import android.graphics.RectF;
 import android.graphics.Typeface;
 import android.view.GestureDetector;
@@ -60,6 +61,11 @@ BusOverlay(MapView map_view) {
 static final Paint paint = new Paint(); {
 	paint.setColor(0xffff0000);
 }
+
+static final int stroke_width = dp2px(5);
+static final int stroke_width_2s = round(stroke_width/2.0);
+static final int stroke_width_4s = round(stroke_width/4.0);
+static final int stroke_width_8s = round(stroke_width/8.0);
 
 static final Paint line_paint = new Paint() {{
 	setStrokeWidth(dp2px(5));
@@ -112,8 +118,8 @@ draw(Canvas canvas, MapView map, boolean shadow)
 	int maxlon = center.getLongitudeE6() + lonspan / 2;
 	int minlat = center.getLatitudeE6() - latspan / 2;
 	int maxlat = center.getLatitudeE6() + latspan / 2;
-	Point min = new Point();
-	Point max = new Point();
+	Point min = new Point(0, 0);
+	Point max = new Point(map.getWidth()-1, map.getHeight()-1);
 	proj.toPixels(new GeoPoint(maxlat, minlon), min);
 	proj.toPixels(new GeoPoint(minlat, maxlon), max);
 	
@@ -130,40 +136,26 @@ draw(Canvas canvas, MapView map, boolean shadow)
 		canvas.drawCircle(point.x, point.y, Math.round(touch_allowance*metrics.density), circle_paint);
 	}
 	zoom_level = x;
+    int zoomLevel = map.getZoomLevel();
 	
+	//if (zoomLevel <= 15)
+    //    line_paint.setStrokeWidth(stroke_width_8s);
+    //else if (zoomLevel == 16)
+    //    line_paint.setStrokeWidth(stroke_width_4s);
+    if (zoomLevel <= 15)
+        line_paint.setStrokeWidth(stroke_width_2s);
+    else
+        line_paint.setStrokeWidth(stroke_width);
 	if (G.active_route >= 0) { 
-		
-		ArrayList<RouteTree.Line> lines = new ArrayList<RouteTree.Line>();
-		line_paint.setColor(0x90000000 | G.route_points[G.active_route].color);
-		
-		RouteTree tree = G.route_points[G.active_route].tree;
-		tree.find(
-            round(minlon-10*pixel), round(minlat-10*pixel), 
-            round(maxlon+10*pixel), round(maxlat+10*pixel), lines);
-		//tree.find(Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE, lines);
-		//System.out.printf("BusRadar:  tree find %s, %d, %dn %d total=%d leaves=%d\n",
-        //    minlon-5*pixel, minlat-5*pixel, maxlon+5*pixel, maxlat+5*pixel,
-        //    lines.size(), tree.getNumberOfLeaves());
-		
-		Path path = new Path();
-		for (RouteTree.Line line : lines) {
-			
-			proj.toPixels(new GeoPoint(line.lat1, line.lon1), p1);
-			proj.toPixels(new GeoPoint(line.lat2, line.lon2), p2);
-			
-			path.moveTo(p1.x, p1.y);
-			path.lineTo(p2.x, p2.y);
-			
-			//canvas.drawLine(p1.x, p1.y, p2.x, p2.y, line_paint);
-			
-			//canvas.drawCircle(p1.x, p1.y, 3, paint);
-			//canvas.drawCircle(p2.x, p2.y, 3, paint);
-		}
-		canvas.drawPath(path, line_paint);
+		drawRoute(G.routes[G.active_route], minlon, maxlon, minlat, maxlat, p1, p2, proj, canvas);
+	} else if (G.active_route == -2) {
+        for (Route route : G.routes) {
+            drawRoute(route, minlon, maxlon, minlat, maxlat, p1, p2, proj, canvas);
+        }
 	}
 	
 	//paint.setColor(0xffff0000);
-	if (map.getZoomLevel() >= 15) {
+	if (zoomLevel >= 14) {
 		ArrayList<QuadTree.Element> geopoints = G.stops_tree.get(
                 round(minlon-dp2px(32)*pixel), round(minlat-dp2px(32)*pixel), 
                 round(maxlon+dp2px(32)*pixel), round(maxlat+dp2px(32)*pixel));
@@ -184,26 +176,56 @@ draw(Canvas canvas, MapView map, boolean shadow)
 			switch (geopoint.dir) {
 				case 'N': 
 					b = G.bitmap_stop_north;
+					if (zoomLevel <= 15)
+                        b = G.bitmap_stop_north_8s;
+                    else if (zoomLevel == 16)
+                        b = G.bitmap_stop_north_4s;
+                    else if (zoomLevel == 17)
+                        b = G.bitmap_stop_north_2s;
 					canvas.drawBitmap(b, point.x, point.y-b.getHeight()/2, paint);
 					break;
 					
 				case 'S': 
 					b = G.bitmap_stop_south; 
+					if (zoomLevel <= 15)
+                        b = G.bitmap_stop_south_8s;
+                    else if (zoomLevel == 16)
+                        b = G.bitmap_stop_south_4s;
+                    else if (zoomLevel == 17)
+                        b = G.bitmap_stop_south_2s;
 					canvas.drawBitmap(b, point.x-b.getWidth(), point.y-b.getHeight()/2, paint);
 					break;
 					
 				case 'E': 
 					b = G.bitmap_stop_east;
+					if (zoomLevel <= 15)
+                        b = G.bitmap_stop_east_8s;
+                    else if (zoomLevel == 16)
+                        b = G.bitmap_stop_east_4s;
+                    else if (zoomLevel == 17)
+                        b = G.bitmap_stop_east_2s;
 					canvas.drawBitmap(b, point.x-b.getWidth()/2, point.y, paint);
 					break;
 					
 				case 'W': 
 					b = G.bitmap_stop_west;
+					if (zoomLevel <= 15)
+                        b = G.bitmap_stop_west_8s;
+                    else if (zoomLevel == 16)
+                        b = G.bitmap_stop_west_4s;
+                    else if (zoomLevel == 17)
+                        b = G.bitmap_stop_west_2s;
 					canvas.drawBitmap(b, point.x-b.getWidth()/2, point.y-b.getHeight(), paint);
 					break;
 					
 				default: 
 					b = G.bitmap_stop_nodir;
+					if (zoomLevel <= 15)
+                        b = G.bitmap_stop_nodir_8s;
+                    else if (zoomLevel == 16)
+                        b = G.bitmap_stop_nodir_4s;
+                    else if (zoomLevel == 17)
+                        b = G.bitmap_stop_west_2s;
 					canvas.drawBitmap(b, point.x-b.getWidth()/2, point.y-b.getHeight(), paint);
 			}
 
@@ -221,29 +243,29 @@ draw(Canvas canvas, MapView map, boolean shadow)
 			if (point.x < min.x || point.x > max.x || point.y < min.y || point.y > max.y) {
 			
                 int heading = bus_loc.heading;
-                char dir = ' ';
-                if (heading < (0+22) || bus_loc.heading >= (315+22)) {
-                    dir = '↑';
-                } else if (heading < (45+22)) {
-                    dir = '↗';
-                } else if (heading < (90+22)) {
-                    dir = '→';
-                } else if (heading < (135+22)) {
-                    dir = '↘';
-                } else if (heading < (180+22)) {
-                    dir = '↓';
-                }  else if (heading < (225+22)) {
-                    dir = '↙';
-                } else if (heading < (270+22)) {
-                    dir = '←';
-                } else if (heading < (315+22)) {
-                    dir = '↖';
-                }
 				
 				double dist = dist(center.getLatitudeE6()/1.E6, center.getLongitudeE6()/1.E6, 
 						bus_loc.loc.getLatitudeE6()/1.E6, bus_loc.loc.getLongitudeE6()/1.E6);
 				
-				String msg = ( ((int)(dist * 0.000621371192 * 100 + 0.5)) / 100.0) + "mi" + dir; 
+                String msg = ( ((int)(dist * 0.000621371192 * 100 + 0.5)) / 100.0) + "mi";
+                
+                if (heading < (0+22) || bus_loc.heading >= (315+22)) {
+                    msg = msg + '↑';
+                } else if (heading < (45+22)) {
+                    msg = msg + '↗';
+                } else if (heading < (90+22)) {
+                    msg = msg + '→';
+                } else if (heading < (135+22)) {
+                    msg = msg + '↘';
+                } else if (heading < (180+22)) {
+                    msg = msg + '↓';
+                }  else if (heading < (225+22)) {
+                    msg = '↙' + msg;
+                } else if (heading < (270+22)) {
+                    msg = '←' + msg;
+                } else if (heading < (315+22)) {
+                    msg = '↖' + msg;
+                }
 				//GeoPoint gps = map.getMapCenter(); //G.location_overlay.getMyLocation();
 				//float[] results = new float[1];
 				//Location.distanceBetween(gps.getLatitudeE6()/1.E6, gps.getLongitudeE6()/1.E6, 
@@ -251,10 +273,10 @@ draw(Canvas canvas, MapView map, boolean shadow)
 								
 				if (point.x > max.x) {
 					if (point.y < min.y) {
-						draw_text_right(canvas, msg, max.x, min.y + (13+16*upper_right_count++)*metrics.density);
+						draw_text_right(canvas, msg, max.x, min.y + dp2px(13+16*upper_right_count++));
 					}
-					else if (point.y > max.y - 13) {
-						draw_text_right(canvas, msg, max.x, max.y - (45+16*lower_right_count++)*metrics.density);
+					else if (point.y > max.y - dp2px(13)) {
+						draw_text_right(canvas, msg, max.x, max.y - dp2px(45+16*lower_right_count++));
 					}
 					else {
 						draw_text_right(canvas, msg, max.x, point.y);
@@ -262,21 +284,21 @@ draw(Canvas canvas, MapView map, boolean shadow)
 				}
 				else if (point.x < min.x) {
 					if (point.y < min.y) {
-						draw_text_left(canvas, msg, min.x+3*metrics.density, min.y+(13+16*upper_left_count++)*metrics.density);
+						draw_text_left(canvas, msg, min.x+dp2px(3), min.y+dp2px(13+16*upper_left_count++));
 					}
-					else if (point.y > max.y - 13) {
-						draw_text_left(canvas, msg, min.x+3*metrics.density, max.y - (45+16*lower_left_count++)*metrics.density);
+					else if (point.y > max.y - dp2px(13)) {
+						draw_text_left(canvas, msg, min.x+dp2px(3), max.y - dp2px(45+16*lower_left_count++));
 					}
 					else {
-						draw_text_left(canvas, msg, min.x+3*metrics.density, point.y);
+						draw_text_left(canvas, msg, min.x+dp2px(3), point.y);
 					}
 					
 				}
 				else if (point.y > max.y) {
-					draw_text_left(canvas, msg, point.x, max.y-45*metrics.density);
+					draw_text_left(canvas, msg, point.x, max.y-dp2px(45));
 				}
 				else { //if (point.y < min.y) {
-					draw_text_left(canvas, msg, point.x, min.y+13*metrics.density);
+					draw_text_left(canvas, msg, point.x, min.y+dp2px(13));
 				}
 				
 				continue;
@@ -312,6 +334,59 @@ draw(Canvas canvas, MapView map, boolean shadow)
 			//canvas.drawCircle(point.x, point.y, 3, paint);
 		}
 	}
+}
+
+void drawRoute(Route route, int minlon, int maxlon, int minlat, int maxlat,
+        Point p1, Point p2, Projection proj, Canvas canvas) {
+    line_paint.setColor(0x90000000 | route.color);
+    
+    Path path = new Path();
+    int[][] polylines = route.polylines;;
+    
+    int polylineCount = 0;
+    GeoPoint p1Geo, p2Geo;
+    int oob = 0;
+    int small = 0;
+    int draw = 0;
+    for (int[] polyline : polylines) {
+        proj.toPixels(p1Geo=new GeoPoint(polyline[0], polyline[1]), p1);
+        
+        boolean didSkip = true;
+        for (int i = 2; i < polyline.length; i += 2) {
+            p2Geo = new GeoPoint(polyline[i], polyline[i+1]);
+            
+            if ( (p1Geo.getLatitudeE6() < minlat && p2Geo.getLatitudeE6() < minlat)   ||
+                 (p1Geo.getLatitudeE6() > maxlat && p2Geo.getLatitudeE6() > maxlat)   ||
+                 (p1Geo.getLongitudeE6() < minlon && p2Geo.getLongitudeE6() < minlon) ||
+                 (p1Geo.getLongitudeE6() > maxlon && p2Geo.getLongitudeE6() > maxlon)    ) {
+                    p1Geo = p2Geo;
+                    didSkip = true;
+                    oob++;
+                    continue;
+            }
+            
+            proj.toPixels(p2Geo, p2);
+            if (p1.x == p2.x && p1.y == p2.y) {
+                small++;
+                continue;
+            }
+            if (didSkip) {
+                proj.toPixels(p1Geo, p1);
+                path.moveTo(p1.x, p1.y);
+                didSkip = false;
+            }
+            p1.x = p2.x;
+            p1.y = p2.y;;
+            p1Geo = p2Geo;
+            path.lineTo(p2.x, p2.y);
+            draw++;
+        }
+        //if (draw > 0)
+        //    System.out.printf("BusRadar: oob=%d small=%d draw=%d\n", oob, small, draw);
+        polylineCount++;
+    }
+    
+    canvas.drawPath(path, line_paint);
 }
 
 @Override
@@ -484,9 +559,9 @@ public boolean onDown(MotionEvent e1) {
 final static void 
 draw_text_right(Canvas canvas, String msg, float x, float y)
 {	
-	float len = text_paint.measureText(msg);
-	RectF rect = new RectF(x-len-3*metrics.density, y-13*metrics.density, x+3*metrics.density, y+3*metrics.density);
-	canvas.drawRoundRect(rect, 3*metrics.density, 3*metrics.density, label_paint);
+	int len = round(text_paint.measureText(msg));
+	RectF rect = new RectF(x-len-dp2px(3), y-dp2px(13), x+dp2px(3), y+dp2px(3));
+	canvas.drawRoundRect(rect, dp2px(3), dp2px(3), label_paint);
 	
 	canvas.drawText(msg, x-len, y, text_paint);
 }
@@ -494,9 +569,9 @@ draw_text_right(Canvas canvas, String msg, float x, float y)
 final static void 
 draw_text_left(Canvas canvas, String msg, float x, float y)
 {	
-	float len = text_paint.measureText(msg);
-	RectF rect = new RectF(x-3*metrics.density, y-13*metrics.density, x+len+3*metrics.density, y+3*metrics.density);
-	canvas.drawRoundRect(rect, 3*metrics.density, 3*metrics.density, label_paint);
+	int len = round(text_paint.measureText(msg));
+	RectF rect = new RectF(x-dp2px(3), y-dp2px(13), x+len+dp2px(3), y+dp2px(3));
+	canvas.drawRoundRect(rect, dp2px(3), dp2px(3), label_paint);
 	
 	canvas.drawText(msg, x, y, text_paint);
 }

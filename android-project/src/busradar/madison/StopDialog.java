@@ -293,16 +293,16 @@ public final class StopDialog extends Dialog {
 								addView(new Button(ctx) {
 									public void setEnabled(boolean e) {
 										if (e) {
-											setBackgroundColor(0xff000000 | G.route_points[route.route].color);
+											setBackgroundColor(0xff000000 | G.routes[route.route].color);
 											setTextSize(TypedValue.COMPLEX_UNIT_PX, text_size * 1.5f);
 										} else {
-											setBackgroundColor(0x90000000 | G.route_points[route.route].color);
+											setBackgroundColor(0x90000000 | G.routes[route.route].color);
 											setTextSize(TypedValue.COMPLEX_UNIT_PX, text_size);
 										}
 									}
 
 									{
-										setText(G.route_points[route.route].name);
+										setText(G.routes[route.route].name);
 										setTextColor(0xffffffff);
 										setTypeface(Typeface.DEFAULT_BOLD);
 										text_size = getTextSize();
@@ -379,8 +379,8 @@ public final class StopDialog extends Dialog {
 								v = (CellView) convertView;
 							
 							RouteTime rt = curr_times.get(position);
-							v.setBackgroundColor(G.route_points[rt.route].color | 0xff000000);
-							v.route_textview.setText(G.route_points[rt.route].name);
+							v.setBackgroundColor(G.routes[rt.route].color | 0xff000000);
+							v.route_textview.setText(G.routes[rt.route].name);
 							if (rt.dir != null) v.dir_textview.setText("to "+ rt.dir);
 							v.time_textview.setText(rt.time);
 
@@ -442,7 +442,7 @@ public final class StopDialog extends Dialog {
 				for (final RouteURL r : routes) {
 					G.activity.runOnUiThread(new Runnable() {
 						public void run() {
-							cur_loading_text.setText(String.format("Loading route %s...", G.route_points[r.route].name));
+							cur_loading_text.setText(String.format("Loading route %s...", G.routes[r.route].name));
 						}
 					});
 					

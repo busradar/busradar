@@ -1,13 +1,13 @@
-all: route_points.bin
+all: routes.bin
 
-route_points.bin: CreateRoutes.class ../combined-stops.json ../paths.json
-	java -cp ../commons-io-2.0.1.jar:. CreateRoutes
+routes.bin: CreatePaths.class  ../combined-stops.json ../paths.json
+	java -cp ../commons-io-2.0.1.jar:. CreatePaths
 	
-CreateRoutes.class: CreateRoutes.java
-	javac -cp ../commons-io-2.0.1.jar:. CreateRoutes.java
+CreatePaths.class: CreatePaths.java
+	javac -cp ../commons-io-2.0.1.jar:. CreatePaths.java
 	
 TestRoutes.class: TestRoutes.java
 	javac -cp ../commons-io-2.0.1.jar:. TestRoutes.java
 
 clean:
-	rm -f route_points.bin
+	rm -f *.bin *.class busradar/madison/*.class

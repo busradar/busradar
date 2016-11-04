@@ -41,10 +41,25 @@ public class G {
 public static DisplayMetrics metrics;
 	
 static Bitmap bitmap_stop_west;
+static Bitmap bitmap_stop_west_2s;
+static Bitmap bitmap_stop_west_4s;
+static Bitmap bitmap_stop_west_8s;
 static Bitmap bitmap_stop_east;
+static Bitmap bitmap_stop_east_2s;
+static Bitmap bitmap_stop_east_4s;
+static Bitmap bitmap_stop_east_8s;
 static Bitmap bitmap_stop_north;
+static Bitmap bitmap_stop_north_2s;
+static Bitmap bitmap_stop_north_4s;
+static Bitmap bitmap_stop_north_8s;
 static Bitmap bitmap_stop_south;
+static Bitmap bitmap_stop_south_2s;
+static Bitmap bitmap_stop_south_4s;
+static Bitmap bitmap_stop_south_8s;
 static Bitmap bitmap_stop_nodir;
+static Bitmap bitmap_stop_nodir_2s;
+static Bitmap bitmap_stop_nodir_4s;
+static Bitmap bitmap_stop_nodir_8s;
 
 static Bitmap bitmap_bus_west;
 static Bitmap bitmap_bus_east;
@@ -56,7 +71,7 @@ static Bitmap bitmap_bus_southwest;
 static Bitmap bitmap_bus_southeast;
 	
 static QuadTree stops_tree;
-static Route[] route_points;
+static Route[] routes;
 
 static Main activity;
 static BusOverlay bus_overlay;
@@ -90,11 +105,60 @@ static void init(Main a)
 	metrics = a.getResources().getDisplayMetrics();
 	
    	bitmap_stop_west = BitmapFactory.decodeResource(a.getResources(), R.drawable.stop_west);
-   	bitmap_stop_north = BitmapFactory.decodeResource(a.getResources(), R.drawable.stop_north);
-   	bitmap_stop_south = BitmapFactory.decodeResource(a.getResources(), R.drawable.stop_south);
-   	bitmap_stop_east = BitmapFactory.decodeResource(a.getResources(), R.drawable.stop_east);
-   	bitmap_stop_nodir = BitmapFactory.decodeResource(a.getResources(), R.drawable.stop_nodir);
+   	bitmap_stop_west_2s = Bitmap.createScaledBitmap(bitmap_stop_west, 
+            round(bitmap_stop_west.getWidth()/2.0), 
+            round(bitmap_stop_west.getHeight()/2.0), true);
+    bitmap_stop_west_4s = Bitmap.createScaledBitmap(bitmap_stop_west, 
+            round(bitmap_stop_west.getWidth()/4.0), 
+            round(bitmap_stop_west.getHeight()/4.0), true);
+    bitmap_stop_west_8s = Bitmap.createScaledBitmap(bitmap_stop_west, 
+            round(bitmap_stop_west.getWidth()/8.0), 
+            round(bitmap_stop_west.getHeight()/8.0), true);
    	
+   	bitmap_stop_north = BitmapFactory.decodeResource(a.getResources(), R.drawable.stop_north);
+   	bitmap_stop_north_2s = Bitmap.createScaledBitmap(bitmap_stop_north, 
+            round(bitmap_stop_north.getWidth()/2.0), 
+            round(bitmap_stop_north.getHeight()/2.0), true);
+    bitmap_stop_north_4s = Bitmap.createScaledBitmap(bitmap_stop_north, 
+            round(bitmap_stop_north.getWidth()/4.0), 
+            round(bitmap_stop_north.getHeight()/4.0), true);        
+    bitmap_stop_north_8s = Bitmap.createScaledBitmap(bitmap_stop_north, 
+            round(bitmap_stop_north.getWidth()/8.0), 
+            round(bitmap_stop_north.getHeight()/8.0), true);        
+    
+   	bitmap_stop_south = BitmapFactory.decodeResource(a.getResources(), R.drawable.stop_south);
+   	bitmap_stop_south_2s = Bitmap.createScaledBitmap(bitmap_stop_south, 
+            round(bitmap_stop_south.getWidth()/2.0), 
+            round(bitmap_stop_south.getHeight()/2.0), true);
+    bitmap_stop_south_4s = Bitmap.createScaledBitmap(bitmap_stop_south, 
+            round(bitmap_stop_south.getWidth()/4.0), 
+            round(bitmap_stop_south.getHeight()/4.0), true);
+    bitmap_stop_south_8s = Bitmap.createScaledBitmap(bitmap_stop_south, 
+            round(bitmap_stop_south.getWidth()/8.0), 
+            round(bitmap_stop_south.getHeight()/8.0), true);        
+            
+   	bitmap_stop_east = BitmapFactory.decodeResource(a.getResources(), R.drawable.stop_east);
+   	bitmap_stop_east_2s = Bitmap.createScaledBitmap(bitmap_stop_east, 
+            round(bitmap_stop_east.getWidth()/2.0), 
+            round(bitmap_stop_east.getHeight()/2.0), true);
+    bitmap_stop_east_4s = Bitmap.createScaledBitmap(bitmap_stop_east, 
+            round(bitmap_stop_east.getWidth()/4.0), 
+            round(bitmap_stop_east.getHeight()/4.0), true);
+    bitmap_stop_east_8s = Bitmap.createScaledBitmap(bitmap_stop_east, 
+            round(bitmap_stop_east.getWidth()/8.0), 
+            round(bitmap_stop_east.getHeight()/8.0), true);
+            
+   	bitmap_stop_nodir = BitmapFactory.decodeResource(a.getResources(), R.drawable.stop_nodir);
+   	bitmap_stop_nodir_2s = Bitmap.createScaledBitmap(bitmap_stop_nodir, 
+            round(bitmap_stop_nodir.getWidth()/2.0), 
+            round(bitmap_stop_nodir.getHeight()/2.0), true);
+    bitmap_stop_nodir_4s = Bitmap.createScaledBitmap(bitmap_stop_nodir, 
+            round(bitmap_stop_nodir.getWidth()/4.0), 
+            round(bitmap_stop_nodir.getHeight()/4.0), true);
+   	bitmap_stop_nodir_8s = Bitmap.createScaledBitmap(bitmap_stop_nodir, 
+            round(bitmap_stop_nodir.getWidth()/8.0), 
+            round(bitmap_stop_nodir.getHeight()/8.0), true);
+
    	bitmap_bus_west = BitmapFactory.decodeResource(a.getResources(), R.drawable.bus_west);
    	bitmap_bus_north = BitmapFactory.decodeResource(a.getResources(), R.drawable.bus_north);
    	bitmap_bus_northeast = BitmapFactory.decodeResource(a.getResources(), R.drawable.bus_northeast);
@@ -114,13 +178,13 @@ static void init(Main a)
 		in.close();
 		file.close();
 		
-		file = a.getResources().openRawResource(R.raw.route_points);
+		file = a.getResources().openRawResource(R.raw.routes);
 		in = new DataInputStream(file);
 		
-		route_points = new Route[in.readInt()];
-		for (int i = 0; i < route_points.length; i++)
+		routes = new Route[in.readInt()];
+		for (int i = 0; i < routes.length; i++)
 		{
-				route_points[i] = new Route(in);
+				routes[i] = new Route(in);
 		}
 	
 		//long t2 = System.currentTimeMillis();

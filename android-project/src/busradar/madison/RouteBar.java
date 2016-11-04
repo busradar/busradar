@@ -56,31 +56,78 @@ make_layout()
 {
 	return new LinearLayout(G.activity) 
 	{{
+        addView(new Button(G.activity) {
+            @Override
+            public void setEnabled(boolean e) {
+                if (e) {
+                    
+                    setBackgroundColor(0xff000000 | 0x00FF0000);
+                    setTextSize(TypedValue.COMPLEX_UNIT_PX, text_size*1.5f);
+                    cur_button = this;
+                }
+                else {
+                    setBackgroundColor(0x90000000 | 0x00FF0000);
+                    setTextSize(TypedValue.COMPLEX_UNIT_PX, text_size);
+                }
+            }
+                
+            {
+                setText("ALL");
+                setTextColor(0xffffffff);
+                setTypeface(Typeface.DEFAULT_BOLD);
+                text_size = getTextSize();
+                setEnabled(false);
+                
+                final Button b = this;
+                
+                setOnClickListener(new OnClickListener() {
+                    public void onClick(View v) {
+                        if (cur_button != null) {
+                            cur_button.setEnabled(false);
+                        }
+                        
+                        if (cur_button == b) {
+                            cur_button.setEnabled(false);
+                            G.active_route = -1;
+                            cur_button = null;
+                            G.bus_locator.stop();
+                            G.activity.map_view.invalidate();
+                        }
+                        else {
+                            b.setEnabled(true);
+                            G.active_route = -2;
+                            G.activity.map_view.invalidate();
+                        }
+                    }
+                });
+            }}, new LinearLayout.LayoutParams(WRAP_CONTENT, WRAP_CONTENT) {{
+                                gravity = Gravity.BOTTOM;
+            }});
 		//setGravity(Gravity.BOTTOM);
-		for (int i = 0; i < G.route_points.length; i++) 
+		for (int i = 0; i < G.routes.length; i++) 
 		{
 			
-			if (G.route_points[i] == null)
+			if (G.routes[i] == null)
 				continue;
 			
-			if ((G.route_points[i].days & G.today) == 0)
+			if ((G.routes[i].days & G.today) == 0)
 				continue;
 			
 			final int ix = i; 
-			final Route route = G.route_points[i];
+			final Route route = G.routes[i];
 			setBaselineAligned(false);
-			addView(G.route_points[i].button=new Button(G.activity) {
+			addView(G.routes[i].button=new Button(G.activity) {
 				@Override
 				public void setEnabled(boolean e) {
 					if (e) {
 						
-						setBackgroundColor(0xff000000 | G.route_points[ix].color);
+						setBackgroundColor(0xff000000 | G.routes[ix].color);
 						setTextSize(TypedValue.COMPLEX_UNIT_PX, text_size*1.5f);
 						cur_button = this;
 					}
 					else {
-						//setBackgroundColor(0xff000000 | G.route_points[ix].color);
-						setBackgroundColor(0x90000000 | G.route_points[ix].color);
+						//setBackgroundColor(0xff000000 | G.routes[ix].color);
+						setBackgroundColor(0x90000000 | G.routes[ix].color);
 						setTextSize(TypedValue.COMPLEX_UNIT_PX, text_size);
 					}
 				}
@@ -114,7 +161,7 @@ make_layout()
 								b.setEnabled(true);
 								G.active_route = ix;
 								
-								G.bus_locator.start(G.route_points[ix].id);
+								G.bus_locator.start(G.routes[ix].id);
 								G.activity.map_view.invalidate();
 							}
 						}
