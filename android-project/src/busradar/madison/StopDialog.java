@@ -210,7 +210,7 @@ public final class StopDialog extends Dialog {
 		final String link_html = stopno == -1 ? "" : String.format(
                 "[<a href='http://www.cityofmadison.com/metro/BusStopDepartures/StopID/%04d.pdf'>%04d</a>]",
                 stopno, stopno);
-		setTitle(name);
+		setTitle(name.replaceFirst("\\s*\\[([NSEW]B)?#?\\d*\\]\\s*$", " $1"));
 		
         TextView title = (TextView) findViewById(android.R.id.title);
         title.setHorizontallyScrolling(true);

@@ -121,8 +121,8 @@ draw(Canvas canvas, MapView map, boolean shadow)
 	int maxlat = center.getLatitudeE6() + latspan / 2;
 	Point min = new Point(0, 0);
 	Point max = new Point(map.getWidth()-1, map.getHeight()-1);
-	proj.toPixels(new GeoPoint(maxlat, minlon), min);
-	proj.toPixels(new GeoPoint(minlat, maxlon), max);
+	//proj.toPixels(new GeoPoint(maxlat, minlon), min);
+	//proj.toPixels(new GeoPoint(minlat, maxlon), max);
 	
 	//ProxyGeoPoint pgp = new ProxyGeoPoint(0, 0);
 	
@@ -286,10 +286,11 @@ draw(Canvas canvas, MapView map, boolean shadow)
                     dir = '↖';
                 }
                 
-                double dist = dist(center.getLatitudeE6()/1.E6, center.getLongitudeE6()/1.E6, 
+                double dist_meters = dist(center.getLatitudeE6()/1.E6, center.getLongitudeE6()/1.E6, 
                         bus_loc.loc.getLatitudeE6()/1.E6, bus_loc.loc.getLongitudeE6()/1.E6);
                 
-                String msg = ( ((int)(dist * 0.000621371192 * 100 + 0.5)) / 100.0) + "mi" + dir; 
+                double dist_miles = dist_meters * 0.000621371192;
+                String msg = String.format("%.2f mi%c", dist_miles, dir);
 				//GeoPoint gps = map.getMapCenter(); //G.location_overlay.getMyLocation();
 				//float[] results = new float[1];
 				//Location.distanceBetween(gps.getLatitudeE6()/1.E6, gps.getLongitudeE6()/1.E6, 
