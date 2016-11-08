@@ -91,6 +91,8 @@ for stopid in stops:
             stop['name'] = mmt_stops[stopid]['name']
 
 
+print 'total number of stops:', len(stops)
+print 'missing stops:'
 for s in missing_stops:
     print s
 

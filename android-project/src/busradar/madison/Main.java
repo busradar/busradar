@@ -16,6 +16,7 @@ package busradar.madison;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.lang.reflect.Method;
 
 import android.content.Context;
 import android.content.SharedPreferences.Editor;
@@ -95,6 +96,26 @@ public class Main extends MapActivity
  	@SuppressWarnings("deprecation")
 	public void onCreate2() 
  	{
+ 	
+        boolean success = false;
+        try {
+            Window wind = getWindow();
+            Method setNeedsMenuKey = Window.class.getDeclaredMethod("setNeedsMenuKey", int.class);
+            setNeedsMenuKey.setAccessible(true);
+            int NEEDS_MENU_SET_TRUE =  WindowManager.LayoutParams.class.getField("NEEDS_MENU_SET_TRUE").getInt(null);
+            setNeedsMenuKey.invoke(wind, NEEDS_MENU_SET_TRUE);
+            success = true;
+        } catch (Exception e) {
+            // ignore
+        }
+        if (!success) {
+            try {
+                getWindow().addFlags(WindowManager.LayoutParams.class.getField("FLAG_NEEDS_MENU_KEY").getInt(null));
+            } catch (Exception e) {
+                // ignore
+            }
+        }
+        
  		map_view.setBuiltInZoomControls(true);
  		final MapController ctrl = map_view.getController();
 
@@ -149,6 +170,7 @@ public class Main extends MapActivity
  				//addRule(RelativeLayout.CENTER_HORIZONTAL);
  			}});
  		}});
+ 		
  		
  		ZoomButtonsController zbc = map_view.getZoomButtonsController();
  		zbc.setVisible(true);

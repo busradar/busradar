@@ -42,7 +42,6 @@ public class LocationOverlay extends MyLocationOverlay
 
         mapView.getProjection().toPixels(myLocation, point);
         
-        System.out.printf("BusRadar: redrawing current location\n");
         canvas.save();
         if (bearing != 0 && !Float.isNaN(bearing)) {
             canvas.rotate(bearing, point.x, point.y);
@@ -73,7 +72,7 @@ public class LocationOverlay extends MyLocationOverlay
     }
     
     void disable() {
-        disableCompass();
+        disableMyLocation();
         sensors.unregisterListener(this);
     }
     
