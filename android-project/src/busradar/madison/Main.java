@@ -29,6 +29,7 @@ import android.graphics.Paint.Style;
 import android.graphics.drawable.Drawable;
 import android.location.Location;
 import android.os.Bundle;
+import android.os.Build;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -39,6 +40,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.*;
 import android.view.*;
+import android.*;
+import android.content.pm.PackageManager;
 
 import com.google.android.maps.*;
 
@@ -73,6 +76,13 @@ public class Main extends MapActivity
  		if (!G.gps_enable) {
             G.location_overlay.enable();
  		}
+ 		
+ 		if (Build.VERSION.SDK_INT >= 23) {
+            if (checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) != 
+                    PackageManager.PERMISSION_GRANTED) {
+                requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 0);
+            }
+        }
  		
  		
  		new Thread() {
