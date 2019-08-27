@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-# this script downloads data from the mobile tracker
+# this scri2pt downloads data from the mobile tracker
 # this data includes the url for each (stop, route) pair
 #
 # This script must be run separately on weekdays and again on 
@@ -42,6 +42,10 @@ for a in BeautifulSoup(html).findAll('a', {'class': 'adalink'}):
         print '  dirname:', dirname, 'dirid:', dirid
         html = urllib.urlopen(url).read()
         for a in BeautifulSoup(html).findAll('a', {'class': 'adalink'}):
+            if 'href' not in a.attrMap:
+                print "skipping", a
+                continue
+            #print "A", a 
             url = re.search(r'\?.*', a['href']).group(0)
             stopname = a.string
             stopid = re.search(r's=(\d+)', url).group(1)

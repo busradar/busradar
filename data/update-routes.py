@@ -54,5 +54,14 @@ for route in routes_json:
     if not route['inactive']:
         route['index'] = index
         index += 1
+        
+for route_name in route_info:
+    found = False
+    for json_route in routes_json:
+        if json_route['name'] == route_name:
+            found = True
+            break
+    if not found:
+        raise Exception("Not found route %s" % route_name)
 
 print >>open('routes.json', 'w'), json.dumps(routes_json, sort_keys=True, indent=4)
