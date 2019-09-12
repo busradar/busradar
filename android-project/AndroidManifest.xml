@@ -17,8 +17,8 @@ GNU General Public License for more details.
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="busradar.madison"
-      android:versionCode="44"
-      android:versionName="1.0.42"
+      android:versionCode="45"
+      android:versionName="1.0.43"
       android:installLocation="auto">
 	
 	<uses-sdk android:minSdkVersion="4" android:targetSdkVersion="24"/>
@@ -31,7 +31,7 @@ GNU General Public License for more details.
     <application android:label="@string/app_name"
     			 android:icon="@drawable/icon"
      			 android:theme="@android:style/Theme.NoTitleBar">
-		<uses-library android:name="com.google.android.maps"/>
+		<uses-library android:name="org.apache.http.legacy" android:required="false"/>
         <activity android:name="Main"
                   android:label="BusRadar"
                   android:configChanges="orientation|screenSize"
